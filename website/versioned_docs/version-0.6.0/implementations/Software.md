@@ -27,6 +27,7 @@ Summary list of software products and status of implementation. Scope defines th
 | [Health LOQ](#health-loq) |Health LOQ Document protection, Product Origin, Compliance dashboard| VCP, DPP, DTE, DCC, IDR, DAC, SVC| planned|
 | [SIMBA Chain](#simba-chain)| SIMBA Ensure | VCP, DPP, DFR, DTE, DCC, IDR, DAC| planned| 
 | [K4 Security](#k4-security)| KS Digital Product passport, KS Product Trust Service| VCP, DPP, DTE, DCC. IDR, DAC| planned|
+| [Reeco](#reeco)| Reeco DPP Platform| DPP, DCC - v0.6.1| active|
 
 ## Implementation Details
 
@@ -366,3 +367,26 @@ SIMBA chain is a participant in
 | Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
 | ------ | ------------- | ----------- | ------------ |
 | [KS Product Trust Service](https://dpp.globalwallet.kr/) |KSDID PTS is a supply chain traceability software/service that provides a platform for business to create and manage Digital product passports (DPPs)| VCP, DPP, DTE, DCC. IDR, DAC - v0.5, v1.0 | TBA |
+
+### [Reeco](https://portal.reeco.eco)
+
+- UNTP commitment made on: 28-Mar-2026
+- Registration Country: Italy
+- Operating Countries: EU (textile sector)
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo | Implementation Statement |
+| --- | --- |
+| | Reeco implements UNTP DPP and DCC to bridge the structural gap between per-kg Transaction Certificate certification (GRS, GOTS, OCS, RCS) and the per-garment declarations required by ESPR. The platform enforces a gram-per-garment mass balance verification (GSM × cut width × yield coefficient) as a hard block on DPP emission. This gap was formally documented in the CIRPASS-2 stakeholder survey (contribution ID: bb6997ac). Reeco is an Expert Member of CIRPASS-2 EWG1, EWG3, EWG5 and integrates the CIRPASS-2 open-source dppvalidator engine. |
+
+#### Product Information
+
+| Product Name & version | Description | UNTP Scope & versions | Implementation Test Report |
+| --- | --- | --- | --- |
+| [Reeco DPP Platform](https://portal.reeco.eco) | SaaS platform for EU textile DPP compliance, TC verification, and supply chain traceability. Integrates CIRPASS-2 dppvalidator v0.3.2. | DPP, DCC - v0.6.1 | [Test Report v1.0](https://raw.githubusercontent.com/halleluiaman-ux/reeco-untp/main/test-report/REECO_UNTP_TEST_REPORT_v1.0.md) |
+
+#### Industry Focus
+
+| Industry Sector | Process focus | UNTP Usage |
+| --- | --- | --- |
+| Textiles (HS 50–63) | DPP emission, TC verification, mass balance g/garment | DPP, DCC |

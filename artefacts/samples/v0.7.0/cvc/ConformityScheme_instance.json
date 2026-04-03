@@ -1,0 +1,118 @@
+{
+  "type": ["ConformityScheme"],
+  "id": "https://sample-scheme.example.com/mas",
+  "name": "Minerals Assurance Scheme",
+  "description": "A third-party audit program that assesses mineral smelter and refiner management systems and sourcing practices against international due diligence guidance for responsible supply chains of minerals from conflict-affected and high-risk areas.",
+  "owner": {
+    "type": ["Party"],
+    "id": "https://sample-minerals-initiative.example.com",
+    "name": "Sample Minerals Initiative",
+    "registeredId": "SMI-001"
+  },
+  "endorsementLevel": "endorsed_benchmarked",
+  "endorsement": {
+    "type": ["Endorsement"],
+    "name": "Recognition of Minerals Assurance Scheme alignment with international due diligence standards.",
+    "trustmark": {
+      "type": ["Image"],
+      "name": "Recognised Minerals Scheme",
+      "description": "Trust mark awarded by the international benchmarking body.",
+      "imageData": "c2FtcGxlLXRydXN0bWFyaw==",
+      "mediaType": "image/png"
+    },
+    "issuingAuthority": {
+      "type": ["Party"],
+      "id": "https://sample-benchmarking-body.example.com",
+      "name": "International Minerals Benchmarking Body",
+      "registeredId": "IMBB-001"
+    },
+    "endorsementEvidence": {
+      "type": ["Link"],
+      "linkURL": "https://sample-benchmarking-body.example.com/recognised-schemes/mas",
+      "linkName": "MAS Recognition Certificate",
+      "mediaType": "text/html"
+    }
+  },
+  "schemeScoringFramework": {
+    "type": ["ScoringFramework"],
+    "name": "Minerals Assurance Conformance Classification",
+    "description": "Overall conformance classification for facilities assessed under the Minerals Assurance Scheme. Conformant facilities have demonstrated responsible sourcing practices; Active facilities are engaged in corrective actions; Non-Conformant facilities do not meet requirements.",
+    "score": [
+      {
+        "type": ["Score"],
+        "code": "CONF",
+        "rank": 1,
+        "definition": "Conformant — the facility meets all applicable requirements for responsible mineral sourcing and processing."
+      },
+      {
+        "type": ["Score"],
+        "code": "ACTIVE",
+        "rank": 2,
+        "definition": "Active — the facility is engaged in the assessment process or is implementing corrective actions to address identified gaps."
+      },
+      {
+        "type": ["Score"],
+        "code": "NON-CONF",
+        "rank": 3,
+        "definition": "Non-Conformant — the facility does not meet the requirements for responsible mineral sourcing and processing."
+      }
+    ]
+  },
+  "documentation": "https://sample-minerals-initiative.example.com/assurance-scheme/",
+  "licenseType": "proprietary-Document",
+  "establishedDate": "2017-01-01",
+  "geographicScope": [
+    {
+      "type": ["Classification"],
+      "code": "001",
+      "name": "Worldwide",
+      "schemeId": "https://unstats.un.org/unsd/methodology/m49/",
+      "schemeName": "UN M49 Standard Country or Area Codes"
+    }
+  ],
+  "industryScope": [
+    {
+      "type": ["Classification"],
+      "code": "2420",
+      "name": "Manufacture of basic precious and other non-ferrous metals",
+      "schemeId": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+      "schemeName": "UN ISIC Rev.4"
+    },
+    {
+      "type": ["Classification"],
+      "code": "0729",
+      "name": "Mining of other non-ferrous metal ores",
+      "schemeId": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+      "schemeName": "UN ISIC Rev.4"
+    }
+  ],
+  "trustmark": {
+    "type": ["Image"],
+    "name": "Minerals Assurance Scheme Certified",
+    "description": "Trust mark for facilities that have achieved conformant status under the Minerals Assurance Scheme.",
+    "imageData": "bWFzLWNlcnRpZmllZA==",
+    "mediaType": "image/png"
+  },
+  "conformsTo": {
+    "type": ["Link"],
+    "linkName": "UNTP Conformity Vocabulary Catalog v0.7.0",
+    "linkURL": "https://uncefact.github.io/spec-untp/docs/specification/ConformityVocabularyCatalog"
+  },
+  "includedProfile": [
+    {
+      "type": ["ConformityProfile"],
+      "id": "https://sample-scheme.example.com/mas/tantalum/1.0.0",
+      "name": "Tantalum Processor Standard v1.0.0"
+    },
+    {
+      "type": ["ConformityProfile"],
+      "id": "https://sample-scheme.example.com/mas/tin/1.0.0",
+      "name": "Tin Smelter Standard v1.0.0"
+    },
+    {
+      "type": ["ConformityProfile"],
+      "id": "https://sample-scheme.example.com/mas/all-minerals/1.0.0",
+      "name": "All Minerals Standard v1.0.0"
+    }
+  ]
+}

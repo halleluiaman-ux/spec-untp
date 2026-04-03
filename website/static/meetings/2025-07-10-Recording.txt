@@ -1,0 +1,405 @@
+[Speaker 8]
+Hello, Steve.
+
+[Speaker 1]
+Sorry, I was on mute. Hello, everyone.
+
+[Speaker 8]
+Yeah, now I can hear you. I could see you can hear me. You look like you're somewhere in the outback.
+
+[Speaker 1]
+I'm somewhere north of Sardinia.
+
+[Speaker 8]
+Oh, that is the outback.
+
+[Speaker 2]
+Morning, everyone. I got myself completely confused because my diary says 9 o'clock and then it says CT on the thing, so I'm suddenly thinking, have I missed it? Right.
+
+[Speaker 1]
+And I realised, too, that after switching from Google Mail, which required everyone to credit Google accounts, which I thought was a bit obtrusive, to Gaggle Mail, which doesn't, I now discover that a lot of Gaggle Mail goes to people's spam folders and junk folders. I'm still struggling to find a good mail list server for this group because I think we've got too many people that actually didn't even know this meeting was happening.
+
+[Speaker 2]
+Yeah, and we had that, the last one, when it was in your night time as well, didn't we?
+
+[Speaker 1]
+Yes. That's right. They alternate.
+
+Yeah, yeah. The idea is to give the American zone a friendly time and the European zone a friendly time by alternating. All right.
+
+I usually give it until about three minutes past, something like that, for people to join. Is there much background noise coming from my side? Not at all.
+
+That's good.
+
+[Speaker 8]
+I'm eating my dinner that just arrived, so if you hear clicking sounds, it's me, but I was on mute.
+
+[Speaker 1]
+That's all right. All right. Give it another one minute.
+
+All right. I think we can start. Some others may join shortly.
+
+We'll see. Thank you everyone for making a bit of time. Just a quick housekeeping reminder.
+
+This is a UN project meeting. It's being recorded and minutes will be published publicly. And we are talking about collaborative standards development and we shouldn't be talking about commercial issues during this fall.
+
+And any material IP that you contribute during the call or otherwise, please understand is becomes UN property. So, so that we can make it freely available to the rest of the world. That's it for the housekeeping bits and pieces.
+
+The agenda for today. A quick review of the events of last week, where we had the United Nations plenary of member states making decisions about things, including recommendation 49. And then a chat about our extenders working group that our governance group, really, they're just started.
+
+And a few other issues that I put in an email, moving from GitHub to GitLab and so on. Before I get started, is there anyone on the call that hasn't been on any UNTP call before and would like to make a quick hello?
+
+[Speaker 8]
+Yes, I am new.
+
+[Speaker 2]
+My name is Anil Jauri and I'm from India.
+
+[Speaker 1]
+Anil, very pleased to meet you. Pleased to meet everybody. Anyone else?
+
+Okay. Well, let's get started then. So last week was the annual UNC fact member state plenary, where countries get together to agree the agenda for the next year and things like that and decide on a few issues before them.
+
+One of them was the accompanying policy document that goes with UNTP called recommendation 49 transparency and scale. And it's more of a policy guidance document to member states, not so much a technical interoperability architecture. And I'm pleased to say that that policy document was unanimously approved.
+
+One change from the document that went to the member states for approval, this is the one that actually got approved, was the removal of annex one, which describes in some detail or moderate detail, what is UNTP? Now, the reason for that removal is not because anybody objects to UNTP, but because policy documents are meant to be long-term, durable, and things like the architecture of UNTP might change a bit. And we don't really want to be going and updating policy documents.
+
+So we will be, instead of the policy document pointing to UNTP, the UNTP site will point to the policy document, but it doesn't really change much what we're doing. It also gives room for other implementation instruments. Perhaps some member states have other interoperability architectures that they want to promote, and we didn't want to lock the policy into only one more admission.
+
+So that's where it's at. It's good news, I think. It doesn't change our work, but it gives it more credibility and support from member states.
+
+Any questions on that before I move to the next topic? Okay. So one other thing.
+
+We have been using GitHub to publish, to manage issues and publish the documentation, the detailed documentation of UNTP. Because that shape of tool is the right tool, right shape for this sort of job. But when we started using it, it was, shall we say, an unofficial experiment.
+
+It wasn't an officially endorsed UN platform, but we agreed with the UN Secretary that we really need to think about modernizing our tooling for this sort of project. And so let's have a trial run, if you like, using GitHub for UNTP. Now, since then, the UN globally, the New York office, has launched an open source program sort of promoting collaboration on standards and products and projects for the common good and has built a UN-hosted platform based on a product called GitLab.
+
+Almost the same sounding name, GitHub GitLab. But GitLab is an open source platform itself. And this one is hosted by the UN.
+
+So we're going to transition. And it doesn't really, again, doesn't actually change much. The site will still look the same.
+
+And the process by which we run things will be much the same. Except that it'll be running on a UN-hosted GitLab on a UN domain, which actually, again, actually helps us because it, instead of referencing uncfac.gitlab.io, we'll be referencing a UN-managed domain, which is probably a good thing. Anyway, the same word that we're running, called the United Nations Open Development Process.
+
+All our small changes of, you know, this issue, that issue, this version and release are all kind of at a lower level within our project. Whereas there is an overall governance framework called the Open Development Process, which at some point in the lifecycle of a project requires what's called a public review, where the UN points basically anyone in the world at the project and says, give us comments. And that's another part of the reason to accelerate this movement to GitLab, because the UN wants to point at a UN domain for that.
+
+So that public review we're proposing will be based on pretty much the current version 0.6. And the consequence of the public review will be feedback that will take us to version 0.7, which will be the pre-release candidate. I see Gideon's got your hand raised.
+
+[Speaker 2]
+Yeah, thanks. Just to say that not being used to GitHub or Git or anything, I'm struggling a bit to actually work with all of this. And it's like, I'm not an IT person.
+
+I'm not a developer. So from a point of view of actually just doing editorial type stuff or commenting on, I'm struggling at the moment. And I'm struggling with time to actually get my head around it as well with all the other things I'm doing.
+
+[Speaker 1]
+So any help and support would be really helpful. We do have help for that. And it's one of the reasons why in each subgroup we have a business lead who also is not familiar with GitLab or GitHub or any Git something, and a technical lead who will be happy to take on the job of applying business feedback to the published content.
+
+So basically you don't have to learn GitLab or GitLab or GitHub. You can look at it. The published website just looks like a website, right?
+
+It doesn't matter really how it's generated. And the issue list, which is where we track kind of to-dos, ought to be sort of reasonably accessible to anyone to comment on that. But actually updating the editorial of the content, either you can – the easiest way to do that is to do it through an issue saying, I think this should change, and then let the project lead and the tech editor take care of the technical publishing.
+
+So nobody should feel any fear that they've got to learn some technology they're unfamiliar with. And if you are finding that, then we need to fix our process so that you don't need it, right? Because clearly that shouldn't be a requirement.
+
+Okay. What else? So the roadmap ahead is move platform, but the site will look the same.
+
+Do the public review for a month. Accommodate that feedback. Release at point seven.
+
+And call that, if you like, candidate release of 1.0 and give it a little bit of time and test things as ever. That's our roadmap ahead. The other thing that happened last week was the first meeting of what we're loosely calling the Extenders Governance Group.
+
+So this is the organizations that are building a community around a, if you like, a customized version of UNTP that suits their industry needs. And if you look down on the UNTP site around extensions and extensions register, you'll find, for example, the Global Battery Alliance publishing their intent to create an extension of UNTP for batteries. Similarly, the Responsible Business Alliance doing the same thing for electrical electronic goods industry.
+
+And an existing one for Australian agriculture. And one for the built environment. And one coming, not published yet, for textiles.
+
+So basically this idea that UNTP is a common core that can be extended to meet industry needs whilst maintaining interoperability is basically a core architectural construct. But then if you do that, the question is, yeah, but if people are taking this and building community around it, shouldn't they have a say in the ongoing development of UNTP itself? And how do you set up an appropriate governance structure to do that?
+
+So Matthias, who's on the call, is running that. He's from the UN. And I expect over the next couple of weeks we'll have a draft in terms of reference.
+
+But what does it mean? What are the rights and obligations of an extender to customize UNTP for their industry needs? So that's probably an interesting thing to watch.
+
+What else? Aside from all that, there's a couple of emergent issues that I encountered last week in Geneva at the Global Digital Collaboration Conference and also at the UN that we don't really, I think, address very clearly in UNTP and need a bit more work. And I think this can be done in parallel while public review is going on.
+
+But one of them is a bit more clarity on how confidentiality is maintained as data moves through a multi-tier supply chain. I've got a little diagram on that I can share with you for your thoughts in a moment. And the other one is how we handle mass balance accounting of bulk commodities in a sort of standard space interoperable way.
+
+There are lots of platforms that do this, but quite a lot of challenges in how do you move data between platforms that isn't so much about a finished good with a barcode on it. It's more about a silo of grain or a shipload of copper concentrate. And handling that more clearly is a gap, I think.
+
+So both of those fit in the supply chain domain. So a lot of work for Nick and his group, which I'd like to help with. So volunteers or people interested in either of those problems, let us know because we've got to do some work on it.
+
+So it's just a bit of...
+
+[Speaker 5]
+Steve, sorry, I probably should have put my hand up first. But yeah, just to say, when you were describing them, they sounded like they could be good problems for the supply chain group to take a look at. And it would be great if there was sort of an overlap with some of the other focus areas we're looking at.
+
+I'm not sure if there necessarily will be, but we're looking at copper and the Global Battery Alliance battery passport. So if we can find a cross-section between your problems and those, that would be efficient. But otherwise, we could still take a look at it.
+
+[Speaker 1]
+Yeah, I'll come to Gideon in a second. But I think solving these problems is best done in the context of a real-world supply chain, right? So copper and batteries, why not?
+
+But what should emerge is a pattern that is reusable for grain and other similar types of problems. Gideon?
+
+[Speaker 2]
+Yeah, just thinking about the extended governance group, and I'm thinking about conformity assessment, because that's my world mainly at the moment. Is there likely to be something in terms of people looking at that side of it to have a consistency across the actual frameworks and the schemes that are going to come out? Is there anything that's been talked about yet?
+
+[Speaker 1]
+Yeah, so that's another good question. I think we should distinguish between a scheme and an industry group that is trying to build a traceable supply chain, because one industry group that's got members building a traceable supply chain might be impacted or want to use many different schemes. And similarly, a scheme might be used by multiple industry groups.
+
+An example, right? Coppermark is a scheme, right? And you could have a Mining Association of Canada, for the sake of argument, industry extension that's looking at the mining industry for Canada.
+
+You could also have the International Copper Association. In fact, this is one of the extensions, looking at copper globally. Now you've got two extensions, if you like, with a bit of overlap, and they both use the same scheme.
+
+So I think we'd like to give scheme owners their own space, if you like, to say, this is how you represent your scheme in a digitalization, verifiable, friendly way. And that is the purpose of the two bits of the UNTP spec, one called DCC, which is Digital Conformity Commercial. In other words, how do you structure your conformity attestation?
+
+And the other one is the SVC. Probably shouldn't have used the word SNA, because it implies that quality is only about sustainability, whereas in fact, there's lots of schemes that have nothing to do with sustainability, not to do with product safety, for example. But the Sustainability Vocabulary Catalog is a guidance for how a scheme owner publishes their criteria in such a way that they can be unambiguously digitally referenced by passports, facility records, and conformity credentials.
+
+So I think what we'll have is a library of, and hopefully, an increasing library of scheme owners saying, here's my scheme, and any particular extension, when it drills down to, okay, what do we really care about in our industry, we'll start to pick from those schemes that say, you know, these are the ones we care about. Okay. That's my thinking.
+
+So they're a bit orthogonal.
+
+[Speaker 2]
+It makes total sense. But then from a conformity assessment and an assurance point of view, we need to be able to ensure that they are actually going to deliver in a way from the accreditation side of it, things like that. So I think we'll have a word with, I'll have a word with Brett on that one, and we'll take it into the conformity bomb.
+
+Because I think there is something there that needs to be thought through relatively early. And maybe it's just a discussion with or something, but certainly CASCO and IAF and people like that, the International Accreditation Forum and people like that will want to understand that side of it.
+
+[Speaker 1]
+Sure, sure. And as we mentioned, you know, Brett's done a great job of pulling the right people together, including yourself, and comes very much from an ISO-CASCO background rather than a, shall we say, the Wild West of sustainability conformity schemes. And somehow we need to bring the two together and accommodate both, right?
+
+But I think if you're referring to the idea of how can I be sure when I'm looking at a credential that the issuer of that credential, the conformity assessment body, is actually accredited to do that, is part of this chain of trust idea that verifiable credentials and trust anchors provide.
+
+[Speaker 2]
+It is, but there's also the mutual recognition side of it as well in terms of the data beneath it. And I've been thinking about that quite a bit recently in terms of how do we get the confidence and trust in something that is on a digital platform.
+
+[Speaker 1]
+Right. Well, that's Brett's group. And anytime there's questions about, well, how does this work technically now that we've figured out what we want in a governance sense, do suck us into that group to answer those questions, right?
+
+Because I think with a lot of these groups, what we want is more and more business people exactly like yourself, but we want to make sure that the technical presence is maintained so that the art of the possible becomes revealed to the business groups that is discussing actually how they use it. All right. I think I've said enough apart from coming back to a slide, maybe towards the end about this confidentiality issue.
+
+I'd like to hand over to the work group leads. Do you want to start, Nick?
+
+[Speaker 5]
+Yeah, certainly. So for those I haven't met, Nick Smith, very nice to meet you. I certainly come at the supply chain from an industry background.
+
+I'm a chemical engineer who's worked in petrochemicals mostly as well as low carbon fuels. Two main updates from our perspective, we're working on some engagement content, capturing some of the lessons learned from past implementers, as well as looking to do practical implementations and extensions for copper and the battery alliance, so the battery passport. And we're trying to pick off small little tasks that we can do to build some momentum.
+
+But if anyone would like to join our supply chain group, very much welcome you to the team. Is there any area, Steve, you'd like me to dig in in more detail?
+
+[Speaker 1]
+No, I think just make sure that your page is updated with when your meetings are and minutes of meetings and stuff like that so we maintain the transparency. And also it's a mechanism to attract more people to the group, right, if they can see what's going on and being discussed. Yes, that's a good point.
+
+I'd like to join the next meetings and maybe chat with you a bit about these two emergent issues.
+
+[Speaker 5]
+Yeah, that's a good point, actually, because we've been trying to get our small group up and running. So just for everyone's benefit, our approach in this team, because there's a lot to do, we're going to meet weekly and we're actually having two different times that people can meet. So it should accommodate pretty much global time zones, which we have in our group.
+
+It is on the same day, Australian time, so that way we can keep the notes and the momentum connected. But really a weekly short meeting is the intention and that then folks can go and work in pairs and trios and small groups around the different things that we're doing. So we're going to try and spin up some momentum, keep it going, and make rateable progress bit by bit.
+
+[Speaker 1]
+Thanks, Nick. And your group's a really interesting one, right? And we've got some interesting challenges coming, but it's a good team on it.
+
+[Speaker 5]
+Yeah, there's some brilliant people.
+
+[Speaker 1]
+Thank you. The next one would be the conformity group. I think with my constant screw-ups with Google and Gaggle, it could be that Brett has not got this on his calendar.
+
+So we either skip him, or if anyone who's been on a recent call with Brett wants to give a one- or two-minute update.
+
+[Speaker 7]
+Actually, I can quickly. So Gideon, I'm the technical lead on the conformity group, so I can, and anybody who needs help with stuff like that, I can help with that as well. But on the conformity side, we have our first meeting next Tuesday, so we're kicking off next week.
+
+And that's the main update from us.
+
+[Speaker 1]
+Okay, and on your side then, similarly, you'll publish that meeting schedule on the UNTP site under the governance section where your group has a page. Yep, yep, we will. All right.
+
+All right, next group would be adoption group. So we've got Michael on the call.
+
+[Speaker 6]
+Yep. Yep, we're having our second call right after this call. So hopefully, Nick, we're not landing on top of each other.
+
+If you're going before today in the call in two weeks, in the evening call for Central European time, we go right before this call. So hopefully we don't end up stepping on top of each other. We have, let's see, there was a lot of good conversation.
+
+I think some of it's been covered or alluded to, particularly around the extension, the governance group and framework, which was part of the conversations in Geneva last week. But, you know, the terms of reference are up on the website. The calendar invites are on the website.
+
+Hopefully all the Zoom links are right. We had a little bit of a teething process on the last call, but we're continuing to make some modifications around that. We're now logically grouping each, the list of tasks or work items or work areas within the terms of reference into smaller work packages.
+
+And then we were looking to be staffing those up and describing those today. So if you're interested in the adoption, some of the adoption working group, particularly around business cases, business justifications, capacity building programs for ecosystems, please join us. That's it, Steve.
+
+[Speaker 1]
+All right. Thank you. All right.
+
+The next one is, they've probably gone to technical, which doesn't have a lead yet. So I'm standing in for it. Although we have a good candidate, I think who looks very promising.
+
+Ali, who's on the call. I just want to give the UN secretary and Matthias an opportunity to add anything you want to add on any topic or specifically about the extenders governance group.
+
+[Speaker 4]
+Yes. Hello everyone. Thank you, Steve.
+
+Well, you said already everything I put in the chat, that indeed those interested in contributing to the work on the extension governance and onboarding framework for new extension owners may want to join the adoption group, which we've now discussed would also be the place to support that process and particularly support new extension owners and potential use cases run on sector specific UNTP extensions. So that's for now the best way to contribute until we have somehow set up this extension governance group. We are still thinking what form would it take, but it will probably be more of a task force, which has a temporary lifespan until we manage to get that structure up and running.
+
+And then the adoption group can take over to support that. That's for now what we are thinking, but we just had, as Steve said, this first meeting in Geneva last week and built a couple of tasks that now need to be worked on to see progress here. And of course we are happy in this group or in the adoption group to inform everyone about it.
+
+Maybe another comment on what Gideon said. I think the indeed the conformity point is an important one also for the extensions because the extensions link the core UNTP to the realities of a specific supply chain. And there we need to speak the language of that supply chain.
+
+So onboarding scheme owners in that sector and somehow incorporating their sustainability catalogue to the extension is important. And to maintain interoperability, of course, we probably will need at some point a way to establish equivalence between different schemes so that that data point, which is covered by one scheme may be linked to a similar data point by another scheme so that we also with our work reduce repragmentation that in many sectors currently holds up progress on sustainability practices in supply chain. So that's maybe another benefit of having extensions and conformity is probably as important as the adoption in it.
+
+Thanks. I hope that makes sense to you too, Steve.
+
+[Speaker 1]
+Sure, sure. All right. I don't see any hands up.
+
+So I'm just going to share some thoughts that have been giving me a headache recently about this question of confidentiality versus transparency. As data moves along steps in a value chain and get your thoughts on it, that's all right. So I'll share a screen.
+
+Some of you may remember this very busy diagram, which is an effort to make sort of plausibly realistic the value chain from mining to either electronic goods like your iPhones or computers or automotive goods through batteries and specialized fabricators in the middle. And it sort of shows the linked data approach to traceability, but doesn't tell you anything really about what if an actor, let's say a refiner or a specialized fabricator doesn't want to share their upstream supply chain information with their next step downstream customer. Obviously they know who their suppliers are.
+
+They know who their customers are, but they very often may not want to tell their customers who their suppliers are. This is a common challenge in any supply chain. And some nirvana in a completely transparent supply chain might look something like this, where each step publishes traceability events, where you can pretty much start anywhere in this graph and just navigate backwards.
+
+But the reality is it won't always be like that because one, the technology isn't ready on time. And there's this rational concern about, well, I'm not, I don't want to share this information. So this is a little diagram here that just uses for the sake of example, a tier one, tier two and tier three supplier, but really it's three different patterns of moving upstream data to a smaller, let's call it redacted, not in a technical zero knowledge proof sense yet, but just a smaller set of important data that the next, my customer needs that isn't necessarily all the data I've got from my upstream supply chain.
+
+And so in this example here, we've got a case of a tier three supplier that has very little data from upstream. And if he does have any, it's probably PDF documents or Excels or something, right? It's not verifiable credentials, but is asked by his tier two supplier to make some assertions about, you know, whether I'm sourcing minerals from a conflict zone or stuff like this.
+
+And basically you'll just make assertions and possibly with very little evidence. And that's probably not uncharacteristic of how much of the supply chain works today. And I'd call that the low trust, low cost, high duplication pattern where you're just making self declarations.
+
+And as we start to, as the world starts to move towards more and more richer data upstream, we have another pattern, which I've just used this tier two supplier where he is starting to get richer data from his upstream supply chain, including some facts that might be quite interesting to his, his customer who's the tier one supplier. Like maybe that PDF is a conformity certificate about carbon intensive electricity, but it's a PDF, right? And maybe he's getting a little bit of digitalization starting to happen that DPP is appearing there, but really he's got to take this mix of upstream data and provide something to the tier one supplier who's starting to demand more digital data.
+
+Some satisfactory evidence that isn't just an ambit claim, but we start here to talk about third party auditors or second party auditors. Some looking at this rich data here that is mostly sensitive and issuing a credential. So basically the tier one supplier is no longer just trusting the word of the tier two supplier.
+
+He's basically saying some third party who I trust has had a look. I don't need to know all the commercially sensitive details, but I'm more confident that the, you know, not whatever the concern is conflict minerals or forced labor or carbon intensity is more likely to be true. So this is a situation where mix of data coming in and a verifiable conformity claim coming out and calling that the kind of higher trust and higher cost medium duplication model.
+
+There is some Nirvana future here where I'd say we're a long way from it, but it may start to appear in pockets where if all the upstream data is itself digitally verifiable, then the redaction of that upstream data can be done algorithmically so that a third party doesn't need to inspect it and kind of regurgitate it. Instead, what you see here is actually assigned subset of the upstream. In other words, this tier one supplier can reduce what you can see, but he can't falsify what you see.
+
+So this is kind of the ideal future and it's the kind of an ideal future that UNTP talks about and it's a higher trust, lower cost, lower duplication model. But I don't think we do a good enough job of painting it as a little bit of a future Nirvana that isn't practical today. And we need to sort of be able to, I think describe these patterns when someone says, yes, but how do I protect my sensitive data answers?
+
+Well, maybe you just make an ambit claim that PDF could be a digital facility record. For example, it's not a third party credential, but it's a digital one. Or maybe you get an auditor to issue a digital conformity credential, or maybe you can apply some algorithmic magic in the future.
+
+But this is just my attempt to show a kind of almost like a maturity roadmap of how you get increasing trust at lower cost over time. So hands up and tell me what crap I'm talking or whatever. Thank you.
+
+Was that Gideon?
+
+[Speaker 2]
+Yeah. Thanks for that. I totally get what you're saying.
+
+Just a little warning for you in conformity assessment, we have the second and third parties. And if you put third party and people are reading it, they'll instantly think that there's got to be certification, third party certification. So we just need to be careful with terminology in this because we don't necessarily need to have fully certified at certain points in it.
+
+So just to be aware of that, don't have the exact answer for you at the moment, but we'll think about it.
+
+[Speaker 1]
+Yeah. I just changed the word to independent verification as opposed to third or second party.
+
+[Speaker 2]
+Yeah. That doesn't necessarily help either because people get confused and then switch it straight to certification again. Let me think about it and I'll mention it to people as well.
+
+[Speaker 6]
+Okay. Michael? Yeah.
+
+I guess on a similar theme, is self-certification quote-unquote permitted? I mean, and does self-certification imply you are also then taking the potential liability if something is actually cooked, right? But is self-certification something that would be considered allowed or does it have to be independent?
+
+[Speaker 1]
+Well, self-assessment, I'm not sure you can use the word certification in a self sense, but self-assessment is kind of what the tier three supplier is doing, right? And I think Gideon will jump in if I say this wrong, but there's kind of two kinds of self-assessment. There's just ambit claims.
+
+And then there's self-assessments. There's still self-assessments, but they're assessments against an authorized scheme. So I could say, I declare that my carbon footprint is 10 tons per ton.
+
+That's an ambit claim, self-assessment. Or I could say, I declare that my carbon footprint, I have measured my carbon footprint at 10 tons per ton, according to the GBA rule book and the WSCD something, something, something, right? Or you can go, some independent has come and assessed me.
+
+These are the different kinds of levels of trust that I think the conformity group is well aware of. And the rest of us sometimes get a bit confused about, including myself. So how to communicate all this is a challenge.
+
+Okay. Yeah.
+
+[Speaker 3]
+Hi everyone. So I didn't have this in my calendar at this meeting. So apologies.
+
+I'm in the car. Maybe two things on the self-assessment. I always think we should allow that for anything, any credentials that is issued because we want to keep the barrier as low as possible to participate at the ecosystem.
+
+That doesn't mean that a claim that has been issued by a third party has the same trustworthiness and value as the one that is self-issued. That might be different, but that can be interpreted per use case. So maybe it's not good enough for a battery passport, but maybe it's good enough for a different use case.
+
+So, you know, you could allow it for different use cases, or you can simply have a higher risk score with the results that you're getting from it. But I'm always voting for being, you know, keeping the barrier to participate as low as possible. And that's one thing.
+
+The other thing is that for the global battery alliance, we are looking at aggregating this information along the supply chain. We're starting with the carbon footprint. I've been writing a document, I guess it's now almost two years ago, for aggregating the carbon footprint.
+
+And what we do there, Sorry for that. What we do there is we get the information from different participants in the supply chain and aggregate their carbon footprint. So from all suppliers in one tier, and then anonymize the data and just only forward the aggregated carbon footprint to the next tier.
+
+And that's also described in that document. And what we could do is we're all, you know, we're super smart working group here. We could to make sure that we can verify it later on if it's needed.
+
+So think of usually it's trusted this way, but then someone comes along and wants to verify which data had actually gone into the carbon footprint at a certain stage. We can do something like, you know, just, you know, stressed ledger like put the hashtags of the previous carbon footprint certificates into the one and then have some kind of graph blockchain that you can always verify. But that's, I mean, that's the super sophisticated way I would never, you know, suggested to be the norm or the, yeah, but it can be somewhere where we can say, okay, this is an aggregated footprint and you can always prove it.
+
+And yeah, maybe. Yeah. So that's, that's the idea about that.
+
+But in the entire automotive industry, you have this also called one up one down approach where the people in the supply chain, so actors in the supply chain can see the data from their suppliers and, and they can provide it to their customers, but that's all they see. And we will have to find a way how to implement that. And that's, I guess that's one suggestion.
+
+[Speaker 1]
+Yes. So if I may quickly, a couple of observations. One is in my mind and the conformity people correct me, if I'm wrong in the digital product, the conformity credential, but the product and the facility record, these are issued by the supply chain actor, right?
+
+Not by a second or third party. They already have a repeating structure where you claim conformity to certain schemes, scheme criteria. So in some ways that is already a product passport is in my view, a first party or self assessment.
+
+And that should, as Suzanne says, always be the minimum threshold. And anything above that, like I got a second or third party or certified body to check my self assessment just adds trust. And I think that that is at the core of our architecture, right?
+
+That we want people to be able to make claims that they sign and therefore are, you know, you can't say they didn't make if you like, but choose whether or not depending on the demands of their customer, whether those claims are independently certified. So that's, that's kind of already the whole purpose. I think of that, the claim structure in a product passport versus the assessment structure in a conformity credential.
+
+Secondarily to your point about auditing and checking. Currently in the conformity credential little data model, there is a field which is, and here's the, the evidence that I used in order to make this assessment. And in our, my understanding, that is normally much more confidential than the output of the assessment.
+
+So the fact that I'm, I don't know, copper mark certified is something I'm proud to announce, but the only private data that went into that copper mark certification is not so public. Right. And what, what the DCC does at the moment is say, feel free to encrypt that, but include a hash of that in your claim.
+
+That way, if, if two months later, three months later, whenever some auditor says, yeah, I want to check your claim, they can check that you're assessed. They are assessing the same data that you assessed without revealing that. So that's already there, but that's a, it was a simpler problem than is that to kind of completely hide it and hash it.
+
+And a third party looks at it. The more tricky problem is how you selectively redact a graph. That is a little bit future looking low.
+
+Interestingly at the global digital collaboration conference conference, I did have someone from the solid project, which is Tim Berners-Lee's project is the founder of the web. For those that ask me, have you got any use cases for zero knowledge proofs? They call it over a graph of data.
+
+Funny. You should ask. So we might follow up with that one, but it is a bit future engineering, but it's, it's interesting that there are technologists out there with solutions.
+
+Anyway, I'll stop now. And Gideon, you've got your hand up again. I value your contributions to it.
+
+[Speaker 2]
+Yeah. So there's, there's a few things here. One jumped out to me and then Susanna said some other stuff, which was very technical about how you can flag things and tag them and things like that, which I won't go into, but it sounds interesting, but there's also from a everyday user, if you like a reasonable person to be able to understand what that is, there should, there probably could be some form of recognition of, you know, where they, where they say how the, what the, what the type of conformity they've used. So for a second or third part, the digital passport think will always be based off and they will always have multiple different levels of confidence that they'll throw at it. So for different parts of it, they'll have different ones.
+
+I noticed Nick's comment earlier, you know, and it's also something that I, as a, as a, as a user of the data might be happy with first party because I understand, and I know that company really well, whereas someone else might want it as a fully certified system evidence based. So it's, it's going to be different depending on whether, where you are in the chain and who you are and what your level of trust is, if you like on all of this. And I think getting to have something that people can easily understand where that data has come from will be important as well.
+
+So it's not like the technical side of it is brilliant, you know, and that will give a lot of confidence to those who understand it. But if you don't understand it, you need an easier way of understanding who actually is giving that confidence. And we've seen this with the voluntary carbon markets, stuff that's been going on recently where they were certified, but actually it all fell apart and there's lots of mistrust in that sector that's having to be rebuilt again.
+
+[Speaker 1]
+Yeah, I think you're right that the, the trust will be very different or the appetite, the demand for trust will be very different from sector to sector, even actor to actor. What we need to do is provide flexible tools so that as Suzanne said, you should be able to just make self assessments, whether that's enough for your customer is, is a kind of commercial and trust question. So if it's not enough, we should also say, and this is how you provide a second or third party assessment in a trustable way.
+
+So at the UNTP level, hopefully it's a set of sufficiently flexible tools. And then at the extension and industry adoption level, there's likely to be more rules. As Suzanne said, the global battery passport might have very specific demands, whereas others might go well, provide more third party assessment if you like, but it's not demanded.
+
+[Speaker 2]
+I think it's the communication part of it as well. So people can understand very quickly and easily where that's come from, that information and whether it is, you know, first party or fits further. It's up the chain from that, so to speak.
+
+[Speaker 1]
+Correct. Yes.
+
+[Speaker 3]
+And maybe also one comment is that as mentioned before, we don't need a third party assessment if we know from whom this claim is coming from, because we've been working with that company for a long time. And so we can also build trust by receiving the conformity credential, seeing who has signed it, and then using the identity credential to be exactly sure that it has been issued by that company. And that might be enough to create enough trust into that conformity claim.
+
+[Speaker 1]
+Yeah, there's a big kind of architectural principle here, that the trust is in the eye of the beholder, right? How I get access to a certain amount of data and whether it's trustworthy enough for me is kind of my decision. And we need to find a way to make, as Gideon said, it communicable and understandable so that that trust decision is based on the right information and assumptions, not thinking it's third party certified when it isn't or something like that.
+
+Anyway, they're all interesting challenges, aren't they? But yeah, part of the reason for all this is how to effectively answer questions that will get thrown at us as a group from those that are interested or doubting or whatever. Yeah, but how do you deal with confidentiality?
+
+Yes, but how do you deal with mass balance accounting? These are the sort of things that I need to, one thing I want to do is collectively put more and more FAQ on the site where we have answers to these things, or we don't know yet, but we're working on it is also kind of a satisfactory answer. So we're 10 minutes left.
+
+Has anyone gotten anything they'd like to contribute? Otherwise, I'm always happy to give people time back. And I know that several people joined late in the meeting, and that's because the meeting request went into several, I think, junk folders.
+
+So that's another challenge for me to figure out how to find a list server that doesn't make you sign up to Google and doesn't put important messages in your junk folder.
+
+[Speaker 3]
+So maybe then the last question is when is the next meeting planned?
+
+[Speaker 1]
+So one place you can always find when the meetings are is on the UNTP site, and let me put a link here. Irrespective of whether you've got it in your calendar, what you will always find is a steering group there, meetings, next four weeks, next meeting, 10th of July, that's today. When I publish the minutes, this page will get updated to say next meeting, 24th, and the one after that.
+
+So the next one is 9 p.m. UTC in two weeks' time. Each one of these is four-weekly, meaning every two weeks there's a meeting, but at an alternate time zone. And the subgroup, similarly, that's why I was talking earlier about please update your page here so that it says next meeting, 12th of June for adoption, which can't be right because we're already 10th of July and similar.
+
+So Zach can help out to get these group pages right, but anyone who wants to know what's coming up should always be able to find it here. Thank you. All right.
+
+Well then, let's have seven minutes left, and thank everyone for their participation.
+
+[Speaker 7]
+Well done, Steve.
+
+[Speaker 1]
+Thanks, Dave.
+
+[Speaker 4]
+Thank you, Steve. Have a good night. Thank you.
+
+[Speaker 7]
+Thanks, everyone.
+
+[Speaker 2]
+Thanks, everyone. Bye.

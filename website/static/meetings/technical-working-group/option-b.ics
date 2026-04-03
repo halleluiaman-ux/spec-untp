@@ -1,0 +1,760 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:UNTP TWG Option B
+X-WR-TIMEZONE:Australia/Adelaide
+BEGIN:VTIMEZONE
+TZID:Australia/Adelaide
+X-LIC-LOCATION:Australia/Adelaide
+BEGIN:STANDARD
+TZOFFSETFROM:+1030
+TZOFFSETTO:+0930
+TZNAME:GMT+9:30
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0930
+TZOFFSETTO:+1030
+TZNAME:GMT+10:30
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260305T183000
+DTEND;TZID=Australia/Adelaide:20260305T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20260205T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=DECLINED;CN=jo@sez
+ oo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ristian.orlowski@4therecord.io;X-NUM-GUESTS=0:mailto:christian.orlowski@4th
+ erecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ju
+ st@4therecord.io;X-NUM-GUESTS=0:mailto:just@4therecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260305T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1X-qsohb8lPBXiotyrkkvRpBVXfMhNV3ttguGx
+ iCx2cE/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251113T183000
+DTEND;TZID=Australia/Adelaide:20251113T191500
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20260204T132959Z;INTERVAL=2;BYDAY=TH
+EXDATE;TZID=Australia/Adelaide:20251225T183000
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20251113T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251211T183000
+DTEND;TZID=Australia/Adelaide:20251211T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20251113T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20251211T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1ZLKgzIm__gERJNHCuplRr5mL0UQOJjgAPTPUa
+ K_oDDY/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260219T183000
+DTEND;TZID=Australia/Adelaide:20260219T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20260205T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=DECLINED;CN=jo@sez
+ oo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ristian.orlowski@4therecord.io;X-NUM-GUESTS=0:mailto:christian.orlowski@4th
+ erecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ju
+ st@4therecord.io;X-NUM-GUESTS=0:mailto:just@4therecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260219T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1qZPTSe7ovMCn7HKqVuroL60L1e-3yEE1YwtUG
+ YtFBtM/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260205T183000
+DTEND;TZID=Australia/Adelaide:20260205T191500
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=15;INTERVAL=2;BYDAY=TH
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20260205T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=DECLINED;CN=jo@sez
+ oo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ristian.orlowski@4therecord.io;X-NUM-GUESTS=0:mailto:christian.orlowski@4th
+ erecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ju
+ st@4therecord.io;X-NUM-GUESTS=0:mailto:just@4therecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20250904T183000
+DTEND;TZID=Australia/Adelaide:20250904T191500
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20251112T132959Z;INTERVAL=2;BYDAY=TH
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251118T190000
+DTEND;TZID=Australia/Adelaide:20251118T194500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20251113T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20251113T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1jZEbE6cfZmuKNG5kt9xWFrtcouJXeWYLIsUcv
+ PGHTjc/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260319T183000
+DTEND;TZID=Australia/Adelaide:20260319T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20260205T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=DECLINED;CN=jo@sez
+ oo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ristian.orlowski@4therecord.io;X-NUM-GUESTS=0:mailto:christian.orlowski@4th
+ erecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ju
+ st@4therecord.io;X-NUM-GUESTS=0:mailto:just@4therecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260319T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1-y2obERgnii9-JWDR3ClWSsQkS8lUCVNxxnlv
+ V4gfKg/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20250904T183000
+DTEND;TZID=Australia/Adelaide:20250904T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20250904T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME="UNTP Technical WG - 2025/09/04 18:28 ACST - Recording";FMT
+ TYPE=video/mp4:https://drive.google.com/file/d/1DVbZFmHrmZuBE0EQ6xE-fv_d6pJ
+ VrEYi/view?usp=drive_web
+ATTACH;FILENAME="UNTP Technical WG - 2025/09/04 18:28 ACST - Notes by Gemin
+ i";FMTTYPE=application/vnd.google-apps.document:https://docs.google.com/doc
+ ument/d/1IDA7NxTy9SX_VHmHhnfvABTleLMV_bC6o51hcii3Ofk/edit?usp=meet_tnfm_cal
+ endar
+ATTACH;FILENAME="UNTP Technical WG - 2025/09/04 17:42 ACST - Notes by Gemin
+ i";FMTTYPE=application/vnd.google-apps.document:https://docs.google.com/doc
+ ument/d/1EWfF7gK3b9dGC8KKRK15Q-a4TTsBDGg54C65pi1mz9Q/edit?usp=meet_tnfm_cal
+ endar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251030T183000
+DTEND;TZID=Australia/Adelaide:20251030T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20251030T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1zvm9WzhA1qIxfm-gytahGSvqL6GVSUVN-GdjS
+ u4nEzU/edit?usp=meet_tnfm_calendar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260108T183000
+DTEND;TZID=Australia/Adelaide:20260108T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20251113T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260108T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1jWaR14uBo_WG_orgCbEQhk6taeYVy4NJLG7BK
+ GB-_q0/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20250918T183000
+DTEND;TZID=Australia/Adelaide:20250918T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20250918T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME="UNTP Technical WG - 2025/09/18 18:58 AEST - Recording";FMT
+ TYPE=video/mp4:https://drive.google.com/file/d/1dczrF0T2uzLBhm2Jhc9jsnlzlv8
+ Czpcr/view?usp=drive_web
+ATTACH;FILENAME="UNTP Technical WG - 2025/09/18 18:58 AEST - Chat";FMTTYPE=
+ text/plain:https://drive.google.com/file/d/1pXsnz2onHAojEQhCFdGv07Gh_OHnDjZ
+ r/view?usp=drive_web
+ATTACH;FILENAME="UNTP Technical WG - 2025/09/18 18:58 AEST - Notes by Gemin
+ i";FMTTYPE=application/vnd.google-apps.document:https://docs.google.com/doc
+ ument/d/18p8XAomUNt2SnkT0RefY0_xrjnWUQ_pv9bzRRZmrBI8/edit?usp=meet_tnfm_cal
+ endar
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260122T183000
+DTEND;TZID=Australia/Adelaide:20260122T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20251113T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260122T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1vI_JWHFAlb8MTyRs32qTdlbpwdf-MzlnKWMYg
+ eh_OfU/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260210T190000
+DTEND;TZID=Australia/Adelaide:20260210T194500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20260205T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ristian.orlowski@4therecord.io;X-NUM-GUESTS=0:mailto:christian.orlowski@4th
+ erecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ju
+ st@4therecord.io;X-NUM-GUESTS=0:mailto:just@4therecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260205T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:5
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/1EoYNxR9sU3WEtBIIOMq5BbrWL_zZsITe-oa5O
+ h_cFzU/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251021T183000
+DTEND;TZID=Australia/Adelaide:20251021T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20251016T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251127T183000
+DTEND;TZID=Australia/Adelaide:20251127T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20251113T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20251127T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes by Gemini;FMTTYPE=application/vnd.google-apps.documen
+ t:https://docs.google.com/document/d/12cv8HWypuZkvc4x4UUCbgjk0vnNcgqT_MLe5P
+ C7Taa4/edit?usp=meet_tnfm_calendar
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20260409T183000
+DTEND;TZID=Australia/Adelaide:20260409T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led_R20260205T080000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ristian.orlowski@4therecord.io;X-NUM-GUESTS=0:mailto:christian.orlowski@4th
+ erecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ju
+ st@4therecord.io;X-NUM-GUESTS=0:mailto:just@4therecord.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20260402T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME=Notes - UNTP Technical WG;FMTTYPE=application/vnd.google-ap
+ ps.document:https://docs.google.com/document/d/1Z_3_jhgLnF5NbuDMupzKnH4Cngf
+ CDKF1H8ARPiXNfd4/edit
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Australia/Adelaide:20251002T183000
+DTEND;TZID=Australia/Adelaide:20251002T191500
+DTSTAMP:20260331T013224Z
+ORGANIZER;CN=c_ce482ca8214f8c0d41db61a7a098c534d1875f3007ff23c7c9cbd3e7ec3a
+ 6b98@group.calendar.google.com:mailto:c_ce482ca8214f8c0d41db61a7a098c534d18
+ 75f3007ff23c7c9cbd3e7ec3a6b98@group.calendar.google.com
+UID:0f681sgjqj23ebvctt5qgq6led@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bv
+ anderpol@usetappr.com;X-NUM-GUESTS=0:mailto:bvanderpol@usetappr.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ @sezoo.digital;X-NUM-GUESTS=0:mailto:jo@sezoo.digital
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ma
+ rkus@danubetech.com;X-NUM-GUESTS=0:mailto:markus@danubetech.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ni
+ ck@cordina.io;X-NUM-GUESTS=0:mailto:nick@cordina.io
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ph
+ il.archer@gs1.org;X-NUM-GUESTS=0:mailto:phil.archer@gs1.org
+X-GOOGLE-CONFERENCE:https://meet.google.com/hur-sobw-dmq
+RECURRENCE-ID;TZID=Australia/Adelaide:20251002T183000
+CREATED:20250818T091014Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.com/hu
+ r-sobw-dmq\nOr dial: (AU) +61 2 9051 4819 PIN: 460400580#\nMore phone numbe
+ rs: https://tel.meet/hur-sobw-dmq?pin=7858492588370&hs=7\n\nLearn more abou
+ t Meet at: https://support.google.com/a/users/answer/9282720\n\nPlease do n
+ ot edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20260331T013002Z
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:UNTP Technical WG
+TRANSP:OPAQUE
+ATTACH;FILENAME="UNTP Technical WG - 2025/10/02 18:29 ACST - Notes by Gemin
+ i";FMTTYPE=application/vnd.google-apps.document:https://docs.google.com/doc
+ ument/d/1Yqgk4pyC5TLvKePDfc_AFlsOrNWZvj9QQdDyatEDams/edit?usp=meet_tnfm_cal
+ endar
+END:VEVENT
+END:VCALENDAR

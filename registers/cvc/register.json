@@ -1,0 +1,196 @@
+{
+  "id": "https://untp.unece.org/registers/cvc",
+  "name": "UNTP Conformity Vocabulary Catalog — Scheme Register",
+  "description": "A directory of conformity assessment schemes that have published machine-readable UNTP Conformity Vocabulary Catalog (CVC) vocabularies. Each entry provides top-level scheme metadata and a link to the scheme owner's published vocabulary.",
+  "lastUpdated": "2025-03-13",
+  "registrar": {
+    "id": "https://unece.org",
+    "name": "United Nations Economic Commission for Europe (UNECE)"
+  },
+  "entries": [
+    {
+      "type": ["ConformityScheme"],
+      "id": "https://responsiblebusiness.org/vap",
+      "name": "RBA Validated Assessment Program (VAP)",
+      "description": "The Responsible Business Alliance Validated Assessment Program (VAP) is an industry-standard audit protocol for assessing labor, health and safety, environmental, ethics, and management systems performance in electronics and related supply chains. VAP assessments are conducted by RBA-recognized audit firms and result in a facility-level recognition status.",
+      "owner": {
+        "id": "https://www.responsiblebusiness.org",
+        "name": "Responsible Business Alliance"
+      },
+      "endorsementLevel": "endorsed_self",
+      "documentation": "https://www.responsiblebusiness.org/vap/about-vap/",
+      "vocabularyURL": "https://vocab.deploy2cloud.com.au/rba-vap",
+      "licenseType": "proprietary-Document",
+      "establishedDate": "2017-01-01",
+      "geographicScope": [
+        {
+          "code": "001",
+          "name": "Worldwide",
+          "schemeID": "https://unstats.un.org/unsd/methodology/m49/",
+          "schemeName": "UN M49 Standard Country or Area Codes"
+        }
+      ],
+      "industryScope": [
+        {
+          "code": "26",
+          "name": "Manufacture of computer, electronic and optical products",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        },
+        {
+          "code": "27",
+          "name": "Manufacture of electrical equipment",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        }
+      ]
+    },
+    {
+      "type": ["ConformityScheme"],
+      "id": "https://www.responsiblemineralsinitiative.org/rmap",
+      "name": "Responsible Minerals Assurance Process (RMAP)",
+      "description": "The Responsible Minerals Assurance Process (RMAP) is an independent third-party assessment of smelter and refiner management systems and sourcing practices. RMAP assessments determine whether a smelter or refiner has systems in place consistent with relevant responsible sourcing standards for conflict-affected and high-risk minerals including tin, tantalum, tungsten, gold, and cobalt.",
+      "owner": {
+        "id": "https://www.responsiblebusiness.org",
+        "name": "Responsible Business Alliance"
+      },
+      "endorsementLevel": "endorsed_benchmarked",
+      "endorsement": {
+        "name": "RMAP alignment with OECD Due Diligence Guidance for Responsible Supply Chains of Minerals from Conflict-Affected and High-Risk Areas.",
+        "issuingAuthority": {
+          "id": "https://www.oecd.org",
+          "name": "Organisation for Economic Co-operation and Development (OECD)"
+        },
+        "endorsementEvidence": {
+          "linkURL": "https://www.oecd.org/en/topics/sub-issues/due-diligence-in-the-minerals-supply-chain.html",
+          "linkName": "OECD Minerals Due Diligence Guidance",
+          "mediaType": "text/html"
+        }
+      },
+      "documentation": "https://www.responsiblemineralsinitiative.org/responsible-minerals-assurance-process/",
+      "vocabularyURL": "https://vocab.deploy2cloud.com.au/rmap",
+      "licenseType": "proprietary-Document",
+      "establishedDate": "2010-01-01",
+      "geographicScope": [
+        {
+          "code": "001",
+          "name": "Worldwide",
+          "schemeID": "https://unstats.un.org/unsd/methodology/m49/",
+          "schemeName": "UN M49 Standard Country or Area Codes"
+        }
+      ],
+      "industryScope": [
+        {
+          "code": "24",
+          "name": "Manufacture of basic metals",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        },
+        {
+          "code": "07",
+          "name": "Mining of metal ores",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        }
+      ]
+    },
+    {
+      "type": ["ConformityScheme"],
+      "id": "https://www.globalbattery.org/battery-passport",
+      "name": "GBA Battery Passport Rulebook",
+      "description": "The Global Battery Alliance Battery Passport Rulebook defines the data requirements, governance framework, and conformity assessment criteria for battery passports. It specifies sustainability, provenance, and lifecycle performance data that must be collected and shared across the battery value chain to support the EU Battery Regulation and other market access requirements.",
+      "owner": {
+        "id": "https://www.globalbattery.org",
+        "name": "Global Battery Alliance"
+      },
+      "endorsementLevel": "endorsed_benchmarked",
+      "endorsement": {
+        "name": "GBA Battery Passport alignment with EU Battery Regulation (EU) 2023/1542 requirements for battery passports and due diligence.",
+        "issuingAuthority": {
+          "id": "https://commission.europa.eu",
+          "name": "European Commission"
+        },
+        "endorsementEvidence": {
+          "linkURL": "https://eur-lex.europa.eu/eli/reg/2023/1542/oj",
+          "linkName": "EU Battery Regulation (EU) 2023/1542",
+          "mediaType": "text/html"
+        }
+      },
+      "documentation": "https://www.globalbattery.org/battery-passport/",
+      "vocabularyURL": "https://vocab.deploy2cloud.com.au/gba",
+      "licenseType": "creative-Commons",
+      "establishedDate": "2023-06-01",
+      "geographicScope": [
+        {
+          "code": "001",
+          "name": "Worldwide",
+          "schemeID": "https://unstats.un.org/unsd/methodology/m49/",
+          "schemeName": "UN M49 Standard Country or Area Codes"
+        }
+      ],
+      "industryScope": [
+        {
+          "code": "27",
+          "name": "Manufacture of electrical equipment",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        },
+        {
+          "code": "29",
+          "name": "Manufacture of motor vehicles, trailers and semi-trailers",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        }
+      ]
+    },
+    {
+      "type": ["ConformityScheme"],
+      "id": "https://coppermark.org",
+      "name": "The Copper Mark",
+      "description": "The Copper Mark is a credible assurance framework for the copper, molybdenum, nickel, and zinc value chains. It uses independent third-party assessments against the Joint Due Diligence Standard and 32 ESG criteria aligned with the UN Sustainable Development Goals. Sites that meet all criteria receive The Copper Mark, demonstrating responsible production practices.",
+      "owner": {
+        "id": "https://coppermark.org",
+        "name": "The Copper Mark Company"
+      },
+      "endorsementLevel": "endorsed_benchmarked",
+      "endorsement": {
+        "name": "The Copper Mark is recognized by the International Copper Association and benchmarked against the OECD Due Diligence Guidance for Responsible Business Conduct.",
+        "issuingAuthority": {
+          "id": "https://www.oecd.org",
+          "name": "Organisation for Economic Co-operation and Development (OECD)"
+        },
+        "endorsementEvidence": {
+          "linkURL": "https://mneguidelines.oecd.org/duediligence/",
+          "linkName": "OECD Due Diligence Guidance for Responsible Business Conduct",
+          "mediaType": "text/html"
+        }
+      },
+      "documentation": "https://coppermark.org/standards/criteria/",
+      "vocabularyURL": "https://vocab.deploy2cloud.com.au/coppermark",
+      "licenseType": "public",
+      "establishedDate": "2019-12-01",
+      "geographicScope": [
+        {
+          "code": "001",
+          "name": "Worldwide",
+          "schemeID": "https://unstats.un.org/unsd/methodology/m49/",
+          "schemeName": "UN M49 Standard Country or Area Codes"
+        }
+      ],
+      "industryScope": [
+        {
+          "code": "07",
+          "name": "Mining of metal ores",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        },
+        {
+          "code": "24",
+          "name": "Manufacture of basic metals",
+          "schemeID": "https://unstats.un.org/unsd/classifications/Econ/isic/",
+          "schemeName": "UN International Standard Industrial Classification (ISIC)"
+        }
+      ]
+    }
+  ]
+}

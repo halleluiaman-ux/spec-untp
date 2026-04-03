@@ -1,0 +1,335 @@
+[Speaker 1]
+All right, so welcome to another UNTP team meeting. I'll continue to admit people as they show up. A reminder of UN code of conduct that we don't use these meetings for commercial discussions, that should anyone make material contributions to publish UNTP content, then you're doing that on the understanding that you're contributing your IP so that it can be made freely available.
+
+And these meetings we conduct with respect of each other's opinions and contributions. And so that's a little flurry of people joining now. Okay.
+
+[Speaker 2]
+You're popular, Steve.
+
+[Speaker 1]
+Well, so the couple of little bits of kind of logistics business to get through before we hand over to team leads to give an update and then maybe embark on a topic of interest. Everyone, in fact, most people on this call will be aware that we divided UNTP into four subgroups some time ago, about a month ago. And they're in different stages of maturity and building up momentum.
+
+And there's kind of a, I suppose, a natural little trough in between splitting up into four and then each of those four gaining momentum and running on their own. I see that Brett's group is up to 50 participants, including some serious global experts. So congratulations there.
+
+And the adoption group is picking up steam with Michael publishing a bunch of work packages that he wants people to do. The supply chain group is also kicking off has somewhat lower participation, but I'd really encourage everyone on this call who has an interest in product passports, facility records, and traceability events and the material of supply chain information to join that supply chain group and make your contributions there. Because generally what we wanna do is do the sleeves rolled up work in the working groups, not in this meeting, or it's not kind of not the purpose of this meeting anymore.
+
+I won't be going through open issues and pull requests because we wanna do that in the working group meetings if that makes sense. So either come to this one for just a general update because you're an interested observer or and or roll up your sleeves and join one of the working groups if you actually want to contribute to material content. There is, has been a question about, well, is this the steering group meeting then?
+
+Or is this a general communication meeting? And in some discussions with the UN secretariat who I see are on the call, we came to the conclusion that it would make sense to have a small and probably not public steering group meeting where we address some, whatever tricky issues are facing the UNTP project at the time. And that becomes a separate meeting, which the UN will organize and send invitations to a project leads and the like, or working group leads and the like.
+
+And at this meeting, we could turn into, if everyone on this call thinks it's worthwhile, more like a open kind of update, come here if you're not particularly engaged in any of the working groups, or even if you are, you want to find out what the other working groups are up to, get a fortnightly update or even a monthly update because we run these meetings at alternating times so that there's a window friendly for Europe and Asia, and there's a different window friendly for US and so on. So, and in that case, this meeting's intent is really a communication and perhaps even a training session, because we also, as we got a lot of new interest recently, I realized that there's many people on the calls that basically haven't been on the journey with us in the last year, and have perhaps some misunderstandings or gaps in knowledge.
+
+So we thought we might also use this call, not only for an update, but for a little topic of the day discussion that we can record and becomes a useful kind of potentially training material and stuff like that. So that's the proposal about this meeting, that its purpose, which is to a general update and then a topic discussion. And one thing I'll ask is, what would you like to discuss next time towards the end of this?
+
+And just one other little last update about our movement from the GitHub site to the UN GitLab site. The rationale for that, first of all, is to move this project more clearly under UN control and to use a platform that does not have any export controls and is completely accessible to any country in the world. And so we've started that move.
+
+At the moment, if you go to the UNTP website, you'll see a pop-up pops up and it redirects you to a perhaps not very friendly URL. So a little bit of news is that we'll be working with the UN to create a nice clean subdomain like untp.unece.org and alias that website to that so that in, I don't know when, perhaps next week, as soon as that maybe, or not long after that, the new UN website, sorry, UNTP website will be on a nice, clean, friendly domain that hopefully search engines will index and promote. And pretty soon, Google will point people directly at the UN-hosted UNTP website instead of to the GitHub one and then a redirect.
+
+So that's kind of it from me. Has anybody got any questions before we move on to, or comments before we move on to team lead updates? As I can't see if anyone's got a hand up.
+
+I don't think so.
+
+[Speaker 6]
+Well, Steve, maybe from Secretary's side, just a word of full support and that we very much welcome your proposal to open up this group to a broader audience while keeping a steering group closed for indeed steering the work of the working groups, but also providing support to working group leaders. And this group indeed shall be the one where everyone who may also be first time in contact with UNTP can start its journey with potentially then becoming more engaged in working groups while vice versa. Everyone who is currently sitting in working groups simply to listen and get an update of what's going on may rather decide to attend this group now and leave the working group with those who are committed to contribute voluntary work as experts to the further development of the UNTP.
+
+That just from our side as a word of support. Thank you.
+
+[Speaker 1]
+Cool. I see, I'm not sure who put their hand up first, whether it's Detlef or Virginia, but on my top of my list is Detlef. Would you like to make your comment?
+
+[Speaker 5]
+Yes, briefly. I'm new to this group and I would briefly like to introduce myself. I'm based in Germany and I'm active in Europe in different roles in standardization and at CESI, for example.
+
+And I'm interested in global transactions of different kinds. And I would like to know whether in which subgroup such issues related to trust infrastructures for global transactions might be the best way to look into this. So as an example, this happens in digital product passport, but also in other data spaces, for example.
+
+There is the issue that in Europe, we have this EIDAS based trust infrastructure, which is very well developed and endorsed. And in other regions, there are different trust registries. And I would like to join forces with probably many of you here to think about how we can reach a global trust infrastructure.
+
+And the question is whether this is already part of the existing working groups and if yes, in which one? That's my question.
+
+[Speaker 1]
+If I may quickly answer that, Virginia, before we come to you, so that we don't lose the momentum of Detlef's question. There's two kinds of trust that UNTP cares about. One is identity.
+
+Are you who you say you are? And the other one is the veracity of sustainability claims. When you say you're deforestation free, are you really?
+
+And the first one is described by a UNTP or how it's solved is described by UNTP specification called the digital identity anchor. And you can find it on the site. However, exactly as you said, Detlef, that concept of who are you, are you who you say you are is much broader than digital product passports and the like.
+
+So there is a separate UN project, which I think would welcome with open arms your participation because EIDAS is such a hugely important identity architecture for a big chunk of the world, right? All of Europe. And that's called the global trust register.
+
+And the digital identity anchor from UNTP is going to move from us to them to maintain its ongoing development. And so happy to give you contacts to the project lead of that one. If from an identity integrity perspective, that's where you're interested is.
+
+From a, when you say you're deforestation free, is it really true? Or whatever the performance claim is, that component of UNTP stays with us and is in Brett's working group called the conformity working group. So I hope that answers your question.
+
+You're welcome to join both, but if it's more identity focused, I think it's actually a different project which has just launched, but inherits the digital identity anchor from us.
+
+[Speaker 5]
+Excellent. I think in the end, we need both. We need the identity part and we need the, well, in the EIDAS world, it's the trust services part.
+
+And in addition to this, this is currently emerging is a kind of, yeah, additional entitlements for those providers. So I'm happy to look into both and see what's happening. Thank you.
+
+[Speaker 1]
+Okay. Thank you, Dennis. And Virginia?
+
+[Speaker 10]
+When we first moved over to the new UN site from GitHub, I could not log in. Has that changed?
+
+[Speaker 1]
+Log in to GitLab, you mean?
+
+[Speaker 10]
+Yes.
+
+[Speaker 1]
+Yeah, there's a story there, which I'll briefly tell, which is that obviously GitHub run now by Microsoft, previously owned separately, it wants to accommodate as many users as possible. So it makes registration completely easy and open and you can just create a repository as soon as you create a GitHub account. That's by design.
+
+But the UN open source GitLab is designed to promote UN open source projects. So initially they didn't even allow free registration. You had to be invited by somebody who knows you.
+
+Now they have just literally hot off the press, I think yesterday, maybe even today, released a new workflow where you can register yourself, but you can't do anything once you're registered. And that's probably reasonable given a UN open source project. You don't want people just creating random repositories and projects under a UN banner, but registration is now open.
+
+And then the process will be that you ask a project lead, I'd like to join your project. And then you get access permissions as a contributor on that repository. So this workflow is improving as time goes on.
+
+Yeah, but it's more restrictive than GitHub for obvious reasons.
+
+[Speaker 10]
+Yeah, but do the people who can now register and not do anything, can they still see everything?
+
+[Speaker 1]
+Oh yes, yes, yes. So the intent is that all registry, all UN GitLab projects, unless they specifically ask otherwise, are fully public. So that means the world can see what we're doing in exactly the way they could on GitHub.
+
+I'm sorry. It's only if you actually want to contribute that you need to register. And then there's a slightly more complex approval process than there was with GitHub, that's all.
+
+[Speaker 10]
+Okay, could you resend around the link or put it in the chat so I don't have to go back and do all the history of emails?
+
+[Speaker 1]
+Yeah, I think Ashley just sent something out, did you? Yes. Ash, are you on the call?
+
+[Speaker 9]
+Yep, that's correct, Steve. Also, just a quick point of clarification. Once you do register, you will be able to contribute in the discussions.
+
+So I think discussions on issues and also merge requests, but you won't be able to actively contribute to the specification. There is an additional step and instructions on how to do so within those correspondences that we just referred to. That was sent out via email and also on the Slack group.
+
+[Speaker 1]
+Okay. Right then, so 20 minutes in, let's hand over to Project Updates and I'll give Nick the floor first because I know he's got to go in 10 minutes.
+
+[Speaker 2]
+Thank you very much, Steve. He's from the Supply Chain Group. Yes, so I'm from the Supply Chain Group and I thought I would just put together a slide, partly to help with communication inside our group as well because we have folks on different time zones, but also to try and be really clear about what we are and aren't working on.
+
+Let me just hide the meeting controls. So for any folks that haven't engaged with the Supply Chain Working Group, I put sort of the objective in simple words up on the left-hand side, top left. And I think also what we've noticed this month is with the four groups being stood up, we're also finding the boundaries between the different groups and working out how the different groups should communicate with one another.
+
+So Zach, thanks very much this month for the chat that we had about the difference between conformity and data preparation. That was very enlightening for me. And I think there's a clear need for us to communicate between our group and conformity group and really all three groups, which we'll do.
+
+What we're trying to do is bridge between the disclosure scheme that a company might be embarking on and the UNTP data framework. We're really trying to position ourselves though, looking at it from the business perspective. So not necessarily from the lens of the auditor, really from the perspective of, I'm a business entity, I've got this scheme, it might be a legislative scheme or an industry scheme.
+
+How am I gonna map between all my mass balances, all my data systems and the UNTP data framework? So that's our lens. It doesn't ignore conformity and the other aspects, very much thinking about the supply chain as well, of who's gonna have access to this information as I go along the supply chain.
+
+And so we're, by design being the supply chain group, quite happy to tackle the supply chain complexity. We're also looking to provide some practical implementation guidance. And this is really to try and bridge a little bit for practitioners that are looking to extend the UNTP, to say what information in my language, you know, as a business practitioner, could really help me get up the learning curve.
+
+So it's not really to go against what's on the website, it's more to supplement and complement. We have 14 members, Steve. Like you said, we could do with some more, but I also like the comments of Matthias earlier.
+
+We're really in this position where if folks have a real business application UNTP that they want to implement, you're the perfect candidate, I would say, to come to our group. We'd love folks who could come with data, with a real scheme that they're trying to implement. And that would be a great way for us to swell our team, I think.
+
+You can see there we've got 11 folks that are really active and a few observers. That's, I'm really happy with that ratio. So that's great.
+
+I still have some admin to do. So sorry, Steve, I haven't updated the site and sent around the meeting links. My email's there.
+
+If you want to jump on the working groups, on our working group meeting, please do. We've got two meetings each week just while we find our feet. So what we've been working on, on the extension mapping side of things, the main focus areas have been in battery passport, and we've started to look through how that might play out and how you would do the mapping work.
+
+Not necessarily from the conformity perspective just yet, but we've got one eye on that. And also we did some interesting, we started some interesting chain of custody discussions, which is really probably going to be our second area of focus around chemicals in Europe. So looking at how would you, if you were a chemicals manufacturer, take a whole lot of DPPs, take all of the conformity stuff that comes with it, and then do some mass balancing, not outside of the UNTP, and then go forth and publish some more DPPs and more information for the downstream consumers.
+
+So that should be quite an interesting real world case where there's pain being felt in the real world, and we're seeing how much of that pain can be alleviated by UNTP. Coppermark is probably on hold for us at the moment, Steve. We're thinking until we really have that candidate that can come in from the Copper Association and wants to work with us, but we're open to it.
+
+And Zach does have some great work that's been done in the past. So we may just sort of do an internal learning session with Zach to learn about what's been done in the past there. And we're open to pivoting towards leather and textile, if that makes sense.
+
+[Speaker 1]
+So I would probably just add that there are a number of extensions that are kicking off and they will have their own projects. And I think there's an interesting question about what's the balance and where do I participate? Let's say the UNECE textiles extension kicks off as a separate project.
+
+Domain-specific experts from that would probably go there. But what we'd want is to make sure that somebody from these extensions joins your group to inform what are the lessons from these extensions that ought to be incorporated in UNTP Core, right?
+
+[Speaker 2]
+So I'd imagine that- I think that's a really, really great suggestion. I think we're already seeing that that's working well with Suzanne with the battery passport. We can see that we don't necessarily need everyone from the GBA in there, but she's like a really helpful conduit to take information back and forth.
+
+Exactly. And that can work both ways as well. I think we've got some insights that we can help with as well.
+
+All right. Yep, I think I'll leave it there, Steve.
+
+[Speaker 1]
+You can say a little bit about developing some implementation guidance, but- Yes, and let me help you with updating your pages on the UNTP site over the next week or so. Now that I've figured out myself how to access and update the UN GitLab. Detlef, do you have that before we move on?
+
+[Speaker 5]
+Yes, just a short question on the potentially upcoming focus areas like textile and what is the basis for decision how to move forward? Is it a kind of the level of interest in the community or do we need to have some more official statement?
+
+[Speaker 1]
+Yes. So there's a few answers to that. So the first point to make probably is that when we started UNTP, we realized very quickly that if we try to be all things to all industries, it will be an enormously complex project.
+
+So better to focus on the common core and then let each industry extend to meet their needs. That's generally the conceptual architecture. And that means we have a mechanism to extend UNTP, if you like a procedural one, what makes a valid extension?
+
+Then the question is, is that a UN governed extension or is it just somebody taking it and using it as they wish, right? So the second case we can't prevent, anyone can take it, use it, do what they want with it, right? But if we want to register on the UNTP website a formal extension, then there are some extra rules which are being developed as we speak by the extensions working group led by Matthias who is on this call.
+
+And there is a kind of an open question about how you manage overlaps and conflicts, right? Where for example, and sorry, I should say the leadership of an extension, typically what UN will look for is some sort of representative organization that can bring a lot of members. So it's not, for example, to pick a name, Rio Tinto Mining that would create an extension, it would be perhaps the Mining Association of Canada or something like this, right?
+
+So the idea is a representative organization can take UNTP, create extensions, register that and follow some governance process, but you still inevitably end up with some overlaps, right? Because if four or five National Mining Associations do something, but then Coppermark or somebody else does something globally, you end up with, well, are we declaring a cop? Are we designing a copper extension globally or is it part of the National Mining Association one, right?
+
+So these kinds of overlaps are, Matthias may wanna say something, but we're still trying to figure out how to govern that. You can't be too prescriptive, but you also can't be too open to chaos, right? So finding the right pathway about how to manage those overlaps is a challenge that lies ahead of us, I would say.
+
+It's a kind of a nice problem to have, right? If you've got 20, 30 organizations that want to extend, that's good news, but how do you govern it so it's not chaotic to users?
+
+[Speaker 2]
+And so practically in the working group, in our working group, we'll probably only, we wanna contribute and do things. So we'll really be focusing on the ones where some people come from that extension body. You know, if they're there and they're keen and we'll try and match their keenness.
+
+[Speaker 1]
+Did you wanna add anything, Matthias, before we move on to the next update?
+
+[Speaker 6]
+Don't have to. Thank you, yes. It was very comprehensive what you said.
+
+And yes, we do plan this fifth group on the extensions and maybe just to add what you said to what you said, the most important thing probably with the extension is that whoever becomes an owner of that extension needs to have the trust of the industry and needs to somehow be able to convene as many as possible actors in that sector so that everyone who trusts that organization can also trust the UNTP and vice versa.
+
+So that is simple in some sectors where you have one major business association and relatively less complexity, but sectors like garment, for example, or textiles, which with 360 different sustainability schemes more or less competing with one another, it's very difficult to find a common language. And that is however, what we need also to establish the semantic interoperability. So these extensions are not without challenges, but if we overcome those challenges, I think the UNTP can be an extremely powerful device for confederating or for uniting an industry behind some common metrics that will then be the basis of their traceability efforts in an interoperable way.
+
+So that's the main mandate and business proposition of the forthcoming extension group. Thank you, Steve.
+
+[Speaker 1]
+Thanks, Matthias.
+
+[Speaker 6]
+Thank you.
+
+[Speaker 1]
+I think generally an industry association is a better shape for an extension owner than a sustainability scheme owner, right? Because they're very competitive and yeah. Anyway, I think we can move on to who would like to go next.
+
+Brett, since I saw you on the call, would you like to go?
+
+[Speaker 3]
+Yeah, sure, Steve. Thanks. So the conformity group is up and running.
+
+We have 58 members and I'd have to say it's an embarrassment of riches in terms of the conformity expertise, recognized authorities from all around the world, bringing real credibility to this work. Now, we don't speak IT in our group. So luckily we have Zach on this call who does speak IT and he's the tech lead.
+
+So thanks a lot, Zach, for filling that critical role. The kickoff meeting was on 15 July and it was attended by half of our members. That's 28 were on the call.
+
+We started with a refresher on the UN's prior work on conformity credentials. This work's actually reasonably mature and it's been adopted into the UNTP from earlier UNC fact work. So there's not a whole lot for us to do there other than maintain that work.
+
+So we then moved into a discussion on this new thing called SVC, Sustainability Vocabulary Catalog. And we were sort of staring at the logical model and wondering what all this is about. So the main action actually from the first meeting was to commission a subgroup to get their heads around exactly what this sustainability vocabulary logical model means and then to report back to the main group.
+
+So that subgroup now has met twice and a big shout out to Olaz from IEC, Gideon from ISO and Jeff formerly of UCAS. We're ready to report back to the main group. We feel that we understand what's going on.
+
+We're quite happy with how the logical model works. Essentially it is an indexing system for expressing conformity scheme outcomes as digital objects that can be referenced both as a claim in a digital product passport and as an assessment outcome in a conformity credential. And so these can be machine mapped or matched.
+
+So you can immediately and categorically know that a claim does correspond to a conformity credential. Now, if you read the UNTPs page on if SVC, that's exactly what it says. So it just took us a while to work out how it would function through worked examples, but we're quite happy now.
+
+And there has been some very recent talk, I think coming from some other groups about extending this logical model to achieve other purposes. So we'll first have to digest what that might mean before we'll be able to comment further on that. The next meeting is Tuesday, Europe and US or North and South American time, Wednesday morning, my time.
+
+So I hope to see some of you there. Thanks.
+
+[Speaker 1]
+Thank you, Brett. Next, Michael, are you on the call? If not, Zach can talk for you.
+
+[Speaker 4]
+No, I'm here. So the adoption working group had our meeting, actually the last one was just before this call in the nighttime for the CET. Our next call is actually just after this call.
+
+So at the top of the hour, we had a lighter representation on the late one, but I think we have likely to be some more people on the call today, as well as hopefully some folks from, some folks from the textile sector. I'm forgetting the name of the company is slipping my mind right at the moment. Recently reissued or issued up the terms of reference, sort of breaking it up into work packages.
+
+We're looking today to go through and get people assigned and start prioritizing activities to start actually accomplishing things. And tie it back to some of the items that have been talked a little bit about here. We've got some folks, some implementers who want to get certified.
+
+So what does that mean? So I've been working a bit with Zach on that, but then also to define that process, review the process that was set up on GitHub before. So actually it's great news to know, to hear that people can self-register again, because I know that there are folks in the pipes that have been trying to register as implementers.
+
+So getting that communicated out, I'll do that as well today. Actually, if they register, can they create a new issue? If I understand, they have to get approved first, right?
+
+So they can register, they got to get approved and then they can create an issue, is that right?
+
+[Speaker 9]
+That's correct, yes. So I've tested this flow with a brand new account that was not associated with that UNTP specification repository. And that's what the flow that I went through.
+
+And I was able to comment on issues, comment on merge requests and also open new issues. And the templates have been moved over to the GitLab as well. So they can just select the implementation template when creating an issue.
+
+Happy to provide guidance on that as well.
+
+[Speaker 4]
+Okay, great. So also met with Matthias last week going over some of the terms of reference also to talk a little bit on the extenders, the new extension or extension working group as well. But really looking now to, we've got about 25 members in the group now, 25, 26.
+
+Certainly if people are interested, you're all welcome. And that's about it, Steve, I think. And does anybody, Zach, if you want to add anything?
+
+[Speaker 1]
+Yeah, go for it. I might add a couple of things. So one of our experts created a little chat GBT engine where a business can drop its company annual report in and then answer 10 questions and get a first draft, if you like, quantified business case for implementing UNTP.
+
+How accurate it is, the answer is probably not very accurate, but it'd be interesting if anyone's interested to test that. I might just send an email out with a link to it and would value your feedback because convincing one of the challenges with this whole sustainability world is that it doesn't translate very much into significantly increased prices for goods, not yet anyway. And so the incentives for implementation are often a bit marginal.
+
+So being able to put together a solid business case about why the sufficient value is quite important. That's an interesting thing I might send around.
+
+[Speaker 4]
+Yeah, please do, Steve. I mean, I think that that's, it would be good to take sort of a look at it and see, I think that's a great way to at least start qualifying it, you're quantifying it.
+
+[Speaker 1]
+Yeah, yeah. I'll send an email out to the group. Hopefully the gaggle mail doesn't go to junk.
+
+Just before we move, the technical group's next, and I'm pleased to announce that we do have a lead now. It's Harley Thomas from, also from Melbourne, actually. We do have a bit of a heavyweight Australian presence here, but the good news is that he's been involved in this project for nearly two years now from the beginning and was heavily involved in the first extension, which is the Australian Agriculture Traceability Protocol.
+
+I think he's quite well-equipped to lead the technical group, and I look forward to, are you on the call, Harley? Yeah, maybe not. So I'll speak for him.
+
+He'll be providing updates on that and looking after the ongoing development of the technical parts of UNTP. Probably the most tricky one is the decentralized access control. Anyway, that's it for technical.
+
+Now, just a quick comment. I saw a whole flurry of emails about canceled meetings and new meetings, and this is testament to my ongoing battles with calendar systems. I have recently had a go with Google Calendar as a carrier of all the meetings for UNTP, allowing people to subscribe to them.
+
+Initially, I actually included in the calendar all the UNTP mailing list, and the trouble with that is people get spammed furiously when things change. So I decided instead, let's keep the mailing list and the calendar separate and let people subscribe. And then I had trouble with ICS and calendar files.
+
+Went to Google, and there is now on the UNTP site a link to a Google Calendar that shows when the meetings happen. We could make that a single calendar for all UNTP meetings, including subgroups, if there is interest in that. The only challenge is, as someone, Viko, just pasted, it's great if you use Google Calendar because you can click on any meeting and say, add to my calendar.
+
+The Google Calendar service also allows me to say, here's a URL for an ICS file. But for some reason, known best only to Google, I don't know why, when you access the ICS file, it's not on a per-meeting basis, it's the entire calendar. So if you add that to your, you can, and if you add that to your calendar, you'll get all the meetings in your calendar.
+
+That doesn't mean you have to attend them all. You might refuse them, but I still don't have a good solution for publishing all the various UNTP meetings in such a way that people on both Google and Microsoft can self-subscribe. But that's what I can do for now.
+
+This Zoom, but the Zoom link is the same for this meeting in all cases. So anyway, that's the thing. So for the last 20 minutes, we, as we mentioned at the beginning of this meeting, we might have a bit of a discussion session on a topic of interest.
+
+Now, I didn't have the opportunity to ask everyone what they wanted to discuss today, so I picked one. But if anyone has a topic of interest, like how does finding a product passport work when you've got an identifier, that's the link resolver, or how does security work, or anything that you'd like to learn about, then I'd be happy to do that in the next meeting. But for this one, I thought I'd compare and contrast the UNTP architecture with regulatory passports like the looming EU digital product passport, because I have heard some, more than one dozen or two dozen people say things that indicate that we haven't sufficiently clarified this relationship.
+
+So the regulatory passports, of which currently there's a few small ones around the world, but the obvious big one is the European one that's being introduced, are really about, mostly about empowering consumers with information to make sustainable choices in their product purchases. It's an excellent initiative, because if it works, it will actually potentially solve that problem I mentioned earlier, which is, how do you monetize and get value out of being more sustainable? Well, if consumers really believe what they see in a passport and do make purchasing decisions that are differentiated based on the information in the passport, then the European Union will have done the world a great favor, I think.
+
+But the purpose of it is very much finished product, consumer information. It doesn't preclude it being used for business to business, but it's at the kind of product level. Now, the challenge is, if I'm a business in Europe or anywhere else that's issuing these things under a regulatory environment, I need to say things that I need to stand by legally, and really the things like the carbon footprint or whether there's deforestation or whatever, depend very heavily on my upstream supply chain.
+
+Right, so that one of the biggest challenges for any issuer of a regulatory passport is have I got the information I need from my upstream supply chain so that I can make confident claims in my regulatory passport? And that's primarily the purpose of UNTP, I would say. There's no reason a particular nation state might choose to base their national regulated passport if they come up with one on UNTP if they want to, but primarily we're focused on exposing that rich upstream information to improve traceability and transparency in the value chain.
+
+And that means what we call a digital product passport, and this is one of the points of confusion, is a bit of product or material information attached to a shipment of products or materials at any step in the supply chain. So just to be clear, the UNTP digital product passport doesn't flow through every step in a supply chain. There is a distinct UNTP DPP for each material or subcomponent or whatever it is that's flowing between a buyer and supplier in an upstream supply chain, right?
+
+So starting right at primary production, if I'm a mine producing copper concentrate, then there'll be a digital product passport describing that copper concentrate. And when it's consumed in a smelter, then it's consumed, it's gone, right? But the smelter has information about that concentrate that they can include when they issue their own passport about what's called copper blister.
+
+That's what comes out of a smelter before it goes to a refiner, right? So think of passports being created about products or materials moving to the next step and then informing the industrial process of that next step and getting kind of incorporated to the extent that that manufacturer wants to or can into the next step, right? So that's an important clarification that I wanted to make.
+
+I'll show a diagram in a minute, but Albert Bertus has got his hand up.
+
+[Speaker 8]
+Yes, Steve, thank you. That I think is extremely important because if we come from the EUDPP, we talk about products and not necessarily raw material, but then at the same time, often you have a shipment of material or products of which you need to have the information. And then, you know, I dealt long time ago with blood diamonds.
+
+And in that case, you want to know information about the source, which is long term. So all the diamonds coming from this specific source as that credentials type thing. And when I start looking at all this little parts, I actually did see that it is catered for.
+
+So it's not necessarily always the material, the product or copper shipment, but it is also often before I place an order, I want to make sure that that source will provide correctly.
+
+[Speaker 1]
+Yeah.
+
+[Speaker 8]
+Or am I missing the point?
+
+[Speaker 1]
+No, no, that is the intent. One of the challenges is the extent to which any intermediary like a copper smelter will pass on the information from their upstream, right? Many will use it to inform their next stage passport, but may not provide access to upstream data because they don't want to reveal who their suppliers are.
+
+So there are parts of UNTP, which are about managing obfuscation or redaction of confidential information. But that's probably a topic for another day.
+
+[Speaker 8]
+Yeah, well, that was one of the issues in the blood diamonds. We, the sources were mixed during the process of refinement. And then only the good places of source were declared.
+
+[Speaker 1]
+And- Yes. And I'll get you in a second, Adriana. And so this is a good point, Bertus.
+
+And this is the reason for some of the early discussions that are happening in the supply chain group, which is as soon as you move away from, components or products that have an identity and a barcode or something like this to bulk materials, then you very quickly get into this challenge of, well, okay, you're selling me, let's say, woven cloth, and you're claiming it's all deforestation free, organic carbon neutral cotton.
+
+But how do I know that you're buying the same amount of that high quality cotton as the cloth that you're selling? You might buy a little bit from a high integrity farm and then a load of junk, and then replay that high integrity one to every customer of your cloth, right? So this mass balance question of, do your claims align with your inputs is one of the challenges that needs to be addressed as soon as you get to bulk materials, which pretty much every supply chain at some point, it's, you crawl upstream far enough, you get away from a box with a code on it and you get into bulk shipments.
+
+So dealing with that challenge of mass balance in a pragmatic and simple and manageable way is one of the next groups challenges. And we've had to have some initial discussions on it. Adriana.
+
+[Speaker 7]
+Yeah, thanks, Steve. Yeah, I've been thinking about this language a lot simply because I was gonna bring it up at the adoption meeting as well, because that's what we're primarily focused on is adoption, is the language where everything's a DPP. And so I've been thinking about perhaps the option or the idea that we have supplier DPP.
+
+So a company like a miner, who you're calling would be producing a DPP would categorise his DPP or their DPP as a supplier or a primary resource DPP. Somehow we need to be able to separate out the different types of DPP because it's going to get too confusing. And so when I was, and just for an example, I was looking through the numbers the other day, the EU imported in 2024, $136 billion worth of products or raw materials from ASEAN.
+
+That's 10 countries in Asia. And I classify Asia as 24 countries. So 10 countries in Asia, ASEAN group.
+
+That's a lot of money. And a lot of those imports are coming in or exports into the EU are coming in from SMEs. And so if we're starting to classify everything along the supply chain, and I know we brought this up the other day in the supply chain group, but I just can't see within adoption, I just can't see how it's not going to get confusing.

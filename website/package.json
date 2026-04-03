@@ -5,8 +5,9 @@
   "license": "CC-BY-4.0",
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "copy-artefacts": "rm -rf ./static/artefacts && cp -r ../artefacts ./static/artefacts",
+    "start": "yarn copy-artefacts && docusaurus start",
+    "build": "yarn copy-artefacts && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -22,6 +23,7 @@
     "@docusaurus/preset-classic": "^3.6.0",
     "@docusaurus/theme-mermaid": "3.6.0",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-llms": "^0.2.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-fast-marquee": "^1.6.5"

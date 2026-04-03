@@ -1,0 +1,44 @@
+{
+  "type": ["Criterion"],
+  "id": "https://sample-scheme.example.com/criterion/supply-chain-due-diligence/1.0.0",
+  "name": "Supply Chain Due Diligence Management System",
+  "description": "Comprehensive management system for mineral supply chain due diligence aligned with the OECD five-step framework. Requires the facility to establish and maintain a supply chain due diligence policy, implement a management structure with senior accountability, maintain a chain of custody and traceability system covering all mineral inputs, conduct regular risk assessments of the supply chain including identification of conflict-affected and high-risk areas, implement risk mitigation measures with corrective action plans, commission independent third-party audits, and publicly report on due diligence activities and findings.",
+  "version": "1.0.0",
+  "status": "active",
+  "documentation": "https://sample-minerals-initiative.example.com/criteria/supply-chain-due-diligence/",
+  "conformityTopic": [
+    {
+      "type": ["ConformityTopic"],
+      "id": "https://vocabulary.uncefact.org/untp/conformity-topic/ethical-material-sourcing",
+      "name": "Ethical Material Sourcing",
+      "definition": "Procuring raw materials through sustainable and responsible practices, avoiding conflict minerals and environmentally destructive extraction."
+    }
+  ],
+  "passThreshold": [
+    {
+      "type": ["Performance"],
+      "metric": {
+        "type": ["PerformanceMetric"],
+        "id": "https://sample-scheme.example.com/metric/due-diligence-conformance",
+        "name": "Due diligence conformance level"
+      },
+      "score": {
+        "type": ["Score"],
+        "code": "CONF",
+        "rank": 1,
+        "definition": "Facility meets all applicable requirements for supply chain due diligence."
+      }
+    }
+  ],
+  "tag": [
+    "due-diligence",
+    "five-step-framework",
+    "management-system",
+    "risk-assessment",
+    "supply-chain-policy",
+    "chain-of-custody",
+    "traceability",
+    "public-reporting",
+    "grievance-mechanism"
+  ]
+}

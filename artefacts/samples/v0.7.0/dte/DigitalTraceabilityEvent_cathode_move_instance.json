@@ -1,0 +1,113 @@
+{
+  "type": ["DigitalTraceabilityEvent", "VerifiableCredential"],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/0.7.0/context/"
+  ],
+  "id": "https://credentials.sample-refinery.example.com/dte/move-cathode-2025-0310",
+  "issuer": {
+    "type": ["CredentialIssuer"],
+    "id": "did:web:sample-refinery.example.com",
+    "name": "Sample Copper Refinery Co. Ltd",
+    "issuerAlsoKnownAs": [
+      {
+        "type": ["Party"],
+        "id": "https://www.sample-register.example.com/henkorireki-johoto.html?selHouzinNo=REF-001",
+        "name": "Sample Copper Refinery Co. Ltd",
+        "registeredId": "REF-001",
+        "idScheme": {
+          "type": ["IdentifierScheme"],
+          "id": "https://www.sample-register.example.com",
+          "name": "Japan Corporate Number (Houjin Bangou)"
+        }
+      }
+    ]
+  },
+  "validFrom": "2025-03-10T00:00:00Z",
+  "validUntil": "2026-03-10T00:00:00Z",
+  "name": "Shipment of Copper Cathode — Sample Smelter to Sample Battery Factory",
+  "credentialSubject": [
+    {
+      "type": ["MoveEvent", "LifecycleEvent"],
+      "id": "https://sample-refinery.example.com/events/move-cathode-2025-0310",
+      "name": "Copper cathode shipment to Sample Battery Factory",
+      "description": "Shipment of 2 tonnes of LME Grade A copper cathode (Cu 99.99%) from Sample Copper Refinery to Sample Battery Factory in Salzgitter, Germany via sea freight.",
+      "eventDate": "2025-03-10T14:00:00Z",
+      "activityType": {
+        "code": "shipping",
+        "name": "Shipping",
+        "definition": "The movement of goods from one location to another.",
+        "schemeId": "https://ref.gs1.org/cbv/BizStep",
+        "schemeName": "GS1 CBV Business Step"
+      },
+      "relatedParty": [
+        {
+          "role": "consignor",
+          "party": {
+            "type": ["Party"],
+            "id": "did:web:sample-refinery.example.com",
+            "name": "Sample Copper Refinery Co. Ltd",
+            "registeredId": "REF-001",
+            "idScheme": {
+              "type": ["IdentifierScheme"],
+              "id": "https://www.sample-register.example.com",
+              "name": "Japan Corporate Number (Houjin Bangou)"
+            }
+          }
+        },
+        {
+          "role": "consignee",
+          "party": {
+            "type": ["Party"],
+            "id": "did:web:sample-battery.example.com",
+            "name": "Sample Battery Mfg GmbH",
+            "registeredId": "BAT-001",
+            "idScheme": {
+              "type": ["IdentifierScheme"],
+              "id": "https://sample-register.example.com",
+              "name": "Sample Commercial Register"
+            }
+          }
+        }
+      ],
+      "movedProduct": [
+        {
+          "product": {
+            "type": ["Product"],
+            "id": "https://id.sample-refinery.example.com/product/cu-cathode-2025",
+            "name": "LME Grade A Copper Cathode",
+            "modelNumber": "SR-CU-CATH-9999",
+            "batchNumber": "2025-Q1-0812",
+            "idGranularity": "model"
+          },
+          "quantity": {
+            "value": 2000,
+            "unit": "KGM"
+          },
+          "disposition": "new"
+        }
+      ],
+      "fromFacility": {
+        "type": ["Facility"],
+        "id": "https://facility-register.example.com/fac-002",
+        "name": "Sample Copper Refinery",
+        "registeredId": "fac-002"
+      },
+      "toFacility": {
+        "type": ["Facility"],
+        "id": "https://facility-register.example.com/fac-003",
+        "name": "Sample Battery Factory",
+        "registeredId": "fac-003"
+      },
+      "consignmentId": "urn:carrier:sea-freight:BL-2025-SG-BG-0310",
+      "relatedDocument": [
+        {
+          "linkURL": "https://credentials.sample-refinery.example.com/dpp/cu-cathode-2025",
+          "linkName": "Digital Product Passport — LME Grade A Copper Cathode",
+          "mediaType": "application/ld+json",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dpp"
+        }
+      ]
+    }
+  ]
+}

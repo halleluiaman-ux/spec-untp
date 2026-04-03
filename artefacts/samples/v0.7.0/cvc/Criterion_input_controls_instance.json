@@ -1,0 +1,40 @@
+{
+  "type": ["Criterion"],
+  "id": "https://sample-scheme.example.com/criterion/processor-input-controls/1.0.0",
+  "name": "Processor Input Controls",
+  "description": "Controls governing the receipt and verification of mineral feedstock at the processing facility. Requires the processor to verify the identity and origin of all incoming mineral shipments, maintain a register of approved suppliers with current due diligence status, perform physical inspection and sampling of incoming materials to verify declared mineral content and weight, reject or quarantine shipments that cannot be verified against declared documentation, and maintain tamper-evident sealing and secure storage for incoming materials pending processing.",
+  "version": "1.0.0",
+  "status": "active",
+  "documentation": "https://sample-minerals-initiative.example.com/criteria/processor-input-controls/",
+  "conformityTopic": [
+    {
+      "type": ["ConformityTopic"],
+      "id": "https://vocabulary.uncefact.org/untp/conformity-topic/supply-chain-traceability",
+      "name": "Supply Chain Traceability",
+      "definition": "Tracking product origins, components, and transformations throughout the supply chain to enable transparency and accountability."
+    }
+  ],
+  "passThreshold": [
+    {
+      "type": ["Performance"],
+      "metric": {
+        "type": ["PerformanceMetric"],
+        "id": "https://sample-scheme.example.com/metric/input-verification-rate",
+        "name": "Input verification rate"
+      },
+      "measure": {
+        "type": ["Measure"],
+        "value": 100,
+        "unit": "P1"
+      }
+    }
+  ],
+  "tag": [
+    "input-controls",
+    "material-verification",
+    "supplier-register",
+    "physical-inspection",
+    "secure-storage",
+    "tantalum"
+  ]
+}

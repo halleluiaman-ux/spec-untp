@@ -1,0 +1,95 @@
+DIN Clause,DIN Data Attribute,DIN Cluster,Mandatory/Recommended,Static/Dynamic,Mapping Type,UNTP Property or Pattern,Notes
+6.1.2.1,Battery passport identifier,Identifiers and product data,R,S,Direct,DigitalProductPassport.id,The credential URI serves as the passport identifier
+6.1.2.2,Battery identifier,Identifiers and product data,M,S,Direct,Product.id + Product.idScheme,"Resolvable product URI; itemNumber for serialised ID"
+6.1.2.3,Operator identifier and information,Identifiers and product data,R,S,Direct,"Product.relatedParty (role: operator)","Party with id, name, registeredId"
+6.1.2.4,Manufacturer identifier and information,Identifiers and product data,M,S,Direct,"Product.relatedParty (role: manufacturer)",Also mapped via CredentialIssuer.issuerAlsoKnownAs
+6.1.3.1,Manufacturing place,Identifiers and product data,M,S,Direct,Product.producedAtFacility,"Facility with id, name, registeredId, location"
+6.1.3.2,Manufacturing date,Identifiers and product data,M,S,Direct,Product.productionDate,ISO 8601 date
+6.1.3.3,Date of putting battery into service,Identifiers and product data,M,S,Lifecycle,DTE ModifyEvent,"Lifecycle event: battery commissioned; eventType = commission"
+6.1.3.4,Warranty period,Identifiers and product data,M,S,Characteristic,Product.characteristics,"Battery-specific; e.g. warrantyPeriodMonths: 96"
+6.1.3.5,Battery category,Identifiers and product data,M,S,Direct,Product.productCategory,"Classification code from EU battery categories (EV, industrial, LMT)"
+6.1.3.6,Battery mass,Identifiers and product data,M,S,Direct,Product.dimensions.weight,Measure with value in KGM
+6.1.3.7,Battery status,Identifiers and product data,M,D,Lifecycle,DTE ModifyEvent,"Status changes (original, repurposed, remanufactured, waste)"
+6.2.2,Separate collection symbol,Symbols and conformity,M,S,Direct,Product.productLabel,"Label with name, description, mediaType (image)"
+6.2.3,Symbols for cadmium and lead,Symbols and conformity,M,S,Direct,Product.productLabel,Hazard symbol as image label
+6.2.4,Carbon footprint label,Symbols and conformity,M,S,Direct,Product.productLabel,Carbon footprint class graphic
+6.2.5,Extinguishing agent,Symbols and conformity,M,S,Characteristic,Product.characteristics,"Battery-specific; e.g. extinguishingAgent: CO2"
+6.2.6,Meaning of labels and symbols,Symbols and conformity,M,S,Document,Product.relatedDocument,Link to explanatory document
+6.2.7,EU declaration of conformity,Symbols and conformity,M,S,Document,Product.relatedDocument,Link to PDF; also referenceable as conformity evidence in a DCC
+6.2.8,Results of test reports proving compliance,Symbols and conformity,M,S,Claim,performanceClaim → DCC,Claim references a Digital Conformity Credential (DCC) as evidence
+6.3.2,Battery carbon footprint per functional unit,Carbon footprint,M,S,Claim,performanceClaim,"topic: greenhouse-gas-emissions; metric: battery-carbon-footprint; unit: kgCO2e/kWh"
+6.3.3,Contribution of raw material acquisition and pre-processing,Carbon footprint,M,S,Claim,performanceClaim,"topic: greenhouse-gas-emissions; lifecycle-stage-specific; unit: kgCO2e/kWh"
+6.3.4,Contribution of main product production/manufacturing,Carbon footprint,M,S,Claim,performanceClaim,"Same topic, manufacturing lifecycle stage"
+6.3.5,Contribution of distribution lifecycle stage,Carbon footprint,M,S,Claim,performanceClaim,"Same topic, distribution lifecycle stage"
+6.3.6,Contribution of end of life and recycling,Carbon footprint,M,S,Claim,performanceClaim,"Same topic, end-of-life lifecycle stage"
+6.3.7,Carbon footprint performance class,Carbon footprint,M,S,Claim,performanceClaim,"topic: greenhouse-gas-emissions; value is the class label (A-E)"
+6.3.8,Web link to public carbon footprint study,Carbon footprint,M,S,Document,Product.relatedDocument,Link to the published study
+6.3.9,General battery and manufacturer information,Carbon footprint,M,S,Direct,Already mapped,Covered by 6.1 identifiers
+6.3.10,Absolute battery carbon footprint,Carbon footprint,R,S,Claim,performanceClaim,"topic: greenhouse-gas-emissions; unit: tCO2e (absolute, not per kWh)"
+6.4.2,Information of due diligence report in the Battery Passport,Supply chain due diligence,M,S,Document,Product.relatedDocument,Link to due diligence report PDF
+6.4.3,Third-party assurances of recognised schemes,Supply chain due diligence,R,S,Claim,performanceClaim → DCC,Claim with conformity evidence referencing a DCC from the assurance body
+6.4.4,Supply chain indices,Supply chain due diligence,R,S,Claim,performanceClaim,"topic: supply-chain-due-diligence; quantified index values"
+6.5.2,Battery chemistry,Materials and composition,M,S,Characteristic,Product.characteristics,"e.g. batteryChemistry: NMC 811"
+6.5.3,Critical raw materials,Materials and composition,M,S,Direct,Product.materialProvenance,"Each critical raw material as a Material entry with name, originCountry"
+6.5.4,Materials used in cathode anode and electrolyte,Materials and composition,M,S,Direct,Product.materialProvenance,"Material entries with materialType, massFraction"
+6.5.5,Hazardous substances,Materials and composition,M,S,Direct,Product.materialProvenance,"Set hazardous: true on relevant material entries"
+6.5.6,Impact of substances on environment human health safety,Materials and composition,M,S,Characteristic,Product.characteristics,Battery-specific descriptive text or link
+6.6.1.2,Dismantling information: Manuals for removal and disassembly,Circularity,M,S,Document,Product.relatedDocument,Link to dismantling manual PDF
+6.6.1.3,Part numbers for components,Circularity,M,S,Characteristic,Product.characteristics,Array of component part numbers
+6.6.1.4,Information on sources of spare parts,Circularity,M,S,Document,Product.relatedDocument,Link to spare parts portal/document
+6.6.1.5,Safety measures,Circularity,M,S,Document,Product.relatedDocument,Link to safety measures document
+6.6.2.2,"Pre-consumer and post-consumer recycled cobalt, lithium, nickel, and lead share",Recycled content,M,S,Direct,Product.materialProvenance,recycledMassFraction on each material entry
+6.6.2.3,Pre-consumer recycled nickel share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content; metric per material
+6.6.2.4,Pre-consumer recycled cobalt share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.5,Pre-consumer recycled lithium share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.6,Pre-consumer recycled lead share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.7,Post-consumer recycled nickel share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.8,Post-consumer recycled cobalt share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.9,Post-consumer recycled lithium share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.10,Post-consumer recycled lead share,Recycled content,M,S,Claim,performanceClaim,topic: recycled-content
+6.6.2.11,Renewable content share,Recycled content,M,S,Claim,performanceClaim,"topic: recycled-content; metric: renewable content %"
+6.6.3.2,Information on role of end-users in contributing to waste prevention,Waste prevention,M,S,Document,Product.relatedDocument,Link to consumer guidance document
+6.6.3.3,Information on role of end-users in contributing to separate collection of waste batteries,Waste prevention,M,S,Document,Product.relatedDocument,Link to collection guidance
+6.6.3.4,Information on battery collection preparation for second life and treatment at end of life,Waste prevention,M,S,Document,Product.relatedDocument,Link to end-of-life treatment document
+6.7.2.2,Rated capacity,Capacity energy and voltage,M,S,Characteristic,Product.characteristics,"ratedCapacity: { value: 150, unit: Ah }"
+6.7.2.3,Remaining capacity,Capacity energy and voltage,M,D,Lifecycle,DTE ModifyEvent,Dynamic state-of-health metric; item-level
+6.7.2.4,Capacity fade,Capacity energy and voltage,M,S,Claim,performanceClaim,topic: performance-and-durability; calculated from rated vs remaining
+6.7.2.5,Certified usable battery energy,Capacity energy and voltage,R,S,Characteristic,Product.characteristics,"certifiedUsableEnergy: { value: 75, unit: kWh }"
+6.7.2.6,Remaining usable battery energy,Capacity energy and voltage,R,D,Lifecycle,DTE ModifyEvent,Dynamic; item-level
+6.7.2.7,State of certified energy (SOCE),Capacity energy and voltage,M,D,Lifecycle,DTE ModifyEvent,Dynamic %; item-level
+6.7.2.8,State of charge (SoC),Capacity energy and voltage,M,D,Lifecycle,DTE ModifyEvent,Dynamic %; item-level
+6.7.2.9,Minimum voltage,Capacity energy and voltage,M,S,Characteristic,Product.characteristics,"minimumVoltage: { value: 250, unit: V }"
+6.7.2.10,Maximum voltage,Capacity energy and voltage,M,S,Characteristic,Product.characteristics,Upper operational voltage limit
+6.7.2.11,Nominal voltage,Capacity energy and voltage,M,S,Characteristic,Product.characteristics,Nominal operating voltage
+6.7.3.2,Original power capability,Power capability,M,S,Characteristic,Product.characteristics,"originalPowerCapability: { value: 150, unit: W }"
+6.7.3.3,Remaining power capability,Power capability,M,D,Lifecycle,DTE ModifyEvent,Dynamic; item-level; BMS-dependent
+6.7.3.4,Power fade,Power capability,M,S,Claim,performanceClaim,topic: performance-and-durability; unit: %
+6.7.3.5,Maximum permitted battery power,Power capability,M,S,Characteristic,Product.characteristics,Upper safe operating power limit; model-level
+6.7.3.6,Ratio between nominal battery power and battery energy,Power capability,R,S,Characteristic,Product.characteristics,Ratio in W/Wh; model-level
+6.7.4.2,Initial round trip energy efficiency,Energy efficiency,M,S,Claim,performanceClaim,topic: energy-efficiency; unit: %
+6.7.4.3,Round trip energy efficiency at 50% of cycle-life,Energy efficiency,M,S,Claim,performanceClaim,topic: energy-efficiency; unit: %
+6.7.4.4,Remaining round trip energy efficiency,Energy efficiency,M,D,Lifecycle,DTE ModifyEvent,Dynamic; item-level; BMS-dependent
+6.7.4.5,Energy round trip efficiency fade,Energy efficiency,M,S,Claim,performanceClaim,topic: energy-efficiency; unit: %
+6.7.4.6,Initial self-discharge rate,Energy efficiency,R,S,Characteristic,Product.characteristics,"initialSelfDischargeRate: { value: 2, unit: %/month }"
+6.7.4.7,Current self-discharge rate,Energy efficiency,R,D,Lifecycle,DTE ModifyEvent,Dynamic; item-level
+6.7.4.8,Evolution of self-discharge rates,Energy efficiency,M,D,Lifecycle,DTE ModifyEvent,Dynamic %; item-level
+6.7.5.2,Initial internal resistance of battery cell and pack,Internal resistance,M,S,Characteristic,Product.characteristics,Cell and pack resistance in ohms; model-level
+6.7.5.3,Internal resistance increase of pack (cell and module recommended),Internal resistance,M,S,Claim,performanceClaim,topic: performance-and-durability; unit: % increase
+6.7.6.2,Expected lifetime in calendar years,Battery lifetime,M,S,Characteristic,Product.characteristics,"expectedLifetimeYears: 15"
+6.7.6.3,Expected lifetime: Number of charge-discharge cycles,Battery lifetime,M,S,Characteristic,Product.characteristics,"expectedLifetimeCycles: 3000"
+6.7.6.4,Number of full charging and discharging cycles,Battery lifetime,M,D,Lifecycle,DTE ModifyEvent,Dynamic counter; item-level
+6.7.6.5,Cycle-life reference test,Battery lifetime,M,S,Characteristic,Product.characteristics,Reference test description; model-level
+6.7.6.6,C-rate of relevant cycle-life test,Battery lifetime,M,S,Characteristic,Product.characteristics,Charge/discharge rate in A/Ah; model-level
+6.7.6.7,Energy throughput,Battery lifetime,M,D,Lifecycle,DTE ModifyEvent,Cumulative kWh; item-level
+6.7.6.8,Capacity throughput,Battery lifetime,M,D,Lifecycle,DTE ModifyEvent,Cumulative Ah; item-level
+6.7.6.9,Capacity threshold for exhaustion,Battery lifetime,M,S,Characteristic,Product.characteristics,% of SOCE; EV only; model-level
+6.7.7.2,Temperature information,Temperature conditions,M,D,Lifecycle,DTE ModifyEvent,Periodic temperature readings; item-level
+6.7.7.3,Temperature range idle state lower boundary,Temperature conditions,M,S,Characteristic,Product.characteristics,Min safe idle temperature in C; model-level
+6.7.7.4,Temperature range idle state upper boundary,Temperature conditions,M,S,Characteristic,Product.characteristics,Max safe idle temperature in C; model-level
+6.7.7.5,Time spent in extreme temperatures above boundary,Temperature conditions,M,D,Lifecycle,DTE ModifyEvent,Cumulative minutes; item-level
+6.7.7.6,Time spent in extreme temperatures below boundary,Temperature conditions,M,D,Lifecycle,DTE ModifyEvent,Cumulative minutes; item-level
+6.7.7.7,Time spent charging during extreme temperatures above boundary,Temperature conditions,M,D,Lifecycle,DTE ModifyEvent,Cumulative minutes; item-level
+6.7.7.8,Time spent charging during extreme temperatures below boundary,Temperature conditions,M,D,Lifecycle,DTE ModifyEvent,Cumulative minutes; item-level
+6.7.8.2,Number of deep discharge events,Negative events,M,D,Lifecycle,DTE ModifyEvent,Event counter; item-level
+6.7.8.3,Number of overcharge events,Negative events,R,D,Lifecycle,DTE ModifyEvent,Event counter; item-level
+6.7.8.4,Information on accidents,Negative events,M,D,Lifecycle,DTE ModifyEvent,Link to accident report PDF; item-level

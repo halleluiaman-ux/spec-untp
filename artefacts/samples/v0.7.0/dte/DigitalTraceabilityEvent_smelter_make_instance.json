@@ -1,0 +1,115 @@
+{
+  "type": ["DigitalTraceabilityEvent", "VerifiableCredential"],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/0.7.0/context/"
+  ],
+  "id": "https://credentials.sample-refinery.example.com/dte/make-cathode-2025-0305",
+  "issuer": {
+    "type": ["CredentialIssuer"],
+    "id": "did:web:sample-refinery.example.com",
+    "name": "Sample Copper Refinery Co. Ltd",
+    "issuerAlsoKnownAs": [
+      {
+        "type": ["Party"],
+        "id": "https://www.sample-register.example.com/henkorireki-johoto.html?selHouzinNo=REF-001",
+        "name": "Sample Copper Refinery Co. Ltd",
+        "registeredId": "REF-001",
+        "idScheme": {
+          "type": ["IdentifierScheme"],
+          "id": "https://www.sample-register.example.com",
+          "name": "Japan Corporate Number (Houjin Bangou)"
+        }
+      }
+    ]
+  },
+  "validFrom": "2025-03-05T00:00:00Z",
+  "validUntil": "2026-03-05T00:00:00Z",
+  "name": "Smelting of Copper Concentrate into Copper Cathode — Sample",
+  "credentialSubject": [
+    {
+      "type": ["MakeEvent", "LifecycleEvent"],
+      "id": "https://sample-refinery.example.com/events/make-cathode-2025-0305",
+      "name": "Copper smelting and electrolytic refining batch",
+      "description": "Processing of 30 tonnes of copper concentrate (Cu 30%) through smelting and electrolytic refining to produce 10 tonnes of LME Grade A copper cathode (Cu 99.99%) at Sample Copper Refinery.",
+      "eventDate": "2025-03-05T06:00:00Z",
+      "activityType": {
+        "code": "commissioning",
+        "name": "Commissioning",
+        "definition": "The process of manufacturing or assembling a product from raw materials or components.",
+        "schemeId": "https://ref.gs1.org/cbv/BizStep",
+        "schemeName": "GS1 CBV Business Step"
+      },
+      "relatedParty": [
+        {
+          "role": "manufacturer",
+          "party": {
+            "type": ["Party"],
+            "id": "did:web:sample-refinery.example.com",
+            "name": "Sample Copper Refinery Co. Ltd",
+            "registeredId": "REF-001",
+            "idScheme": {
+              "type": ["IdentifierScheme"],
+              "id": "https://www.sample-register.example.com",
+              "name": "Japan Corporate Number (Houjin Bangou)"
+            }
+          }
+        }
+      ],
+      "inputProduct": [
+        {
+          "product": {
+            "type": ["Product"],
+            "id": "https://id.sample-mine.example.com/product/cu-conc-2025",
+            "name": "Copper Concentrate (Cu 30%)",
+            "modelNumber": "SM-CU-CONC-30",
+            "batchNumber": "2025-Q1-4501",
+            "idGranularity": "model"
+          },
+          "quantity": {
+            "value": 30000,
+            "unit": "KGM"
+          },
+          "disposition": "consumed"
+        }
+      ],
+      "outputProduct": [
+        {
+          "product": {
+            "type": ["Product"],
+            "id": "https://id.sample-refinery.example.com/product/cu-cathode-2025",
+            "name": "LME Grade A Copper Cathode",
+            "modelNumber": "SR-CU-CATH-9999",
+            "batchNumber": "2025-Q1-0812",
+            "idGranularity": "model"
+          },
+          "quantity": {
+            "value": 10000,
+            "unit": "KGM"
+          },
+          "disposition": "new"
+        }
+      ],
+      "madeAtFacility": {
+        "type": ["Facility"],
+        "id": "https://facility-register.example.com/fac-002",
+        "name": "Sample Copper Refinery",
+        "registeredId": "fac-002"
+      },
+      "relatedDocument": [
+        {
+          "linkURL": "https://credentials.sample-refinery.example.com/dpp/cu-cathode-2025",
+          "linkName": "Digital Product Passport — LME Grade A Copper Cathode",
+          "mediaType": "application/ld+json",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dpp"
+        },
+        {
+          "linkURL": "https://credentials.sample-cab.example.com/dcc/smelter-002",
+          "linkName": "Coppermark Certification — Sample Copper Refinery",
+          "mediaType": "application/ld+json",
+          "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+        }
+      ]
+    }
+  ]
+}

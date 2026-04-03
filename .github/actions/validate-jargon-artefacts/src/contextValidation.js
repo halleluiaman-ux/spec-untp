@@ -1,8 +1,11 @@
 const core = require('@actions/core');
 const jsonld = require('jsonld');
-const { splitSchemasAndInstances } = require('./schemaValidation');
-const { fetchArtefactData } = require('./utils');
-const { JARGON_INSTANCES_TO_VALIDATE, JARGON_CONTEXT_IRI_PREFIX } = require('./config');
+const {splitSchemasAndInstances} = require('./schemaValidation');
+const {fetchArtefactData} = require('./utils');
+const {
+  JARGON_INSTANCES_TO_VALIDATE,
+  JARGON_CONTEXT_IRI_PREFIX,
+} = require('./config');
 
 /**
  * Validate JSON-LD context
@@ -13,17 +16,21 @@ async function validateContext(jsonldContext) {
   try {
     const context = await fetchArtefactData(jsonldContext.url);
     if (!context) {
-      throw new Error(`Failed to fetch JSON-LD context "${jsonldContext.url}".`);
+      throw new Error(
+        `Failed to fetch JSON-LD context "${jsonldContext.url}".`
+      );
     }
 
     // Run JSON-LD context expansion
     await jsonld.expand(context);
     core.info('Context validation results: passed.');
-    return { valid: true };
+    return {valid: true};
   } catch (error) {
-    core.setFailed(`Error validating context: ${error.message} ${JSON.stringify(error)}`);
+    core.setFailed(
+      `Error validating context: ${error.message} ${JSON.stringify(error)}`
+    );
     core.info('Context validation results: failed.');
-    return { valid: false };
+    return {valid: false};
   }
 }
 
@@ -34,66 +41,74 @@ async function validateContext(jsonldContext) {
  * @returns { valid: boolean }
  */
 async function validateContextInCredential(rawArtefactData, jsonldContext) {
-  const { instances } = splitSchemasAndInstances(rawArtefactData);
+  const {instances} = splitSchemasAndInstances(rawArtefactData);
   const instanceFileNames = Object.keys(instances);
 
   // Filter out secondary instances that lack @context.
   const mainInstanceFileNames = instanceFileNames.filter(instanceFileName =>
-    JARGON_INSTANCES_TO_VALIDATE.some(validInstance => instanceFileName.includes(validInstance))
+    JARGON_INSTANCES_TO_VALIDATE.some(validInstance =>
+      instanceFileName.includes(validInstance)
+    )
   );
 
   if (!mainInstanceFileNames.length) {
     core.info(`
       No permitted sample instances found for JSON-LD expansion. 
       Ensure the instance file name is present in JARGON_INSTANCES_TO_VALIDATE. 
-      Current JARGON_INSTANCES_TO_VALIDATE: ${JARGON_INSTANCES_TO_VALIDATE.join(', ')}
+      Current JARGON_INSTANCES_TO_VALIDATE: ${JARGON_INSTANCES_TO_VALIDATE.join(
+        ', '
+      )}
     `);
-    return { valid: false };
+    return {valid: false};
   }
 
   // Fetch all permitted instances in parallel
-  const fetchedInstances = await Promise.all(mainInstanceFileNames.map(async instanceFileName => {
-    const instanceJson = await fetchArtefactData(instances[instanceFileName]);
+  const fetchedInstances = await Promise.all(
+    mainInstanceFileNames.map(async instanceFileName => {
+      const instanceJson = await fetchArtefactData(instances[instanceFileName]);
 
-    if (instanceJson && jsonldContext && JARGON_CONTEXT_IRI_PREFIX) {
-      const context = instanceJson['@context'];
+      if (instanceJson && jsonldContext && JARGON_CONTEXT_IRI_PREFIX) {
+        const context = instanceJson['@context'];
 
-      if (context && Array.isArray(context) && jsonldContext.url) {
-        // Replace the deployed @context IRI (that is, the eventual IRI at which the context will be
-        // published when the deploy completes) with the Jargon context IRI where we know
-        // it is published right now.
-        instanceJson['@context'] = context.map(c =>
-          typeof c === 'string' && c.startsWith(JARGON_CONTEXT_IRI_PREFIX)
-            ? jsonldContext.url
-            : c
-        );
+        if (context && Array.isArray(context) && jsonldContext.url) {
+          // Replace the deployed @context IRI (that is, the eventual IRI at which the context will be
+          // published when the deploy completes) with the Jargon context IRI where we know
+          // it is published right now.
+          instanceJson['@context'] = context.map(c =>
+            typeof c === 'string' && c.startsWith(JARGON_CONTEXT_IRI_PREFIX)
+              ? jsonldContext.url
+              : c
+          );
+        }
       }
-    }
 
-    return {
-      fileName: instanceFileName,
-      url: instances[instanceFileName],
-      json: instanceJson,
-    }
-  }));
+      return {
+        fileName: instanceFileName,
+        url: instances[instanceFileName],
+        json: instanceJson,
+      };
+    })
+  );
 
   try {
     // Expand all fetched instances
     await Promise.all(
-      fetchedInstances.map(async ({ json, url }) => {
+      fetchedInstances.map(async ({json, url}) => {
         core.info(`Validating "${url}"`);
-        // Expands the document and converts it to RDF. See issue https://github.com/uncefact/spec-untp/issues/369#issuecomment-2878856840
-        return jsonld.toRDF(json, { safe: true })        
-      }) 
+        // Expands the document and converts it to RDF. See issue https://opensource.unicc.org/un/unece/uncefact/spec-untp/-/issues/369#issuecomment-2878856840
+        return jsonld.toRDF(json, {safe: true});
+      })
     );
 
     core.info('Context in credentials validation results: passed.');
-    return { valid: true };
+    return {valid: true};
   } catch (error) {
-    core.setFailed(`Error validating context in credentials: ${JSON.stringify(error)}`);
+    core.setFailed(
+      `Error validating context in credentials: ${JSON.stringify(error)}`
+    );
     core.info('Context in credentials validation results: failed.');
-    return { valid: false };
+    return {valid: false};
   }
 }
 
-module.exports = { validateContext, validateContextInCredential };
+module.exports = {validateContext, validateContextInCredential};

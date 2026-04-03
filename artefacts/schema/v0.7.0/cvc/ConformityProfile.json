@@ -1,0 +1,429 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": ["ConformityProfile"],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "ConformityProfile",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "id": {
+      "example": "https://vocabulary.sample-scheme.org/profile/lrap/v1.0",
+      "type": "string",
+      "format": "uri",
+      "description": "Globally unique identifier of this context specific conformity profile. Typically represented as a URI SchemeOwner/profileID URI"
+    },
+    "name": {
+      "example": "Forced labour assessment criterion",
+      "type": "string",
+      "description": "Name of this conformity profile as defined by the scheme owner."
+    },
+    "description": {
+      "type": "string",
+      "description": "The description of this versioned and context specific conformity profile."
+    },
+    "version": {
+      "example": "1.0.0",
+      "type": "string",
+      "description": "Version of this scheme following SemVer best practice (major.minor.patch). "
+    },
+    "validFrom": {
+      "example": "2025-06-10",
+      "type": "string",
+      "format": "date",
+      "description": "The data from which this scheme version is valid."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "active", "deprecated"],
+      "example": "proposed",
+      "description": "The status of this conformity profile (draft, active, deprecated)"
+    },
+    "subjectType": {
+      "type": "string",
+      "enum": ["product", "facility", "organisation"],
+      "example": "product",
+      "description": "The type of the subject of assessments made under this conformity profile (eg product, facility, organisation)"
+    },
+    "standardAlignment": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/StandardAlignment"
+      },
+      "description": "A list of voluntary standards referenced by this conformity profile and against which some level of compliance can be inferred for subjects that pass an assessment.  "
+    },
+    "regulatoryAlignment": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/RegulatoryAlignment"
+      },
+      "description": "A list of regulations or legally binding conventions referenced by this conformity profile and against which some level of compliance can be inferred for subjects that pass an assessment.  "
+    },
+    "criterionScoringFramework": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ScoringFramework"
+      },
+      "description": "A list of named scoring frameworks that are applied by criterion within this profile. "
+    },
+    "documentation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A web page that describes this entity in detail."
+    },
+    "criterion": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "array",
+            "readOnly": true,
+            "default": ["Criterion"],
+            "items": {
+              "type": "string"
+            },
+            "allOf": [
+              {
+                "contains": {
+                  "const": "Criterion",
+                  "minContains": 1
+                }
+              }
+            ]
+          },
+          "id": {
+            "example": "https://vocabulary.sample-scheme.org/criterion/lb/v1.0",
+            "type": "string",
+            "format": "uri",
+            "description": "Globally unique identifier of this conformity criterion. Typically represented as a URI SchemeOwner/CriterionID URI"
+          },
+          "name": {
+            "example": "Forced labour assessment criterion",
+            "type": "string",
+            "description": "Name of this criterion as defined by the scheme owner."
+          }
+        },
+        "required": ["id", "name"]
+      },
+      "description": "A list of criterion that are included in this conformity profile."
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Classification"
+      },
+      "description": "A set of classification codes that may be used to categorize the applicability of this criteria - for example industry sector, jurisdiction or commodity type - based on a formal vocabulary."
+    },
+    "scheme": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["ConformityScheme"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "ConformityScheme",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "example": "https://sample-scheme.org/lrap",
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of this conformity scheme. Typically represented as a URI SchemeOwner/SchemeName URI"
+        },
+        "name": {
+          "example": "Labour rights assessment program",
+          "type": "string",
+          "description": "Name of this scheme as defined by the scheme owner."
+        }
+      },
+      "required": ["id", "name"],
+      "description": "The conformity scheme under which this versioned profile is maintained."
+    }
+  },
+  "description": "A versioned conformity profile, managed under a scheme, which includes a specific list of versioned criteria. A conformity profile represents the precise scope of a conformity attestation. ",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "validFrom",
+    "status",
+    "criterion",
+    "scheme"
+  ],
+  "$defs": {
+    "StandardAlignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["StandardAlignment"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "StandardAlignment",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "standard": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "array",
+              "readOnly": true,
+              "default": ["Standard"],
+              "items": {
+                "type": "string"
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "const": "Standard",
+                    "minContains": 1
+                  }
+                }
+              ]
+            },
+            "id": {
+              "example": "https://sample-standards.org/A1234",
+              "type": "string",
+              "format": "uri",
+              "description": "Globally unique identifier of this standard. Typically represented as a URI issuer/standard URI"
+            },
+            "name": {
+              "example": "Labour rights standard",
+              "type": "string",
+              "description": "Name for this standard"
+            }
+          },
+          "required": ["id", "name"],
+          "description": "The standard against which this alignment assessment is made."
+        },
+        "alignmentLevel": {
+          "type": "string",
+          "enum": ["meets", "exceeds", "partial"],
+          "example": "meets",
+          "description": "A level of alignment with the referenced standard (exceeds, meets, partial,..)"
+        }
+      },
+      "description": "A voluntary standard and an alignment level (exceeds, meets, partial).",
+      "required": ["standard"]
+    },
+    "RegulatoryAlignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["RegulatoryAlignment"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "RegulatoryAlignment",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "regulation": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "array",
+              "readOnly": true,
+              "default": ["Regulation"],
+              "items": {
+                "type": "string"
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "const": "Regulation",
+                    "minContains": 1
+                  }
+                }
+              ]
+            },
+            "id": {
+              "example": "https://regulations.country.gov/ABC-12345",
+              "type": "string",
+              "format": "uri",
+              "description": "Globally unique identifier of this standard. Typically represented as a URI government/regulation URI"
+            },
+            "name": {
+              "example": "Due Diligence Directove",
+              "type": "string",
+              "description": "Name of this regulation as defined by the regulator."
+            }
+          },
+          "required": ["id", "name"],
+          "description": "The regulation against which this alignment assessment is made."
+        },
+        "alignmentLevel": {
+          "type": "string",
+          "enum": ["meets", "exceeds", "partial"],
+          "example": "meets",
+          "description": "A level of alignment with the referenced standard (exceeds, meets, partial,..)"
+        }
+      },
+      "description": "A national regulation or international treaty and an alignment level (exceeds, meets, partial).",
+      "required": ["regulation"]
+    },
+    "ScoringFramework": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["ScoringFramework"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "ScoringFramework",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "A name for this scoring framework.  Must be unique within a scheme."
+        },
+        "description": {
+          "type": "string",
+          "description": "A full text description of the criterion that clearly specifies how compliance is achieved and measured. "
+        },
+        "score": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Score"
+          },
+          "description": "A list of scores and ranks associated with this scoring framework."
+        }
+      },
+      "description": "A scoring framework used for performance level assessments against a criteria or scheme. For example forced labour performance might score A to D depending on the percentage of workforce subject to recruitment fees.",
+      "required": ["name", "description", "score"]
+    },
+    "Score": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["Score"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Score",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "code": {
+          "type": "string",
+          "description": "The coded value for this score (eg \"AAA\")"
+        },
+        "rank": {
+          "type": "integer",
+          "description": "The ranking of this score within the scoring framework - using an integer where \"1\" is the highest rank."
+        },
+        "definition": {
+          "type": "string",
+          "description": "A description of the meaning of this score."
+        }
+      },
+      "description": "A single score within a scoring framework. ",
+      "required": ["code"]
+    },
+    "Classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["Classification"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Classification",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "code": {
+          "example": 46410,
+          "type": "string",
+          "description": "classification code within the scheme"
+        },
+        "name": {
+          "example": "Primary cells and primary batteries",
+          "type": "string",
+          "description": "Name of the classification represented by the code"
+        },
+        "definition": {
+          "type": "string",
+          "description": "A rich definition of this classification code."
+        },
+        "schemeId": {
+          "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+          "type": "string",
+          "format": "uri",
+          "description": "Classification scheme ID"
+        },
+        "schemeName": {
+          "example": "UN Central Product Classification (CPC)",
+          "type": "string",
+          "description": "The name of the classification scheme"
+        }
+      },
+      "description": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
+      "required": ["code", "name", "schemeId", "schemeName"]
+    }
+  }
+}

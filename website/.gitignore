@@ -3,10 +3,12 @@
 
 # Production
 /build
+/static/artefacts
 
 # Generated files
 .docusaurus
 .cache-loader
+.generated
 
 # Misc
 .DS_Store

@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer').themes.github;
 const darkCodeTheme = require('prism-react-renderer').themes.dracula;
+const {getDocusaurusVersions} = require('./src/config/versions.ts');
 
 const slackLink =
   'https://join.slack.com/t/uncefact/shared_invite/zt-36yan5ezl-gFgWgckgKlZ5lIR4m_lVWg';
@@ -15,10 +16,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://uncefact.github.io',
+  url: 'https://untp.unece.org',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/spec-untp/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -45,13 +46,9 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/docs',
           editUrl: ({versionDocsDirPath, docPath}) =>
-            `https://github.com/uncefact/spec-untp/edit/main/website/${versionDocsDirPath}/${docPath}`,
-          versions: {
-            current: {
-              label: 'Work in Progress',
-              path: 'wip',
-            },
-          },
+            `https://opensource.unicc.org/un/unece/uncefact/spec-untp/edit/main/website/${versionDocsDirPath}/${docPath}`,
+          versions: getDocusaurusVersions(),
+          lastVersion: 'current',
         },
         blog: false,
         theme: {
@@ -61,7 +58,7 @@ const config = {
           ],
         },
         gtag: {
-          trackingID: 'G-9NBG7HW734',
+          trackingID: 'G-4DWX800CQ7',
           anonymizeIP: true,
         },
       }),
@@ -90,29 +87,35 @@ const config = {
           },
           {to: '/docs/about', label: 'About UNTP', position: 'right'},
           {
-            to: '/docs/governance',
-            label: 'Governance',
-            position: 'right',
-          },
-          {
-            to: '/docs/business-case',
-            label: 'Business Case',
-            position: 'right',
-          },
-          {
             to: '/docs/specification',
             label: 'Specification',
             position: 'right',
           },
           {
+            to: '/docs/business-case',
+            label: 'Benefits',
+            position: 'right',
+          },
+          {
+            to: '/docs/governance',
+            label: 'Governance',
+            position: 'right',
+          },
+
+          {
             to: '/docs/tools-and-support',
             label: 'Guidance',
             position: 'right',
           },
-          {to: '/docs/extensions', label: 'Extensions', position: 'right'},
+
           {
             to: '/docs/implementations',
             label: 'Implementations',
+            position: 'right',
+          },
+          {
+            to: '/versions',
+            label: 'Versions',
             position: 'right',
           },
           {
@@ -128,9 +131,9 @@ const config = {
             className: 'navbar-mailing-list-link',
           },
           {
-            href: 'https://github.com/uncefact/spec-untp',
-            html: '<svg class="icon"><use xlink:href="#github"></use></svg><span class="menu-item-name">Github</span>',
-            className: 'navbar-github-link',
+            href: 'https://opensource.unicc.org/un/unece/uncefact/spec-untp',
+            html: '<svg class="icon"><use xlink:href="#gitlab"></use></svg><span class="menu-item-name">GitLab</span>',
+            className: 'navbar-gitlab-link',
             position: 'right',
           },
         ],
@@ -139,7 +142,7 @@ const config = {
         links: [
           {
             label: 'Print this specification as PDF',
-            to: '/un-transparency-protocol.pdf',
+            to: 'https://untp.unece.org/un-transparency-protocol.pdf',
             target: '_blank',
           },
           {
@@ -162,6 +165,7 @@ const config = {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
+  plugins: ['docusaurus-plugin-llms', './plugins/carousel-generator'],
 };
 
 module.exports = config;

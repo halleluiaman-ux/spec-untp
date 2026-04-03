@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": ["ConformityVocabularyCatalog"],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "ConformityVocabularyCatalog",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "catalogUsage": {
+      "type": "string",
+      "description": "A description of the purpose and usage of this UNTP scheme catalog"
+    },
+    "conformityScheme": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "example": "https://sample-scheme.org/ESGStandard/v4.0",
+            "type": "string",
+            "format": "uri",
+            "description": "The globally unique identifier of this entity. "
+          },
+          "name": {
+            "example": "Sample ESG Standard",
+            "type": "string",
+            "description": "The name of this entity."
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of this entity"
+          },
+          "assessmentLevel": {
+            "type": "string",
+            "enum": [
+              "authority-benchmark",
+              "authority-mandate",
+              "authority-globalmra",
+              "authority-peer",
+              "authority-cab",
+              "scheme-self",
+              "scheme-cab",
+              "no-endorsement"
+            ],
+            "example": "authority-benchmark",
+            "description": "The scheme assurance type."
+          },
+          "establishedDate": {
+            "type": "string",
+            "format": "date",
+            "description": "The date when this scheme was first established.  "
+          },
+          "documentation": {
+            "type": "string",
+            "format": "uri",
+            "description": "A web page providing full documentation of this scheme."
+          }
+        },
+        "required": ["id", "name", "assessmentLevel", "documentation"]
+      },
+      "description": "A formal governance scheme under which an attestation is issued (eg ACRS structural steel certification) "
+    }
+  },
+  "description": "A UNTP managed list of conformity schemes.",
+  "$defs": {}
+}

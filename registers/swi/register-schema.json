@@ -1,0 +1,262 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Globally unique identifier for this register."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of this register."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the purpose and scope of this register."
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "The date this register was last updated."
+    },
+    "registrar": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of the registrar."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the registrar organisation."
+        }
+      },
+      "required": ["id", "name"],
+      "description": "The organisation responsible for maintaining this register."
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/SoftwareImplementerEntry"
+      },
+      "description": "The list of software implementers in this register."
+    }
+  },
+  "required": ["id", "name", "lastUpdated", "registrar", "entries"],
+  "description": "A register of software solutions that implement the UN Transparency Protocol (UNTP).",
+  "$defs": {
+    "SoftwareImplementerEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier for this implementer entry."
+        },
+        "name": {
+          "type": "string",
+          "description": "Organisation name of the software implementer."
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "description": "Organisation website URL."
+        },
+        "description": {
+          "type": "string",
+          "description": "Implementation statement describing the organisation's commitment to UNTP."
+        },
+        "registrationCountry": {
+          "type": "string",
+          "description": "Country where the organisation is registered."
+        },
+        "operatingCountries": {
+          "type": "string",
+          "description": "Countries or regions where the organisation operates (e.g. 'Global', 'Canada')."
+        },
+        "commitmentDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the organisation committed to UNTP implementation."
+        },
+        "pilotParticipation": {
+          "type": "boolean",
+          "description": "Whether the organisation participates in pre-release UNTP pilots."
+        },
+        "untpScope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "VCP",
+              "DPP",
+              "DTE",
+              "DCC",
+              "DFR",
+              "IDR",
+              "DIA",
+              "DAC",
+              "SVC"
+            ]
+          },
+          "description": "The UNTP specification components in scope for this implementer."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["planned", "active", "conformant"],
+          "description": "Current implementation status: planned (committed), active (in development), conformant (passed tests)."
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/SoftwareProduct"
+          },
+          "description": "Software products implementing UNTP specifications."
+        },
+        "industryFocus": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/IndustryFocus"
+          },
+          "description": "Industry sectors and process areas targeted by this implementer."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "website",
+        "commitmentDate",
+        "untpScope",
+        "status",
+        "products"
+      ],
+      "description": "A registered software implementer of UNTP specifications."
+    },
+    "SoftwareProduct": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Product name."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Product URL or documentation link."
+        },
+        "description": {
+          "type": "string",
+          "description": "Brief description of the product."
+        },
+        "untpScope": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "VCP",
+              "DPP",
+              "DTE",
+              "DCC",
+              "DFR",
+              "IDR",
+              "DIA",
+              "DAC",
+              "SVC"
+            ]
+          },
+          "description": "UNTP specification components implemented by this product."
+        },
+        "untpVersions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "UNTP specification versions targeted (e.g. '0.5', '0.6', '1.0')."
+        },
+        "testResults": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TestResult"
+          },
+          "description": "Results of UNTP conformity testing for this product."
+        }
+      },
+      "required": ["name", "untpScope"],
+      "description": "A software product that implements one or more UNTP specifications."
+    },
+    "TestResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "softwareVersion": {
+          "type": "string",
+          "description": "The version of the software product tested."
+        },
+        "untpVersion": {
+          "type": "string",
+          "description": "The UNTP specification version tested against."
+        },
+        "testDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the test was conducted."
+        },
+        "testSuite": {
+          "type": "string",
+          "description": "Name or identifier of the test suite used."
+        },
+        "result": {
+          "type": "string",
+          "enum": ["pass", "fail", "partial"],
+          "description": "Overall test result."
+        },
+        "evidenceCredentialURL": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the verifiable credential evidencing the test result from the UNTP test playground."
+        }
+      },
+      "required": ["softwareVersion", "untpVersion", "result"],
+      "description": "A test result for a specific software version against a specific UNTP version."
+    },
+    "IndustryFocus": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "industrySector": {
+          "type": "string",
+          "description": "Industry sector name."
+        },
+        "processFocus": {
+          "type": "string",
+          "description": "Specific process or credential focus within the sector."
+        },
+        "untpUsage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "VCP",
+              "DPP",
+              "DTE",
+              "DCC",
+              "DFR",
+              "IDR",
+              "DIA",
+              "DAC",
+              "SVC"
+            ]
+          },
+          "description": "UNTP components most relevant to this industry focus."
+        }
+      },
+      "required": ["industrySector"],
+      "description": "An industry sector and process focus for a software implementer."
+    }
+  }
+}

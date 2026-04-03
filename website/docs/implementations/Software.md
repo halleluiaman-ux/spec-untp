@@ -9,24 +9,29 @@ Please refer to [Implementation Register](index.md) for general information abou
 
 Summary list of software products and status of implementation. Scope defines the list of UNTP specifications supported.
 
-| Organisation Name                                                 | Product Name                             | UNTP Scope                                  | Status    |
-| ----------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------- | --------- |
-| [UNCEFACT](#uncefact)                                             | Reference Implementations and test suite | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned   |
-| [Spherity](#spherity)                                             | VERA Digital Product passport Suite      | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned   |
-| [Trust Provenance](#trust-provenance)                             | Trust Provenance                         | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned   |
-| [Tilkal](#tilkal)                                                 | Tilkal Platform                          | VCP, DPP, DCC                               | planned   |
-| [Northern Block](#northern-block)                                 | Orbit enterprise, trust registry         | VCP, DCC                                    | planned   |
-| [FreshChain](#freshchain)                                         | FreshChain Platform                      | VCP, DPP, DFR, DTE, DCC, DIR, DAC           | planned   |
-| [Government of British Columbia](#government-of-british-columbia) | Traction                                 | VCP, DCC, DIA                               | planned   |
-| [ReLOG3P SRL](#relog3p-srl)                                       | ReACT, SRL                               | VCP, DPP, DTE, IDR, DIA, DAC, SVC           | planned   |
-| [Lumoin](#lumoin)                                                 | Verifiable, CoreLoop                     | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned   |
-| [Morpheus Network](#morpheus-network)                             | Morpheus Platform                        | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC      | planned   |
-| [Cordina](#cordina)                                               | Cordina emissions intelligence platform  | VCP, DTE, DCC, IDR                          | planned   |
-| [Enigio](#enigio)                                                 | trace:original                           | VCP, DPP, DTE, DCC, DFR, DAC                | planned   |
-| [Sustainable Choice Group](#sustainable-choice-group).            | Sustainability Tracker                   | VCP, DPP, IDR                               | planned   |
-| [Health LOQ](#health-loq) |Health LOQ Document protection, Product Origin, Compliance dashboard| VCP, DPP, DTE, DCC, IDR, DAC, SVC| planned|
-| [SIMBA Chain](#simba-chain)| SIMBA Ensure | VCP, DPP, DFR, DTE, DCC, IDR, DAC| planned| 
-| [K4 Security](#k4-security)| KS Digital Product passport, KS Product Trust Service| VCP, DPP, DTE, DCC. IDR, DAC| planned|
+| Organisation Name                                                 | Product Name                                                         | UNTP Scope                                  | Status  |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------- | ------- |
+| [UNCEFACT](#uncefact)                                             | Reference Implementations and test suite                             | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned |
+| [Spherity](#spherity)                                             | VERA Digital Product passport Suite                                  | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned |
+| [Trust Provenance](#trust-provenance)                             | Trust Provenance                                                     | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned |
+| [Tilkal](#tilkal)                                                 | Tilkal Platform                                                      | VCP, DPP, DCC                               | planned |
+| [Northern Block](#northern-block)                                 | Orbit enterprise, trust registry                                     | VCP, DCC                                    | planned |
+| [FreshChain](#freshchain)                                         | FreshChain Platform                                                  | VCP, DPP, DFR, DTE, DCC, DIR, DAC           | planned |
+| [Government of British Columbia](#government-of-british-columbia) | Traction                                                             | VCP, DCC, DIA                               | planned |
+| [ReLOG3P SRL](#relog3p-srl)                                       | ReACT, SRL                                                           | VCP, DPP, DTE, IDR, DIA, DAC, SVC           | planned |
+| [Lumoin](#lumoin)                                                 | Verifiable, CoreLoop                                                 | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned |
+| [Morpheus Network](#morpheus-network)                             | Morpheus Platform                                                    | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC      | planned |
+| [Cordina](#cordina)                                               | Cordina emissions intelligence platform                              | VCP, DTE, DCC, IDR                          | planned |
+| [Enigio](#enigio)                                                 | trace:original                                                       | VCP, DPP, DTE, DCC, DFR, DAC                | planned |
+| [Sustainable Choice Group](#sustainable-choice-group).            | Sustainability Tracker                                               | VCP, DPP, IDR                               | planned |
+| [Health LOQ](#health-loq)                                         | Health LOQ Document protection, Product Origin, Compliance dashboard | VCP, DPP, DTE, DCC, IDR, DAC, SVC           | planned |
+| [SIMBA Chain](#simba-chain)                                       | SIMBA Ensure                                                         | VCP, DPP, DFR, DTE, DCC, IDR, DAC           | planned |
+| [K4 Security](#k4-security)                                       | KS Digital Product passport, KS Product Trust Service                | VCP, DPP, DTE, DCC. IDR, DAC                | planned |
+| [Wholechain](#wholechain)                                         | Wholechain                                                           | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC | planned |
+| [Tappr](#tappr)                                                   | Tappr                                                                | DPP, DFR, DTE, DCC, IDR                     | planned |
+| [Movilitas.Cloud](#movilitas.cloud)                               | Movilitas.Cloud                                                      | DPP, DTE, DFR                               | planned |
+| [Global Circular Network ](#global-circular-network)              | Global Circular Network                                              | DPP, DFR, DTE, DCC, DIR, DAC, SVC           | planned |
+| [Reeco](#reeco)                                                   | Reeco DPP Platform                                                   | DPP, DCC - v0.6.1                           | active  |
 
 ## Implementation Details
 
@@ -43,9 +48,9 @@ Summary list of software products and status of implementation. Scope defines th
 
 #### Product Information
 
-| Product Name & version                             | Description                                                     | UNTP Scope & versions                | Implementation Test Report |
-| -------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------ | -------------------------- |
-| [VCkit](https://github.com/uncefact/project-vckit) | Verifiable credential issuing and verifying toolkit             | VCP - all versions                    | TBA                        |
+| Product Name & version                             | Description                                                     | UNTP Scope & versions                  | Implementation Test Report |
+| -------------------------------------------------- | --------------------------------------------------------------- | -------------------------------------- | -------------------------- |
+| [VCkit](https://github.com/uncefact/project-vckit) | Verifiable credential issuing and verifying toolkit             | VCP - all versions                     | TBA                        |
 | [Test Kit](https://uncefact.github.io/tests-untp/) | A suite of conformity testing tools for all UNTP specifications | DPP, DCC, DFR, DTE, DIA - all versions | TBA                        |
 
 ### [Spherity](https://www.spherity.com/)
@@ -61,9 +66,9 @@ Summary list of software products and status of implementation. Scope defines th
 
 #### Product Information
 
-| Product Name & version             | Description                    | UNTP Scope & versions        | Implementation Test Report |
-| ---------------------------------- | ------------------------------ | ---------------------------- | -------------------------- |
-| [VERA](https://vera.spherity.com/) | Digital Product Passport Suite | VCP, DPP, DTE, DFR, IDR, DAC - v1.0 | TBA                      |
+| Product Name & version             | Description                    | UNTP Scope & versions               | Implementation Test Report |
+| ---------------------------------- | ------------------------------ | ----------------------------------- | -------------------------- |
+| [VERA](https://vera.spherity.com/) | Digital Product Passport Suite | VCP, DPP, DTE, DFR, IDR, DAC - v1.0 | TBA                        |
 
 ### [Trust Provenance](https://trustprovenance.com/) {#trust-provenance}
 
@@ -72,14 +77,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                                          | Implementation Statement                      |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Logo                                                          | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![TP Logo](/img/implementations/trustprovenance.com/logo.png) | The United Nations Transparency Protocol (UNTP) is crucial for Trust Provenance as it aligns with the company's mission to foster transparency and traceability in Australian agriculture. The UNTP provides a standardized framework for managing and sharing data across global supply chains, ensuring that the origins, production practices, and environmental impact of agricultural products are verifiable. For Trust Provenance, which focuses on ensuring trust and integrity in supply chains, this protocol offers a way to standardize how data related to sustainability, compliance, and traceability are captured and communicated. In Australian agriculture, where sustainability and transparency are increasingly essential to meet domestic and international market demands, the UNTP ensures that producers, regulators, and consumers have confidence in the provenance and sustainability of agricultural products. By adopting the UNTP protocol, Trust Provenance can streamline its efforts to manage digital product passports, ensuring that Australian farmers can provide credible, traceable, and verifiable data that meets global standards, bolstering both the local industry and its international competitiveness. |
 
 #### Product Information
 
-| Product Name & version                           | Description                                    | UNTP Scope & versions                     | Implementation Test Report |
-| ------------------------------------------------ | ---------------------------------------------- | ----------------------------------------- | -------------------------- |
+| Product Name & version                           | Description                                    | UNTP Scope & versions                       | Implementation Test Report |
+| ------------------------------------------------ | ---------------------------------------------- | ------------------------------------------- | -------------------------- |
 | [Trust Provenance](https://trustprovenance.com/) | Supply chain traceability & transparency suite | VCP, DPP, DTE, DFR, IDR, DAC - all versions | TBA                        |
 
 ### [Tilkal](https://www.tilkal.com)
@@ -89,15 +94,15 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                              | Implementation Statement                                  |
-| ------------------------------------------------- | -------------------------------------- |
+| Logo                                              | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/tilkal.com/logo.png) | Tilkal is a premier platform for supply chain traceability and transparency, integrating a B2B blockchain network with advanced analytics and risk scoring algorithms to deliver a secure, real-time view of the end-to-end supply chain. Trusted by companies across industries, Tilkal collects and consolidates operational, social & environmental data to prove origin and impact from raw materials to end products, supporting DPP creation and compliance assurance. |
 
 #### Product Information
 
 | Product Name & version                    | Description                                    | UNTP Scope & versions | Implementation Test Report |
 | ----------------------------------------- | ---------------------------------------------- | --------------------- | -------------------------- |
-| [Tilkal Platform](https://www.tilkal.com) | Supply chain traceability & transparency suite | VCP, DPP - v0.5, v1.0   | TBA                        |
+| [Tilkal Platform](https://www.tilkal.com) | Supply chain traceability & transparency suite | VCP, DPP - v0.5, v1.0 | TBA                        |
 
 ### [Northern Block](https://northernblock.io/)
 
@@ -106,16 +111,16 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Canada
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                                    | Implementation Statement      |
-| ------------------------------------------------------- | ----------------- |
+| Logo                                                    | Implementation Statement                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/northernblock.io/logo.png) | Our enterprise digital credentialing product enables the mining industry to exchange verifiable sustainability data based on industry standards, such as Towards Sustainable Mining. As these standards are key indicators of sustainable mining practices, it's essential that they can be easily integrated into digital product passports. |
 
 #### Product Information
 
 | Product Name & version                                        | Description                        | UNTP Scope & versions | Implementation Test Report |
 | ------------------------------------------------------------- | ---------------------------------- | --------------------- | -------------------------- |
-| [Orbit Enterprise](https://northernblock.io/orbit-enterprise) | Enterprise Self-Sovereign Identity | VCP, DCC - v0.5, v1.0   | TBA                        |
-| [Trust Registry](https://trustregistry.nborbit.ca/)                       | Enterprise Trust Registry          | DCC - v0.5, v1.0        | TBA                        |
+| [Orbit Enterprise](https://northernblock.io/orbit-enterprise) | Enterprise Self-Sovereign Identity | VCP, DCC - v0.5, v1.0 | TBA                        |
+| [Trust Registry](https://trustregistry.nborbit.ca/)           | Enterprise Trust Registry          | DCC - v0.5, v1.0      | TBA                        |
 
 #### Industry Focuss
 
@@ -130,14 +135,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                                     | Implementation Statement                |
-| -------------------------------------------------------- | ------------------------------------------ |
+| Logo                                                     | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/freshchain.com.au/logo.png) | FreshChain is a fully integrated, blockchain enabled, paddock to plate assurance system that verifies the food you eat. It uses artificial intelligence, machine learning and deep learning algorithms to trace and monitor products throughout the supply chain. The protocol supports our values of ensuring that food is safe, secure, and sustainable. It enables quality data sharing that streamlines ESG responsibilities and assists with market access. UNTP is an important implementable standard for FreshChain to empower our customers to connect into global transparent and sustainable supply chains. |
 
 #### Product Information
 
-| Product Name & version                            | Description                    | UNTP Scope & versions                        | Implementation Test Report |
-| ------------------------------------------------- | ------------------------------ | -------------------------------------------- | -------------------------- |
+| Product Name & version                            | Description                    | UNTP Scope & versions                          | Implementation Test Report |
+| ------------------------------------------------- | ------------------------------ | ---------------------------------------------- | -------------------------- |
 | [FreshChain Platform](https://freshchain.com.au/) | traceability from farm to fork | VCP, DPP, DCC, DTE, IDR, DIA, DAC - v0.5, v1.0 | TBA                        |
 
 #### Industry Focus
@@ -153,14 +158,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                                     | Implementation Statement                                |
-| -------------------------------------------------------- | ------------------------------- |
+| Logo                                                     | Implementation Statement                                                                                                                                                                                                                                |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/digital.gov.bc.ca/logo.png) | The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets, contributing to a sustainable, clean, secure, and fair global economy. |
 
 #### Product Information
 
-| Product Name & version                                              | Description                                                                                                                  | UNTP Scope & versions    | Implementation Test Report |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------------- |
+| Product Name & version                                              | Description                                                                                                                  | UNTP Scope & versions      | Implementation Test Report |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------- |
 | [Traction](https://digital.gov.bc.ca/digital-trust/tools/traction/) | Traction is a tool for simplifying the sending and receiving of digital credentials. It’s for governments and organizations. | VCP, DPP, DCC - v0.5, v1.0 | TBA                        |
 
 #### Industry Focus
@@ -176,14 +181,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                               | Implementation Statement                                                        |
-| -------------------------------------------------- | -------------------------------------- |
+| Logo                                               | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![Logo](/img/implementations/relog3p.com/logo.png) | ReLOG3P is an Innovative Startup and Benefit Corporation based in Italy founded with the specific aim to support the Global Trade to contribute, among others, achieving the UN Agenda 2030 and its Sustainable Development Goals as well as the EU objectives set by the Green Deal, Fit for 55% Package, Sustainable and Smart Mobility Strategy, Digital Strategy. Full transparency all along the Supply Chains is key to achieve our targets, and UNTP vision and mission are extremely aligned to ours, specifically looking at scaling the transparency around Sustainability and against any type of fake and washing, and we strive to embrace and embed it fully within our own product, services and actions. |
 
 #### Product Information
 
-| Product Name & version | Description                                    | UNTP Scope & versions    | Implementation Test Report |
-| ---------------------- | ------------------------------------------------ | ------------------------ | -------------------------- |
+| Product Name & version | Description                                                                                                                  | UNTP Scope & versions      | Implementation Test Report |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------- | -------------------------- |
 | ReACT                  | Reshaping trasnport and logistics towards a sustainable future.                                                              | VCP, DPP, DTE - v0.5, v1.0 | TBA                        |
 | SRL                    | Traction is a tool for simplifying the sending and receiving of digital credentials. It’s for governments and organizations. | VCP, DPP, DTE - v0.5, v1.0 | TBA                        |
 
@@ -194,14 +199,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                              | Implementation Statement                                                                                                        |
-| ------------------------------------------------- | ---------------------- |
+| Logo                                              | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/lumoin.com/logo.png) | Lumoin builds Verifable and open-source components to drive the transition to a regenerative and circular economy by implementing the UN Transparency Protocol (UNTP). Verifable offers secure management of Digital Product Passports (DPPs) and verifiable credentials, creating accountable, dependable pathways for supply-chain and project finance across global value chains. Focusing on habitats' resilience, we ensure that materials, water, and energy flow sustainably through societies. By leveraging UNTP, Verifable empowers individuals and businesses to co-create meaningful, accountable choices, driving regenerative and sustainable actions for a better future. |
 
 #### Product Information
 
-| Product Name & version                             | Description                                                             | UNTP Scope & versions    | Implementation Test Report |
-| -------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------ | -------------------------- |
+| Product Name & version                             | Description                                                             | UNTP Scope & versions      | Implementation Test Report |
+| -------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------- | -------------------------- |
 | [Verifiable](https://github.com/Lumoin/Verifiable) | DID, VC and presentation methods and standards as open source           | VCP, DPP, DCC - v0.5, v1.0 | TBA                        |
 | [CoreLoop](https://github.com/Lumoin/CoreLoop)     | UNTP and other data shapes standards and transformations as open source | DPP, DTE, SVC - v0.5, v1.0 | TBA                        |
 
@@ -210,7 +215,7 @@ Summary list of software products and status of implementation. Scope defines th
 | Industry Sector                          | Process focus             | UNTP Usage    |
 | ---------------------------------------- | ------------------------- | ------------- |
 | Agriculture, Critical Minerals, Textiles | Supply chain transparency | VCP, DPP, DTE |
-                   |
+|                                          |
 
 #### Industry Focus
 
@@ -225,15 +230,15 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                                    | Implementation Statement                                                                                      |
-| ------------------------------------------------------- | -------------------------------------- |
+| Logo                                                    | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | ![Logo](/img/implementations/morpheus.network/logo.png) | Morpheus.Network is a middleware solution designed specifically for the complexities of supply chain IT systems and stakeholders. Acting as a "binding glue," it seamlessly connects fragmented data, software systems, and various stakeholders across the supply chain. With over 150 integrations, including ERPs (Enterprise Resource Planning systems), TMS (Transportation Management Systems), and cloud providers, Morpheus.Network ensures smooth interoperability between disparate systems. This middleware also provides intuitive tools that enable businesses to digitalize and automate their supply chain processes, leading to increased efficiency, transparency, and control. Morpheus.Network is proud to be part of the UN/CEFACT and UN ESCAP ecosystems of professionals and contributors. We strongly believe in the UNTP initiative and are committed to advancing our goal of achieving global supply chain transparency and efficiency. |
 
 #### Product Information
 
-| Product Name & version                                          | Description        
-| --------------------------------------------------------------- | ---------------- |
-| [Morpheus Network Platform](https://morpheus.network/platform/) | Our multi-award-winning supply chain platform eliminates inefficiencies and removes barriers in your operations. With over 150 connections, our middleware provides a layer between disparate systems and processes, facilitating smooth data exchange and automating workflows. | VCP, DPP, DTE, DFR, DCC, DIA, IDR - v0.5, v1.0 | TBA                        |
+| Product Name & version                                          | Description                                                                                                                                                                                                                                                                      |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | --- |
+| [Morpheus Network Platform](https://morpheus.network/platform/) | Our multi-award-winning supply chain platform eliminates inefficiencies and removes barriers in your operations. With over 150 connections, our middleware provides a layer between disparate systems and processes, facilitating smooth data exchange and automating workflows. | VCP, DPP, DTE, DFR, DCC, DIA, IDR - v0.5, v1.0 | TBA |
 
 ### [Cordina](https://www.cordina.io/)
 
@@ -242,14 +247,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                              | Implementation Statement                                                      |
-| ------------------------------------------------- | -------------------------------------------------------------- |
+| Logo                                              | Implementation Statement                                                                                                             |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | ![Logo](/img/implementations/cordina.io/logo.png) | Cordina is implementing UNTP to help simplify ESG disclosures for Heavy Industry and delivery of high value interactive benchmarking |
 
 #### Product Information
 
-| Product Name & version                                                    | Description                                                                                                                                                               | UNTP Scope & versions         | Implementation Test Report |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------- |
+| Product Name & version                                                    | Description                                                                                                                                                               | UNTP Scope & versions           | Implementation Test Report |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | -------------------------- |
 | [Cordina interactive benchmarking engine](https://www.cordina.io/product) | We're putting the Cordina data framework into action for industrial supply chains and demonstrating the value of interactive benchmarking vs scope 3 emissions reporting. | VCP, DTE, DCC, IDR - v0.5, v1.0 | TBA                        |
 
 #### Industry Focus
@@ -265,14 +270,14 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo                                              | Implementation Statement                                                                  |
-| ------------------------------------------------- | ---------------------------------------- |
+| Logo                                              | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/enigio.com/logo.png) | Recent legislation has paved the way for complete trade digitalisation. Achieving seamless end-to-end digitalisation also requires that trading parties can exchange structured data across multiple systems efficiently. Without such capabilities, the risk of fragmentation increases, leading to multiple platforms and/or complex API integrations. Enigio's trace:original offers a solution that creates freely transferable electronic original documents wich includes structured data. This allows any recipient of a trace:original document to extract verified structured data effortlessly, without the need for onboarding or additional system integration. |
 
 #### Product Information
 
-| Product Name & version                                     | Description        | UNTP Scope & versions                   | Implementation Test Report |
-| ---------------------------------------------------------- | ----------- | --------------------------------------- | -------------------------- |
+| Product Name & version                                     | Description                                                                                                                                                                                                                                                                                                               | UNTP Scope & versions                     | Implementation Test Report |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------- |
 | [Enigio trace:original](https://enigio.com/traceoriginal/) | Enigio's trace:original is a solution for creating and managing digital original documents, with all the useful properties of paper, but in a digital form. This means that you can maintain a completely digital process for original documents, with all the security, efficiency and convenience of digital documents. | VCP, DTE, DPP, DFR, DCC, DAC - v0.5, v1.0 | TBA                        |
 
 ### [Sustainable Choice Group](https://www.sustainabilitytracker.com/scgroup/)
@@ -282,15 +287,15 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo     | Implementation Statement      |
-| ------ | --------- |
+| Logo                                                             | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/sustainabilitytracker.com/logo.png) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. By simplifying complex data, Sustainability Tracker helps consumers to make considered choices in real time while they shop and helps brands share their sustainability messages without greenwashing. We host the sustainability data of brands and businesses around the world, and fully intend to support Digital Product Passport development. |
 
 #### Product Information
 
-| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
-| ------ | ------------- | ----------- | ------------ |
-| [Sustainability Tracker](https://www.sustainabilitytracker.com/) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. | VCP, DPP, IDR - v0.5, v1.0 | TBA |
+| Product Name & version                                           | Description                                                                                                                                                  | UNTP Scope & versions      | Implementation Test Report |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | -------------------------- |
+| [Sustainability Tracker](https://www.sustainabilitytracker.com/) | Sustainability Tracker is a world first solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands. | VCP, DPP, IDR - v0.5, v1.0 | TBA                        |
 
 ### [Health LOQ](https://healthloq.com/)
 
@@ -299,25 +304,25 @@ Summary list of software products and status of implementation. Scope defines th
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo     | Implementation Statement      |
-| ------ | --------- |
+| Logo                                                  | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/healthloq.com/logo.jpeg) | The future of trade moves away from complex, redundant, duplicatory document management towards a more automated, transparent, standard way to connect with trading partners. HealthLOQ provides product/ingredient/component origin transparency and certificate protection and verification software for companies in industries where such supply chain transparency is critical. HealthLOQ specializes in providing secure and transparent solutions for tracking and verifying the integrity of products across the supply chain. Their innovative approach ensures that consumers can trust the products they purchase. At the forefront of digital document security, HealthLOQ offers a robust solution for protecting and verifying sensitive documents. Leveraging blockchain technology, HealthLOQ ensures the authenticity and integrity of critical documents, fostering transparency and trust across various industries. |
 
 HealthLOQ is a member of [GRMA](https://grmalliance.org/), the Global Retailer and Manufacturing Alliance.
 
 #### Product Information
 
-| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
-| ------ | ------------- | ----------- | ------------ |
-| [Health LOQ Document Protection](https://healthloq.com/verify-document) |HealthLOQ authenticates legitimate electronic documents and detects fraudulent or tampered versions using blockchain technology  | VCP, IDR, DAC - v0.5, v1.0 | TBA |
-| [Health LOQ Product Origin](https://healthloq.com/products?product_type=all)| HealthLOQ captures first-party inputs from ingredient suppliers and manufacturers and knits that information together into a product genealogy. It links supply chain information from specific ingredient batches to the specific batch of the final product. | DPP, DTE, DIA, IDR, DAC| TBA |
-| [Health LOQ Compliance Dashboard](https://healthloq.com/compliance-dashboard)| Verify a brand’s credentials through the issuing organization. Automate the verification of CoAs, other documentation, & credentials without manual searches. Check for metals, microbials, and adulterants in products effortlessly. Automate the comparison of the label to the CoA for ingredients listed|VCP, IDR, DAC|TBA|
+| Product Name & version                                                        | Description                                                                                                                                                                                                                                                                                                  | UNTP Scope & versions      | Implementation Test Report |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | -------------------------- |
+| [Health LOQ Document Protection](https://healthloq.com/verify-document)       | HealthLOQ authenticates legitimate electronic documents and detects fraudulent or tampered versions using blockchain technology                                                                                                                                                                              | VCP, IDR, DAC - v0.5, v1.0 | TBA                        |
+| [Health LOQ Product Origin](https://healthloq.com/products?product_type=all)  | HealthLOQ captures first-party inputs from ingredient suppliers and manufacturers and knits that information together into a product genealogy. It links supply chain information from specific ingredient batches to the specific batch of the final product.                                               | DPP, DTE, DIA, IDR, DAC    | TBA                        |
+| [Health LOQ Compliance Dashboard](https://healthloq.com/compliance-dashboard) | Verify a brand’s credentials through the issuing organization. Automate the verification of CoAs, other documentation, & credentials without manual searches. Check for metals, microbials, and adulterants in products effortlessly. Automate the comparison of the label to the CoA for ingredients listed | VCP, IDR, DAC              | TBA                        |
 
 #### Industry Focus
 
-| Industry Sector                   | Process focus        | UNTP Usage    |
-| --------------------------------- | -------------------- | ------------- |
-| Pharmaceuticals, Nutraceuticals, Food Products, Cosmetics, Military and Defense | Traceability & Integrity| VCP, DCC, DTE |
+| Industry Sector                                                                 | Process focus            | UNTP Usage    |
+| ------------------------------------------------------------------------------- | ------------------------ | ------------- |
+| Pharmaceuticals, Nutraceuticals, Food Products, Cosmetics, Military and Defense | Traceability & Integrity | VCP, DCC, DTE |
 
 ### [SIMBA Chain](https://simbachain.com/)
 
@@ -326,28 +331,27 @@ HealthLOQ is a member of [GRMA](https://grmalliance.org/), the Global Retailer a
 - Operating Countries: Global
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo     | Implementation Statement      |
-| ------ | --------- |
+| Logo                                                  | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/simbachain.com/logo.png) | SIMBA Ensure is a blockchain-powered solution that delivers trust, transparency, and traceability across supply chains and life-cycles of assets and products by creating immutable digital records for asset verification. The adoption of the UNTP is vital for aligning with global standards of accountability and interoperability. By integrating UNTP, we help stakeholders meet international compliance requirements, reduce risks, and foster equitable, transparent ecosystems. This initiative supports sustainable development goals while empowering businesses to innovate responsibly and compete in a global digital economy. |
 
 SIMBA chain is a participant in
 
-* [NAATBatt](https://naatbatt.org/) - Alliance for Advanced Transportation Batteries. Board Member
-* [SAE](https://www.sae.org/) (Society of Automotive Engineers) Battery Global Traceability Standards Development Committee
-* [CIRPASS 2](https://cirpass2.eu/) Electronics Experts Working Group (representative is a SIMBA consultant)
-
+- [NAATBatt](https://naatbatt.org/) - Alliance for Advanced Transportation Batteries. Board Member
+- [SAE](https://www.sae.org/) (Society of Automotive Engineers) Battery Global Traceability Standards Development Committee
+- [CIRPASS 2](https://cirpass2.eu/) Electronics Experts Working Group (representative is a SIMBA consultant)
 
 #### Product Information
 
-| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
-| ------ | ------------- | ----------- | ------------ |
-| [SIMBA Ensure](https://simbachain.com/) |Transfer error-free and tamper-proof data using any system, with any party – fast. SIMBA’s Platform provides trusted seamless data exchange for identity management, multi-vendor data sharing, and third party data verification. | CP, DPP, DFR, DTE, DCC, IDR, DAC - v0.5, v1.0 | TBA |
+| Product Name & version                  | Description                                                                                                                                                                                                                        | UNTP Scope & versions                         | Implementation Test Report |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | -------------------------- |
+| [SIMBA Ensure](https://simbachain.com/) | Transfer error-free and tamper-proof data using any system, with any party – fast. SIMBA’s Platform provides trusted seamless data exchange for identity management, multi-vendor data sharing, and third party data verification. | CP, DPP, DFR, DTE, DCC, IDR, DAC - v0.5, v1.0 | TBA                        |
 
 #### Industry Focus
 
-| Industry Sector                   | Process focus        | UNTP Usage    |
-| --------------------------------- | -------------------- | ------------- |
-| Automotive, batteries | Traceability & Integrity| VCP, DCC, DTE |
+| Industry Sector       | Process focus            | UNTP Usage    |
+| --------------------- | ------------------------ | ------------- |
+| Automotive, batteries | Traceability & Integrity | VCP, DCC, DTE |
 
 ### [K4 Security](https://k4-security.com/)
 
@@ -356,13 +360,124 @@ SIMBA chain is a participant in
 - Operating Countries: Republic of Korea
 - Participate in pre-release UNTP Pilots? : Yes
 
-| Logo     | Implementation Statement      |
-| ------ | --------- |
+| Logo                                                   | Implementation Statement                                                                                                                                                                                                                                               |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Logo](/img/implementations/k4-security.com/logo.png) | KSDPP (K4-Security Digital Product Passport) enables the application of Digital Product Passport (DPP). It allows for the verification of product authenticity while providing a fast and secure means to validate product and supplier information linked to the DPP. |
-
 
 #### Product Information
 
-| Product Name & version   | Description   | UNTP Scope & versions    | Implementation Test Report |
-| ------ | ------------- | ----------- | ------------ |
-| [KS Product Trust Service](https://dpp.globalwallet.kr/) |KSDID PTS is a supply chain traceability software/service that provides a platform for business to create and manage Digital product passports (DPPs)| VCP, DPP, DTE, DCC. IDR, DAC - v0.5, v1.0 | TBA |
+| Product Name & version                                   | Description                                                                                                                                           | UNTP Scope & versions                     | Implementation Test Report |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------- |
+| [KS Product Trust Service](https://dpp.globalwallet.kr/) | KSDID PTS is a supply chain traceability software/service that provides a platform for business to create and manage Digital product passports (DPPs) | VCP, DPP, DTE, DCC. IDR, DAC - v0.5, v1.0 | TBA                        |
+
+### [Wholechain](https://wholechain.com/)
+
+- UNTP commitment made on: 21-Aug-2025
+- Registration Country: USA
+- Operating Countries: Global
+
+| Logo                                              | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Logo](/img/implementations/wholechain/logo.png) | Wholechain® is a supply chain traceability solution that tracks products from raw materials to finished goods. Built around global data standards such as GS1 and GDST (Global Dialogue on Seafood Traceability), Wholechain connects data across complex supply networks, helping businesses meet compliance requirements, enhance operational efficiency, and build consumer trust. Our platform supports both serialized and batch/lot-level traceability, and includes features for consumer transparency, labeling, and a soon-to-be-launched intelligence tool to provide actionable supply chain insights. Wholechain is committed to UNTP implementation as it aligns with our focus on interoperable data standards as well as our ongoing collaborations with other UN agencies. |
+
+#### Product Information
+
+| Product Name & version                         | Description                                                                                                                                                                                | UNTP Scope & versions                                    | Implementation Test Report |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------- | -------------------------- |
+| [Wholechain Platform](https://wholechain.com/) | Wholechain® collects and connects data across global supply chains, giving businesses the insights to manage risk, improve efficiency, and enable consumers to make more informed choices. | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC - v0.6, v1.0 | TBA                        |
+
+#### Industry Focus
+
+| Industry Sector                                                                           | Process focus             | UNTP Usage                                  |
+| ----------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------- |
+| Agriculture, Critical Minerals, Textiles, Food Products, Cosmetics, Automotive, Batteries | Supply chain traceability | VCP, DPP, DTE, DCC, DFR, IDR, DIA, DAC, SVC |
+
+### [Tappr](https://usetappr.com/)
+
+- UNTP commitment made on: 31-Dec-2025
+- Registration Country: The Netherlands
+- Operating Countries: Global
+
+| Logo                                                    | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Logo](/img/implementations/tappr/tappr_logo_dark.png) | Tappr builds digital infrastructure for product traceability and Digital Product Passports, enabling brands and supply chains to exchange trusted product data without relying on centralised databases. We believe UNTP is critical because backward traceability based on manual data requests is slow, costly, and unsustainable under upcoming regulation. UNTP enables verifiable, event-based data sharing at the source, reducing friction for suppliers while increasing trust for brands, regulators, and consumers. For our stakeholders, UNTP is the only scalable path to compliant, efficient, and interoperable traceability across complex, multi-tier supply chains. |
+
+#### Product Information
+
+| Product Name & version  | Description                                                                                              | UNTP Scope & versions                     | Implementation Test Report |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------- | -------------------------- |
+| Brand Cloud - SaaS      | Brand Cloud is our data storage solution, supporting the data model, exposing the data, collecting data. | DPP, DTE, DCC, DFR, IDR, SVC - v0.6, v1.0 | TBA                        |
+| Passport Builder - SaaS | Passport Builder exposes the JSON-LD machine-readable UNTP data.                                         |                                           | TBA                        |
+
+#### Industry Focus
+
+| Industry Sector                  | Process focus             | UNTP Usage              |
+| -------------------------------- | ------------------------- | ----------------------- |
+| Textiles, Furniture, Electronics | Supply chain traceability | DPP, DTE, DCC, DFR, IDR |
+
+### [Movilitas.Cloud](https://www.movilitas.cloud/)
+
+- UNTP commitment made on: 31-Dec-2025
+- Registration Country: Belgium
+- Operating Countries: Global
+
+| Logo                                                   | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Logo](/img/implementations/movilitas.cloud/logo.png) | Movilitas.Cloud is used to serialize prescription drugs with GS1 2D data matrix codes and to track & trace these products throughout the supply chain to adhere to legislation in different parts of the world( Europe, USA, Middle East, and Asia). The system can also be used to apply QR codes on food products to allow consumers to learn about the different parties involved in the production of this product. |
+
+#### Product Information
+
+| Product Name & version | Description | UNTP Scope & versions     | Implementation Test Report |
+| ---------------------- | ----------- | ------------------------- | -------------------------- |
+| Movilitas.Cloud 1.28.0 | .           | DPP, DTE, DFR, SVC - v1.0 | TBA                        |
+
+#### Industry Focus
+
+| Industry Sector | Process focus             | UNTP Usage    |
+| --------------- | ------------------------- | ------------- |
+| Pharma, Food    | Supply chain traceability | DPP, DTE, DFR |
+
+### [Global Circular Network](https://www.globalcircularnetwork.com/)
+
+- UNTP commitment made on: 20-Oct-2025
+- Registration Country: Australia
+- Operating Countries: Global
+
+| Logo                                                         | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ![Logo](/img/implementations/globalcircularnetwork/logo.png) | The Global Circular Network (GCN) Digital Product Passport (DPP) Platform integrates​ RFID technology, including RFID THREADS®​, to enable secure, human and machine-readable tracking of textile products across interconnected ​global circular business networks​, from fibre to feedstock. By embedding RFID and linking B2B data systems, we capture transparent, verifiable lifecycle information that supports circularity, compliance and value recovery. Implementing the United Nations Transparency Protocol (UNTP) ensures global interoperability, data integrity​ and trust among ​v​alue chain operators; textile suppliers, manufacturers, ​R-Cyclers, sorters, recyclers, regulators plus consumers via WALK. UNTP is essential to exchange reliable circularity data internationally, meet emerging regulatory standards, and advance sustainable, inclusive textile industry transformation at scale. |
+
+#### Product Information
+
+| Product Name & version                     | Description | UNTP Scope & versions | Implementation Test Report |
+| ------------------------------------------ | ----------- | --------------------- | -------------------------- |
+| Global Circular Network Platform Version 1 | .           | all key components    | TBA                        |
+
+#### Industry Focus
+
+| Industry Sector                                                           | Process focus             | UNTP Usage         |
+| ------------------------------------------------------------------------- | ------------------------- | ------------------ |
+| Textile Manufacturing (ISIC Rev.4 Division 13 including Groups 131 & 139) | Supply chain traceability | All key components |
+
+### [Reeco](https://portal.reeco.eco)
+
+- UNTP commitment made on: 28-Mar-2026
+- Registration Country: Italy
+- Operating Countries: EU (textile sector)
+- Participate in pre-release UNTP Pilots? : Yes
+
+| Logo | Implementation Statement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|      | Reeco implements UNTP DPP and DCC to bridge the structural gap between per-kg Transaction Certificate certification (GRS, GOTS, OCS, RCS) and the per-garment declarations required by ESPR. The platform enforces a gram-per-garment mass balance verification (GSM × cut width × yield coefficient) as a hard block on DPP emission. This gap was formally documented in the CIRPASS-2 stakeholder survey (contribution ID: bb6997ac). Reeco is an Expert Member of CIRPASS-2 EWG1, EWG3, EWG5 and integrates the CIRPASS-2 open-source dppvalidator engine. |
+
+#### Product Information
+
+| Product Name & version                         | Description                                                                                                                            | UNTP Scope & versions | Implementation Test Report                                                                                                       |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [Reeco DPP Platform](https://portal.reeco.eco) | SaaS platform for EU textile DPP compliance, TC verification, and supply chain traceability. Integrates CIRPASS-2 dppvalidator v0.3.2. | DPP, DCC - v0.6.1     | [Test Report v1.0](https://raw.githubusercontent.com/halleluiaman-ux/reeco-untp/main/test-report/REECO_UNTP_TEST_REPORT_v1.0.md) |
+
+#### Industry Focus
+
+| Industry Sector     | Process focus                                         | UNTP Usage |
+| ------------------- | ----------------------------------------------------- | ---------- |
+| Textiles (HS 50–63) | DPP emission, TC verification, mass balance g/garment | DPP, DCC   |

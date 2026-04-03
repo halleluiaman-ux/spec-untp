@@ -84,7 +84,7 @@ There are a large number of national and global not-for-profit organisations who
 
 Consumer sentiment around sustainable production is strong and growing with over 70% of consumers in some economies actively choosing sustainable goods where possible. At the same time cynicism around greenwashing is increasing which acts to devalue sustainability claims. As greenwashing countermeasures such as UNTP and national regulations become widely adopted, it is reasonable to expect that consumers will become familiar with product passports and ESG verification techniques.
 
-- When consumers can confidently **verify** the sustainability performance of products simply by scanning barcodes, QR codes or RFID tags then they will be more likely to choose products with verifiable and trustworthy ESG qualities over that that simply make unverifiable claims. When this behaviour is ubiquitous then consumers will have played a pivotal role in combatting greenwashing and winning the [race to the top](https://uncefact.github.io/spec-untp/docs/about/#but-endemic-greenwashing-risks-devaluing-the-incentives).
+- When consumers can confidently **verify** the sustainability performance of products simply by scanning barcodes, QR codes or RFID tags then they will be more likely to choose products with verifiable and trustworthy ESG qualities over that that simply make unverifiable claims. When this behaviour is ubiquitous then consumers will have played a pivotal role in combatting greenwashing and winning the [race to the top](https://untp.unece.org/docs/about/#but-endemic-greenwashing-risks-devaluing-the-incentives).
 - When products are also equipped with the UNTP [anti-counterfeiting](../design-patterns/Counterfeiting.md) measures then consumers can not only **verify** ESG performance but also confirm that the performance is associated with an authentic product and not a fake. Producers, manufacturers, brands, and retailers can be confident that their sustainability investments are not devalued by counterfeit products.
 
 ## Transport & Logistics Providers
@@ -106,7 +106,7 @@ There are over 100,000 industry associations world-wide. Most represent a specif
 
 - Industry member associations may add value to their membership by developing develop UNTP industry profiles that provide their members with targeted implementation guidance that meets the needs of their industry and jurisdiction.
 - Industry member associations may develop training and implementation services, possibly in partnership with local service providers, thereby adding both a valuable service and also a revenue stream for the member association.
-- Industry member associations may act as a trusted independent quota managers to counter [mass balance fraud](../design-patterns/ChainOfCustody.md) amongst their membership. The value of this service would be increased if the industry association is accredited by either a national accreditation authority or a global environmental or human welfare organisation.
+- Industry member associations may act as a trusted independent quota managers to counter [mass balance fraud](/docs/0.6.0/design-patterns/ChainOfCustody) amongst their membership. The value of this service would be increased if the industry association is accredited by either a national accreditation authority or a global environmental or human welfare organisation.
 
 ## Software Developers
 

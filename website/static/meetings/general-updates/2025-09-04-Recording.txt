@@ -1,0 +1,446 @@
+[Speaker 1]
+All right, well, welcome to the fortnightly meeting of the UNTP information group, where we get an update from the working groups and then chat about a topic of interest. This shouldn't be any specific material contribution to specifications in these meetings, that's the job of the working groups now. And the topic of interest for today, suggested by Matthias, thank you, I like it, is to brainstorm some ideas of concrete use cases and value propositions that could turn into pilots, especially perhaps fundable pilots, and start to flesh them out with example credentials and things like this.
+
+So, but before then, why don't we, I'll perhaps give a quick update for on behalf of the conformity group, because Brett's not able to attend today. So they've been quite busy getting their head around the sustainability vocabulary catalog, and refining the wording to make more, that it's more meaningful to conformity professionals, of which I'm not one of those, but Gideon is on this call, welcome Gideon. And so that's helpful.
+
+And we, they're also getting into, okay, let's find some concrete conformity credential types or use cases that we think will be important to the market and create examples for them, right? So one of them might be, for example, a report on organizational and facility level carbon footprint, according to the GHG protocol, and various others. So have I more or less represented faithfully where the conformity group's up to, Gideon?
+
+If you'd like to, you can feel free to say a few words.
+
+[Speaker 2]
+Sorry, I was just trying to do a screenshot, actually, to capture everyone's names on the quick way. But of course, it was showing rather than the actual screen. So apologies for that.
+
+No, I think that's, that's, that's good. I think the other thing that we're trying to get our heads around, from a conformity point of view, is the how you make sure that it's comparable from one to another, which is sort of behind the scenes, but needs to be thought about in terms of what the digital passport would actually show. And there's quite a bit of thought going on with that as well.
+
+So it's, it's quite a complex area, actually, it's more complex than, than it sounds, when you start putting it all together. But yeah, use cases will, will, and case studies, I think, will help considerably.
+
+[Speaker 1]
+Yeah, thank you.
+
+[Speaker 5]
+Sorry, can I just interrupt? Steve, could I ask you a favour? Could you move your camera down a little bit?
+
+Because, oh, that's better, because we've got this little tiny head with a big background. And now we've got a head with a body.
+
+[Speaker 1]
+Yes, thank you. It does look better, doesn't it?
+
+[Speaker 5]
+Yes, it does.
+
+[Speaker 1]
+All right. Yeah. So conformity groups, do you bring away on that?
+
+They are starting to touch on a challenge that's the probably the most difficult thing across most of UNTP work is not so much, how do you make a particular scheme or standard compatible with the digital world? In other words, the language of the standard is digitally referenceable in product passports and conformity claims. But a bigger problem is how do I compare conformity claims across schemes, two different standards for measuring carbon intensity, for example, or social welfare on a, on a, on a worksite.
+
+That's particularly challenging problem. And I don't, I'm not sure I've even got answers to it, but we'll see where that goes. So I don't think we've got either Zach or Michael on this call either.
+
+So from the conformity group, sorry, not conformity group, the adoption group, last thing I saw is a recognition of all the various bits of work, like making a better case for regulators on the website. We do, there's a bunch of content about business value propositions for commercial businesses, but not so much about governments and regulators. Some work around that and also a bunch of use cases and value propositions and value calculators and so on that I think that group's going to get on with.
+
+Is there anything else you're aware of, I should say, about the adoption group, Matthias?
+
+[Speaker 3]
+No, I think the last sessions were really about defining the work packages and assigning experts to them. We have one thing which we wanted to discuss in the meeting today, but this will actually not take place. So anyone who planned to join just after this update call the adoption group, it has been cancelled because Michael is not available today.
+
+But the next meeting then we will probably discuss a frequently asked questions document that me and my team prepared as a way to make the UNTP understandable to a non-technical audience. So to anticipate questions that a non-technical interested party may have on the UNTP and then give answers to those questions, which are hopefully not technical, but we will reach out to all the working groups actually to help when it touches their domain to contribute to that. This is one of the, let's say, communication related projects we want to embark on.
+
+[Speaker 1]
+You could feel free to send that, I think, to the whole UNTP mailing list.
+
+[Speaker 3]
+Why not, right?
+
+[Speaker 1]
+There's a lot of people on the mailing list, something like 250 or 300, most of which don't show up to these meetings, but I spam the mailing list now and again and I very rarely get any unsubscriptions. So people are watching and sending out something like an FAQ from the perspective of UNEC might get you some feedback from a large group, which could be quite useful.
+
+[Speaker 3]
+Yeah.
+
+[Speaker 1]
+Yeah, okay. The adoption group also is going to do a bit of work on a page on the UNTP site, which is called the Value Assessment Framework, which is a bit empty and a little bit misunderstood as well. The purpose of that was and is to provide a means to measure the impact of UNTP, particularly with regards to the measures and metrics that matter to UN member states and things like development organizations.
+
+In other words, if we had 100 digital product passports, a million, sorry, issued every day by 2030, which sustainable development goals would be impacted and how would you measure it and so on, right? So the Value Assessment Framework is closing the loop back from implementers to give us some reporting of metrics and then for us to try and figure out, okay, if we can measure this metric, how many have adopted, how many passport issues, how can you use a metric to convert that to some sort of material sustainability impact? Also a difficult question, but that's the intent of the Value Assessment Framework.
+
+So hopefully the group will provide something there because it also, once we get meaningful content there, I think we can start to approach organizations like development banks who have an interest in uplifting developing organizations and a lot of the sustainable development goals are targeted at the global south. So that combination, the combination of that and all these use cases, I think gives us opportunity to take projects, fundable projects to a broader world. So Gideon, sorry, I've just noticed you've got your hand up, please do.
+
+[Speaker 2]
+Yeah, no, quick question on that actually. Given that the SDGs are till 2030 and presumably they're already starting to think about what's next, have you got any clues on what's going on there at the moment and if there's likely to be anything that we need to think about?
+
+[Speaker 1]
+I'm not aware of what's coming next. I know there's 17 or 19 SDGs and then a whole bunch of targets where they're actually concrete KPIs and I have tried to link UNTP activities to specific targets, which I think is more useful than to abstract goals. And so I might remember to send that out to the broader group of a first pass assessment of which UNTP thing or process might impact which target and how.
+
+And if we can start to articulate that, it's helpful as well. I don't know what's happening with changes. Adriana's got her hand up and Matthias.
+
+So Adriana, you're next.
+
+[Speaker 5]
+I did ask Michael about whether there was any value assessment framework that we can look at or build on or whether we were starting from scratch. And he said that basically we were starting from scratch. The OECD had issued something along a values assessment and I did send a link to the group.
+
+But my question is, do you know whether the UN, they produce thousands of documents a year, do you know whether they have something in their vault somewhere that we can look at?
+
+[Speaker 1]
+I don't, but we should not start from scratch where there is something usable. In my view, the whole point really is just at the moment, it's just a name for closing the loop, right? Because one of the challenges with standards bodies is that we publish something.
+
+We hardly even know who's using it, never mind what they're using it for and what sort of volumetrics are coming out of it. So one of the purposes of having the registration list on the UNTP side, this software developer that is committing to implement is that we can then ping them and say, well, OK, have you implemented? And if you're a software provider, how many passports have you issued?
+
+And start to close that loop of metrics gathering. So I think there must be a lot of quite good and reusable frameworks and no reason to start from scratch, but probably we're going to have some very specific metrics that we've got to think about. How do we capture them?
+
+What do they mean? And how do we map them to value? And I don't know if there's, I'm waving my hands because I'm not really sure, but let's use whatever's out there.
+
+[Speaker 5]
+Well, you've answered my question.
+
+[Speaker 1]
+If you've got advice, we're listening. Matthias, you've got your hand up.
+
+[Speaker 3]
+Yes, there are a few bits where I like to contribute. I mean, the SDGs, yes, we actually do not know what will be a follow-up process. We are still at the UN doing everything to make as much progress as possible.
+
+But as with the Millennium Development Goals, which were actually the first attempt to define global goals on development, it will probably be a rather sobering outcome. And I think a third attempt at, again, defining global goals will probably not be done, particularly in the current geopolitical environment. We just saw the Plastics Treaty fail.
+
+And if we would have negotiated the Paris Agreement today, it would probably also have failed. So my take is rather we should not only take the SDGs as our reference framework. It's rather broader societal value and contribution to sustainable development that we would like to demonstrate with the value assessment framework, which can then very nicely link to the use case discussion we may have today.
+
+Because every use case of the UNTP can actually also be a use case where a public entity may see that this is helping its public interest or goals, be it that you get better access for farmers to credit because they can use their capital as collateral, which is one of the use cases, the recent ones I liked a lot, which is actually one of those value propositions. If we could spell that out and a donor or a government sees that the UNTP has the capabilities to help them achieve a broader political or societal goal, then this is also part of the value assessment framework in the sense that we create value for a common good and that is what we should keep in mind when we define this assessment framework. It's nice to use the SDGs because they have clearly defined and measurable targets, but I would say even without the SDGs, we would be perfectly able to formulate a value assessment framework and find enough references how we can, to which the UNTP can contribute.
+
+On the existing assessment frameworks, I know the OECD indeed did a lot of good work and it's part of their mandate to assess policies and the impact of policies. So we can certainly find inspiration from the OECD regarding methodologies to assess impact and value. I would not advise to use any, let's say, assessment frameworks on a particular topic and just copy that.
+
+I think there on the content, we have to start from scratch because that ensures that we really develop something which is fully reflecting the benefits that the UNTP can have for governments, for donors, for everyone else. The last point, I would see it a bit as the other side of the coin of the business case template, which we also have in the same pillar of the UNTP. So the business case template tells what benefits the UNTP brings to an individual company and the value assessment framework says what does the UNTP bring for society as a whole.
+
+And so they two somehow belong in a sense together. And of course, even the government may have interest to see benefits of the UNTP for its companies in terms of better market access and so forth, which can also be then used as a use case of UNTP in the value assessment framework and reference there. So that's just an addition.
+
+[Speaker 1]
+Thank you, Matthias. I do notice we do have Nick Smith and Harley on the call. So why don't you just give us a quick update of the supply chain working group activities, Nick?
+
+[Speaker 4]
+You're on mute. There you are. Very delayed, yes, as I was looking through windows for the unmute button.
+
+I will put up my normal slide just so some folks can read the update or catch up on what our group is doing. Meeting controls. The main updates, for those that are familiar with our objectives, our mantra, highlighted in yellow.
+
+So very pleased to say that we'll be going back into the Global Battery Alliance battery passport mapping work from next week. I think we're going to do that in a couple of steps. I think we'll have a couple of internal discussions in the working group first to then try and take something like a recommendation back to the GBA so that we're well prepared for it.
+
+Chemex is a little bit more. We're making the cake with the Chemex representative in the supply chain working group. And so that continues on Monday.
+
+So we've got almost biweekly sessions on both of those mapping exercises. And then a little bit more just around, we're picking Harley's brain in particular around how the DPP structure works. Some of the mechanics so that we can piece it into some clear recommendations or some not so much recommendations, actually, more clear guidance on how do you deploy this if you're an ESG manager, really looking at it from a business perspective, trying to put it in plain speak.
+
+And some of that will cross over with other working groups. So there are main focus areas. I will just quickly bring up just to give you a sense of the types of questions that we're looking into.
+
+One question that's really bubbled to the surface over the last three weeks has been questioning how if I wanted to issue claims, if you look on the left hand side here, I wanted to issue claims. And let's say I've got seven different claims that I want to issue. So think of these as data that adhere to some standard.
+
+And I want to I want to disclose them. And how would I disclose the same claim to multiple working multiple access groups? So you can think of that being to one might be to a government access group, one might be to a customer access group.
+
+And this question could go out to a very wide band of of how you know how you might want to use the UNTP. And so we're trying to work out whether or not this is access groups assigned by claim or whether it's you actually have to assign the claims into a DPP. And then each DPP has its own access group, its own verifiable credential.
+
+I really bring this up just to give you a sense that we're trying to find the really important parts of linking these things in practice along supply chains. And then we'll go and get assistance. In this case, I think we'll go to the technical working group, but also just do a little bit of thinking about what we want as well.
+
+Or what would work best? I say a couple of questions. I think Matthias, you first.
+
+[Speaker 3]
+Yes, thanks. I have a question on your work on the GBA extension or work with the Global Batteries Alliance. Since we have announced that extension now in the extensions register on the website, is there plans to somehow officially launch an extension with GBA as well?
+
+I'm asking also because we are trying to get our calendar up to date and they have their annual meetings on 9th and 10th of December, which could be an opportunity. I know that ITC is actually using the New York Climate Week to launch their platform, the gateway that they're developing with GBA, which is a complement to what we do. So we are too late, I think, and have not been brought into the loop early enough to join hands with them for the New York Climate Week.
+
+But the next opportunity would actually be the annual meetings in December.
+
+[Speaker 4]
+Yeah, I think I heard that we were looking to do something like an extensions working group. There's some really nice overlap, I think complementary overlap with the supply chain working group. I'm not too worried about blurred lines at this stage.
+
+So yes, absolutely. It does feel like this is the start of some of that extension work. I think some of that's been done in parallel and we're trying to bring it all together.
+
+I did get in touch with a couple of the folks from the extensions team. I think there was a representative who was on a separate call. So yeah, we should try and bring that work all together.
+
+December, I think, feels good from having the extension mapping done and seeing what would go into that extension. I think we'll be able to do that. And what we're noticing as well, Matthias, is because we started with Battery Passport, then went to Chemex, and now we're going back to Battery Passport.
+
+We're getting some sort of insights from doing it a second time. So I think we're starting to get a little bit more skilled on what things go in which part of the UNTP. But it's still a journey and I think it will still take a couple of months for us to really get up to speed on how to do an extension quickly.
+
+[Speaker 3]
+If I may add one tiny question, is someone from GBA participating directly in that work or is it Susanna who is kind of the link between you and them?
+
+[Speaker 4]
+It is Susanna with the link, but it's Graham who's participating. Yes, yeah.
+
+[Speaker 3]
+OK, cool. Thank you.
+
+[Speaker 4]
+And Gideon?
+
+[Speaker 2]
+Yeah, Dan, thanks. The slide you showed with the claims, it is actually a question that we're grappling with as well in the conformity group because obviously we have mutual recognition and things like that as well to deal with. So it might well be worth sort of trying to put those two together and talking to both of us.
+
+[Speaker 4]
+Yeah, it's front of mind for us, Gideon, and we've actually purposefully left off all the DCC kind of threads that hang off this purely to see if we can simplify the first part of the question. And then we know that we've got a few other strands that will follow on. So absolutely, we'll try and get an answer and then bring it back.
+
+[Speaker 2]
+OK, well, just to let you know then, I think, Steve, if you correct me if I've got it wrong, but we've just set up a small group of us to look at use cases to try and sort of map through some of this and to work out what we're doing as well and how it would work, because understanding it before it tries to get digitized is the big part of it for us.
+
+[Speaker 1]
+Yes, I think putting some examples together and using them to guide implementers is quite useful, right? We had a conversation, for example, about what is the UNTP artifact that would get produced when a organization uses one of these annual facility emissions or actually organizational level emissions calculators, right? And typically what happens is an organization will say, I've got all these scope three type emissions, business travel and supply chain and then I've got scope one and two.
+
+And scope one and two are much more anchored to my facilities. Let's say I'm a big mining company with 20 mine sites and my annual statement says, here's my scope three for the company. Here's my scope one and two by facility.
+
+The scope three breaks down into all these different categories and scope one has fuel types. How does all that fit? What is that in UNTP?
+
+Is that a digital facility record or is it a conformity credential? And if it's a conformity credential, how many assessments? We worked through that with three people who are fairly familiar with UNTP and all three had a different opinion, which tells me guidance is going to be quite important and examples, right?
+
+And so we landed on, and I think we've got an example which you might publish to the group of, well, it's a statement that's issued by a system. It's impartial in the sense that the rules are defined by the system operator, but it's not necessarily impartially audited. That's an interesting question about, you know, where's the blurry line about what is a DCC really?
+
+Can I use a digital conformity credential format issued by, let's say, a carbon calculator platform that company A uses where the carbon calculator guides you through questions like fuel types and volumes and so on, but, and it gives you its assessment. Is that sufficiently impartial to be called a digital conformity credential and what granularity and so on and so forth? So a lot of these interesting questions, which will, I think we should all share our experiences and make more use of the larger mailing list.
+
+I'll certainly do that with the experimental mapping to battery passport and with this emissions footprint thing. And then you end up with also thinking, well, if I've got an emissions at the facility level as one part, one assessment with multiple assessments inside one conformity credential, right? Remembering the structure there is usually in one scheme or one topic, multiple facilities, multiple products.
+
+That's kind of the concept of a conformity credential. So there'd be some statement about scope one and scope two for facility A of organization X in a conformity credential, but they're also issuing facility records, which are a different perspective, right? They're more one place to assemble all the topics, labor rights, carbon emissions, product quality processes, whatever around one facility.
+
+And so the same semi impartial assessment in a facility record might also get duplicated as a claim in a facility record. So yeah, it's tricky and more examples we work through, the more we're going to discover how to get it right. But also from my perspective, fixing gaps in UNTP itself, we shouldn't assume that it's right.
+
+There might be some things that need to be fixed. All right, last but not least, Harley has just kindly volunteered to lead the technical group and is about to have his first meeting after this one. I'll just hand over to you to introduce yourself and say what you're going to do in your first meeting, maybe Harley or whatever your update.
+
+[Speaker 8]
+No grand updates because we've really just kind of kicked off. But like Steve says, we got our first call in 30 minutes. If anyone is interested in joining in as well, the calendars and all the links are on the tech working group governance page as well.
+
+Really our group, we're going to be working through different issues. We've got a bit of a goal by Christmas to have a version 0.7 available. Really what that means is going through all of the different GitLab issues and solving all of the any and open questions that are relevant and the ones that are kind of closing them with some kind of formal justification as well.
+
+Just loosely what our group will be working on, and we'll go through more of this in terms of the terms of reference in 30 minutes, is a couple of different aspects around the Identity Resolver, Decentralized Access Control, which has obviously just been spoken about quite a bit then as well, the Verifiable Credentials Profile and harmonizing it with other existing standards, and then verification rules as well. So I've got like a really great transparency graph.
+
+How do we actually make sense of that as well? So in terms of our call in 30 minutes, bit of an introduction, review of the terms of reference and how we'll work together as well. And then really a bit of a call to action to people in the group to help wrangle and kind of solve these different GitLab issues that we have as well.
+
+And then probably divided up by those different work streams of the IDR, Decentralized Access Control and so forth as well. But that's us. Hope to see everyone in 30 minutes.
+
+[Speaker 1]
+Well, it's a technical working group, so I think you'll have different appetites. All right. So thank you for that.
+
+We've got 30 minutes left, a bit less actually, 25 to give everyone a bit of time in between meetings to brainstorm ideas about value and also secure. Obviously, this meeting is being recorded, so the summary will record whatever ideas get spoken about in this meeting. But I think what I'd like to do is summarize them in maybe some sort of online spreadsheet and invite the larger group, everyone on the mailing list that don't often show up to these calls, just to edit and add ideas, right?
+
+Because I think the bigger the funnel of ideas we can collect that represent perceived value, the better. And then there's a bit of work to do to kind of consolidate that into a meaningful categorized list that we might turn into something useful on the website. So with that in mind, let's just kick off.
+
+There is on the website a few value propositions for businesses around things like market access, particularly when markets have compliance requirements like deforestation and so on, around price uplift. If that's really true, that's a tricky one. I'd be interested to know which industries really might have that.
+
+Anti-counterfeiting, reduction in compliance costs, border surveillance authorities and the EU saying maybe the DPP is the vehicle to accommodate all kinds of different border surveillance activities, trade finance access, and so on and so forth. But the more we can be a little bit specific to, the better, right? The more concrete.
+
+So do you want to, if anybody wants to kick off with ideas of value, this is just going to get recorded. I'll summarize, I'll create a spreadsheet or something and then invite more and more participation. Where do people here see the greatest value or specific use cases?
+
+Anybody got anything to say?
+
+[Speaker 4]
+I've got two quick ones that I've picked up from engagements on the UNTP. So they're really use cases by others, not ones that I necessarily am putting forward. But we heard from the Australian government some interest in being able to trace where financial credit had been assigned to a good moving through a supply chain.
+
+I think this was in the context of large scale sort of funded commodities, maybe low carbon commodities, seeing where they'd received government support from different countries and being able to trace like, not so much like tariffs, more the more tracing incentives. I've also heard like folks talk about tracing tariffs in goods along supply chains. And then a second one, which we've heard from Chemex is they're just having to handle a huge, enormous amount of manual data that's disclosed along the chemical supply chains, because some of that disclosure legislation is already in practice or being rolled out.
+
+So they're already in the world of sharing product information between different business entities. And they just handle a lot of PDFs, a lot of Excel files. And we haven't quite worked out how UNTP is a lever to make that easier.
+
+But digitisation of that data would take away a lot of pain that's been felt by those businesses. They might too.
+
+[Speaker 1]
+Gideon?
+
+[Speaker 2]
+Yeah, I can see some of this actually working with waste as well, and waste frameworks, and things like that. So, you know, what I do a lot of work in international standards on solid recovered materials now, we call it, or solid recovered fuels. But I was on the vocabulary, I was convening the vocabulary group on that.
+
+And, you know, understanding what's non-hazardous and what's hazardous. And then you sort of, you get into the real difficult world of going into that in detail to try and work out what's what. I know, certainly from Europe, you've got them looking at no pollution to land and things like that.
+
+So we're trying to sort of fathom out what that really means in terms of hazardous and non-hazardous. We've got the Basel Convention, but then the Basel Convention has a political, with a small p, you know, definition of it. And therefore, it's really difficult to actually determine what's what.
+
+So I think waste, and then obviously that links with disposal of waste and how organisations actually think about it, and their carbon footprint and life cycle, I think could be quite an interesting one to consider.
+
+[Speaker 1]
+Okay. Interesting part there is who says what's hazardous and what isn't.
+
+[Speaker 2]
+Don't ask me how at the moment, but.
+
+[Speaker 1]
+Okay. A few more hands up. Who's next?
+
+Clary.
+
+[Speaker 7]
+To that, I think I had the packaging schemes as well. So the recycling and packaging schemes as a really huge use case for UNTP, especially when we think about European PPWR coming up. A lot of information from suppliers, tier one, two and three have to flow up to the consumer and then up to the waste management guys.
+
+So that's definitely something I echo there. The idea which we should look into. That's the first idea.
+
+Second idea, in general, sustainable finance access. So investments all over the world. How do we can open that up and make that comparable when banks or investors want to support businesses?
+
+They need all the data points to have evidence and proof for specific green bonds, sustainable finance, whatever it is. And that could be another big use case area.
+
+[Speaker 1]
+Yep. That one is an interesting one because that one also brings incentives, which is really important.
+
+[Speaker 7]
+Exactly. And it's not trade finance only. It is really whatever you say, you lower emissions, you need 2 million.
+
+Okay. What are the critical actions you're doing? The mitigation actions?
+
+How can they prove them? And that needs to go across the whole supply chain as well, because at the end, somebody has to report something. Yep.
+
+[Speaker 1]
+I like that one. Also on the packaging made me remember that that's a gap. It's a gap in the DPP data model.
+
+It says nothing about packaging. If we haven't got an issue, I have to raise one to make sure that we include that before the next release.
+
+[Speaker 7]
+There are guys like AIP, for example, is working on their packaging guidelines, all of it. And it can go as well into their product bill of material as well, depending on the packaging from primary packaging, secondary packaging, tertiary packaging as well. So it can easily get quite complex.
+
+But they definitely need help in data sharing and yeah. Okay. Thanks.
+
+[Speaker 1]
+Right. Excellent. Lots of hands going up.
+
+Matthias.
+
+[Speaker 3]
+Yes, thank you. Yeah, indeed. I have two cases which I found quite compelling and that actually brought me to this idea of proposing discussing more such use cases.
+
+I had presented the UNDP at a meat traceability and circularity roundtable here at the UN of our market access colleagues. And there was a guy from Africa who actually reported that he needs traceability to allow cows to be, or cattle generally, to be clearly identified so that he then can use them as collateral in getting microcredit. That was one thing.
+
+But also another thing is that traceability is a precondition for many farmers to get insurance of their livestock. And that's another thing you may not necessarily think about. So if anyone wants to build insurance markets in Africa, this traceability bit in it may be a missing link that we can actually supply potentially with the work we do.
+
+Just generally to say when we discuss use cases, I think starting with use cases for traceability is already good. And then we can see whenever there's a need for traceability, probably the UNDP is a very appropriate instrument to be used for it. So I would just encourage to extend slightly the scope of the discussion just to use cases for traceability.
+
+And then the UNDP is certainly relevant to respond. Thank you. Great.
+
+[Speaker 1]
+That's a sweet one, isn't it? I like it. Gideon?
+
+[Speaker 2]
+Sorry, hold hand.
+
+[Speaker 1]
+Hold hand. All right. Martina.
+
+[Speaker 6]
+Hi, everyone. I want to give you maybe some cases from my experience, because for those of you who don't know me, I work as head of global strategy and partnership at Impact. So we work on supporting companies and implementing also traceability.
+
+And my work is essentially trying to tell them what's the value behind it, aligning with standards and schemes such as the UNDP. And just yesterday, I had a discussion with the large sportswear brand in Italy. Who actually is scared.
+
+They really get the point of why they need traceability. Not simply because of regulation, but because of measuring scope tree emission. And they mainly come from materials and production facilities, as well as retailers, money and brands don't even know where the material comes from many cases.
+
+And traceability is the only way they can actually assess and verify what's the impact. And their major concern is how to get this data from the supplier. And so I think the UNDP protocol can support on streamlining this data collection process to standardize also the requirements for the suppliers.
+
+The problem here that I see, and maybe that's an open point for everyone, is how to align such requirements also for a global market, such as the textile industry, where you get into very different geographies. And where as a technology provider, we usually rely on the requirement of the brands who has the lead. And so how can also the UNDP create the protocol to guide brands if such brands are not that much in the discussion tables today?
+
+[Speaker 1]
+Yeah. Thank you, Martina. Just before we move on to Adriana, one of the key ideas is exactly as you said, Martina, that the majority of scope three, as far as I've seen in most reports I've ever looked at, although there are 15 categories of scope three in the GHG protocol, overwhelmingly it's category one, which is the upstream supply chain, right?
+
+It's the carbon embedded in the goods you buy and put on the shelf, especially the further downstream you are, the more that's true. And I've often asked this question of, well, how do you actually assess your scope three from the supply chain? And almost everybody, of course, is using sort of industry metrics.
+
+Like I know I purchased this much beef, the emissions intensity average across the world for cows is X, therefore my scope three is Y. But the trouble with that is it gives you no levers to choose supply, right? It means that I don't have any information to tell me which of my supplier beef is lower emissions and therefore choose more of that and less of the other one.
+
+So unless we start to get primary data from suppliers, then there's no trajectory that I can see to improve your scope three emissions. That's one clear value proposition, I think. But taking it a little further, I have had some chats with, I think it was in the electronics industry and PCB manufacturers, where they are a bit more mature and did start to provide scope three emissions to their customers.
+
+But one observation was that for very, very similar types of products, like a circuit board that goes into a PC from two different suppliers, very different numbers. And then when you lift the covers, you find that one of the suppliers did not include their own scope three upstream. You know, it's one thing to have a number, which is the emissions.
+
+It's another thing to have a comparable and reliable number. And I heard too, I think it was in Australia for, again, livestock or agriculture, that organizations that have attempted to get primary data for scope three from upstream find so much variation in their data that they're not sure they can trust it. And they go back to industry standards after getting lots of different data and going, oh, this is all wildly different and I'm not sure I believe it.
+
+Nevermind, forget it. I'll just go with the industry benchmark, which kind of defeats the purpose, right? So anybody that's got ideas about how to get consistency in these numbers, I think we should really be talking about that.
+
+So a few more hands have gone up. Adriana?
+
+[Speaker 5]
+Just a couple of points. One is, Clary, the topic that you raised about finance is something that I've looked into when I lived in Malaysia over quite some time. And there's a lot of agencies around the world that can provide those guidelines.
+
+It's just putting the investment of time. And it also depends on what kind of finance you're looking at, whether you're looking at micro financing for the very small micro businesses or whether you're looking at sustainable finance for SMEs, larger companies, large companies don't often have that problem. But I did have a list or I do have a list of most of the banks in Asia that do provide or Southeast Asia that do provide sustainable finance.
+
+And then you have organizations like Giz and other entities, ADB, that would have that. It's a matter of getting somebody to put in the hours to make those contacts and getting those guidelines and then collating them all. And then I've got two more points, which I'll go through quickly.
+
+The second point is that can we be much more forward thinking in one area of our terminology and stop using the word waste and start talking about material management? Because that's really where we're headed as a circular economy practitioner or professional. I believe that we're going to stop talking about waste and look at how we manage our end of use cycle materials.
+
+And I'd like to see the UN consider that forward thinking approach. And then finally, have we thought of data centers, the new big thing in building? And because I've been little bit involved in MICLA, which is the Australian Materials Embodied Carbon Leadership Association, and they were very kind and gave me free membership for a year.
+
+And I've been attending as many meetings as I can, but also because I intend to go back to Asia and the growth of data centers across Southeast Asia is quite phenomenal. So that's an area I believe that we have great opportunity and more so because remember that many Asian countries still heavily rely on FDI, foreign direct investment. And when you have foreign direct investment, you have companies who are very sensitive to their ESG sustainability goals and other components that make up their public facing.
+
+So that provides us with additional opportunities, I believe for engagement.
+
+[Speaker 1]
+Thank you for that. Yes. And on the data centers point, the responsible business alliance members, biggest members are the household brands of Google, Amazon, Microsoft, and Oracle that run big data centers.
+
+Obviously, they're not the only ones that build data centers, but they're a big footprint. And those members are saying that their key interest is to, because they've got a huge building program coming, right? This isn't fixing history.
+
+This is how do we build a future more sustainably. They have a very strong interest in UNTP for traceability and transparency in the data center supply chain, which includes building materials, as well as electronic stuff that you put in there. So that is an area if people have got interest and appetite that we might be able to make some connections.
+
+But yes, there is activity there. Who's next? Gideon.
+
+[Speaker 2]
+Yeah, thanks. Just a couple of ones. And going back to Adriana's comment, and I didn't quite catch what you said in terms of not calling it waste.
+
+Waste is waste under the definitions of Basel convention. And I think we're getting into a point where we're trying, as we've done in solid recovered materials, trying to fudge the words to make it not sound as bad. I totally get your point that it's, but what we should be aiming for is waste being that total end of life, where there's nothing else that can be done with it.
+
+And that should be the final point of waste. But politically, it's not that. And therefore, it makes it very difficult to start trying to change the names on it.
+
+It is waste at the end of the day. Okay, well, I don't know. Just before you go on that, let me just go.
+
+So in terms of data centers, energy is a massive part of this. And I think different sources of energy would be helpful to have some work done on as well. Because obviously, depending on the intensity of the system you're using, but you know, it's one of those big ones, everyone's going on the default values, as we were talking about earlier, because they don't know what they're doing unless they're doing their own renewable energy.
+
+And then they can, they can specify easier. But energy is a big part of that. And nuclear is coming up on the data center side of it.
+
+So that then has resource mineral resource issues, you know, uranium, and all of that kind of stuff as well. So there's, there's things in there, just to in terms of the default side of it, is it something we could consider, of actually trying to make a hierarchy of defaults. So global, regional, national, maybe, you know, working it down where there are defaults in different areas, that we could gather together and let people use.
+
+So they actually find the one that best suits them, if there are if there is such stuff, when you say defaults, do you mean like, default values for energy?
+
+[Speaker 1]
+Renewable energy content by region is just default.
+
+[Speaker 2]
+Yeah, exactly.
+
+[Speaker 1]
+Yeah. Yeah.
+
+[Speaker 2]
+So in the UK, we have a UK intensity, carbon intensity for for energy, as a default value that government always use. And it's like the general mix of all of it. So that's on the system at the time, at that year.
+
+So they use that. So I think if there is a glow, if there are global metrics going down, I'm talking to a company at the moment, about textiles, and, you know, talking to them, you know, sort of, how much does the pair of jeans carbon intensity of it, you know, so it would be helpful to be able to, to be able to look at those, and then, you know, be able to drill down, you could actually go, well, if I'm only selling, you know, notes in a particular area, I could use a better one, more succinct one, maybe, just a thought.
+
+[Speaker 5]
+Okay, do you mind if I just respond quickly to Gideon about the, the, you know, waste? Well, yeah, in all in all things, we see evolution, it's a natural component of humanity. And it has been ever since we walked on two legs.
+
+So the issue is, is that just because it's written in the Basel Convention doesn't mean it won't evolve to something else. And we're also seeing that we're, we're learning to accept that end of use cycle materials will end up becoming commodities. And the EU want to now see that these exports, which the Basel Convention banned for a lot of it, now want to go into facilities that meet certain environmental and energy efficiency standards.
+
+And a country like India is really welcoming to that, because a large, I have a lot of industries that are dependent on end of use cycle materials. So we don't need to be stuck in a framework that will eventually change, but we could be forward thinking. So that's my suggestion.
+
+[Speaker 2]
+And can I just say that I don't disagree with you at all. In any of that, you know, it's just a case of the politics of it all. And can you tell us, say what you called what you were suggesting it was called rather than waste?
+
+[Speaker 5]
+Oh, materials management, because if we start looking at items, end of use cycle items as materials, as materials, the management of that the disposal and management of that becomes completely different. And we're beginning to see some tiny pockets, but it's but the outcomes of these attempts at managing these materials is proving to be really beneficial. So it is taking off.
+
+And I just like to see us to be ahead of the game. That's all.
+
+[Speaker 1]
+I thought I heard Gideon say that waste meant that proportion of the I don't know, I want to use the word waste again, but that the stuff that isn't in your the stuff that goes to recycling or repair or reuse or, you know, end of life, the stuff at end of life, there's some proportion of it, which is ultimately just genuinely waste, but there's another proportion of it, which is recycling potential, right?
+
+[Speaker 5]
+And that's, that's correct. And Gideon's correct in that. And I and that's my definition of waste is that, unfortunately, we're not managing those end of use cycle items properly.
+
+Okay, which means we've got too much waste and not enough material recovery.
+
+[Speaker 1]
+Okay.
+
+[Speaker 2]
+Yeah. And the definition of waste is not actually that globally. And it's a political definition.
+
+But let's not go into that one.
+
+[Speaker 5]
+Okay, well, not today.
+
+[Speaker 1]
+We're at our time. And I don't like to go over time, because people have other commitments. Holly, you did briefly have your hand up if you wanted a final say, but otherwise, we can close it now.
+
+[Speaker 8]
+I just wanted to flag a potential biosecurity use case, but I can flag it next time. No problem.
+
+[Speaker 1]
+Yeah, okay. And my use cases that I've come across are things like, they're the ones that are driven by regulation in a buyer market and impact a seller market, right? So, carbonian rubber, for example, or Australian beef, or anything that's impacted by EUDR and the like.
+
+These are quite, quite good use cases. But I'll, I'll summarize all this, and we'll collect more of them and really start to distill value propositions, I think. But thank you, everyone.
+
+It was a, it was an interesting chat to get everybody's perspective on these things. And hopefully, we'll inspire a few more to join us in these sort of discussions. So, thank you very much for your time.
+
+[Speaker 7]
+Thank you. See you.
+
+[Speaker 1]
+Thank you, everyone.
+
+[Speaker 7]
+Bye-bye.

@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Globally unique identifier for this register."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of this register."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the purpose and scope of this register."
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "The date this register was last updated."
+    },
+    "registrar": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of the registrar."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the registrar organisation."
+        }
+      },
+      "required": ["id", "name"],
+      "description": "The organisation responsible for maintaining this register."
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/IdentifierSchemeEntry"
+      },
+      "description": "The list of identifier schemes in this register."
+    }
+  },
+  "required": ["id", "name", "lastUpdated", "registrar", "entries"],
+  "description": "A register of identifier schemes — a directory of identification systems used to uniquely identify entities such as organisations, products, facilities, and locations.",
+  "$defs": {
+    "IdentifierSchemeEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier for this identifier scheme, expressed as a URI."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the identifier scheme."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the identifier scheme and its purpose."
+        },
+        "registerType": {
+          "type": "string",
+          "enum": [
+            "organisation",
+            "product",
+            "facility",
+            "location",
+            "consignment"
+          ],
+          "description": "The type of entity identified by this scheme."
+        },
+        "registrarName": {
+          "type": "string",
+          "description": "Official name of the organisation that operates this identifier scheme."
+        },
+        "registrarId": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of the registrar organisation."
+        },
+        "legalBasis": {
+          "type": "string",
+          "format": "uri",
+          "description": "A persistent link to the legislation, decree, or governance framework establishing the scheme's authority."
+        },
+        "registeredIdPattern": {
+          "type": "string",
+          "description": "A regular expression pattern that valid identifiers in this scheme must match."
+        },
+        "registeredIdExample": {
+          "type": "string",
+          "description": "An example of a valid identifier in this scheme."
+        },
+        "registeredIdUriTemplate": {
+          "type": "string",
+          "format": "uri-template",
+          "description": "A URI template used to construct a globally unique identifier from a registered ID, using {id} as placeholder."
+        },
+        "queryEndpoint": {
+          "type": "string",
+          "format": "uri-template",
+          "description": "A URI template for a human-readable query interface, using {id} as placeholder."
+        },
+        "resolverEndpoint": {
+          "type": "string",
+          "format": "uri-template",
+          "description": "A URI template for an identity resolver endpoint conforming to ISO/IEC 18975, using {id} as placeholder."
+        },
+        "countryCode": {
+          "type": "string",
+          "description": "ISO 3166-1 alpha-3 country code for the jurisdiction of this scheme, or 'GLO' for global schemes."
+        },
+        "documentation": {
+          "type": "string",
+          "format": "uri",
+          "description": "A web page providing full documentation of this identifier scheme."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "registerType",
+        "registrarName",
+        "registrarId"
+      ],
+      "description": "A directory entry for an identifier scheme."
+    }
+  }
+}

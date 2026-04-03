@@ -5,20 +5,11 @@
     "type": {
       "type": "array",
       "readOnly": true,
-      "const": [
-        "DigitalFacilityRecord",
-        "VerifiableCredential"
-      ],
-      "default": [
-        "DigitalFacilityRecord",
-        "VerifiableCredential"
-      ],
+      "const": ["DigitalFacilityRecord", "VerifiableCredential"],
+      "default": ["DigitalFacilityRecord", "VerifiableCredential"],
       "items": {
         "type": "string",
-        "enum": [
-          "DigitalFacilityRecord",
-          "VerifiableCredential"
-        ]
+        "enum": ["DigitalFacilityRecord", "VerifiableCredential"]
       }
     },
     "@context": {
@@ -70,11 +61,7 @@
     }
   },
   "description": "A digital verifiable credential hodling faiclity performance inofmration.",
-  "required": [
-    "@context",
-    "id",
-    "issuer"
-  ],
+  "required": ["@context", "id", "issuer"],
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$defs": {
     "CredentialIssuer": {
@@ -84,9 +71,7 @@
         "type": {
           "type": "string",
           "default": "CredentialIssuer",
-          "enum": [
-            "CredentialIssuer"
-          ]
+          "enum": ["CredentialIssuer"]
         },
         "id": {
           "example": "did:web:identifiers.example-company.com:12345",
@@ -108,10 +93,7 @@
         }
       },
       "description": "The issuer party ()person or orgnaition) of a verifiable credential.",
-      "required": [
-        "id",
-        "name"
-      ]
+      "required": ["id", "name"]
     },
     "Entity": {
       "type": "object",
@@ -120,12 +102,10 @@
         "type": {
           "type": "string",
           "default": "Entity",
-          "enum": [
-            "Entity"
-          ]
+          "enum": ["Entity"]
         },
         "id": {
-          "example": "https://id.gs1.org/01/09520123456788/21/12345",
+          "example": "https://ref.gs1.org/ai/01/09520123456788/21/12345",
           "type": "string",
           "format": "uri",
           "description": "The globally unique ID of the entity as a resolvable URL according to ISO 18975. ExamplesProduct - id.gs1.org/01/09520123456788/21/12345  Party - abr.business.gov.au/ABN/View?abn=90664869327. Facility - did:web:facilities.example-company.com:123. "
@@ -146,10 +126,7 @@
         }
       },
       "description": "The ID and Name of an identified entity such qs a product, facility, party, standard, etc.  If the identifier is a W3C DID then the corresponding DID document SHOULD include a serviceEndpoint of type \"IdentityResolver\". If the identifier is not a W3C DID then the id peroperty SHOULD be an identity resolver URL.",
-      "required": [
-        "id",
-        "name"
-      ]
+      "required": ["id", "name"]
     },
     "IdentifierScheme": {
       "type": "object",
@@ -158,12 +135,10 @@
         "type": {
           "type": "string",
           "default": "IdentifierScheme",
-          "enum": [
-            "IdentifierScheme"
-          ]
+          "enum": ["IdentifierScheme"]
         },
         "id": {
-          "example": "https://id.gs1.org/01/",
+          "example": "https://ref.gs1.org/ai/01/",
           "type": "string",
           "format": "uri",
           "description": "The globally unique identifier of the registration scheme. The scheme should be registered and discoverable from vocabulary.uncefact.org/identifierSchemes"
@@ -183,20 +158,11 @@
         "type": {
           "type": "array",
           "readOnly": true,
-          "const": [
-            "Facility",
-            "Entity"
-          ],
-          "default": [
-            "Facility",
-            "Entity"
-          ],
+          "const": ["Facility", "Entity"],
+          "default": ["Facility", "Entity"],
           "items": {
             "type": "string",
-            "enum": [
-              "Facility",
-              "Entity"
-            ]
+            "enum": ["Facility", "Entity"]
           }
         },
         "id": {
@@ -264,10 +230,7 @@
         }
       },
       "description": "A facility sustainabiloty performacne record.",
-      "required": [
-        "id",
-        "name"
-      ]
+      "required": ["id", "name"]
     },
     "Classification": {
       "type": "object",
@@ -276,9 +239,7 @@
         "type": {
           "type": "string",
           "default": "Classification",
-          "enum": [
-            "Classification"
-          ]
+          "enum": ["Classification"]
         },
         "id": {
           "example": "https://unstats.un.org/unsd/classifications/Econ/cpc/46410",
@@ -309,10 +270,7 @@
         }
       },
       "description": "A classification scheme and code / name representing a category value for a product, entity, or facility.",
-      "required": [
-        "id",
-        "name"
-      ]
+      "required": ["id", "name"]
     },
     "Address": {
       "type": "object",
@@ -367,9 +325,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "Point"
-          ],
+          "enum": ["Point"],
           "example": "Point",
           "description": ""
         },
@@ -379,9 +335,7 @@
         }
       },
       "description": "Represents a Point geometry",
-      "required": [
-        "type"
-      ]
+      "required": ["type"]
     },
     "Point3D": {
       "description": "Point in 3d space",
@@ -402,9 +356,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "Polygon"
-          ],
+          "enum": ["Polygon"],
           "example": "Polygon",
           "description": ""
         },
@@ -417,9 +369,7 @@
         }
       },
       "description": "Represents a Polygon geometry",
-      "required": [
-        "type"
-      ]
+      "required": ["type"]
     },
     "Point3DWrapper": {
       "description": "",
@@ -440,17 +390,11 @@
         "type": {
           "type": "array",
           "readOnly": true,
-          "const": [
-            "Declaration"
-          ],
-          "default": [
-            "Declaration"
-          ],
+          "const": ["Declaration"],
+          "default": ["Declaration"],
           "items": {
             "type": "string",
-            "enum": [
-              "Declaration"
-            ]
+            "enum": ["Declaration"]
           }
         },
         "id": {
@@ -514,11 +458,7 @@
         }
       },
       "description": "A specific assessment about the product or facility against a specific specification.  Eg the carbon intensity of a given product or batch.",
-      "required": [
-        "id",
-        "compliance",
-        "conformityTopic"
-      ]
+      "required": ["id", "compliance", "conformityTopic"]
     },
     "Standard": {
       "type": "object",
@@ -527,9 +467,7 @@
         "type": {
           "type": "string",
           "default": "Standard",
-          "enum": [
-            "Standard"
-          ]
+          "enum": ["Standard"]
         },
         "id": {
           "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf",
@@ -554,9 +492,7 @@
         }
       },
       "description": "A standard (eg ISO 14000) that specifies the criteria for conformance.",
-      "required": [
-        "issuingParty"
-      ]
+      "required": ["issuingParty"]
     },
     "Regulation": {
       "type": "object",
@@ -565,9 +501,7 @@
         "type": {
           "type": "string",
           "default": "Regulation",
-          "enum": [
-            "Regulation"
-          ]
+          "enum": ["Regulation"]
         },
         "id": {
           "example": "https://www.legislation.gov.au/F2008L02309/latest/versions",
@@ -597,9 +531,7 @@
         }
       },
       "description": "A regulation (eg EU deforestation regulation) that defines the criteria for assessment.",
-      "required": [
-        "administeredBy"
-      ]
+      "required": ["administeredBy"]
     },
     "Criterion": {
       "type": "object",
@@ -608,9 +540,7 @@
         "type": {
           "type": "string",
           "default": "Criterion",
-          "enum": [
-            "Criterion"
-          ]
+          "enum": ["Criterion"]
         },
         "id": {
           "example": "https://www.globalbattery.org/media/publications/gba-rulebook-v2.0-master.pdf#BatteryAssembly",
@@ -632,10 +562,7 @@
         }
       },
       "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
-      "required": [
-        "id",
-        "name"
-      ]
+      "required": ["id", "name"]
     },
     "Metric": {
       "type": "object",
@@ -657,10 +584,7 @@
         }
       },
       "description": "A specific measure of performance against the criteria that governs the claim.  Expressed as an array of metric (ie unit of emasure) / value (ie the actual numeric value) pairs.  ",
-      "required": [
-        "metricName",
-        "metricValue"
-      ]
+      "required": ["metricName", "metricValue"]
     },
     "Measure": {
       "type": "object",
@@ -678,10 +602,7 @@
         }
       },
       "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).",
-      "required": [
-        "value",
-        "unit"
-      ]
+      "required": ["value", "unit"]
     },
     "SecureLink": {
       "type": "object",
@@ -690,20 +611,11 @@
         "type": {
           "type": "array",
           "readOnly": true,
-          "const": [
-            "SecureLink",
-            "Link"
-          ],
-          "default": [
-            "SecureLink",
-            "Link"
-          ],
+          "const": ["SecureLink", "Link"],
+          "default": ["SecureLink", "Link"],
           "items": {
             "type": "string",
-            "enum": [
-              "SecureLink",
-              "Link"
-            ]
+            "enum": ["SecureLink", "Link"]
           }
         },
         "linkURL": {
@@ -729,19 +641,13 @@
         },
         "hashMethod": {
           "type": "string",
-          "enum": [
-            "SHA-256",
-            "SHA-1"
-          ],
+          "enum": ["SHA-256", "SHA-1"],
           "example": "SHA-256",
           "description": "The hashing algorithm used to create the target hash.  SHA-265 is the recommedned standard"
         },
         "encryptionMethod": {
           "type": "string",
-          "enum": [
-            "none",
-            "AES"
-          ],
+          "enum": ["none", "AES"],
           "example": "none",
           "description": "The symmetric encryption algorithm used to encrypt the link target.  AES is the recommended standard. Decryption keys are expected to be passed out of bounds."
         }

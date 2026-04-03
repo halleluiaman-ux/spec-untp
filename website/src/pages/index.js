@@ -12,7 +12,7 @@ import {
   registerImplementationPledges,
   regulatorImplementationPledges,
   softwareImplementationPledges,
-} from '../../implementations';
+} from '../../.generated/implementations';
 
 function HomepageHero() {
   const {siteConfig} = useDocusaurusContext();

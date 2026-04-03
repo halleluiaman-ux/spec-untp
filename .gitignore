@@ -1,10 +1,17 @@
 node_modules
 .DS_Store
+
+# Local AI assistant workspace (do not publish in UNTP tree)
+.claude/
 .idea
 .nvmrc
 .docusaurus
 
 website/build/
-yarn.lock
+package-lock.json
 
 data_models/client_payload.json
+
+/exclude/
+
+!ci/validate-jargon-artefacts/package-lock.json

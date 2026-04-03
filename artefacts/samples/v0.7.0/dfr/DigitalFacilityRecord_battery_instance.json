@@ -1,0 +1,382 @@
+{
+  "type": ["DigitalFacilityRecord", "VerifiableCredential"],
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://vocabulary.uncefact.org/untp/0.7.0/context/"
+  ],
+  "id": "https://credentials.sample-battery.example.com/dfr/battery-003",
+  "issuer": {
+    "type": ["CredentialIssuer"],
+    "id": "did:web:sample-battery.example.com",
+    "name": "Sample Battery Mfg GmbH",
+    "issuerAlsoKnownAs": [
+      {
+        "type": ["Party"],
+        "id": "https://sample-register.example.com/companies/BAT-001",
+        "name": "Sample Battery Mfg GmbH",
+        "registeredId": "BAT-001",
+        "idScheme": {
+          "type": ["IdentifierScheme"],
+          "id": "https://sample-register.example.com",
+          "name": "Sample Commercial Register"
+        }
+      }
+    ]
+  },
+  "validFrom": "2025-01-15T00:00:00Z",
+  "validUntil": "2028-01-15T00:00:00Z",
+  "name": "Digital Facility Record — Sample Battery Factory",
+  "credentialSubject": {
+    "type": ["Facility"],
+    "id": "https://facility-register.example.com/fac-003",
+    "name": "Sample Battery Factory",
+    "description": "Li-ion battery cell and pack manufacturing facility in Salzgitter, Lower Saxony, Germany. Annual production capacity of 40 GWh, producing NMC 811 battery packs for electric vehicles.",
+    "registeredId": "fac-003",
+    "idScheme": {
+      "type": ["IdentifierScheme"],
+      "id": "https://facility-register.example.com",
+      "name": "UNTP Sample Facility Register"
+    },
+    "countryOfOperation": {
+      "countryCode": "DE",
+      "countryName": "Germany"
+    },
+    "processCategory": [
+      {
+        "code": "46410",
+        "name": "Primary cells and primary batteries",
+        "definition": "Primary cells and primary batteries and parts thereof.",
+        "schemeId": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+        "schemeName": "UN Central Product Classification (CPC)"
+      }
+    ],
+    "relatedParty": [
+      {
+        "role": "owner",
+        "party": {
+          "type": ["Party"],
+          "id": "did:web:sample-battery.example.com",
+          "name": "Sample Battery Mfg GmbH",
+          "description": "German battery manufacturer producing high-performance lithium-ion battery packs for the European EV market.",
+          "registeredId": "BAT-001",
+          "idScheme": {
+            "type": ["IdentifierScheme"],
+            "id": "https://sample-register.example.com",
+            "name": "Sample Commercial Register"
+          },
+          "registrationCountry": {
+            "countryCode": "DE",
+            "countryName": "Germany"
+          },
+          "partyAddress": {
+            "streetAddress": "Industriestrasse 42",
+            "postalCode": "38239",
+            "addressLocality": "Salzgitter",
+            "addressRegion": "Lower Saxony",
+            "addressCountry": {
+              "countryCode": "DE",
+              "countryName": "Germany"
+            }
+          },
+          "organisationWebsite": "https://sample-battery.example.com",
+          "industryCategory": [
+            {
+              "code": "46410",
+              "name": "Primary cells and primary batteries",
+              "definition": "Primary cells and primary batteries and parts thereof.",
+              "schemeId": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+              "schemeName": "UN Central Product Classification (CPC)"
+            }
+          ]
+        }
+      }
+    ],
+    "relatedDocument": [
+      {
+        "linkURL": "https://credentials.sample-vap-cab.example.com/dcc/battery-003",
+        "linkName": "RBA VAP Certification — Sample Battery Factory",
+        "mediaType": "application/ld+json",
+        "linkType": "https://test.uncefact.org/vocabulary/linkTypes/dcc"
+      }
+    ],
+    "facilityAlsoKnownAs": [
+      {
+        "type": ["Facility"],
+        "id": "https://sample-register.example.com/facilities/DE-NI-BAT-0042",
+        "name": "Sample Battery Factory Salzgitter",
+        "registeredId": "DE-NI-BAT-0042",
+        "idScheme": {
+          "type": ["IdentifierScheme"],
+          "id": "https://sample-register.example.com",
+          "name": "Sample Environmental Register"
+        }
+      }
+    ],
+    "locationInformation": {
+      "plusCode": "https://plus.codes/9F4FXR22+22",
+      "geoLocation": {
+        "latitude": 52.15,
+        "longitude": 10.33
+      },
+      "geoBoundary": [
+        {
+          "latitude": 52.14,
+          "longitude": 10.32
+        },
+        {
+          "latitude": 52.16,
+          "longitude": 10.34
+        }
+      ]
+    },
+    "address": {
+      "streetAddress": "Industriestrasse 42",
+      "postalCode": "38239",
+      "addressLocality": "Salzgitter",
+      "addressRegion": "Lower Saxony",
+      "addressCountry": {
+        "countryCode": "DE",
+        "countryName": "Germany"
+      }
+    },
+    "materialUsage": {
+      "applicablePeriod": {
+        "startDate": "2024-01-01",
+        "endDate": "2024-12-31",
+        "periodInformation": "Calendar year 2024 reporting period."
+      },
+      "materialConsumed": [
+        {
+          "name": "Copper cathode",
+          "originCountry": {
+            "countryCode": "JP",
+            "countryName": "Japan"
+          },
+          "materialType": {
+            "code": "41521",
+            "name": "Unwrought copper",
+            "definition": "Copper, unrefined; copper anodes for electrolytic refining; refined copper and copper alloys, unwrought.",
+            "schemeId": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+            "schemeName": "UN Central Product Classification (CPC)"
+          },
+          "massFraction": 0.08,
+          "mass": {
+            "value": 3200000,
+            "unit": "KGM"
+          },
+          "recycledMassFraction": 0.12,
+          "hazardous": false
+        },
+        {
+          "name": "Lithium carbonate",
+          "originCountry": {
+            "countryCode": "CL",
+            "countryName": "Chile"
+          },
+          "materialType": {
+            "code": "14290",
+            "name": "Other non-ferrous metal ores and concentrates",
+            "definition": "Lithium, beryllium, and other non-ferrous metal ores and concentrates.",
+            "schemeId": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+            "schemeName": "UN Central Product Classification (CPC)"
+          },
+          "massFraction": 0.12,
+          "mass": {
+            "value": 4800000,
+            "unit": "KGM"
+          },
+          "recycledMassFraction": 0.05,
+          "hazardous": false
+        },
+        {
+          "name": "Nickel sulphate",
+          "originCountry": {
+            "countryCode": "ID",
+            "countryName": "Indonesia"
+          },
+          "materialType": {
+            "code": "14230",
+            "name": "Nickel ores and concentrates",
+            "definition": "Nickel ores and concentrates.",
+            "schemeId": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+            "schemeName": "UN Central Product Classification (CPC)"
+          },
+          "massFraction": 0.35,
+          "mass": {
+            "value": 14000000,
+            "unit": "KGM"
+          },
+          "recycledMassFraction": 0.08,
+          "hazardous": false
+        },
+        {
+          "name": "Graphite (anode material)",
+          "originCountry": {
+            "countryCode": "MZ",
+            "countryName": "Mozambique"
+          },
+          "materialType": {
+            "code": "15310",
+            "name": "Natural graphite",
+            "definition": "Natural graphite.",
+            "schemeId": "https://unstats.un.org/unsd/classifications/Econ/cpc/",
+            "schemeName": "UN Central Product Classification (CPC)"
+          },
+          "massFraction": 0.18,
+          "mass": {
+            "value": 7200000,
+            "unit": "KGM"
+          },
+          "recycledMassFraction": 0,
+          "hazardous": false
+        }
+      ]
+    },
+    "performanceClaim": [
+      {
+        "type": ["Claim"],
+        "id": "https://sample-battery.example.com/claims/ghg-2024",
+        "name": "GHG Emissions — Scope 1+2",
+        "description": "Combined Scope 1 and Scope 2 greenhouse gas emissions from the Sample Battery Factory for the 2024 reporting year.",
+        "referenceCriteria": [
+          {
+            "type": ["Criterion"],
+            "id": "https://sample-scheme.responsiblebusiness.org/criteria/ghg-reporting/v8",
+            "name": "GHG Emissions Reporting (RBA Code of Conduct Section C.1)",
+            "conformityTopic": [
+              {
+                "type": ["ConformityTopic"],
+                "id": "https://vocabulary.uncefact.org/conformity-topic/greenhouse-gas-emissions",
+                "name": "Greenhouse Gas Emissions",
+                "definition": "Assessment of direct and indirect greenhouse gas emissions across scopes 1, 2, and 3, including measurement, reporting, and reduction targets aligned with climate science."
+              }
+            ]
+          }
+        ],
+        "claimDate": "2025-03-01",
+        "applicablePeriod": {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "periodInformation": "Calendar year 2024 reporting period."
+        },
+        "claimedPerformance": [
+          {
+            "metric": {
+              "type": ["PerformanceMetric"],
+              "id": "https://vocabulary.uncefact.org/performance-metric/total-ghg-emissions",
+              "name": "Total GHG Emissions"
+            },
+            "measure": {
+              "value": 8500,
+              "unit": "TNE"
+            }
+          }
+        ],
+        "conformityTopic": [
+          {
+            "type": ["ConformityTopic"],
+            "id": "https://vocabulary.uncefact.org/conformity-topic/greenhouse-gas-emissions",
+            "name": "Greenhouse Gas Emissions",
+            "definition": "Assessment of direct and indirect greenhouse gas emissions across scopes 1, 2, and 3, including measurement, reporting, and reduction targets aligned with climate science."
+          }
+        ]
+      },
+      {
+        "type": ["Claim"],
+        "id": "https://sample-battery.example.com/claims/renewable-2024",
+        "name": "Renewable Energy Percentage",
+        "description": "Share of electricity from renewable sources at the Sample Battery Factory for 2024.",
+        "referenceCriteria": [
+          {
+            "type": ["Criterion"],
+            "id": "https://sample-scheme.responsiblebusiness.org/criteria/renewable-energy/v8",
+            "name": "Renewable Energy Procurement (RBA Code of Conduct Section C.2)",
+            "conformityTopic": [
+              {
+                "type": ["ConformityTopic"],
+                "id": "https://vocabulary.uncefact.org/conformity-topic/renewable-energy-use",
+                "name": "Renewable Energy Use",
+                "definition": "Adoption and integration of renewable energy sources to reduce reliance on fossil fuels and lower the carbon footprint of operations and products."
+              }
+            ]
+          }
+        ],
+        "claimDate": "2025-03-01",
+        "applicablePeriod": {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "periodInformation": "Calendar year 2024 reporting period."
+        },
+        "claimedPerformance": [
+          {
+            "metric": {
+              "type": ["PerformanceMetric"],
+              "id": "https://vocabulary.uncefact.org/performance-metric/renewable-energy-percentage",
+              "name": "Renewable Energy Percentage"
+            },
+            "measure": {
+              "value": 85,
+              "unit": "P1"
+            }
+          }
+        ],
+        "conformityTopic": [
+          {
+            "type": ["ConformityTopic"],
+            "id": "https://vocabulary.uncefact.org/conformity-topic/renewable-energy-use",
+            "name": "Renewable Energy Use",
+            "definition": "Adoption and integration of renewable energy sources to reduce reliance on fossil fuels and lower the carbon footprint of operations and products."
+          }
+        ]
+      },
+      {
+        "type": ["Claim"],
+        "id": "https://sample-battery.example.com/claims/waste-2024",
+        "name": "Waste Diversion Rate",
+        "description": "Percentage of manufacturing waste diverted from landfill through recycling and reuse at the Sample Battery Factory for 2024.",
+        "referenceCriteria": [
+          {
+            "type": ["Criterion"],
+            "id": "https://sample-scheme.responsiblebusiness.org/criteria/waste-management/v8",
+            "name": "Waste Management (RBA Code of Conduct Section C.4)",
+            "conformityTopic": [
+              {
+                "type": ["ConformityTopic"],
+                "id": "https://vocabulary.uncefact.org/conformity-topic/waste-minimization",
+                "name": "Waste Minimization",
+                "definition": "Strategies and practices to reduce waste generation, promote reuse and recycling, and minimize the environmental impact of waste disposal across the product lifecycle."
+              }
+            ]
+          }
+        ],
+        "claimDate": "2025-03-01",
+        "applicablePeriod": {
+          "startDate": "2024-01-01",
+          "endDate": "2024-12-31",
+          "periodInformation": "Calendar year 2024 reporting period."
+        },
+        "claimedPerformance": [
+          {
+            "metric": {
+              "type": ["PerformanceMetric"],
+              "id": "https://vocabulary.uncefact.org/performance-metric/waste-diversion-rate",
+              "name": "Waste Diversion Rate"
+            },
+            "measure": {
+              "value": 92,
+              "unit": "P1"
+            }
+          }
+        ],
+        "conformityTopic": [
+          {
+            "type": ["ConformityTopic"],
+            "id": "https://vocabulary.uncefact.org/conformity-topic/waste-minimization",
+            "name": "Waste Minimization",
+            "definition": "Strategies and practices to reduce waste generation, promote reuse and recycling, and minimize the environmental impact of waste disposal across the product lifecycle."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+[Speaker 1]
+Sorry, I'm a couple of minutes late, colleagues. I was just on another call.
+
+[Speaker 13]
+We were only confused about the link, but now it seems to be right. Good to see you all.
+
+[Speaker 7]
+I'm sorry, but these new links don't seem to be working. I get messages that say it's at 11 p.m., but the link in the message says it's at 10 p.m., and it doesn't work, and what's in my calendar doesn't work, or it doesn't update my calendar. Like, all the ones that I got from Jay for the 3 a.m. to 4 a.m. meetings, they don't update my calendar. So, I was feeling frustrated today.
+
+[Speaker 1]
+Yes, yes. I hear you, and you sent me an email on it, Virginia, and we're going to have to find a solution to this. So, the challenge I'm having, just in case anybody's got any bright ideas, is that if you use a traditional kind of send a calendar invite to everyone on a CC list, then whenever you add a new member to a group which has already 200 members in it, all 200 members get spammed with, oh, the meeting's changed.
+
+It hasn't changed. You just added one new member, right? So, I try to avoid that by saying, all right, maybe I can create an ICS file that we can share with everyone that doesn't spam everyone, right?
+
+It's just you click on this, and it appears in your calendar, but what you're telling me, and I tested it with my Apple Mac, but maybe it works differently on Outlook. I don't know. I need a solution to be able to send workable calendar invites in such a way that 200 people don't get spammed whenever a membership of a group changes, and enough said for now, but if anyone's got any experience or ideas on this, let me know, and we'll try and make it more robust.
+
+[Speaker 7]
+Yeah, actually, I don't use Outlook for my calendar. I use Google for my calendar, but since it didn't update my Google calendar, I said, well, I'll try and see if the ICS, because the ICS file just says it doesn't load, and then I went and tried to do it in Outlook to see if maybe in Outlook it loads, and it doesn't either.
+
+[Speaker 9]
+So, the same problem with me, but who's Jason Berry? Berry Hill?
+
+[Speaker 1]
+I don't know. I don't know. Why?
+
+Did you get an invitation from Jason?
+
+[Speaker 9]
+Well, I received three emails from a Jason Berry Hill in relation to these meetings, 3 to 4 a.m. Did you? Is that the same that you're talking about, Virginia? Yes.
+
+Right. So, all of us have received, well, Virginia and I.
+
+[Speaker 3]
+I think Jason Berry Hill is a potential implementer. I don't know how somehow he emailed something on the Gaggle email list.
+
+[Speaker 1]
+Well, anyone that's on the Gaggle list can send an email to the list.
+
+[Speaker 3]
+Yeah, and I think that maybe because I don't, you know, he's not, he's from Holchain or something like that.
+
+[Speaker 7]
+Yeah, Holchain.
+
+[Speaker 3]
+Yeah, he's an implementer. He's not controlling the meetings.
+
+[Speaker 9]
+Well, anyway, he sent out three emails in regards to something, and I don't understand it. I didn't understand any of it.
+
+[Speaker 1]
+All right. Well, this is something, obviously, I've got to figure out how to fix because this is a recurring pain. So, I hereby call for assistance, and we'll find a way to make it work.
+
+[Speaker 7]
+Okay.
+
+[Speaker 1]
+So, regarding the agenda of this meeting, we may get it over fairly quick and give people some time back, but you will have seen that the UNTP GitHub site webpage now has a big kind of pop-up box that says this site has moved. And the reason for that is removing the whole management of UNTP from GitHub to a UN-hosted GitLab, primarily so that UN has more control, which is entirely reasonable, but also because of access by some countries that are blocked from GitHub, a very small number of countries, but because the UN is a global entity and needs to provide equality to all, they're not blocked from the UN GitLab. So, we have, however, it turns out, this is part of a global UN initiative called Open Source Program that put quite a bit of investment into making this GitLab platform.
+
+It's quite good, and it's a good team behind it. But the very first project that is moving on to this new global infrastructure is us. So, we're a guinea pig, right?
+
+And because of that, we're suffering some teething problems. And so, for example, some people have tried to self-register on the new UN GitLab, and it says no, right? And our understanding was that it would work a bit like GitHub, but it doesn't, right?
+
+And we have had a discussion with UNICC about this, a very constructive one. Their concern is that they don't want millions of people. You see, the GitHub model is self-register and create a repository and start writing code.
+
+They want to Whereas the UN GitLab model is open to the world, but in the context of more controlled projects, right? So, you can't just, for example, create an account on UN GitLab and start writing open source code. It needs to be in the context of some endorsed UN project.
+
+That's why the self-registration doesn't work. But the discussion we had is, well, you could still allow people to self-register, just with almost no permissions, but visibility and to be able to knock on the door, for example, of an existing project and say, hey, I'd like to join. So, it's a bit different to the GitHub model, but that's a valid one.
+
+And so, they've taken that on board, and I believe they will actually work on implementing that. So, we may find that, you know, there's a little, it gets a bit more streamlined. In the meantime, we have to ask for your patience.
+
+But it's a useful move, right? Because it makes the whole thing more sort of UN official, if you like, if it's on UN infrastructure. So, I think we've got another week or so of suffering through the teething troubles, and then it should be a bit more seamless.
+
+So, that's my only update on this transition. I might ask Matthias to give us a quick update on UN extension projects, UNTP extension projects. Albert?
+
+Sorry, Bertus?
+
+[Speaker 5]
+On this point, while I'm looking at GitLab, we're using the Rhino Alliance system called Basecamp, and there's sort of a calendar implemented in there, which you subscribe to. So, maybe if you can propose to the GitLab team that they implement the UNTP, and all you need to do is to subscribe to that calendar, and then you get updated automatically without getting spammed. So, what you normally would do is you would say, in this project, I subscribe to that project calendar, and or you can group it together, and you say, I subscribe to the UNTP GitLab calendar, and all the groups which you are participating in actually goes into that calendar.
+
+And that technically is pretty, it's worked out. Let me just put it that way. I don't know how technically difficult it is, but it worked.
+
+And then we need to subscribe to one channel as external calendar, and I press refresh, and I get the meetings.
+
+[Speaker 1]
+Okay. I mean, that's not strictly the purpose of GitLab, but I have had a chat with UNICC about more broadly beyond GitLab, how do we, what tooling can you offer to facilitate these global meetings? So, mailing list is another one.
+
+[Speaker 5]
+That doesn't necessarily need to be part of GitLab. It can be something parallel, but I think a single calendar for UNTP, a subscription calendar, and then you actually as participants say, I'm in this project, as you just described, and then that project calendars automatically go there. So, that could solve this problem better than this, and inputs.
+
+I can speak to you offline now, that Basecamp thing. Yeah.
+
+[Speaker 1]
+Yeah. Shoot me an email or let's have a chat about that. We may find we need to use some commercial tools in the interim before UNICC provides more collaboration tools, because they're starting with GitLab, but I have asked them about a mailing list, list server, and chat tools and things like this, because we just, we use Slack, but that's also not an official UN channel, but it's very helpful.
+
+So, yeah, anyway, there's a transition, I think, from all these sort of plethora of commercial tools that we just pick up and use, usually the free version, to hopefully more UN supported infrastructure. But in the meantime, if I don't mind using a commercial tool, if it just works better than what I'm doing at the moment, let's have a look at that.
+
+[Speaker 5]
+I will pop you an email. I don't actually recommend we use Basecamp, but for the interim, that is a better mechanism. I think the UN should provide us a tool that works, and calendars are one of the critical things that simply must work, otherwise you get into trouble, as we are now.
+
+[Speaker 1]
+Okay, all right, enough of that, but thank you. I'll really try to fix this before the next meeting. Before we get on to the updates from the various team leads, do you want to say anything, Matthias, about textile extension and copper extension?
+
+[Speaker 2]
+Yes, gladly. Thanks, Steve. Yes, we are indeed working on two new extensions.
+
+One is for the textile or garment and textile sector, which we currently do as an internal project, since we have done substantial work on the garment and footwear sector already under recommendation 46 and the traceability standard for garment and footwear. So, we have some business model specifications done already, and that's the basis now for this textile extension that we somehow first develop in-house. We also have a group of brands, textile or fashion brands, willing to do a first round of testing, which we would start early 2026, when we have a very rough first draft of the extension ready.
+
+But this is all, I would say for textiles, a very initial stage, and once there's a bit more maturity behind this extension, I think we still would need to look for an external extension owner who has the trust of the sector and can then, in the more long term, maintain and administer the extension. So, this is not, I would say, the approach we want to take as a model for new extensions, but it's simply grown out of the fact that we had already done substantial work on the sector and want to use that as the basis and develop something now with a small team of experts. One of them is Harley Thomas, who you may know because he contributed to UNTP a lot already.
+
+Another one is Gerhard Helmskerk, of course, who you know because he did all the work on Recommendation 46 and the business model specifications for the garment and footwear traceability standard. And then we have also a consultant, at least one, very knowledgeable of the textile sector, but then there's actually a lot of work ongoing, supported by the EU-funded project that the UNECE is implementing on convening the garment and footwear sector around a common language and a common set of data metrics that they would consider as important to be let's say, the vocabulary catalog basis of a textile extension.
+
+So, this work will also feed into it. So, it will be a very interactive process with stakeholders from the industry. So, we will not do that on a desk on our own, but we have these feedback loops with the sector to stay relevant and produce something which is really of value for them.
+
+So, that's for textile. The other extension is on copper, which follows more the model that we want to also develop as a model for future other extensions that we actually now have a commitment from the International Copper Association, who are ready to work with us on this extension and to be committed to own this extension at some point. So, currently, it's a joint project led by me from the UNECE Secretariat or from the UN Seafaring Secretariat and Nancy.
+
+We are also here working with consultants, Susanne, who already worked with us on Recommendation 49, will be involved also actually due to the fact that she's already working with the Global Batteries Alliance on their efforts to develop an extension. So, since copper and batteries are two value chains that have several intersection points, there may be synergies in developing that bit in parallel also with a similar team. But for this extension, we also would like to go to the UNCEFAC plenary next year with a recommendation which is accompanying the extension, however, not on copper only, but on critical raw materials more broadly.
+
+So, this recommendation would then cover also future extensions to the UNTP on other minerals as soon as industry interest is there and we have capacity to work on these additional minerals extensions as well. But for now, copper will be kind of our pilot and also along developing these two extensions, we will also develop a more structured approach and methodology to onboard new extension owners and to also pilot or company pilots on new extensions. So, this will be an important by-product of these two pilot extensions now that we hopefully come up then with a more structured approach for other extensions as well and we just come out of the adoption working group.
+
+So, the adoption working group may play an important role in supporting extension owners in promoting the UNTP, but we may also or we plan to have at least a temporary task force or group which looks into the more general development of a governance structure for extensions that will be outside the adoption group, but very closely aligned to the work that the adoption group is doing. So, that's it for this update. Thanks.
+
+[Speaker 1]
+All right, thanks Matthias. Before we move on to the team updates, can I just ask, is there anyone on this call from the US North American time zone? Because the scheduling of these UNTP meetings is designed to be friendly to Europe in one meeting and friendly to the US in another meeting and this is meant to be the US friendly one, but I see everybody that's on the call is either Australian or European as far as I can guess.
+
+So, I wonder whether we're doing ourselves a disservice by making everybody stay up late in Europe to attend a meeting that primarily is targeted at the North American time zone. Anybody here from that time zone?
+
+[Speaker 8]
+Time zone? It's 6 p.m. here.
+
+[Speaker 1]
+6 p.m.? Ah, okay. Where are you?
+
+[Speaker 8]
+I'm in Uruguay, South America.
+
+[Speaker 1]
+Ah, okay. All right. So, this is a friendly time zone for you then, at least.
+
+[Speaker 8]
+Yes, it is.
+
+[Speaker 1]
+Good. I'm glad we got at least one. Okay.
+
+So, let's move on to team updates. I see Nick's on the call. Do you want to give us a supply chain update, Nick?
+
+[Speaker 4]
+Yeah. Yes. Can you hear me okay?
+
+Sorry if I'm sounding a bit croaky. I lost my voice at kids football training last night, being the coach yelling at a bunch of nine-year-old girls in a positive way, of course. So, the main update from us, we've had a few new members join the supply chain working group, which is really good.
+
+And Matthias, I was really interested to hear your update there, because this sounds like there's quite a lot of constructive overlap with what we're looking to do in the supply chain working group. Suzanne is in our working group, and we're looking to try and help any scheme owners that are implementing UNTP with some of the practical aspects of how would you map data content from the scheme owner to UNTP elements. I would say it's probably the technical practical aspects of how you would implement, versus the business case and the bigger picture, why.
+
+We're more on the nuts and bolts of how do you make it work for the customers of that scheme. And so, the first two that we were focused on, or that we are focused on, are the Global Battery Alliance, Battery Passport, and the Coppermark. We made contact in the last week with the Global Battery Alliance and had a first discussion with them through Suzanne, which was really good.
+
+More work to do, we're going to start the mapping process next week. And we haven't yet got that connection into the Coppermark, so I think if that's something where you'd like a few more folks to help, then let's maybe connect up, because I think we're ready to go, especially given we're starting the mapping process on the Global Battery Alliance TPP. The other aspect of what we're working on is capturing some of the knowledge of what's worked in the past from UNTP implementers.
+
+The first person we're interviewing is Harley tomorrow, oh no, hang on, today, sorry, today. And so, we'll try and record at least part of that session, and we've got a string of questions that we're going to ask him to try and get the honest perspective of what does it feel like to be someone working on implementing UNTP, where the challenges, what have some of the learnings been up till now. So, that's where we're up to.
+
+We have a weekly meeting, Steve. At this stage, I'm just saying, if you would like to join our meeting, shoot me an email or a Slack message, and then once all the distribution list stuff's sorted out, I'll go to that extra effort of updating our page again. That's all from me for now.
+
+[Speaker 1]
+Thank you. I wouldn't mind joining one and also kicking off a discussion that started at the GDC when Adrian approached me. I see you're on the call, Adrian, to talk about how we handle upstream bulk materials and mass balance accounting, particularly in an interoperable way.
+
+There's a number of platforms out there that do tokenized mass balance accounting, but everyone's got to be on the platform. So, how do you do mass balance accounting of bulk materials across platforms is something I've not seen an open specification for. I don't know if anyone else has, but that could be an interesting topic.
+
+[Speaker 4]
+So, Steve, we put that on our next up list after the last meeting, because I think you mentioned that on the last UNTP meeting. So, I would suggest if we want to scope that out a little bit and make sure the objective is clear, perhaps you, Adrian, and I jump on a call this week, and we at least kind of scope it, and then I can take it back to the working group.
+
+[Speaker 1]
+Right. It's already Friday here, but maybe next week.
+
+[Speaker 4]
+Yeah. Next week. Next week.
+
+[Speaker 1]
+Yeah. If you're interested, Adrian, welcome your thoughts on this.
+
+[Speaker 12]
+Well, I'm just messaging via Slack, Nick, on that purpose. So, thanks for building the bridge. I will follow up.
+
+[Speaker 1]
+Great. Okay. Great.
+
+All right. Well, thanks, Nick. I don't think Brett's on the call.
+
+He had some other commitment. We don't have anybody from the conformity group. I know they've had the first meeting, and they are a team that's re-established that was working for quite some time on the digital conformity credentials.
+
+So, they were very well familiar with that. But I've been involved in a long email thread, which is getting the members of that group, getting their head around the SVC, Vocabulary Catalog. So, for those on the call, there's two aspects to the whole conformity structure.
+
+One is the certificate that declares some conformity against a scheme about a product or a facility. That's the digital conformity credential. The other one is the publishing of the scheme itself.
+
+What is the scheme? What are all the criteria? And how do I provide an unambiguous reference to the criteria?
+
+That's what the Sustainability Vocabulary Catalog is. It was interesting to work, to see a long email thread with a bunch of very capable and deeply experienced business subject matter experts in the conformity space and realize how hard it is to communicate some technical ideas about linked data and how, you know, how we need to join things up in a digitally understandable way. So, yet another lesson that one of our challenges here is how to communicate this stuff to the business subject matter experts that care in a language they understand.
+
+So, they're making great progress and I'm looking forward to how they interpret our ideas because their language is what will resonate with others like them. So, yeah.
+
+[Speaker 6]
+Steve, let me add to that. I am part of the conformity group, so I can sort of report on the progress a little bit. So, we did have a successful kickoff meeting with 28 participants.
+
+There has been a subgroup formed and that's the group that Steve was talking about, that long email, to really focus on that SVC side of things. And Nick, I kind of wanted to flag that there's an overlap between the supply chain group and the conformity group when it comes to the SVC definitions. And some of the mapping, it sounds like you're starting to work through with GBA and Coppermark probably needs to line up with the conformity group, particularly the Coppermark.
+
+The Coppermark is a conformity credential. And so, in terms of the collaboration with the International Copper Association's extension, there's kind of two jobs there. One is the product passport definition and the second job is the conformity credential definition.
+
+And the SVC is kind of the glue that sits between those two definitions. And so, we need to kind of think through as you're doing the mapping from a supply chain side, how we then map that back to the conformity side. The second thing I'd mention is on the Coppermark side, we have done some of that mapping work already.
+
+So, they were part of the UNCRM project and the BC Mine reference implementation. So, we can kind of just lift that and kind of walk through that. And I can introduce you to Hilary, who's the COO of Coppermark and is a person we work with there.
+
+[Speaker 4]
+That would be awesome. Thank you. And yeah, I was going to type it in the chat, but we'll look to share our content as soon as we've sort of got a semi-conclusion.
+
+[Speaker 1]
+Cool. Cool. All right.
+
+Thanks, Zach.
+
+[Speaker 3]
+Adoption? Working group? Yep.
+
+We had our call actually just before this one. Matthias gave you some of the updates. I think in his update, he covered some of the stuff because we covered a lot of that on the adoption call or particularly around the extenders.
+
+Ultimately, the adoption working group really should be responsible just for execution of what the whole extender signup process is defined. So, until we have a formal thing with the extenders, if we're calling it a working group or task force or whatever, it falls under adoption. We had a light participation.
+
+We had six members of which I think most of them are here on this call as well. We're in the middle of summer here in Europe and I think a light attendance is a lot of people are away still. But we went through a different work package.
+
+We've sort of grouped up the different items from the terms of reference into work packages. Comms is a big piece. And one of the things that we have talked about particularly was around FAQs to try and put language in non-tech, non-jargon rich definitions and FAQ answers.
+
+So, one of the processes that we've talked about is that the adoption group would own the getting the FAQs updated, but then there's probably questions that will come in for the three other working groups. And so, being that as that sort of point of entry within UNTP, coming in, whether it's coming in from an extender or coming in from an implementer, as people start to learn to ask questions and trying to understand exactly that we would stream the questions over to the appropriate working group for response and answer that will be updated in an FAQ overall at UNTP FAQ. Just the start of that.
+
+Otherwise, we have a couple people who are signed up for the communications work package as Adriana and Christoph. But it will continue to evolve. A good conversation, I think.
+
+Most people or a lot of people were on that that are here. And next call is in two weeks. Okay.
+
+[Speaker 1]
+A couple of emails. Sorry.
+
+[Speaker 3]
+The GitLab thing is, there are challenges and I've had contact from several people that would fall, that I believe would fall into an implementer categorization that want to enter the stuff, to fill in the form, but aren't able to get into it.
+
+[Speaker 1]
+I was just going to ask that. Yeah. I think we should write to them and say, just put it in an email and we'll review it in this group.
+
+Because it used to be on GitHub that anyone could open a ticket, right? And so the instructions, if you wanted to register your software product as a implementation commitment was filling a GitHub issue with this template. And now, of course, you can't create a GitLab issue unless you're registered and you can't register.
+
+So we've got ourselves stuck in a loop. So until that's fixed, let's just do it for them. All right.
+
+Technical group. No report this week, I think. No changes there.
+
+So that's the four groups. Has anyone got any questions or comments or any other matter they'd like to bring up? Or anyone brand new on this call that has never joined us before would like to introduce themselves?
+
+Emiliano.
+
+[Speaker 11]
+Can you guys hear me? Yeah. Yeah.
+
+I just thought I would introduce myself. I know a couple of the people they call already. I'm from Cortec.
+
+We're working with the BC provincial government in the scope of the UNTP protocol implementation. So I'm mostly listening in. I would probably be more active with the technical folks potentially, but just trying to figure out where I sit and how I can contribute right now.
+
+[Speaker 1]
+Okay. Thank you. All right.
+
+Well, if there's no other...
+
+[Speaker 10]
+Oh, hello. Emiliano, I'd like to introduce myself. Please do.
+
+Hi, everyone. My name is Dan Miller. I am based in Berlin, Germany, and I am an entrepreneur currently working on a business and trying to help mostly fashion brands prepare for this forthcoming extended producer responsibility regulations and mostly listening in, but I just wanted to introduce myself.
+
+[Speaker 7]
+Okay.
+
+[Speaker 1]
+Thank you. You may be interested in the fashion extension then when that kicks off. Okay.
+
+Anyone else?
+
+[Speaker 8]
+Me. Hi. My name is Carolyn.
+
+I'm from Uruguay, South America, and we've been working with a team, Trey Surfer, which is a DPP service, and we have experience with plastics, textiles, and some other random projects, but that's what we've been doing for the past two years and would like to collaborate here.
+
+[Speaker 1]
+Okay. Well, I think now that we've more or less established four groups, we'd be looking for more hands-on, willing to contribute, and probably got an exercise to do to bring a lot of new people up to speed on how UNTP works and get their criticism and make the appropriate changes. I'm looking forward to that over the next few months.
+
+We usually have a few more people on this call, but I suspect the reason we don't is the challenges that Virginia brought up earlier. We've just got a major stuff up with the old calendaring and communication stuff, so I'll have to get that fixed for the next one. Has anybody got anything else they'd like to bring up?
+
+If not, we could give everybody 20 minutes of their time back, and I'll make a commitment to fix the messaging and calendaring. All right. Well, let's leave it at this then, and we'll see anyone that can join us in two weeks, hopefully with a proper calendar entry.
+
+Thank you.
+
+[Speaker 13]
+Thanks, Steve.
+
+[Speaker 1]
+Thanks, Steve. Cheers.
+
+[Speaker 13]
+Thanks. Thank you.
+
+[Speaker 3]
+Thanks, Steve.

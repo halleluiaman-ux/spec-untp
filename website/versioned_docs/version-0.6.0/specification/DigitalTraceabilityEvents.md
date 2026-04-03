@@ -7,40 +7,41 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-## Artifacts 
+## Artifacts
 
 Are maintained at https://test.uncefact.org/vocabulary/untp/dte/0/about
 
 ### Stable Releases For Implementation
 
-Version 1.0 stable release for production implementation is due in June 2025 after formal public review 
+Version 1.0 stable release for production implementation is due in June 2025 after formal public review
 
 ### Release for Pilot Testing
 
-Version 0.6.0 release artifacts can be used for pilot testing.  
+Version 0.6.0 release artifacts can be used for pilot testing.
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/0.6.0/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.6.0.json)
-* [Sample Instance](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.6.0.json)
+- [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dte/0.6.0/)
+- [JSON Schema](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-schema-0.6.0.json)
+- [Sample Instance](https://test.uncefact.org/vocabulary/untp/dte/untp-dte-instance-0.6.0.json)
 
 ### Latest Development Version
 
-Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes.
 
 ### Ontology
+
 The ontology for Digital Traceability Events is available in JSON-LD format and can be retrieved via content negotiation from:
 
 [https://test.uncefact.org/vocabulary/untp/dte/0/](https://test.uncefact.org/vocabulary/untp/dte/0/)
 
-  Example:
-  ```bash
-  curl https://test.uncefact.org/vocabulary/untp/dte/0/ -H 'Accept: application/ld+json'
-  ```
+Example:
+
+```bash
+curl https://test.uncefact.org/vocabulary/untp/dte/0/ -H 'Accept: application/ld+json'
+```
 
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dte/0/versions)** page.
-
 
 ### Visualization
 
@@ -48,9 +49,9 @@ A UNTP digital traceability event may be rendered in any format desired by the i
 
 ### Sample Credential
 
-|URL|QR|Description|
-|--|--|--|
-|[Sample Battery Transformation Event](https://untp.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F0b9a7227-760b-4b30-a1d3-e1a1d632a671.json%22%7D%7D)|![Sample Battery Transformation Event](untp-dte-demo-transformation-event.png)|A sample digital traceability event (transformation) as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be downloaded via the download button.|
+| URL                                                                                                                                                                                                                                | QR                                                                             | Description                                                                                                                                                                                                                                                                                                       |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Sample Battery Transformation Event](https://untp.showthething.com/verify?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2F0b9a7227-760b-4b30-a1d3-e1a1d632a671.json%22%7D%7D) | ![Sample Battery Transformation Event](untp-dte-demo-transformation-event.png) | A sample digital traceability event (transformation) as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be downloaded via the download button. |
 
 ## Overview
 
@@ -62,18 +63,17 @@ Traceability events are very lightweights collections of identifiers that specif
 
 ## Requirements
 
-The traceability event is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements)
+The traceability event is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://untp.unece.org/docs/about/Requirements)
 
-|ID|Name|Requirement Statement|Solution Mapping|
-|--|--|--|--|
-|TEV-01|Sub-components|The traceability event MUST provide a mechanism to trace from a DPP representing a product assembly to the individual DPPs of each sub-assembly component part|[Association Event](#association-event)|
-|TEV-02|Consumed materials|The traceability event MUST provide a mechanism to trace a manufactured product DPP back to the DPPs representing batches of input materials that are consumed in manufacturing one or more output products.|[Transformation Event](#transformation-event)|
-|TEV-03|Aggregated bundles|When a DPP represents an aggregated bundle of similar items (eg a pallet of cotton bales) then the traceability event MUST provide a means to allocate the aggregate measures to each individual item (ie each bale)|[Aggregation Event](#aggregation-event)|
-|TEV-04|Transportation|when a product (or consolidated consignment) is shipped from one physical location to another, the traceability event MUST provide a means to record the movement and associate sustainability measures such as transport emissions to the shipped bundle|[Transaction event](#transaction-event)|
-|TEV-05|items or quantities|Traceability events MUST work equally well whether the input or output items are individually serialised items or measured quantities (mass or volume) of a product class.|[Items](#item) [Quantity](#quantity-element)|
-|TEV-06|IoT Sensor data|Traceability events will often be generated by or associated with physical sensor readings. In such cases, the traceability event SHOULD support the association of sensor data with the event|[Sensor element](#sensor-element)|
-|TEV-07|Time & Location|Traceability events MUST always record the timestamp and physical location of the event so that multiple events can be be connected in time and space|[Event](#traceability-event)|
-
+| ID     | Name                | Requirement Statement                                                                                                                                                                                                                                     | Solution Mapping                              |
+| ------ | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| TEV-01 | Sub-components      | The traceability event MUST provide a mechanism to trace from a DPP representing a product assembly to the individual DPPs of each sub-assembly component part                                                                                            | [Association Event](#association-event)       |
+| TEV-02 | Consumed materials  | The traceability event MUST provide a mechanism to trace a manufactured product DPP back to the DPPs representing batches of input materials that are consumed in manufacturing one or more output products.                                              | [Transformation Event](#transformation-event) |
+| TEV-03 | Aggregated bundles  | When a DPP represents an aggregated bundle of similar items (eg a pallet of cotton bales) then the traceability event MUST provide a means to allocate the aggregate measures to each individual item (ie each bale)                                      | [Aggregation Event](#aggregation-event)       |
+| TEV-04 | Transportation      | when a product (or consolidated consignment) is shipped from one physical location to another, the traceability event MUST provide a means to record the movement and associate sustainability measures such as transport emissions to the shipped bundle | [Transaction event](#transaction-event)       |
+| TEV-05 | items or quantities | Traceability events MUST work equally well whether the input or output items are individually serialised items or measured quantities (mass or volume) of a product class.                                                                                | [Items](#item) [Quantity](#quantity-element)  |
+| TEV-06 | IoT Sensor data     | Traceability events will often be generated by or associated with physical sensor readings. In such cases, the traceability event SHOULD support the association of sensor data with the event                                                            | [Sensor element](#sensor-element)             |
+| TEV-07 | Time & Location     | Traceability events MUST always record the timestamp and physical location of the event so that multiple events can be be connected in time and space                                                                                                     | [Event](#traceability-event)                  |
 
 ## Logical Model
 
@@ -82,7 +82,6 @@ The traceability event is designed to meet the following detailed requirements a
 ### Core Vocabulary Documentation
 
 The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.6.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
-
 
 ### DTE Documentation
 
@@ -98,13 +97,13 @@ Please refer to [DPP VC Guidance](DigitalProductPassport.md#verifiable-credentia
 
 ### Traceability Event
 
-There are five types of traceability event which all extend the same abstract `Event` model. 
+There are five types of traceability event which all extend the same abstract `Event` model.
 
-* A `TransformationEvent` describes manufacturing processes where input materials are consumed and/or assembled to create new output products. For example cotton thread is consumed to make woven cotton fabric.
-* An `AssociationEvent` is used to establish relationships between otherwise independent items. For example new tyres on a car.  
-* An `AggregationEvent` describes the grouping (or un-grouping) of a quantity of similar items, usually for transport. For example the stacking of several bales of cotton onto a pallet.
-* A `TransactionEvent` represents the transfer of products between organisations or facilities. For example the sale of some cotton cloth from seller to buyer.
-* An `ObjectEvent` represents an action on an individual item or quantity of product.  For example an inspection or test of a battery.
+- A `TransformationEvent` describes manufacturing processes where input materials are consumed and/or assembled to create new output products. For example cotton thread is consumed to make woven cotton fabric.
+- An `AssociationEvent` is used to establish relationships between otherwise independent items. For example new tyres on a car.
+- An `AggregationEvent` describes the grouping (or un-grouping) of a quantity of similar items, usually for transport. For example the stacking of several bales of cotton onto a pallet.
+- A `TransactionEvent` represents the transfer of products between organisations or facilities. For example the sale of some cotton cloth from seller to buyer.
+- An `ObjectEvent` represents an action on an individual item or quantity of product. For example an inspection or test of a battery.
 
 Any value chain of any complexity can be represented as a combination of these types of events. However for UNTP value chain traceability, the most important event is the transformation event because it represents a manufacturing step that consumes inputs to create new outputs. When an identified output product (with its digital product passport) can be traced to its identified input products (each with their own digital product passport) then a linked set of credentials can be followed to define an entire value chain.
 
@@ -204,6 +203,7 @@ This association event example describes the replacement of a new battery cell (
     }
   ]
 ```
+
 ### Aggregation Event
 
 This aggregation event describes the packaging for shipment of two battery cells (child EPCs) into a battery consignment (parent EPC)
@@ -285,6 +285,7 @@ This transaction event describes the sale of 200 batteries (quantity list) from 
     }
   ]
 ```
+
 ### Object Event
 
 This object event describes the repair of a battery cell (EPC list).

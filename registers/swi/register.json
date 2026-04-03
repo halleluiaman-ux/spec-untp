@@ -1,0 +1,666 @@
+{
+  "id": "https://untp.unece.org/registers/swi",
+  "name": "UNTP Software Implementers Register",
+  "description": "A directory of software solutions that have committed to implementing the UN Transparency Protocol (UNTP). Each entry provides organisation metadata, product information, UNTP scope, and links to conformity test results from the UNTP test playground.",
+  "lastUpdated": "2026-03-13",
+  "registrar": {
+    "id": "https://unece.org",
+    "name": "United Nations Economic Commission for Europe (UNECE)"
+  },
+  "entries": [
+    {
+      "id": "https://untp.unece.org/registers/swi/uncefact",
+      "name": "UNCEFACT",
+      "website": "https://unece.org/trade/uncefact",
+      "description": "The UN center for trade facilitation and e-business (UN/CEFACT) provides a suite of UNTP open source reference implementations and a conformity testing toolkit to support global implementers of UNTP.",
+      "registrationCountry": "Switzerland",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-01",
+      "pilotParticipation": true,
+      "untpScope": [
+        "VCP",
+        "DPP",
+        "DTE",
+        "DCC",
+        "DFR",
+        "IDR",
+        "DIA",
+        "DAC",
+        "SVC"
+      ],
+      "status": "planned",
+      "products": [
+        {
+          "name": "VCkit",
+          "url": "https://github.com/uncefact/project-vckit",
+          "description": "Verifiable credential issuing and verifying toolkit.",
+          "untpScope": ["VCP"],
+          "untpVersions": ["all"],
+          "testResults": []
+        },
+        {
+          "name": "Test Kit",
+          "url": "https://uncefact.github.io/tests-untp/",
+          "description": "A suite of conformity testing tools for all UNTP specifications.",
+          "untpScope": ["DPP", "DCC", "DFR", "DTE", "DIA"],
+          "untpVersions": ["all"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/spherity",
+      "name": "Spherity",
+      "website": "https://www.spherity.com/",
+      "description": "Spherity is a global leader in digital identity solutions, focused on improving secure identity management for enterprises, products, and supply chains. Supporting UNTP implementation aligns with our mission to enhance transparency, accountability, and trust.",
+      "registrationCountry": "Germany",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-11",
+      "pilotParticipation": false,
+      "untpScope": [
+        "VCP",
+        "DPP",
+        "DTE",
+        "DCC",
+        "DFR",
+        "IDR",
+        "DIA",
+        "DAC",
+        "SVC"
+      ],
+      "status": "planned",
+      "products": [
+        {
+          "name": "VERA",
+          "url": "https://vera.spherity.com/",
+          "description": "Digital Product Passport Suite.",
+          "untpScope": ["VCP", "DPP", "DTE", "DFR", "IDR", "DAC"],
+          "untpVersions": ["1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/trust-provenance",
+      "name": "Trust Provenance",
+      "website": "https://trustprovenance.com/",
+      "description": "Trust Provenance focuses on ensuring trust and integrity in supply chains, particularly in Australian agriculture, by leveraging UNTP to manage digital product passports with credible, traceable, and verifiable data.",
+      "registrationCountry": "Australia",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-11",
+      "pilotParticipation": true,
+      "untpScope": [
+        "VCP",
+        "DPP",
+        "DTE",
+        "DCC",
+        "DFR",
+        "IDR",
+        "DIA",
+        "DAC",
+        "SVC"
+      ],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Trust Provenance",
+          "url": "https://trustprovenance.com/",
+          "description": "Supply chain traceability and transparency suite.",
+          "untpScope": ["VCP", "DPP", "DTE", "DFR", "IDR", "DAC"],
+          "untpVersions": ["all"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/tilkal",
+      "name": "Tilkal",
+      "website": "https://www.tilkal.com",
+      "description": "Tilkal is a premier platform for supply chain traceability and transparency, integrating a B2B blockchain network with advanced analytics and risk scoring algorithms to deliver a secure, real-time view of the end-to-end supply chain.",
+      "registrationCountry": "France",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-12",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DCC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Tilkal Platform",
+          "url": "https://www.tilkal.com",
+          "description": "Supply chain traceability and transparency suite.",
+          "untpScope": ["VCP", "DPP"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/northern-block",
+      "name": "Northern Block",
+      "website": "https://northernblock.io/",
+      "description": "Northern Block's enterprise digital credentialing product enables the mining industry to exchange verifiable sustainability data based on industry standards such as Towards Sustainable Mining.",
+      "registrationCountry": "Canada",
+      "operatingCountries": "Canada",
+      "commitmentDate": "2024-09-12",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DCC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Orbit Enterprise",
+          "url": "https://northernblock.io/orbit-enterprise",
+          "description": "Enterprise Self-Sovereign Identity.",
+          "untpScope": ["VCP", "DCC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        },
+        {
+          "name": "Trust Registry",
+          "url": "https://trustregistry.nborbit.ca/",
+          "description": "Enterprise Trust Registry.",
+          "untpScope": ["DCC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Mining",
+          "processFocus": "Towards Sustainable Mining, The Copper Mark",
+          "untpUsage": ["DCC"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/freshchain",
+      "name": "FreshChain",
+      "website": "https://freshchain.com.au/",
+      "description": "FreshChain is a fully integrated, blockchain enabled, paddock to plate assurance system that verifies the food you eat. UNTP is an important implementable standard for FreshChain to empower customers to connect into global transparent and sustainable supply chains.",
+      "registrationCountry": "Australia",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-12",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DFR", "DTE", "DCC", "IDR", "DAC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "FreshChain Platform",
+          "url": "https://freshchain.com.au/",
+          "description": "Traceability from farm to fork.",
+          "untpScope": ["VCP", "DPP", "DCC", "DTE", "IDR", "DIA", "DAC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Agriculture",
+          "processFocus": "Horticulture food safety, export compliance",
+          "untpUsage": ["DPP", "DCC"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/gov-bc",
+      "name": "Government of British Columbia",
+      "website": "https://digital.gov.bc.ca",
+      "description": "The BC government sees UNTP implementation as an opportunity to enable BC producers of raw materials to differentiate their products in emerging sustainability-focused markets.",
+      "registrationCountry": "Canada",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-12",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DCC", "DIA"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Traction",
+          "url": "https://digital.gov.bc.ca/digital-trust/tools/traction/",
+          "description": "A tool for simplifying the sending and receiving of digital credentials for governments and organisations.",
+          "untpScope": ["VCP", "DPP", "DCC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Government",
+          "processFocus": "Compliance (permits, licenses, certificates)",
+          "untpUsage": ["VCP", "DPP", "DCC"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/relog3p",
+      "name": "ReLOG3P SRL",
+      "website": "https://relog3p.com/",
+      "description": "ReLOG3P is an Innovative Startup and Benefit Corporation based in Italy, supporting Global Trade to achieve the UN Agenda 2030 and EU Green Deal objectives through full supply chain transparency.",
+      "registrationCountry": "Italy",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-12",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DTE", "IDR", "DIA", "DAC", "SVC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "ReACT",
+          "description": "Reshaping transport and logistics towards a sustainable future.",
+          "untpScope": ["VCP", "DPP", "DTE"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        },
+        {
+          "name": "SRL",
+          "description": "Digital credential issuance and management platform.",
+          "untpScope": ["VCP", "DPP", "DTE"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Regulatory compliance",
+          "processFocus": "Supply chain",
+          "untpUsage": ["VCP", "DPP", "DTE", "DCC"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/lumoin",
+      "name": "Lumoin",
+      "website": "https://lumoin.com",
+      "description": "Lumoin builds Verifiable and open-source components to drive the transition to a regenerative and circular economy by implementing the UN Transparency Protocol (UNTP).",
+      "registrationCountry": "Finland",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-14",
+      "pilotParticipation": true,
+      "untpScope": [
+        "VCP",
+        "DPP",
+        "DTE",
+        "DCC",
+        "DFR",
+        "IDR",
+        "DIA",
+        "DAC",
+        "SVC"
+      ],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Verifiable",
+          "url": "https://github.com/Lumoin/Verifiable",
+          "description": "DID, VC and presentation methods and standards as open source.",
+          "untpScope": ["VCP", "DPP", "DCC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        },
+        {
+          "name": "CoreLoop",
+          "url": "https://github.com/Lumoin/CoreLoop",
+          "description": "UNTP and other data shapes standards and transformations as open source.",
+          "untpScope": ["DPP", "DTE", "SVC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Agriculture, Critical Minerals, Textiles",
+          "processFocus": "Supply chain transparency",
+          "untpUsage": ["VCP", "DPP", "DTE"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/morpheus-network",
+      "name": "Morpheus Network",
+      "website": "https://morpheus.network/",
+      "description": "Morpheus.Network is a middleware solution for supply chain IT systems, seamlessly connecting fragmented data, software systems, and stakeholders with over 150 integrations.",
+      "registrationCountry": "Canada",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-09-14",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DTE", "DCC", "DFR", "IDR", "DIA", "DAC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Morpheus Network Platform",
+          "url": "https://morpheus.network/platform/",
+          "description": "Multi-award-winning supply chain platform with over 150 connections, providing middleware between disparate systems and processes.",
+          "untpScope": ["VCP", "DPP", "DTE", "DFR", "DCC", "DIA", "IDR"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/cordina",
+      "name": "Cordina",
+      "website": "https://www.cordina.io/",
+      "description": "Cordina is implementing UNTP to help simplify ESG disclosures for Heavy Industry and delivery of high value interactive benchmarking.",
+      "registrationCountry": "Australia",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-10-04",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DTE", "DCC", "IDR"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Cordina Interactive Benchmarking Engine",
+          "url": "https://www.cordina.io/product",
+          "description": "Data framework for industrial supply chains demonstrating the value of interactive benchmarking vs scope 3 emissions reporting.",
+          "untpScope": ["VCP", "DTE", "DCC", "IDR"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Critical Minerals, Heavy Industry",
+          "processFocus": "Emissions accounting",
+          "untpUsage": ["VCP", "DCC", "DTE"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/enigio",
+      "name": "Enigio",
+      "website": "https://enigio.com/",
+      "description": "Enigio's trace:original creates freely transferable electronic original documents which include structured data, allowing recipients to extract verified structured data without onboarding or additional system integration.",
+      "registrationCountry": "Sweden",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-10-14",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DTE", "DCC", "DFR", "DAC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "trace:original",
+          "url": "https://enigio.com/traceoriginal/",
+          "description": "Solution for creating and managing digital original documents with all the useful properties of paper in digital form.",
+          "untpScope": ["VCP", "DTE", "DPP", "DFR", "DCC", "DAC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/sustainable-choice-group",
+      "name": "Sustainable Choice Group",
+      "website": "https://www.sustainabilitytracker.com/scgroup/",
+      "description": "Sustainability Tracker houses brand sustainability credentials, initiatives, actions, and evidence, helping consumers make considered choices in real time while helping brands share sustainability messages without greenwashing.",
+      "registrationCountry": "Australia",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-10-28",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "IDR"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Sustainability Tracker",
+          "url": "https://www.sustainabilitytracker.com/",
+          "description": "Solution that houses brand sustainability credentials, initiatives, actions, and evidence in the palm of your hands.",
+          "untpScope": ["VCP", "DPP", "IDR"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/health-loq",
+      "name": "Health LOQ",
+      "website": "https://healthloq.com/",
+      "description": "HealthLOQ provides product/ingredient/component origin transparency and certificate protection and verification software for industries where supply chain transparency is critical. Member of GRMA (Global Retailer and Manufacturing Alliance).",
+      "registrationCountry": "USA",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-12-07",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DTE", "DCC", "IDR", "DAC", "SVC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Health LOQ Document Protection",
+          "url": "https://healthloq.com/verify-document",
+          "description": "Authenticates legitimate electronic documents and detects fraudulent or tampered versions using blockchain technology.",
+          "untpScope": ["VCP", "IDR", "DAC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        },
+        {
+          "name": "Health LOQ Product Origin",
+          "url": "https://healthloq.com/products?product_type=all",
+          "description": "Captures first-party inputs from ingredient suppliers and manufacturers, linking supply chain information from specific ingredient batches to final products.",
+          "untpScope": ["DPP", "DTE", "DIA", "IDR", "DAC"],
+          "untpVersions": [],
+          "testResults": []
+        },
+        {
+          "name": "Health LOQ Compliance Dashboard",
+          "url": "https://healthloq.com/compliance-dashboard",
+          "description": "Verifies brand credentials through issuing organisations, automates verification of CoAs and documentation.",
+          "untpScope": ["VCP", "IDR", "DAC"],
+          "untpVersions": [],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Pharmaceuticals, Nutraceuticals, Food Products, Cosmetics, Military and Defense",
+          "processFocus": "Traceability and integrity",
+          "untpUsage": ["VCP", "DCC", "DTE"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/simba-chain",
+      "name": "SIMBA Chain",
+      "website": "https://simbachain.com/",
+      "description": "SIMBA Ensure is a blockchain-powered solution delivering trust, transparency, and traceability across supply chains by creating immutable digital records for asset verification. Participant in NAATBatt, SAE, and CIRPASS 2.",
+      "registrationCountry": "USA",
+      "operatingCountries": "Global",
+      "commitmentDate": "2024-12-12",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DFR", "DTE", "DCC", "IDR", "DAC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "SIMBA Ensure",
+          "url": "https://simbachain.com/",
+          "description": "Platform providing trusted seamless data exchange for identity management, multi-vendor data sharing, and third party data verification.",
+          "untpScope": ["VCP", "DPP", "DFR", "DTE", "DCC", "IDR", "DAC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Automotive, Batteries",
+          "processFocus": "Traceability and integrity",
+          "untpUsage": ["VCP", "DCC", "DTE"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/k4-security",
+      "name": "K4 Security",
+      "website": "https://k4-security.com/",
+      "description": "KSDPP (K4-Security Digital Product Passport) enables the application of Digital Product Passport (DPP), allowing verification of product authenticity while providing fast and secure validation of product and supplier information.",
+      "registrationCountry": "Republic of Korea",
+      "operatingCountries": "Republic of Korea",
+      "commitmentDate": "2025-01-13",
+      "pilotParticipation": true,
+      "untpScope": ["VCP", "DPP", "DTE", "DCC", "IDR", "DAC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "KS Product Trust Service",
+          "url": "https://dpp.globalwallet.kr/",
+          "description": "Supply chain traceability software/service providing a platform to create and manage Digital Product Passports.",
+          "untpScope": ["VCP", "DPP", "DTE", "DCC", "IDR", "DAC"],
+          "untpVersions": ["0.5", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": []
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/wholechain",
+      "name": "Wholechain",
+      "website": "https://wholechain.com/",
+      "description": "Wholechain is a supply chain traceability solution that tracks products from raw materials to finished goods, built around global data standards such as GS1 and GDST.",
+      "registrationCountry": "USA",
+      "operatingCountries": "Global",
+      "commitmentDate": "2025-08-21",
+      "pilotParticipation": false,
+      "untpScope": [
+        "VCP",
+        "DPP",
+        "DTE",
+        "DCC",
+        "DFR",
+        "IDR",
+        "DIA",
+        "DAC",
+        "SVC"
+      ],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Wholechain Platform",
+          "url": "https://wholechain.com/",
+          "description": "Collects and connects data across global supply chains, giving businesses insights to manage risk, improve efficiency, and enable informed consumer choices.",
+          "untpScope": [
+            "VCP",
+            "DPP",
+            "DTE",
+            "DCC",
+            "DFR",
+            "IDR",
+            "DIA",
+            "DAC",
+            "SVC"
+          ],
+          "untpVersions": ["0.6", "1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Agriculture, Critical Minerals, Textiles, Food Products, Cosmetics, Automotive, Batteries",
+          "processFocus": "Supply chain traceability",
+          "untpUsage": [
+            "VCP",
+            "DPP",
+            "DTE",
+            "DCC",
+            "DFR",
+            "IDR",
+            "DIA",
+            "DAC",
+            "SVC"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/tappr",
+      "name": "Tappr",
+      "website": "https://usetappr.com/",
+      "description": "Tappr builds digital infrastructure for product traceability and Digital Product Passports, enabling brands and supply chains to exchange trusted product data without relying on centralised databases.",
+      "registrationCountry": "The Netherlands",
+      "operatingCountries": "Global",
+      "commitmentDate": "2025-12-31",
+      "pilotParticipation": false,
+      "untpScope": ["DPP", "DFR", "DTE", "DCC", "IDR"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Brand Cloud",
+          "description": "Data storage solution supporting the UNTP data model, exposing and collecting data.",
+          "untpScope": ["DPP", "DTE", "DCC", "DFR", "IDR", "SVC"],
+          "untpVersions": ["0.6", "1.0"],
+          "testResults": []
+        },
+        {
+          "name": "Passport Builder",
+          "description": "Exposes JSON-LD machine-readable UNTP data.",
+          "untpScope": ["DPP"],
+          "untpVersions": [],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Textiles, Furniture, Electronics",
+          "processFocus": "Supply chain traceability",
+          "untpUsage": ["DPP", "DTE", "DCC", "DFR", "IDR"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/movilitas-cloud",
+      "name": "Movilitas.Cloud",
+      "website": "https://www.movilitas.cloud/",
+      "description": "Movilitas.Cloud serializes prescription drugs with GS1 2D data matrix codes and tracks products throughout the supply chain to adhere to legislation in Europe, USA, Middle East, and Asia. Also applies QR codes on food products for consumer transparency.",
+      "registrationCountry": "Belgium",
+      "operatingCountries": "Global",
+      "commitmentDate": "2025-12-31",
+      "pilotParticipation": false,
+      "untpScope": ["DPP", "DTE", "DFR"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Movilitas.Cloud",
+          "url": "https://www.movilitas.cloud/",
+          "description": "Serialization and track-and-trace platform for pharmaceuticals and food products.",
+          "untpScope": ["DPP", "DTE", "DFR", "SVC"],
+          "untpVersions": ["1.0"],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Pharma, Food",
+          "processFocus": "Supply chain traceability",
+          "untpUsage": ["DPP", "DTE", "DFR"]
+        }
+      ]
+    },
+    {
+      "id": "https://untp.unece.org/registers/swi/global-circular-network",
+      "name": "Global Circular Network",
+      "website": "https://www.globalcircularnetwork.com/",
+      "description": "The Global Circular Network (GCN) Digital Product Passport Platform integrates RFID technology, including RFID THREADS, to enable secure, human and machine-readable tracking of textile products across interconnected global circular business networks, from fibre to feedstock.",
+      "registrationCountry": "Australia",
+      "operatingCountries": "Global",
+      "commitmentDate": "2025-10-20",
+      "pilotParticipation": false,
+      "untpScope": ["DPP", "DFR", "DTE", "DCC", "IDR", "DAC", "SVC"],
+      "status": "planned",
+      "products": [
+        {
+          "name": "Global Circular Network Platform",
+          "url": "https://www.globalcircularnetwork.com/",
+          "description": "DPP platform integrating RFID technology for textile product tracking across circular business networks.",
+          "untpScope": ["DPP", "DFR", "DTE", "DCC", "IDR", "DAC", "SVC"],
+          "untpVersions": [],
+          "testResults": []
+        }
+      ],
+      "industryFocus": [
+        {
+          "industrySector": "Textile Manufacturing",
+          "processFocus": "Supply chain traceability",
+          "untpUsage": ["DPP", "DFR", "DTE", "DCC", "IDR", "DAC", "SVC"]
+        }
+      ]
+    }
+  ]
+}

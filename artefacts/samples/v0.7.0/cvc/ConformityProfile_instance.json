@@ -1,0 +1,154 @@
+{
+  "type": ["ConformityProfile"],
+  "id": "https://sample-scheme.example.com/mas/tantalum/1.0.0",
+  "name": "Tantalum Processor Standard",
+  "description": "Assessment standard for tantalum processors covering supply chain due diligence, material traceability, mass balance controls, and tantalum-specific risk management. Designed for processors of tantalum ore (coltan) and recycled tantalum materials.",
+  "version": "1.0.0",
+  "validFrom": "2025-02-01",
+  "status": "active",
+  "subjectType": "facility",
+  "standardAlignment": [
+    {
+      "type": ["StandardAlignment"],
+      "standard": {
+        "type": ["Standard"],
+        "id": "https://www.oecd.org/corporate/mne/mining.htm",
+        "name": "OECD Due Diligence Guidance for Responsible Supply Chains of Minerals from Conflict-Affected and High-Risk Areas"
+      },
+      "alignmentLevel": "meets"
+    },
+    {
+      "type": ["StandardAlignment"],
+      "standard": {
+        "type": ["Standard"],
+        "id": "https://www.iso.org/standard/79612.html",
+        "name": "ISO 14001:2015 Environmental Management Systems"
+      },
+      "alignmentLevel": "partial"
+    }
+  ],
+  "regulatoryAlignment": [
+    {
+      "type": ["RegulatoryAlignment"],
+      "regulation": {
+        "type": ["Regulation"],
+        "id": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017R0821",
+        "name": "EU Conflict Minerals Regulation (2017/821)"
+      },
+      "alignmentLevel": "meets"
+    },
+    {
+      "type": ["RegulatoryAlignment"],
+      "regulation": {
+        "type": ["Regulation"],
+        "id": "https://www.congress.gov/bill/111th-congress/house-bill/4173",
+        "name": "US Dodd-Frank Act Section 1502 (Conflict Minerals)"
+      },
+      "alignmentLevel": "meets"
+    }
+  ],
+  "criterionScoringFramework": [
+    {
+      "type": ["ScoringFramework"],
+      "name": "Criterion Conformance",
+      "description": "Conformance classification applied to individual criteria within the tantalum processor assessment. Each criterion is assessed as conformant, active (corrective actions in progress), or non-conformant.",
+      "score": [
+        {
+          "type": ["Score"],
+          "code": "CONF",
+          "rank": 1,
+          "definition": "Facility meets all applicable requirements for this criterion."
+        },
+        {
+          "type": ["Score"],
+          "code": "ACTIVE",
+          "rank": 2,
+          "definition": "Facility is engaged in corrective actions to address identified gaps for this criterion."
+        },
+        {
+          "type": ["Score"],
+          "code": "NON-CONF",
+          "rank": 3,
+          "definition": "Facility does not meet the requirements for this criterion."
+        }
+      ]
+    }
+  ],
+  "scope": [
+    {
+      "type": ["Classification"],
+      "code": "2844",
+      "name": "Tantalum",
+      "schemeId": "https://www.customs.gov/hts/",
+      "schemeName": "Harmonized Tariff Schedule"
+    }
+  ],
+  "documentation": "https://sample-minerals-initiative.example.com/assurance-scheme/tantalum/",
+  "scheme": {
+    "type": ["ConformityScheme"],
+    "id": "https://sample-scheme.example.com/mas",
+    "name": "Minerals Assurance Scheme"
+  },
+  "criterion": [
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/supply-chain-due-diligence/1.0.0",
+      "name": "Supply Chain Due Diligence Management System"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/conflict-risk-management/1.0.0",
+      "name": "Conflict and High-Risk Area Risk Management"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/supplier-verification/1.0.0",
+      "name": "Supplier Verification and Know-Your-Counterparty"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/material-eligibility/1.0.0",
+      "name": "Material Eligibility and Classification"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/chain-of-custody/1.0.0",
+      "name": "Chain of Custody Documentation"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/mass-balance-controls/1.0.0",
+      "name": "Mass Balance Controls"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/batch-traceability/1.0.0",
+      "name": "Batch Traceability"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/recycled-material/1.0.0",
+      "name": "Recycled Material Qualification"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/sanctions-screening/1.0.0",
+      "name": "Sanctions List Screening"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/financial-records/1.0.0",
+      "name": "Financial Record Keeping"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/processor-input-controls/1.0.0",
+      "name": "Processor Input Controls"
+    },
+    {
+      "type": ["Criterion"],
+      "id": "https://sample-scheme.example.com/criterion/tantalum-risk-indicators/1.0.0",
+      "name": "Tantalum-Specific Risk Indicators"
+    }
+  ]
+}

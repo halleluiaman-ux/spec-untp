@@ -1,0 +1,44 @@
+{
+  "id": "https://untp.unece.org/registers/idr",
+  "name": "UNTP Identifier Scheme Register",
+  "description": "A directory of identifier schemes that may be used within UNTP credentials to uniquely identify products, organisations, facilities, and other entities. Each entry provides scheme metadata, registrar information, identifier patterns, and resolver endpoints.",
+  "lastUpdated": "2026-03-13",
+  "registrar": {
+    "id": "https://unece.org",
+    "name": "United Nations Economic Commission for Europe (UNECE)"
+  },
+  "entries": [
+    {
+      "id": "https://id.gs1.org/gtin",
+      "name": "GS1 Global Trade Item Number (GTIN)",
+      "description": "The Global Trade Item Number (GTIN) is a globally unique identifier for trade items (products and services). GTINs are used to identify any item upon which there is a need to retrieve pre-defined information and that may be priced, ordered, or invoiced at any point in the supply chain. GTINs may be 8, 12, 13, or 14 digits long and are encoded in GS1 barcodes and EPC/RFID tags.",
+      "registerType": "product",
+      "registrarName": "GS1",
+      "registrarId": "https://www.gs1.org",
+      "legalBasis": "https://www.gs1.org/standards/id-keys/gtin",
+      "registeredIdPattern": "^\\d{8}$|^\\d{12,14}$",
+      "registeredIdExample": "09506000164908",
+      "registeredIdUriTemplate": "https://id.gs1.org/01/{id}",
+      "queryEndpoint": "https://www.gs1.org/services/check-digit-calculator?value={id}",
+      "resolverEndpoint": "https://id.gs1.org/01/{id}",
+      "countryCode": "GLO",
+      "documentation": "https://www.gs1.org/standards/id-keys/gtin"
+    },
+    {
+      "id": "https://id.gs1.org/gln",
+      "name": "GS1 Global Location Number (GLN)",
+      "description": "The Global Location Number (GLN) is a globally unique identifier for legal entities, functional entities, and physical locations. GLNs are 13-digit numbers used to identify parties and locations in electronic commerce, supply chain management, and healthcare. They enable unique identification of any legal, functional, or physical entity involved in business transactions.",
+      "registerType": "organisation",
+      "registrarName": "GS1",
+      "registrarId": "https://www.gs1.org",
+      "legalBasis": "https://www.gs1.org/standards/id-keys/gln",
+      "registeredIdPattern": "^\\d{13}$",
+      "registeredIdExample": "9506000164000",
+      "registeredIdUriTemplate": "https://id.gs1.org/417/{id}",
+      "queryEndpoint": "https://www.gs1.org/services/check-digit-calculator?value={id}",
+      "resolverEndpoint": "https://id.gs1.org/417/{id}",
+      "countryCode": "GLO",
+      "documentation": "https://www.gs1.org/standards/id-keys/gln"
+    }
+  ]
+}

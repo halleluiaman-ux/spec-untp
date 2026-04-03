@@ -7,7 +7,9 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-## Artefacts 
+## Artefacts
+
+Are maintained at https://test.uncefact.org/vocabulary/untp/svc/0/about
 
 ### Stable Releases For Implementation
 
@@ -15,88 +17,82 @@ Version 1.0 stable release for production implementation is due Jun 2025
 
 ### Release for Pilot Testing
 
-* Conformity Vocabulary [Schema](https://jargon.sh/user/unece/SustainabilityVocabulary/v/working/artefacts/jsonSchemas/ConformitySchemeVocabulary.json?class=ConformitySchemeVocabulary) and [Documentation](https://jargon.sh/user/unece/SustainabilityVocabulary/v/working/artefacts/readme/render)
-* Conformity Topic Classification [JSON Structure](/schema/SustainabilityCriteriaTaxonomy_v0.1.json), [JSON-LD vocabulary](/schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
-* Conformity Scheme [Register](../implementations/SchemeOwners) (simple web page for now)
+Version 0.6.1 release artifacts can be used for pilot testing.
+
+- [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/svc/0.6.1/context/)
+- [JSON Schema](https://test.uncefact.org/vocabulary/untp/svc/untp-svc-schema-0.6.1.json)
+- [Sample JSON Instance](https://test.uncefact.org/vocabulary/untp/svc/untp-svc-instance-0.6.1.json)
+- Conformity Scheme [Register](../implementations/SchemeOwners) (simple web page for now)
 
 Note that the vocabulary schema depends on definitions in [UNTP core vocabulary](https://test.uncefact.org/vocabulary/untp/core/0/about)
 
 ### Latest Development Version
 
-Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes.
 
 ### Version History
 
 First release.
 
-### Sample Conformity Vocabulary 
+### Sample Conformity Vocabulary
 
 Will be published by early implementers and discoverable via the [scheme owner register](../implementations/SchemeOwners.md)
 
 ## Overview
 
-Web **vocabularies** are a means to bring consistent understanding of **meaning** to ESG claims and assessments throughout transparent value chains based on UNTP. There are hundreds of ESG standards and regulations around the world, each with dozens or hundreds of specific conformity **criteria**. Any given value chain from raw materials to finished product is likely to include dozens of passports and conformity credentials issued against any of thousands of ESG criteria. Without a consistent means to make sense of this data, UNTP would provide a means to discover a lot of data but no easy way to understand it. This specification provides guidance to scheme owners about how to publish their sustainability standards in a way that allows the conformity criteria defined by the standards to be unambiguously referenced when making claims and assessments. 
+Web **vocabularies** are a means to bring consistent understanding of **meaning** to ESG claims and assessments throughout transparent value chains based on UNTP. There are hundreds of ESG standards and regulations around the world, each with dozens or hundreds of specific conformity **criteria**. Any given value chain from raw materials to finished product is likely to include dozens of passports and conformity credentials issued against any of thousands of ESG criteria. Without a consistent means to make sense of this data, UNTP would provide a means to discover a lot of data but no easy way to understand it. This specification provides guidance to scheme owners about how to publish their sustainability standards in a way that allows the conformity criteria defined by the standards to be unambiguously referenced when making claims and assessments.
 
 ## Conceptual Model
 
-The diagram shows how the sustainability vocabulary catalog works with UNTP credentials such as product passports, facility records, and conformity credentials to bring unambiguous meaning to sustainability claims and assessments. 
+The diagram shows how the sustainability vocabulary catalog works with UNTP credentials such as product passports, facility records, and conformity credentials to bring unambiguous meaning to sustainability claims and assessments.
 
-* Schemes (Grey): There are hundreds of national regulations and industry standards that address sustainability of products, facilities, and organisations. Each one typically contains multiple auditable criteria. These are governed by the the government or industry authorities that define them.  UNTP does not seek to create any new schemes or regulations but rather to provide a means to ensure that these standards and regulations can be unambiguously referenced by digital credentials. This requires each individual criteria to have a globally unique identifier (a URI). 
-* DPP / DFR (green): The UNTP digital product passport (DPP) provides a means for a manufacturer or brand owner to list multiple sustainability claims for a given identified product. Similarly a UNTP digital facility record (DFR) provides the same capability but for facilities such as farms, mine-sites, processing plants, or manufacturing sites. Each claim may reference a sustainability criteria defined by a regulator or an industry standard.  
-* DCC (brown): The UNTP digital conformity credential (DCC) provides a means for a second or third party to list independent assessments of specific products or facilities against the same conformity criteria. For a DCC to verifiably support a claim in a DPP, the identifier of the criteria and supporting regulation / standard must match. Therefore it is important that both the manufacturer issuing the DPP and the auditor issuing the DCC use the same identifier for the sustainability criteria.  
+- Schemes (Grey): There are hundreds of national regulations and industry standards that address sustainability of products, facilities, and organisations. Each one typically contains multiple auditable criteria. These are governed by the the government or industry authorities that define them. UNTP does not seek to create any new schemes or regulations but rather to provide a means to ensure that these standards and regulations can be unambiguously referenced by digital credentials. This requires each individual criteria to have a globally unique identifier (a URI).
+- DPP / DFR (green): The UNTP digital product passport (DPP) provides a means for a manufacturer or brand owner to list multiple sustainability claims for a given identified product. Similarly a UNTP digital facility record (DFR) provides the same capability but for facilities such as farms, mine-sites, processing plants, or manufacturing sites. Each claim may reference a sustainability criteria defined by a regulator or an industry standard.
+- DCC (brown): The UNTP digital conformity credential (DCC) provides a means for a second or third party to list independent assessments of specific products or facilities against the same conformity criteria. For a DCC to verifiably support a claim in a DPP, the identifier of the criteria and supporting regulation / standard must match. Therefore it is important that both the manufacturer issuing the DPP and the auditor issuing the DCC use the same identifier for the sustainability criteria.
 
 ![Sustainability Vocabulary Catalog](SustainabilityVocabularyCatalog.png)
 
 The purpose of the sustainability vocabulary catalog (SVC) is to reduce the risk of misalignment between claims in DPPs and assessments in DCCs and also to provide a way to group similar criteria across different schemes. The SVC has three components
 
-* [A standard structure (schema)](#conformity-vocabulary-schema) for scheme owners to publish their vocabularies of conformity criteria. This makes sure that the criterion URI is **correct**.
-* [A catalog of schemes](#conformity-scheme-register) that can be used as the entry point to discover scheme-specific criteria. This makes sure that the criterion URI is **discoverable**.
-* [A conformity topic taxonomy](#conformity-topic-classification) that can be used to classify criteria from different schemes. This makes sure that different criterion URI are **comparable**.
+- [A standard structure (schema)](#conformity-vocabulary-schema) for scheme owners to publish their vocabularies of conformity criteria. This makes sure that the criterion URI is **correct**.
+- [A catalog of schemes](#conformity-scheme-register) that can be used as the entry point to discover scheme-specific criteria. This makes sure that the criterion URI is **discoverable**.
+- [A conformity topic taxonomy](#conformity-topic-classification) that can be used to classify criteria from different schemes. This makes sure that different criterion URI are **comparable**.
 
 ## Requirements
 
-|ID|Requirement Statement|Solution Mapping|
-|--|--|--|
-|SVC-01|As a scheme owner, I need to publish the granular conformity criteria defined by my scheme in such a way that each conformity criteria in a multi-level hierarchy can be unambiguously referenced by issuers of conformity credentials, facility records, and product passports |[Conformity Vocabulary Schema](#conformity-vocabulary-schema)|
-|SVC-02|As a scheme owner, I need to manage versions of schemes to reflect changes in the criteria within a scheme so that claims and assessments can be understood within a specific version context|[Conformity Vocabulary Schema](#conformity-vocabulary-schema)| 
-|SVC-03|As a scheme owner, I need to be able to group criteria according to performance levels so that auditors and subjects can clearly understand which criteria must be met in order to reach a given performance level (score)| [Conformity Vocabulary Publishing Guide](#conformity-vocabulary-schema)|
-|SVC-04|As a scheme owner, I need to be able to tag criteria with context labels such as commodity type or facility type so that a relevant subset of assessment criteria are easily identified for a given audit context.| [Conformity Vocabulary Schema](#conformity-vocabulary-schema)|
-|SVC-05|As a Conformity Assessment Body (CAB) I need to be able to easily find criteria URI for any scheme so that I can correctly reference them in the assessments recorded in digital conformity credentials that I issue| [Conformity Scheme Register](#conformity-scheme-register) |
-|SVC-06|As a product owner or facility operator, I need to be able to easily find criteria URI for any scheme so that I can correctly reference them in the claims lists in the product passports and facility records that I issue.|[Conformity Scheme Register](#conformity-scheme-register) |
-|SVC-07|Given that there are hundreds of schemes each with hundreds of criteria, as consumer of any digital credentials I need the criteria from different schemes to be classified using a simple taxonomy so that I can more easily compare similar criteria (eg emissions intensity) across different schemes.|[Conformity Criteria Topic Classification](#conformity-topic-classification) |
-
+| ID     | Requirement Statement                                                                                                                                                                                                                                                                                     | Solution Mapping                                                             |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| SVC-01 | As a scheme owner, I need to publish the granular conformity criteria defined by my scheme in such a way that each conformity criteria in a multi-level hierarchy can be unambiguously referenced by issuers of conformity credentials, facility records, and product passports                           | [Conformity Vocabulary Schema](#conformity-vocabulary-schema)                |
+| SVC-02 | As a scheme owner, I need to manage versions of schemes to reflect changes in the criteria within a scheme so that claims and assessments can be understood within a specific version context                                                                                                             | [Conformity Vocabulary Schema](#conformity-vocabulary-schema)                |
+| SVC-03 | As a scheme owner, I need to be able to group criteria according to performance levels so that auditors and subjects can clearly understand which criteria must be met in order to reach a given performance level (score)                                                                                | [Conformity Vocabulary Publishing Guide](#conformity-vocabulary-schema)      |
+| SVC-04 | As a scheme owner, I need to be able to tag criteria with context labels such as commodity type or facility type so that a relevant subset of assessment criteria are easily identified for a given audit context.                                                                                        | [Conformity Vocabulary Schema](#conformity-vocabulary-schema)                |
+| SVC-05 | As a Conformity Assessment Body (CAB) I need to be able to easily find criteria URI for any scheme so that I can correctly reference them in the assessments recorded in digital conformity credentials that I issue                                                                                      | [Conformity Scheme Register](#conformity-scheme-register)                    |
+| SVC-06 | As a product owner or facility operator, I need to be able to easily find criteria URI for any scheme so that I can correctly reference them in the claims lists in the product passports and facility records that I issue.                                                                              | [Conformity Scheme Register](#conformity-scheme-register)                    |
+| SVC-07 | Given that there are hundreds of schemes each with hundreds of criteria, as consumer of any digital credentials I need the criteria from different schemes to be classified using a simple taxonomy so that I can more easily compare similar criteria (eg emissions intensity) across different schemes. | [Conformity Criteria Topic Classification](#conformity-topic-classification) |
 
 ## Conformity Vocabulary Schema
 
-The sustainability vocabulary publishing guide provides scheme owners with a best practice framework that can be used to publish their schemes as a hierarchy of  criteria, each with a unique identifier (URI). This is a critical activity so that issuers of product passports, conformity credentials, and facility records, can unambiguously reference a conformity criterion. In the example above the key reference criterion is `"id": id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation` indicating that the claim is made following GHG Calculation guidance in the GBA v2.0 rulebook. 
+The sustainability vocabulary publishing guide provides scheme owners with a best practice framework that can be used to publish their schemes as a hierarchy of criteria, each with a unique identifier (URI). This is a critical activity so that issuers of product passports, conformity credentials, and facility records, can unambiguously reference a conformity criterion. In the example above the key reference criterion is `"id": id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation` indicating that the claim is made following GHG Calculation guidance in the GBA v2.0 rulebook.
 
 ### Minimum Implementation
 
-At a minimum, scheme owners need to specify a URL for each conformity criterion that will be referenced by a claim or assessment. Scheme owners that already publish schemes and assessment criterion as a website with stable links may register their schemes with no further action. Scheme owners without reference-able criteria URIs (or who wish to upgrade their digital publishing) should follow the guidance below.  
+At a minimum, scheme owners need to specify a URL for each conformity criterion that will be referenced by a claim or assessment. Scheme owners that already publish schemes and assessment criterion as a website with stable links may register their schemes with no further action. Scheme owners without reference-able criteria URIs (or who wish to upgrade their digital publishing) should follow the guidance below.
 
 ### Implementation Guidance
 
-To publish a UNTP SVC compliant vocabulary, scheme owners will need to published conformity criteria as a web vocabulary alongside existing publishing formats (typically PDF documents).  For some scheme owners that already operate a system to manage scheme and criteria in a structured way, this could be just a simple publishing step from existing structured data. Other may choose to implement a "scheme management system" so that criteria are managed in one place and can be published in different formats. The diagram below shows a conceptual implementation model for any scheme owner. 
+To publish a UNTP SVC compliant vocabulary, scheme owners will need to published conformity criteria as a web vocabulary alongside existing publishing formats (typically PDF documents). For some scheme owners that already operate a system to manage scheme and criteria in a structured way, this could be just a simple publishing step from existing structured data. Other may choose to implement a "scheme management system" so that criteria are managed in one place and can be published in different formats. The diagram below shows a conceptual implementation model for any scheme owner.
 
 ![Scheme management system](SchemeManagementSystem.png)
 
 The implementation model proposes that scheme owners
 
-* Create a lightweight system to maintain scheme versions, the conformity criteria within the scheme, and the classification of the criteria.
-* Populate the system from existing scheme documentation, possibly with the assistance of some automation tools.
-* Publish both the UNTP standard vocabulary catalog and relevant document content from the same system.  
-
-Once scheme and criteria are managed in a more structured way, scheme owners can potentially leverage the system to realise further benefits.
-
-* Tailored auditor checklists are easily generated, reflecting the specific criteria applicable to the context of a specific product or facility subject.
-* Automated assistants can more easily make initial assessments based on documentary evidence from the subject product or facility.
-* The structured assessment together with secure links to evidence is already available, making the job of issuing a UNTP digital conformity credential very straightforward. 
-
-![Improving audit efficiency](SVC-DCC-Integration.png)
+- Create a lightweight system to maintain scheme versions, the conformity criteria within the scheme, and the classification of the criteria.
+- Populate the system from existing scheme documentation, possibly with the assistance of some automation tools.
+- Publish both the UNTP standard vocabulary catalog and relevant document content from the same system.
 
 ### Logical Model
 
-This section describes the logical data model of the scheme and criteria in more detail.  
+This section describes the logical data model of the scheme and criteria in more detail.
 
 ![SVC logical Model](SustainabilityVocabularyCatalog.svg)
 
@@ -104,19 +100,19 @@ This section describes the logical data model of the scheme and criteria in more
 
 The key ideas in the logical model of a published conformity vocabulary are
 
-* A conformity scheme has a unique ID, a version, validity period, an owner, and contains a structured hierarchy of conformity criteria.
-* The conformity scheme may define performance levels against which criteria can be categorised.  It may also define an allowed set of tags which can be assigned to criteria for the purposes of filtering or sorting. 
-* A conformity scheme may reference any regulations that it is designed to support.
-* Each criterion has a unique ID (a URI) which is the key reference for any claims or assessments of product or facilities made in product passports or conformity credentials. 
-* Each criterion must be classified according to the UNTP [Conformity Topic Classification](#conformity-topic-classification).
-* A criterion may specify a threshold value as a numeric (eg 300Mpa tensile strength) or a score (eg "B") which an assessed product or facility much achieve in order to be considered conformant.
-* A criterion may be classified according to formal classification schemes (eg applicable industry sector or commodity type).
-* Criterion may list sub-criterion that specify more granular conformity requirements.  
-* A given criterion ID may be re-used by multiple Scheme ID (for example a Scheme version increments but most of the conformity criteria don't change from one version to the next).
+- A conformity scheme has a unique ID, a version, validity period, an owner, and contains a structured hierarchy of conformity criteria.
+- The conformity scheme may define performance levels against which criteria can be categorised. It may also define an allowed set of tags which can be assigned to criteria for the purposes of filtering or sorting.
+- A conformity scheme may reference any regulations that it is designed to support.
+- Each criterion has a unique ID (a URI) which is the key reference for any claims or assessments of product or facilities made in product passports or conformity credentials.
+- Each criterion must be classified according to the UNTP [Conformity Topic Classification](#conformity-topic-classification).
+- A criterion may specify a threshold value as a numeric (eg 300Mpa tensile strength) or a score (eg "B") which an assessed product or facility much achieve in order to be considered conformant.
+- A criterion may be classified according to formal classification schemes (eg applicable industry sector or commodity type).
+- Criterion may list sub-criterion that specify more granular conformity requirements.
+- A given criterion ID may be re-used by multiple Scheme ID (for example a Scheme version increments but most of the conformity criteria don't change from one version to the next).
 
 ### Sample Scheme Vocabulary
 
-The JSON snippet below shows an example of a Scheme and criteria as a UNTP compliant digital vocabulary. Such data structures should be simple to generate from a scheme management system. An HTMl rendering template can present the same data as a human browsable website where there is a dedicated web page for each criteria ID (eg `https://sample-scheme.org/ESGStandard/S11`) that represents the detailed information about that criteria.  
+The JSON snippet below shows an example of a Scheme and criteria as a UNTP compliant digital vocabulary. Such data structures should be simple to generate from a scheme management system. An HTMl rendering template can present the same data as a human browsable website where there is a dedicated web page for each criteria ID (eg `https://sample-scheme.org/ESGStandard/S11`) that represents the detailed information about that criteria.
 
 ```json
 {
@@ -152,7 +148,7 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
         {
           "@id": "https://sample-scheme.org/ESGStandard/S1.1",
           "@type": "untp-svc:ConformityCriterion",
-          "name":"Voluntary agreements",
+          "name": "Voluntary agreements",
           "description": "Employment must be based on voluntary agreements, allowing employees to terminate their contracts with reasonable notice not exceeding one month.",
           "conformityTopic": "social.labour",
           "status": "active"
@@ -160,7 +156,7 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
         {
           "@id": "https://sample-scheme.org/ESGStandard/S1.2",
           "@type": "untp-svc:ConformityCriterion",
-          "name":"Unrestricted access",
+          "name": "Unrestricted access",
           "description": "Employees shall have unrestricted access to essential facilities such as restrooms and drinking water during working hours.",
           "conformityTopic": "social.labour",
           "status": "active"
@@ -170,7 +166,7 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
     {
       "@id": "https://sample-scheme.org/ESGStandard/S2",
       "@type": "untp-svc:ConformityCriterion",
-      "name":"Workplace safety",
+      "name": "Workplace safety",
       "description": "Organizations shall identify and mitigate workplace hazards to ensure a safe working environment, providing necessary protective equipment to employees at no cost.",
       "conformityTopic": "social.safety",
       "status": "active"
@@ -178,7 +174,7 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
     {
       "@id": "https://sample-scheme.org/ESGStandard/E1",
       "@type": "untp-svc:ConformityCriterion",
-      "name":"Environmental permits",
+      "name": "Environmental permits",
       "description": "Organizations shall secure and maintain all necessary environmental permits and adhere to reporting obligations to minimize environmental impact.",
       "conformityTopic": "environment.waste",
       "status": "active"
@@ -186,7 +182,7 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
     {
       "@id": "https://sample-scheme.org/ESGStandard/G1",
       "@type": "untp-svc:ConformityCriterion",
-      "name":"Ethical governance",
+      "name": "Ethical governance",
       "description": "Organizations shall maintain high ethical standards, prohibiting bribery, corruption, or any unethical advantages in business dealings.",
       "conformityTopic": "governance.ethics",
       "status": "active"
@@ -195,14 +191,14 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
       "@id": "https://sample-scheme.org/ESGStandard/G2",
       "@type": "untp-svc:ConformityCriterion",
       "description": "Organizations shall implement due diligence processes to ensure responsible sourcing of critical raw materials, aligning with international guidelines.",
-      "name":"Supply chain due diligence",
+      "name": "Supply chain due diligence",
       "conformityTopic": "governance.compliance",
       "status": "active",
       "thresholdValue": {
         "metricName": "Percentage of Critical Materials with Due Diligence",
         "metricValue": {
           "value": 75,
-          "unit": "P1"  // UNECE code for percentage
+          "unit": "P1" // UNECE code for percentage
         }
       }
     }
@@ -268,29 +264,29 @@ The JSON snippet below shows an example of a Scheme and criteria as a UNTP compl
 }
 ```
 
-
 ## Conformity Scheme Register
 
-The conformity scheme register is essentially a catalog of schemes that are registered with UNTP by scheme owners.  The register will evolve from a simple list to a rich criteria search capability as UNTP matures. 
+The conformity scheme register is essentially a catalog of schemes that are registered with UNTP by scheme owners. The register will evolve from a simple list to a rich criteria search capability as UNTP matures.
 
-* The first (current) version is the current [Scheme Owners](../implementations/SchemeOwners.md) registration page. 
-* The next version will add a structured data version of register and include more meta-data about each scheme and links to each scheme's published vocabulary catalog. Essentially a navigable and searchable version of registered schemes and their detailed criterion. When schemes are published by scheme owners in a structured way and criteria are classified [by conformity topic](#conformity-topic-classification), the register will support cross-scheme queries such as "show me all criterion in the water conservation category"
-* Future versions may include capabilities to define relationships between schemes and their criteria such as mutual recognition.
+- The first (current) version is the current [Scheme Owners](../implementations/SchemeOwners.md) registration page.
+- The next version will add a structured data version of register and include more meta-data about each scheme and links to each scheme's published vocabulary catalog. Essentially a navigable and searchable version of registered schemes and their detailed criterion. When schemes are published by scheme owners in a structured way and criteria are classified [by conformity topic](#conformity-topic-classification), the register will support cross-scheme queries such as "show me all criterion in the water conservation category"
+- Future versions may include capabilities to define relationships between schemes and their criteria such as mutual recognition.
 
 ## Conformity Topic Classification
 
 Below is a **very early draft** of a 2-level ESG classification scheme for sustainability criteria and including references to the **EU Ecodesign for Sustainable Products Regulation (ESPR)**, **UN Sustainable Development Goals (SDGs)**, and **OECD Guidelines for Multinational Enterprises**. The taxonomy includes 8 top-level categories, each with 8-12 second-level categories, ensuring coverage of quality, safety, and sustainability criteria.
 
-This classification is an early draft for discussion **only**. It is likely to evolve considerably until consensus is reached. 
+This classification is an early draft for discussion **only**. It is likely to evolve considerably until consensus is reached.
 
 ### Machine Readable Versions
 
-* [JSON Structure](/schema/SustainabilityCriteriaTaxonomy_v0.1.json)
-* [JSON-LD vocabulary](/schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
+- [JSON Structure](/schema/SustainabilityCriteriaTaxonomy_v0.1.json)
+- [JSON-LD vocabulary](/schema/SustainabilityCriteriaTaxonomy_v0.1.jsonld)
 
 ### Human Readable Version
 
 #### Top-Level Category 1: Ecological Resilience
+
 - **Description**: Emphasizes environmental protection, resource conservation, and climate resilience.
 - **Mappings**: UN SDGs (6, 7, 12, 13, 14, 15); OECD Guidelines (Chapter VI: Environment).
 - **Second-Level Categories**:
@@ -305,6 +301,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   9. **Chemical Safety** (SDG 12) - Restriction of hazardous substances (e.g., EU ESPR Annex I - Substance Restrictions).
 
 #### Top-Level Category 2: Human Equity and Welfare
+
 - **Description**: Focuses on human rights, fair labor, and community support.
 - **Mappings**: UN SDGs (1, 3, 4, 5, 8, 10); OECD Guidelines (Chapter IV: Human Rights, Chapter V: Employment and Industrial Relations).
 - **Second-Level Categories**:
@@ -318,6 +315,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   8. **Gender Equity** (SDG 5) - Promoting diversity (e.g., EU ESPR Art. 10 - Social Sustainability).
 
 #### Top-Level Category 3: Ethical Governance
+
 - **Description**: Promotes integrity, accountability, and transparent practices.
 - **Mappings**: UN SDGs (16); OECD Guidelines (Chapter II: General Policies, Chapter VII: Combating Bribery).
 - **Second-Level Categories**:
@@ -331,6 +329,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   8. **Competitive Fairness** (SDG 16) - Ensuring fair market practices (e.g., EU ESPR Art. 11 - Governance).
 
 #### Top-Level Category 4: Product Integrity
+
 - **Description**: Ensures products are safe, reliable, and sustainable.
 - **Mappings**: UN SDGs (9, 12); OECD Guidelines (Chapter VIII: Consumer Interests).
 - **Second-Level Categories**:
@@ -344,6 +343,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   8. **End-of-Life Management** (SDG 12) - Effective recycling processes (e.g., EU ESPR Art. 6 - End-of-Life Requirements).
 
 #### Top-Level Category 5: Circular Value Chains
+
 - **Description**: Advances sustainability throughout supply and production networks.
 - **Mappings**: UN SDGs (8, 12, 17); OECD Guidelines (Chapter II: General Policies, Chapter VI: Environment).
 - **Second-Level Categories**:
@@ -357,6 +357,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   8. **Supply Chain Risk Reduction** (SDG 12) - Mitigating vulnerabilities (e.g., EU ESPR Art. 10 - Risk Management).
 
 #### Top-Level Category 6: Economic Sustainability
+
 - **Description**: Balances profitability with sustainable economic impact.
 - **Mappings**: UN SDGs (8, 9); OECD Guidelines (Chapter II: General Policies).
 - **Second-Level Categories**:
@@ -370,6 +371,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   8. **Supply Network Strength** (SDG 9) - Enhancing value chain stability (e.g., EU ESPR Art. 10 - Supply Chain Resilience).
 
 #### Top-Level Category 7: Health and Safety Assurance
+
 - **Description**: Prioritizes health and safety for workers and communities.
 - **Mappings**: UN SDGs (3); OECD Guidelines (Chapter V: Employment and Industrial Relations).
 - **Second-Level Categories**:
@@ -383,6 +385,7 @@ This classification is an early draft for discussion **only**. It is likely to e
   8. **Ergonomic Design** (SDG 3) - Safe physical work environments (e.g., EU ESPR Art. 5 - Product Safety).
 
 #### Top-Level Category 8: Systemic Sustainability
+
 - **Description**: Establishes frameworks for managing and improving ESG outcomes.
 - **Mappings**: UN SDGs (12, 16); OECD Guidelines (Chapter II: General Policies).
 - **Second-Level Categories**:
@@ -394,7 +397,3 @@ This classification is an early draft for discussion **only**. It is likely to e
   6. **Feedback Channels** (SDG 16) - Grievance mechanisms (e.g., EU ESPR Art. 10 - Stakeholder Engagement).
   7. **Compliance Verification** (SDG 16) - Audits and checks (e.g., EU ESPR Art. 4 - Compliance Monitoring).
   8. **Transparent Communication** (SDG 16) - Public ESG reporting (e.g., EU ESPR Art. 12 - Information Disclosure, UNTP governance.transparency).
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 title: Business Case for Industry
 ---
 
@@ -7,162 +7,273 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-The decision to implement UNTP needs a positive business case to justify the investment. The purpose of this page is to provide a framework for business case development. We provide a generalized cost / benefit model and then discuss its application to specific roles and industries. We also provide a separate cost benefit model and business case template for regulators.
+## Purpose
 
-Note: The economic impacts described in this document are projections based on available data and economic models. Actual results may vary. Regular monitoring and evaluation of the UNTP's effects are recommended to assess its efficacy and guide any necessary adjustments to the protocol.
+The purpose of this page is to provide a structured framework for building a quantified business case for UNTP implementation at the individual company level. The cost/benefit model, benchmark data, and template below are designed so that any organisation can combine them with their own financial data (e.g. annual report, management accounts) to produce a customised business case. The quantification benchmarks and template below are designed so that any organisation can combine them with their own financial data to produce a customised business case — including with the assistance of AI tools.
+
+We also provide a separate [cost/benefit model and business case template for government](BusinessCaseGovernment.md).
+
+Note: The economic impacts described in this document are projections based on available data and economic models. Actual results will vary. Regular monitoring and evaluation through the UNTP [Impact Assessment Framework (IAF)](ImpactAssessmentFramework.md) is recommended.
 
 ## Industry Cost Benefit Model
 
 The high level model shown below breaks benefits into three categories and costs into two categories.
 
-* Benefits accrue through increasing revenue and/or decreasing cost. Improved margins that result from that of course contribute to corporate value but there are also less tangible benefits at the corporate level such as brand reputation. 
-* Costs are incurred through changes to production processes to achieve greater sustainability and the implementation of traceability & transparency systems to communicate that verifiable sustainability.
+- Benefits accrue through increasing revenue and/or decreasing cost. Improved margins contribute to corporate value, alongside less tangible benefits such as brand reputation and improved regulatory standing.
+- Costs are incurred through changes to production processes to achieve greater sustainability and the implementation of traceability and transparency systems to communicate that verifiable sustainability.
 
 ![Cost benefit model](CostBenefitModel.png)
 
-Actual benchmarks for benefits and costs by industry sector and geographic region will become increasingly available over time through the UNTP [Value Assessment Framework (VAF)](ValueAssessmentFramework.md). At this point in time, benefits and costs are described qualitatively and supported with metrics from public research.
-
-## Benefits - Revenue Uplift
+## Benefits — Revenue Uplift
 
 ### Market Access
 
-Legislation increasingly requires companies to prove ESG credentials to be able to trade in certain countries. Examples include the EU Deforestation Regulation [EUDR](https://environment.ec.europa.eu/topics/forests/deforestation/regulation-deforestation-free-products_en) as well as several due-diligence regulations such as the [EU CSDDD](https://commission.europa.eu/business-economy-euro/doing-business-eu/sustainability-due-diligence-responsible-business/corporate-sustainability-due-diligence_en) and [US UFLPA](https://www.cbp.gov/trade/forced-labor/UFLPA). Legislation effectively put pressure for on buyers to prove provenance and sustainability requirements for certain products, as well as a higher burden of truth from suppliers from to certain regions. In many cases, these regulations reverse the burden of proof - namely that companies must prove that they are compliant in order to maintain market access. UNTP based transparency allows companies to keep trading in said areas, rewarding suppliers ensuring good practices rather than being forced outright out of these markets.  
+**Description** — A growing wave of sustainability regulations (EUDR, CBAM, UFLPA, ESPR, CSDDD) is creating mandatory compliance requirements for market access. In many cases these regulations reverse the burden of proof: companies must demonstrate compliance to continue trading in regulated markets. Non-compliant suppliers risk exclusion from high-value export markets entirely.
 
-* *Quantification.* The percentage of revenue that is either retained or increased will depend on the commodity and footprint of any given supplier in a regulated market. The value of imported goods impacted by EUDR is approximately $400Bn which is around 1.2% of world trade. The volume of trade impacted by Due Diligence acts is similar or larger than EUDR. 
-* *References.* [EU market import volumes](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=International_trade_in_goods_for_the_EU_-_an_overview), [Krungsri EUDR impact analysis](https://www.krungsri.com/en/research/research-intelligence/eudr-2023), 
+**How UNTP helps** — UNTP Digital Product Passports (DPPs) and Digital Conformity Credentials (DCCs) provide the verifiable, machine-readable evidence that importers and regulators require. By presenting credentials that directly address regulatory requirements, suppliers can maintain and expand market access rather than being forced into lower-value commodity channels.
 
-The impact of these trade barriers for any given company will be between 0% and 100% of revenue depending on which commodities they sell to which market. But given the collective impact of between 2% and 3% of world trade, an average benchmark of 1% of revenue seems conservative.
+**Quantification** — Depending on sector and geography, 10–40% of export revenue may be exposed to sustainability regulations. The benefit is measured as market access retained (i.e. revenue that would otherwise be lost due to non-compliance). References: [WTO Trade Facilitation Agreement](https://www.wto.org/english/tratop_e/tradfa_e/tradfa_e.htm), [UNCTAD trade data](https://unctad.org/statistics).
+
+**Key variables**
+
+- Proportion of revenue from regulated markets (EU, US, Japan, Australia)
+- Number and severity of applicable regulations
+- Current ability to demonstrate compliance without UNTP
+- Competitor readiness — early movers capture displaced market share
 
 ### Unit Price Uplift
 
-Consumers are increasingly selective about product choice based on believable sustainability criteria. There are several surveys that indicate around two-thirds of consumers consider sustainability in product choices and that around one third are willing to pay a premium. The amount of the price premium varies widely and there is evidence that consumer behaviour change is slow and sometimes only temporary. There is also evidence that rich data (for example UNTP DPPs) drives stronger behaviour. The amount of end product price increase that flows through to the upstream supply chain is more difficult to quantify but may be very limited. Nevertheless, if buyers select supply based on sustainability criteria then non-conforming suppliers and products are likely to be forced into lower-priced commodity markets. Buyers tend to be reacting more quickly than suppliers to these demands, as a result, moving forward it is likely that there will be a shortage of suppliers able to deliver products with satisfying ESG credentials. Buyers who are able to sign long term contracts today and develop partnerships with aligned suppliers will have a considerable price advantage compared to market laggards.
+**Description** — Consumers and business buyers are increasingly willing to pay a premium for products with verified sustainability credentials. Conversely, products that cannot demonstrate sustainability are likely to be pushed into lower-priced commodity markets, creating a widening price gap between verified and unverified goods.
 
-* *Quantification* Estimates of the average sustainability premium that consumers will pay vary widely from around 1% to 12%. If 30% of consumers are willing to pay a 5% premium then the overall unit price impact is around 1.5%. 
-* *References.* [Consumer high estimates](https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/consumers-care-about-sustainability-and-back-it-up-with-their-wallets), [Consumer low estimates](https://www.chicagobooth.edu/review/consumers-say-they-care-about-esg-but-dont-spend-like-they-do). 
+**How UNTP helps** — UNTP provides rich, verifiable product-level data through DPPs and DCCs that can be presented at point of sale (B2C) or during procurement (B2B). This transforms sustainability from a marketing claim into a verifiable attribute that justifies premium pricing.
 
-The unit price uplift for verifiable sustainable goods will vary widely depending on commodity and market.  However an average benchmark of 1% seems reasonable and conservative.  
+**Quantification** — Consumer goods: 2–8% price premium for verified sustainable products. B2B/industrial: 1–3% price premium. Note: willingness-to-pay surveys report higher figures (10–15%), but actual captured premiums are consistently lower due to the gap between stated preference and purchase behaviour. References: [PwC 2024 Voice of the Consumer](https://www.pwc.com/gx/en/news-room/press-releases/2024/pwc-2024-voice-of-consumer-survey.html), [Simon-Kucher 2024 Global Sustainability Study](https://www.simon-kucher.com/en/who-we-are/newsroom/simon-kucher-unveils-2024-global-sustainability-study-majority-willing-pay-more).
+
+**Key variables**
+
+- Sector (consumer goods vs industrial commodities)
+- Strength of sustainability differentiation relative to competitors
+- Consumer/buyer willingness to pay in target markets
+- Existing brand positioning and credibility
 
 ### Anti-Counterfeiting
 
-Global trade in counterfeit goods is estimated at between 2% and 5% of trade. The most impacted commodities are pharmaceuticals and luxury goods including quality wines & spirits. The volumes increase when pirated / smuggled goods are taken into account including illicit tobacco into high tax markets. What is more difficult to quantify is the proportion of counterfeit goods that are un-knowingly purchased as genuine goods since, in many cases, buyers of fake luxury goods or illicit tobacco make purchases knowing that the goods are fake or pirated. UNTP offers a simple but effective anti-counterfeit protocol that works well when buyers are motivated to confirm that goods are genuine. 
+**Description** — Global trade in counterfeit goods is estimated at 2–5% of total trade value. The most impacted sectors are pharmaceuticals and luxury goods, including quality wines and spirits. The proportion that matters commercially is counterfeits unknowingly purchased as genuine, since in many cases buyers of fake luxury goods know the goods are counterfeit.
 
-* *Quantification.* 4% of global trade represents about $1.2Tn in counterfeit goods. If approximately 50% of that trade can be impacted by improved anti-counterfeiting measures then the average value is around 2%. If the effectiveness of anti-counterfeiting measures is estimated at 50% then the value falls to around 1% of trade.
-* *References.* [OECD trends in counterfeit goods](https://www.oecd.org/en/publications/2019/03/trends-in-trade-in-counterfeit-and-pirated-goods_g1g9f533.html), [USTPO counterfeit estimates.](https://www.uspto.gov/sites/default/files/documents/USPTO-Counterfeit.pdf)
+**How UNTP helps** — UNTP provides a simple but effective anti-counterfeit mechanism through verifiable product identity linked to Digital Product Passports. When buyers scan a product identifier, they can verify authenticity against the manufacturer's identity resolver. This works particularly well when buyers are motivated to confirm that goods are genuine.
 
-The value of sales recovered by reductions in illicit goods will vary from 0% for commodity goods to as much as 10% for pharmaceuticals and some luxury goods. A benchmark value of 1% industry-wide seems reasonable and conservative. 
+**Quantification** — Revenue recovery ranges from negligible for commodity goods to material for pharmaceuticals and luxury goods. A benchmark of 0.1–2% of revenue is reasonable depending on sector. Note: OECD estimates of 2–5% refer to total counterfeit trade as a share of global trade, not per-company revenue recovery through anti-counterfeiting measures. References: [OECD trends in counterfeit goods](https://www.oecd.org/en/publications/2019/03/trends-in-trade-in-counterfeit-and-pirated-goods_g1g9f533.html), [USPTO counterfeit estimates](https://www.uspto.gov/sites/default/files/documents/USPTO-Counterfeit.pdf).
 
-## Benefits - Cost Reduction
+**Key variables**
+
+- Sector (pharma and luxury highest; commodities lowest)
+- Brand recognition and attractiveness to counterfeiters
+- Geographic markets (counterfeiting more prevalent in some regions)
+- Buyer motivation to verify authenticity
+
+## Benefits — Cost Reduction
 
 ### Compliance Costs
 
-Regulatory compliance costs encompass the administrative burden of reporting, processing fees, tariffs, border clearance delays, and penalties. As sustainability regulations increase, these will be more rigorously enforced at borders, likely resulting in higher compliance costs. The UNTP offers customs authorities and corporate regulators higher confidence data, which can streamline border processing, reduce administrative costs, and minimize delays. As countries advance towards net zero commitments and implement domestic carbon pricing, it is increasingly likely that more countries will impose carbon border tariffs, such as the planned [EU Carbon Border Adjustment Mechanism (CBAM)](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en). High-quality evidence of a low carbon footprint via UNTP Digital Product Passports (DPPs), along with full traceability, can help importers prove compliance with the EU rules of emission estimation, and reduce the burden of data collection and management  for tariff treatment. Additionally, high-quality evidence of conformance of imported goods reduces the risk of punitive non-compliance fines. Importers with traceable, high-quality data can ensure that they are only paying CBAM charges on actual emissions. Without accurate data, importers might overestimate emissions, leading to higher costs. Detailed tracking allows them to minimize over-payment and reduce their carbon liabilities if the carbon price effectively paid in the export country can be deducted.
+**Description** — Regulatory compliance costs encompass administrative burden of reporting, processing fees, tariffs, border clearance delays, and penalties for non-compliance. As sustainability regulations proliferate, these costs will grow — especially at borders where goods face increasing scrutiny.
 
-* *Quantification.* The compliance cost under CBAM, a steel producer with a high emission profile, might face a carbon levy in the range of €50–€90 per ton of CO₂ emitted, depending on current EU ETS carbon prices. High-quality evidence of carbon price paid in the export country can substantially adjust that value.
-* *References.* [EU Carbon Border Adjustment Mechanism](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en#where-to-report), [Wood MacKenzie CBAM Analysis](https://www.woodmac.com/news/opinion/how-will-the-eus-cbam-impact-global-iron--steel/)
+**How UNTP helps** — UNTP Digital Product Passports provide customs authorities and corporate regulators with high-confidence, machine-readable data that can streamline border processing, reduce administrative costs, and minimise delays. For carbon border tariffs such as the [EU CBAM](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en), DPPs with actual emissions data enable importers to pay charges on actual rather than default (higher) emissions values, and Digital Traceability Events (DTEs) provide the chain of custody evidence required.
+
+**Quantification** — 10–20% reduction in compliance administration costs through automated data exchange. Note: this applies to the documentation and reporting component of compliance spend, not to audit fees, tariffs, or testing costs which are not directly reduced by digital credentials. Additional savings from CBAM certificate costs when using actual vs default emissions data. References: [EU CBAM](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en), [WTO Trade Facilitation Agreement studies](https://www.wto.org/english/tratop_e/tradfa_e/tradfa_e.htm).
+
+**Key variables**
+
+- Current compliance spend (reporting, audits, border costs)
+- Exposure to carbon border tariffs (CBAM and similar)
+- Volume and frequency of border crossings
+- Current level of manual vs automated compliance processes
 
 ### Finance Costs
 
-UNTP provides a framework based on international standards which can accommodate different ESG risks, enabling development banks to standardize their reporting and ensuring their mandate, without having to create ad-hoc structures for each Sustainable Supply Chain Finance Deal. This unlocks a significant trade finance gap, and enables preferential finance to reach deep-tier suppliers. Access to lower financing costs for suppliers results in lower cost of goods sold and improved margins. These trade finance arrangements often come with grants that can support costs associated with the ESG transition, such as support certification, consulting or implementation of new ERP systems for reporting.
+**Description** — Sustainable supply chain finance (SCF) is growing rapidly, yet the global trade finance gap remains approximately $2.5 trillion (ADB 2022), disproportionately affecting SMEs and deep-tier suppliers. Companies with strong, verifiable ESG credentials can access preferential financing terms, reducing their cost of capital and improving margins.
 
-#### Access to Trade Finance
-The Asian Development Bank (ADB) estimates that the global trade finance gap was approximately $2.5 trillion in 2022, up from $1.5 trillions in 2016 with a significant portion attributable to SMEs applicants, lack of visibility, and issues with country risk, credit-worthiness and lack of sufficient information by the applicant. At the same time, Supply Chain Finance (SCF) has grown from $330 billion in 2015 to $1.8 trillion in 2021, despite this growth, SCF has has not yet had a major impact in reducing the trade finance gap due to difficulty reaching past tier 1 suppliers. By adopting the UNTP, this gap can be reduced by enabling more companies to access preferential financing thanks to increased visibility over ESG credentials and ability to provide identity assurance from a trusted register, combined with SCF reverse factoring operating models which reduce applicants risk by tying the financing to the buyer credit risk.
+**How UNTP helps** — UNTP provides a standardised framework based on international standards that enables development banks and commercial lenders to assess ESG risk consistently. This unlocks trade finance for deep-tier suppliers who previously lacked the visibility to qualify. Digital Conformity Credentials provide the verifiable ESG evidence that lenders require, while the transparency graph enables risk assessment across multiple supply chain tiers.
 
-* *References* Asian Development Bank (ADB), [Trade Finance Gaps Growth and Jobs Survey 2021](https://www.adb.org/publications/2021-trade-finance-gaps-growth-jobs-survey), 
- [Trade finance gaps growth jobs survey 2023](https://www.adb.org/publications/2023-trade-finance-gaps-growth-jobs-survey). [Deep-Tier Supply Chain Finance 2022](https://www.adb.org/publications/deep-tier-supply-chain-finance)
+**Quantification** — 2–10% reduction in financing costs for companies with verified sustainability credentials. Sustainability-linked loans typically offer margin reductions of 5–25 basis points; the benefit is most material for companies with large debt portfolios or those currently constrained by the trade finance gap. References: [ADB Trade Finance Gaps 2023](https://www.adb.org/publications/2023-trade-finance-gaps-growth-jobs-survey), [IFC Sustainable Finance 2020](https://www.ifc.org/en/home).
 
-#### Reduced Finance Costs
+**Key variables**
 
-According to the International Finance Corporation (IFC), companies that adopt sustainable practices can reduce their financing costs by up to 20% due to lower risk premiums and better access to capital.
-
-* *References* International Finance Corporation (IFC), "Sustainable Finance: Creating Value for Companies and Investors," 2020.
-
-#### Improved margins
-
-A study by the Global Reporting Initiative (GRI) found that companies with strong ESG performance can achieve up to a 10% improvement in profit margins due to enhanced operational efficiencies and lower financing costs.
-
-* *References* Global Reporting Initiative (GRI), "The Business Case for ESG: How Sustainability Can Drive Financial Performance," 2019.
-
-#### Cost of Goods Sold
-A report by McKinsey & Company indicates that companies with optimized supply chain financing can reduce their cost of goods sold by 5% to 10% due to lower financing costs and improved supply chain efficiencies.
-
-* *References* [McKinsey & Company, Unlocking success in digital transformations, 2018](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations) 
+- Current financing costs and access to trade finance
+- Depth and complexity of supply chain
+- ESG maturity and existing certifications
+- Lender appetite for sustainable finance products in relevant markets
 
 ### Digitalisation Efficiency
 
-Digitalisation through UNTP enables automated data collection and processing, reducing manual labor and errors. This leads to streamlined operations and faster decision-making. Enhanced digitalisation provides real-time visibility into supply chain activities, allowing for better inventory management and demand forecasting. Access to accurate and timely data enables companies to make informed decisions, improving overall business performance. Finally, digitalisation allows for better tracking of product quality and delivery times, leading to improved customer satisfaction and loyalty.
+**Description** — Digitalisation through UNTP enables automated data collection and processing, reducing manual labour and errors. Enhanced visibility into supply chain activities allows for better inventory management, demand forecasting, and faster decision-making. Access to accurate, real-time data improves overall operational performance.
 
-Digitalisation as a whole of organisation initiative can deliver a 10% to 20% reduction in operational costs due to automation and improved data accuracy. Improved supply chain visibility can reduce inventory holding costs by 15% to 30% and decrease stock-outs by 20%. Data-driven decision-making can increase productivity by 5% to 10% and enhance profitability by 3% to 5%. Enhanced customer satisfaction can lead to a 10% increase in repeat business and a 5% boost in overall sales.
+**How UNTP helps** — UNTP Digital Traceability Events and Digital Product Passports provide standardised, machine-readable data flows across the supply chain. This data integrates with existing ERP and supply chain management systems, automating processes that were previously manual. The transparency graph provides end-to-end visibility that supports predictive analytics and proactive management.
 
-* *Quantification* The digitalisation cost savings are for enterprise wide digital transformation.  A smaller but significant proportion of those savings could be allocated to digitalisation of supply chain traceability & transparency through UNTP implementation. A 1% reduction in operating costs is a conservative estimate.
-* *References*  [McKinsey & Company reports on digital transformation](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations), Deloitte insights on operational efficiency. Gartner reports on supply chain visibility, Accenture studies on inventory management. Harvard Business Review articles on data analytics, PwC reports on data-driven strategies. Forrester Research on customer experience, Bain & Company studies on customer loyalty.
+**Quantification** — 3–10% reduction in supply chain documentation and data management costs through automation and standardised data exchange. Note: UNTP adds a credential and data interoperability layer — it is not a full supply chain digitalisation platform. Benefits are concentrated in cross-enterprise data exchange (supplier data collection, compliance documentation, traceability reporting) rather than internal operations. References: [McKinsey digital transformation reports](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations).
 
+**Key variables**
 
-## Benefits - Corporate Value
+- Current level of supply chain digitalisation
+- Volume and complexity of supply chain transactions
+- Number of manual processes that can be automated
+- Integration capability of existing IT systems
+
+## Benefits — Corporate Value
 
 ### Brand Reputation
 
-Transparency in supply chains builds consumer trust, as customers are increasingly concerned about the ethical and environmental impact of their purchases. Companies that can demonstrate their commitment to sustainability and ethical practices are more likely to gain consumer loyalty.  Companies with strong ESG credentials often see an increase in brand value. This is because consumers, investors, and other stakeholders perceive these companies as more responsible and forward-thinking. Companies that adopt the UNTP can differentiate themselves from competitors by showcasing their commitment to transparency and sustainability. This can lead to a stronger market position and increased market share. Finally, transparent supply chains help companies identify and mitigate risks related to unethical practices, environmental violations, and other ESG issues. This proactive approach can prevent reputational damage and associated financial losses.
+**Description** — Transparency in supply chains builds consumer trust, as customers and investors are increasingly concerned about the ethical and environmental impact of products. Companies that can demonstrate verifiable commitment to sustainability are more likely to gain consumer loyalty, attract investment, and command brand premiums.
 
-Studies reveal that over 50% of global consumers and over 75% of millennials are willing to pay more for sustainable brands. Also that over 80% of consumers will purchase a product because a company advocated for an issue they cared about, and over 70% will refuse to purchase if they find out a company supports an issue contrary to their beliefs. Brands with high ESG scores have been found to achieve a brand value premium of up to 10%. Brands with strong reputations recover more quickly from crises, with a 5% to 10% faster recovery in stock prices. 
+**How UNTP helps** — UNTP provides the verifiable evidence behind sustainability claims, moving beyond marketing assertions to machine-verifiable credentials. Digital Product Passports make sustainability data accessible to consumers, investors, and rating agencies. This builds trust through transparency rather than narrative.
 
-* *Quantification.* The brand value benefits listed above will accrue for companies that place sustainability at the center of their corporate strategy and implement a range of measures.  UNTP implementation is only one measure but will add considerable trust to sustainability claims and can therefore conservatively account for a 1% increase in brand value.
-* *References.* Nielsen, "The Sustainability Imperative: New Insights on Consumer Expectations," 2015, [Brand Finance, "Global 500 2020: The Annual Report on the World's Most Valuable Brands," 2019](https://brandfinance.com/wp-content/uploads/1/global_500_2019_locked_4.pdf). RepTrak, "Global RepTrak 100: The World's Most Reputable Companies," 2019. [Cone Communications, "2017 Cone Communications CSR Study," 2017](https://www.cbd.int/doc/case-studies/inc/cs-inc-cone-communications-en.pdf).
+**Quantification** — Qualitative benefit. While studies suggest correlations between sustainability perception and brand value, the effect of any single initiative (including UNTP) is impossible to isolate from other factors such as marketing spend, product quality, and competitive dynamics. Brand value effects typically manifest over medium-to-long time horizons. References: [Brand Finance Sustainability Perceptions 2025](https://brandirectory.com/reports/sustainability-perceptions-index).
+
+**Key variables**
+
+- Current brand value and market positioning
+- Consumer sensitivity to sustainability in target markets
+- Competitor sustainability positioning
+- Consistency and credibility of current sustainability messaging
 
 ### Improved Disclosures
 
-Regulations that mandate annual corporate sustainability disclosures are being drafted or already in force in most economies. They generally require reporting of concrete metrics such as CO2 equivalent emissions and almost all include scope 3 emissions (ie emissions associated with upstream supply. The World Business Council for Sustainable Development (WBCSD) defines a generic model for emissions reporting and highlights the fact that, for most companies, scope 3 emissions represent around 70% to 80% of their emissions footprint. 
+**Description** — Regulations mandating annual corporate sustainability disclosures are in force or being drafted in most economies. They generally require reporting of concrete metrics such as CO2-equivalent emissions, including scope 3 (upstream supply chain) emissions. Most corporations lack the supplier data to directly measure scope 3, forcing reliance on industry-average intensity factors — which provide no mechanism to reward or select lower-intensity suppliers.
 
-We have included a separate category for corporate disclosures because there is a serious problem facing most corporates today. The problem is that most corporates simply do not have the data from their upstream suppliers to directly measure their scope 3 emissions footprint. Therefore the only viable option is indirect measures such as using industry average intensity for each input product or material. Without direct information from suppliers there is no mechanism to select lower intensity supplies - and, correspondingly, there is no incentive for suppliers to reduce their emissions. Corporates that increase sales volume year on year are therefore likely to also report increased emissions (increased volume multiplied by an unchanged industry average). Companies that show deteriorating emissions performance are likely to be punished through reduced consumer loyalty, reduced brand value, increased border tariffs, and reduced access to finance. 
-
-Direct measures of supplier sustainability performance through UNTP digital product passports will provide corporates with the means to select more sustainable supply and therefore directly improve their own aggregate performance year on year.
+**How UNTP helps** — Digital Product Passports from suppliers provide direct measurement of product-level sustainability performance, replacing industry-average estimates. This enables corporations to select more sustainable supply and demonstrate year-on-year improvement in their own aggregate performance. The transparency graph aggregates supplier DPPs into disclosure-ready metrics.
 
 ![Transaction to disclosure roll up](PassportDisclosuresRollUp.png)
 
-* *Quantification.* The same metrics as apply to brand reputation apply here.  
-* *References.* [WBCSD Pathfinder 2.0 Framework](https://www.wbcsd.org/resources/pathfinder-framework-version-2-0/) 
+**Quantification** — Qualitative benefit. Companies with verifiable supply chain data can demonstrate actual (rather than estimated) scope 3 performance, which strengthens regulatory compliance posture and supports better outcomes across all other benefit categories (brand, finance, market access). The value is in moving from estimated to actual data — the magnitude of improvement is organisation-specific and depends on the gap between current estimates and actual supplier performance. References: [WBCSD Pathfinder 2.0 Framework](https://www.wbcsd.org/resources/pathfinder-framework-version-2-0/).
 
-## Costs - Sustainable Practices
+**Key variables**
+
+- Scope 3 emissions as proportion of total emissions
+- Number and diversity of suppliers
+- Current reliance on industry-average vs actual data
+- Applicable disclosure regulations (CSRD, SEC climate rules, ISSB)
+
+## Costs — Sustainable Practices
 
 ### Process Improvement
 
-Suppliers are often requested to bring ESG improvements based on the materiality matrix of their buyers, so as to align with the buyers ESG strategic priorities:
-Examples may include: 
-Reducing carbon emissions of particular energy intensive processes (i.e. by adopting less energy intensive processes or switching to renewable energy sources)
-Reducing or eliminating the use of harmful chemicals in heavy industrial processes
-Improving human or labour rights issues within their supply chains
-These improvements are often costly, which are often absorbed by loans. Green finance mechanism can help reduce the financing cost of these improvements, and are often related to these improvements, while the establishment of long term contracts with buyers can on the one hand secure cash flow for suppliers to absorb those costs over the years, while on the other guarantee to the buyer the flow of conform goods.
+**Description** — Suppliers are often required to implement ESG improvements aligned with buyers' sustainability strategies. This may include reducing carbon emissions from energy-intensive processes, switching to renewable energy sources, eliminating harmful chemicals, or improving labour practices. These transitions require real investment but are often partially offset by efficiency gains and green finance.
 
-* *Quantification.*
-* *References.*
+**How UNTP helps** — UNTP does not directly reduce the cost of process improvement, but it ensures that investments in sustainability are visible and valued by the market. DPPs and DCCs make improvement verifiable, enabling suppliers to capture the market access, price premium, and finance benefits described above. This makes the business case for process improvement stronger and the payback period shorter.
 
-### Audits & Certification
+**Quantification** — 2–8% of operational costs for the first 3 years of ESG transition, declining as improvements are embedded. Partially offset by green finance grants and efficiency gains. References: IFC transition cost data, UNIDO industrial energy efficiency studies.
 
-Suppliers that improve their processes towards sustainability practices have three ways to prove their credentials to their buyers, namely carrying out a self assessment, being audited by the buyers and being audited and certified by a third party, the latter of which carries the greatest weigh in terms of credibility, both for voluntary improvements and certainly for regulated ones. These certifications and audits often need to be made for each ESG risk where mitigating actions have occurred, with certifications starting in the 5 figures for each certification type. 
+**Key variables**
 
-* *Quantification.*
-* *References.*
+- Current sustainability maturity (more to do = higher initial cost)
+- Sector-specific transition requirements
+- Availability of green finance and grants
+- Energy and material cost structures
 
-## Costs - Transparency System
+### Audits and Certification
 
-Establishing a transparency systems along a supply chain carries its own costs in the form of consulting fees to map and study the structure and processes and actors involved in a specific supply chain, the data elements of it and how those conform to an interoperability protocol such as UNTP as well as software and IT integration and adaptation costs, all of which is expected to range in the six figures. It also carries costs to run such a system on a day to day basis. At the same time, UNTP’s principle is to use what is already available and being used, or planned to be used, by participants, rather than buying new software; once implemented we expect the operational costs to be in a similar range to what existed before hand, with any additional cost related to additional features related to benefits which the industry might require.
+**Description** — Third-party certification is the most credible way to verify sustainability claims, carrying greater weight than self-assessment or buyer audits for both voluntary and regulatory compliance. Certifications typically need to be obtained for each relevant ESG risk area, with costs for initial certification and ongoing annual surveillance.
 
-### Capital investment
+**How UNTP helps** — UNTP Digital Conformity Credentials digitise certification evidence, making it reusable across multiple buyers and regulatory contexts. Multi-scheme mutual recognition, facilitated by the [Conformity Assessment Body (CAB)](../specification/ConformityCredential) framework, reduces duplication by allowing a single assessment to satisfy multiple requirements.
 
-In order to adapt a digital ecosystem to an interoperability protocol such as UNTP, adopters will likely rely on consulting companies to assess the supply chain, identify data elements, and evaluate compatibility with UNTP standards and may decide to rely on consultants also to project manage and implement the project. Equally buyers will need to integrate their systems with their suppliers systems, or decide to commonly use a system that conforms to UNTP.
+**Quantification** — $10K–$50K per certification type (initial assessment); $5K–$20K annual surveillance. Multi-scheme recognition through UNTP can reduce total certification costs by consolidating overlapping requirements.
 
+**Key variables**
 
-* *Quantification.*
-* *References.*
+- Number of certification schemes required by buyers/regulators
+- Complexity of operations being assessed
+- Geographic spread of facilities
+- Existing certifications that may satisfy multiple requirements
 
-### Operational costs
+## Costs — Transparency System
 
-As a UNTP complaint system set up is designed to work with what is already available, we expect adopters to get back more for the same resources they were already using for transparency purposes AUTOMATION, COST SAVINGS.. At the same time, the wealth of information resulting from full traceability will likely drive adopters to capitalise on their investment and add resources to analyse and disclose their supply chain data where they see a return.
+### Capital Investment
 
+**Description** — Implementing a UNTP-conformant transparency system requires consulting to assess the supply chain structure and data elements, software integration or adaptation, staff training, and project management. The scale of investment depends significantly on organisation size and existing digital maturity.
 
-* *Quantification.*
-* *References.*
+**How UNTP helps** — UNTP is designed to work with existing systems rather than requiring replacement. The protocol specifies open standards and interoperable data formats, allowing organisations to extend their current ERP, supply chain, and compliance systems. When implemented at community level through a [Community Activation Program (CAP)](CommunityActivationProgram.md), costs are significantly reduced as software vendors implement UNTP once for all their customers.
 
-## Industry Business Case Template
+**Quantification** — $50K–$200K for SMEs; $200K–$1M for large enterprises. Significantly reduced when implemented at community level via CAP, as software vendors, certifiers, and industry associations share implementation costs across their communities.
 
+**Key variables**
 
+- Organisation size and supply chain complexity
+- Existing digital maturity and system landscape
+- Whether implementing individually or as part of a community
+- Availability of UNTP-ready software from existing vendors
 
+### Operational Costs
+
+**Description** — Ongoing costs include credential issuance (signing and hosting DPPs, DCCs, DTEs), identity resolver hosting, system maintenance, and staff to manage the transparency system. UNTP is designed to work with what is already available, so these costs are typically incremental to existing IT operations.
+
+**How UNTP helps** — UNTP's standards-based approach means that operational costs leverage existing infrastructure. Credential issuance can be automated as part of existing business processes (e.g. issuing a DPP as part of shipping documentation). Identity resolver hosting can be shared at community level.
+
+**Quantification** — $10K–$50K/year for SMEs; $50K–$200K/year for large enterprises. Often largely absorbed into existing IT operations budgets.
+
+**Key variables**
+
+- Transaction volume (number of credentials issued per year)
+- Whether resolver hosting is individual or shared
+- Level of automation achieved during implementation
+- Existing IT operations budget and capacity
+
+## Business Case Template
+
+A downloadable [business case template](../assets/files/UNTP-Business-Case-Template-Industry.docx) with quantification summary table and narrative structure is available as a Word document. The template is designed to be populated using the benchmark ranges above combined with organisation-specific financial data (e.g. annual report, management accounts) — including with the assistance of AI tools as described below.
+
+## Generate Your Own Business Case
+
+You can use a frontier AI model (such as ChatGPT, Claude, or Gemini) to generate a first-draft business case for your organisation. Upload your company's annual report (PDF) alongside the prompt below. The AI will extract your financial data, apply the UNTP benchmark ranges weighted to your specific industry and geography, and produce a complete draft business case using the template above.
+
+**Prerequisites:** This prompt requires a frontier AI model with a large context window (100K+ tokens) and the ability to process PDF attachments. You will likely need a professional-tier subscription (e.g. ChatGPT Plus/Pro, Claude Pro, Gemini Advanced) to handle the combined size of the annual report, the UNTP cost/benefit framework, and the business case template in a single session.
+
+**Important disclaimer:** The generated business case is only an initial draft. AI models may misinterpret financial data, apply benchmark ranges inappropriately, or make unfounded assumptions about your organisation's regulatory exposure, supply chain structure, or competitive position. The output should be thoroughly reviewed and adjusted by subject matter experts before being used for any decision-making purpose.
+
+**How to use:** Copy the prompt below, open your preferred AI assistant, attach your annual report PDF, paste the prompt, and submit.
+
+:::info[Business Case Generation AI Prompt]
+
+You are preparing a first-draft UNTP business case for the company whose annual report is attached.
+
+**Input documents**
+
+1. **Annual report** — attached PDF. Extract: company name, sector, revenue, export revenue, geographic markets, supply chain description, existing certifications/sustainability initiatives, ESG disclosures, and any mentions of regulatory compliance costs or sustainability spending.
+
+2. **UNTP cost/benefit framework** — fetch from https://untp.unece.org/business-case/BusinessCaseIndustry and use the benchmark ranges for each benefit and cost category.
+
+3. **Business case template** — fetch from https://untp.unece.org/assets/files/UNTP-Business-Case-Template-Industry.docx and use this as the output structure. Fill in every section and every bracketed placeholder.
+
+**How to weight each benefit category**
+
+IMPORTANT: Always err on the side of conservatism. Use the lower end of each benchmark range unless there is strong, specific evidence from the annual report to justify a higher figure. A credible business case with conservative estimates is far more useful than an optimistic one that loses credibility under scrutiny. When in doubt, round down. If evidence for a benefit category is weak or absent, use the minimum of the range or exclude it entirely.
+
+Weight each benefit category based on what you know about this specific company, its sector, and its geography:
+
+- **Market access** — weight HIGH if the company exports to the EU, US, Japan, or Australia and operates in sectors subject to EUDR, CBAM, ESPR, UFLPA, or CSDDD. Weight LOW if primarily domestic or in unregulated sectors.
+- **Unit price uplift** — weight HIGH for consumer-facing brands with sustainability positioning. Weight LOW for undifferentiated commodity producers.
+- **Anti-counterfeiting** — weight HIGH for pharmaceuticals, luxury goods, premium wines/spirits. Weight NEAR-ZERO for bulk commodities, construction materials, most B2B industrials. Note: the benchmark range (0.1–2%) refers to per-company revenue recovery, not total counterfeit trade volume.
+- **Compliance cost reduction** — weight HIGH if the company reports significant regulatory compliance spend or operates across many jurisdictions. Weight MEDIUM for most exporters.
+- **Finance cost reduction** — weight HIGH if the company mentions trade finance constraints, operates in developing countries, or is an SME. Weight LOW for investment-grade corporates with strong ESG ratings already.
+- **Operational efficiency** — weight HIGH if the company has complex multi-tier supply chains with manual processes. Weight LOW if already highly digitised.
+- **Brand reputation** — weight HIGH for consumer brands. Weight LOW for B2B intermediaries.
+- **Improved disclosures** — weight HIGH if the company reports under CSRD, ISSB, or SEC climate rules and acknowledges scope 3 data gaps. Weight LOW if not subject to disclosure regulations.
+
+For costs, adjust based on:
+
+- **Organisation size** — use the low end of capital investment ranges for SMEs, high end for large enterprises.
+- **Digital maturity** — reduce cost estimates if the company already has modern ERP/supply chain systems.
+- **Community implementation** — reduce costs significantly if the company operates in a sector with an active UNTP Community Activation Program.
+
+**Output requirements**
+
+1. Populate the full template — every section, every table, every placeholder. Use actual figures from the annual report where available; use informed estimates (with reasoning) where not.
+2. In section 4.4 (Estimation Assumptions), assign a confidence level (H/M/L) to each benefit and explain your reasoning based on the company's specific context.
+3. In section 4.3 (Net Value and Payback), provide conservative, base case, and optimistic scenarios. The conservative case should use the low end of applicable ranges; the optimistic case should use the high end.
+4. In section 6 (Dependencies), assess the actual readiness of the ecosystem the company operates in — name specific software vendors, registers, and conformity schemes relevant to its sector and geography.
+5. In section 7.3 (Do-Nothing Risk), be specific about which regulations affect this company and by when.
+6. Throughout, show your working — explain why you chose a particular point in a benchmark range, citing specific evidence from the annual report or your knowledge of the sector.
+
+**Output format**
+
+Download the business case template from https://untp.unece.org/assets/files/UNTP-Business-Case-Template-Industry.docx and produce the output as a completed version of that Word document. Fill in every bracketed placeholder, populate every table, and replace all instructional text with company-specific content. The output should be a ready-to-review Word document that can be presented to a board or investment committee without further formatting.
+
+:::

@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "description": "Globally unique identifier for this register."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of this register."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the purpose and scope of this register."
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "The date this register was last updated."
+    },
+    "registrar": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of the registrar."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the registrar organisation."
+        }
+      },
+      "required": ["id", "name"],
+      "description": "The organisation responsible for maintaining this register."
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ConformitySchemeEntry"
+      },
+      "description": "The list of conformity schemes in this register."
+    }
+  },
+  "required": ["id", "name", "lastUpdated", "registrar", "entries"],
+  "description": "A register of conformity schemes — a directory of certification, audit, and assessment programs that may be referenced by UNTP conformity credentials.",
+  "$defs": {
+    "ConformitySchemeEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["ConformityScheme"],
+          "items": {
+            "type": "string"
+          }
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "Globally unique identifier of this conformity scheme."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of this scheme as defined by the scheme owner."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of this conformity scheme."
+        },
+        "owner": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uri",
+              "description": "Globally unique identifier of the scheme owner."
+            },
+            "name": {
+              "type": "string",
+              "description": "Legal registered name of the scheme owner."
+            },
+            "registeredId": {
+              "type": "string",
+              "description": "The registration number of the scheme owner within a business register."
+            }
+          },
+          "required": ["id", "name"],
+          "description": "The party that owns and maintains this conformity scheme."
+        },
+        "endorsementLevel": {
+          "type": "string",
+          "enum": [
+            "endorsed_self",
+            "endorsed_mandate",
+            "endorsed_accreditation",
+            "endorsed_benchmarked"
+          ],
+          "description": "The scheme assurance type."
+        },
+        "endorsement": {
+          "$ref": "#/$defs/Endorsement",
+          "description": "Endorsement provided to the scheme by an external authority."
+        },
+        "documentation": {
+          "type": "string",
+          "format": "uri",
+          "description": "A web page providing full documentation of this scheme."
+        },
+        "vocabularyURL": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL of the machine-readable UNTP CVC vocabulary published by the scheme owner."
+        },
+        "licenseType": {
+          "type": "string",
+          "enum": [
+            "proprietary-Code",
+            "proprietary-Document",
+            "permissive-OpenSource",
+            "copyleft",
+            "creative-Commons",
+            "source-Available",
+            "public"
+          ],
+          "description": "License conditions associated with this scheme."
+        },
+        "establishedDate": {
+          "type": "string",
+          "format": "date",
+          "description": "The date when this scheme was first established."
+        },
+        "geographicScope": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "Geographic scope as ISO-3166 countries/regions or code=001 for worldwide."
+        },
+        "industryScope": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Classification"
+          },
+          "description": "Industry scope as UN ISIC codes."
+        },
+        "trustmark": {
+          "$ref": "#/$defs/Image",
+          "description": "The trust mark or seal used by this conformity scheme."
+        }
+      },
+      "required": ["id", "name", "owner", "endorsementLevel", "documentation"],
+      "description": "A top-level directory entry for a conformity scheme."
+    },
+    "Endorsement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the endorsement."
+        },
+        "issuingAuthority": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "uri",
+              "description": "Globally unique identifier of the endorsing authority."
+            },
+            "name": {
+              "type": "string",
+              "description": "Legal registered name of the endorsing authority."
+            }
+          },
+          "required": ["id", "name"],
+          "description": "The authority that issued the endorsement."
+        },
+        "endorsementEvidence": {
+          "$ref": "#/$defs/Link",
+          "description": "Evidence supporting the endorsement."
+        }
+      },
+      "required": ["name", "issuingAuthority"],
+      "description": "An endorsement of the scheme by an external authority."
+    },
+    "Classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Classification code within the scheme."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the classification."
+        },
+        "schemeID": {
+          "type": "string",
+          "format": "uri",
+          "description": "Classification scheme ID."
+        },
+        "schemeName": {
+          "type": "string",
+          "description": "The name of the classification scheme."
+        }
+      },
+      "required": ["code", "name", "schemeID", "schemeName"],
+      "description": "A classification code from a standard scheme."
+    },
+    "Image": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Display name for this image."
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of this image."
+        },
+        "imageData": {
+          "type": "string",
+          "format": "byte",
+          "description": "Base64 encoded image data."
+        },
+        "mediaType": {
+          "type": "string",
+          "description": "The media type (e.g. image/png)."
+        }
+      },
+      "required": ["name", "imageData", "mediaType"],
+      "description": "A binary image encoded as base64."
+    },
+    "Link": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "linkURL": {
+          "type": "string",
+          "format": "uri",
+          "description": "The URL of the target resource."
+        },
+        "linkName": {
+          "type": "string",
+          "description": "Display name for this link."
+        },
+        "mediaType": {
+          "type": "string",
+          "description": "The media type of the target resource."
+        }
+      },
+      "required": ["linkURL", "linkName"],
+      "description": "A URL link with metadata."
+    }
+  }
+}

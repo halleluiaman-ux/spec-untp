@@ -1,0 +1,269 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "array",
+      "readOnly": true,
+      "default": ["Criterion"],
+      "items": {
+        "type": "string"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "const": "Criterion",
+            "minContains": 1
+          }
+        }
+      ]
+    },
+    "id": {
+      "example": "https://vocabulary.sample-scheme.org/criterion/lb/v1.0",
+      "type": "string",
+      "format": "uri",
+      "description": "Globally unique identifier of this conformity criterion. Typically represented as a URI SchemeOwner/CriterionID URI"
+    },
+    "name": {
+      "example": "Forced labour assessment criterion",
+      "type": "string",
+      "description": "Name of this criterion as defined by the scheme owner."
+    },
+    "description": {
+      "type": "string",
+      "description": "Descriptoin of this criterion"
+    },
+    "version": {
+      "type": "string",
+      "description": "The major.minor version of the the criterion. Minor versions represent changes that would not invalidate an assessment made under a previous version."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "active", "deprecated"],
+      "example": "proposed",
+      "description": "The lifecycle status of this criterion. "
+    },
+    "documentation": {
+      "type": "string",
+      "format": "uri",
+      "description": "A web page carrying detailed information about this criterion."
+    },
+    "conformityTopic": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ConformityTopic"
+      },
+      "description": "A global UN/CEFACT standard conformity topic code. "
+    },
+    "passThreshold": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Performance"
+      },
+      "description": "The assessed performance level (either a score or a measured metric) that represents compliance against the criteria (ie a passing score)."
+    },
+    "tag": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A set of tags that can be used by the scheme owner to be able to filter or group criterion in a large vocabulary for specific use cases."
+    }
+  },
+  "description": "A specific rule or criterion within a standard or regulation. eg a carbon intensity calculation rule within an emissions standard.",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "status",
+    "conformityTopic",
+    "passThreshold"
+  ],
+  "$defs": {
+    "ConformityTopic": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["ConformityTopic"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "ConformityTopic",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "id": {
+          "type": "string",
+          "format": "uri",
+          "description": "The unique identifier for this conformity topic"
+        },
+        "name": {
+          "example": "forced-labour",
+          "type": "string",
+          "description": "The human readable name for this conformity topic."
+        },
+        "definition": {
+          "type": "string",
+          "description": "The rich definition of this conformity topic."
+        }
+      },
+      "description": "The UNTP standard classification scheme for conformity topic.  see http://vocabulary.uncefact.org/ConformityTopic",
+      "required": ["id", "name"]
+    },
+    "Performance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["Performance"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Performance",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "metric": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "array",
+              "readOnly": true,
+              "default": ["PerformanceMetric"],
+              "items": {
+                "type": "string"
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "const": "PerformanceMetric",
+                    "minContains": 1
+                  }
+                }
+              ]
+            },
+            "id": {
+              "example": "https://authority.gov/schemeABC/123456789",
+              "type": "string",
+              "format": "uri",
+              "description": "Globally unique identifier of this reporting metric. "
+            },
+            "name": {
+              "example": "emissions intensity",
+              "type": "string",
+              "description": "A human readable name for this metric (for example \"water usage per Kg of material\")"
+            }
+          },
+          "required": ["id", "name"],
+          "description": "The metric (eg material emissions intensity CO2e/Kg or percentage of young workers) that is measured."
+        },
+        "measure": {
+          "$ref": "#/$defs/Measure",
+          "description": "The measured performance value"
+        },
+        "score": {
+          "$ref": "#/$defs/Score",
+          "description": "A performance score (eg \"AA\") drawn from a scoring framework defined by the scheme or criterion."
+        }
+      },
+      "description": "A claimed, assessed, or required performance level defined either by a scoring system or a numeric measure. When a numeric measure is provided, the metric classifying the measurement is required. When only a score is provided, the scoring framework is discoverable via the conformity scheme or criterion.",
+      "dependentRequired": {
+        "measure": ["metric"]
+      }
+    },
+    "Measure": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["Measure"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Measure",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "value": {
+          "example": 10,
+          "type": "number",
+          "description": "The numeric value of the measure"
+        },
+        "upperTolerance": {
+          "type": "number",
+          "description": "The upper tolerance associated with this measure expressed in the same units as the measure.  For example value=10, upperTolerance=0.1, unit=KGM would mean that this measure is 10kg + 0.1kg"
+        },
+        "lowerTolerance": {
+          "type": "number",
+          "description": "The lower tolerance associated with this measure expressed in the same units as the measure.  For example value=10, lowerTolerance=0.1, unit=KGM would mean that this measure is 10kg - 0.1kg"
+        },
+        "unit": {
+          "type": "string",
+          "x-external-enumeration": "https://vocabulary.uncefact.org/UnitMeasureCode#",
+          "description": "Unit of measure drawn from the UNECE Rec20 measure code list.\n\n    This is an enumerated value, but the list of valid values are too big, or change too often to include here. You can access the list of allowable values at this URL:  https://vocabulary.uncefact.org/UnitMeasureCode#\n    "
+        }
+      },
+      "description": "The measure class defines a numeric measured value (eg 10) and a coded unit of measure (eg KG).  There is an optional upper and lower tolerance which can be used to specify uncertainty in the measure.  ",
+      "required": ["value", "unit"]
+    },
+    "Score": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "array",
+          "readOnly": true,
+          "default": ["Score"],
+          "items": {
+            "type": "string"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "const": "Score",
+                "minContains": 1
+              }
+            }
+          ]
+        },
+        "code": {
+          "type": "string",
+          "description": "The coded value for this score (eg \"AAA\")"
+        },
+        "rank": {
+          "type": "integer",
+          "description": "The ranking of this score within the scoring framework - using an integer where \"1\" is the highest rank."
+        },
+        "definition": {
+          "type": "string",
+          "description": "A description of the meaning of this score."
+        }
+      },
+      "description": "A single score within a scoring framework. ",
+      "required": ["code"]
+    }
+  }
+}

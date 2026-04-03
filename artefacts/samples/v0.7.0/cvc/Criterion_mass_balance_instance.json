@@ -1,0 +1,39 @@
+{
+  "type": ["Criterion"],
+  "id": "https://sample-scheme.example.com/criterion/mass-balance-controls/1.0.0",
+  "name": "Mass Balance Controls",
+  "description": "Quantitative reconciliation of all mineral inputs and outputs at the processing facility. Requires the facility to maintain accurate records of all incoming raw materials (by weight, origin, and supplier), all outgoing processed materials (by weight, product type, and customer), and all processing losses and waste streams. Input-output reconciliation must be performed at regular intervals (minimum monthly) with variance analysis. Material discrepancies exceeding defined thresholds must be investigated and documented. Records must be maintained for a minimum of five years and be available for independent audit.",
+  "version": "1.0.0",
+  "status": "active",
+  "documentation": "https://sample-minerals-initiative.example.com/criteria/mass-balance-controls/",
+  "conformityTopic": [
+    {
+      "type": ["ConformityTopic"],
+      "id": "https://vocabulary.uncefact.org/untp/conformity-topic/origin-tracking",
+      "name": "Origin Tracking",
+      "definition": "Transparent documentation and verification of material and product origins throughout the supply chain."
+    }
+  ],
+  "passThreshold": [
+    {
+      "type": ["Performance"],
+      "metric": {
+        "type": ["PerformanceMetric"],
+        "id": "https://sample-scheme.example.com/metric/mass-balance-variance",
+        "name": "Mass balance variance"
+      },
+      "measure": {
+        "type": ["Measure"],
+        "value": 2,
+        "unit": "P1"
+      }
+    }
+  ],
+  "tag": [
+    "mass-balance",
+    "input-output-reconciliation",
+    "material-tracking",
+    "variance-analysis",
+    "record-keeping"
+  ]
+}

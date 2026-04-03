@@ -1,0 +1,11 @@
+{
+  "categories": {
+    "Software.md": "softwareImplementationPledges",
+    "Industry.md": "industryImplementationPledges",
+    "Registers.md": "registerImplementationPledges",
+    "Regulators.md": "regulatorImplementationPledges",
+    "SchemeOwners.md": "certifierImplementationPledges"
+  },
+  "skipMarkers": ["Sample"],
+  "imageStyleOverrides": {}
+}

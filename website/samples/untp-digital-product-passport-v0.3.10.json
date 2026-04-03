@@ -27,12 +27,12 @@
   "validUntil": "2034-03-15T12:00:00",
   "credentialSubject": {
     "type": ["Product", "Entity"],
-    "id": "https://id.gs1.org/01/09520123456788/21/12345",
+    "id": "https://ref.gs1.org/ai/01/09520123456788/21/12345",
     "name": "EV battery 300Ah.",
     "registeredId": "90664869327",
     "idScheme": {
       "type": ["IdentifierScheme"],
-      "id": "https://id.gs1.org/01/",
+      "id": "https://ref.gs1.org/ai/01/",
       "name": "Global Trade Identification Number (GTIN)"
     },
     "serialNumber": "12345678",

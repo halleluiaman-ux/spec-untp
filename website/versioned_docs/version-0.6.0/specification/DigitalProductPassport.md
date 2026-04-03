@@ -7,40 +7,41 @@ import Disclaimer from '../\_disclaimer.mdx';
 
 <Disclaimer />
 
-## Artifacts 
+## Artifacts
 
-Are maintained at https://test.uncefact.org/vocabulary/untp/dpp/0/about 
+Are maintained at https://test.uncefact.org/vocabulary/untp/dpp/0/about
 
 ### Stable Releases For Implementation
 
-Version 1.0 stable release for production implementation is due in June 2025 after formal public review 
+Version 1.0 stable release for production implementation is due in June 2025 after formal public review
 
 ### Release for Pilot Testing
 
-Version 0.6.0 release artifacts can be used for pilot testing.  
+Version 0.6.0 release artifacts can be used for pilot testing.
 
-* [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/)
-* [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.6.0.json)
-* [Sample JSON Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.6.0.json)
+- [JSON-LD @context](https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/)
+- [JSON Schema](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-schema-0.6.0.json)
+- [Sample JSON Instance](https://test.uncefact.org/vocabulary/untp/dpp/untp-dpp-instance-0.6.0.json)
 
 ### Latest Development Version
 
-Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes. 
+Latest development versions are used to reflect lessons learned from pilots but should not be used for either pilot testing or production purposes.
 
 ### Ontology
+
 The ontology for the Digital Product Passport is available in JSON-LD format and can be retrieved via content negotiation from:
 
 [https://test.uncefact.org/vocabulary/untp/dpp/0/](https://test.uncefact.org/vocabulary/untp/dpp/0/)
 
-  Example:
-  ```bash
-  curl https://test.uncefact.org/vocabulary/untp/dpp/0/ -H 'Accept: application/ld+json'
-  ```
+Example:
+
+```bash
+curl https://test.uncefact.org/vocabulary/untp/dpp/0/ -H 'Accept: application/ld+json'
+```
 
 ### Version History
 
 History of releases is available from the **[Version history](https://test.uncefact.org/vocabulary/untp/dpp/0/versions)** page.
-
 
 ### Default Render Template
 
@@ -48,10 +49,9 @@ A UNTP digital product passport may be rendered in any format desired by the iss
 
 ### Sample Credential
 
-|URL|QR|Description|
-|--|--|--|
-|[Sample Digital Battery Passport](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2Fbc075c5f-2304-4b3f-bb24-46d9fa9a8e60.json%22%7D%7D)|![Battery Passport Example](untp-dpp-demo.png)|A sample digital product passport as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be downloaded via the download button.|
-
+| URL                                                                                                                                                                                                                             | QR                                             | Description                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Sample Digital Battery Passport](https://untp.showthething.com/verify/?q=%7B%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Funtp-verifiable-credentials.s3.amazonaws.com%2Fbc075c5f-2304-4b3f-bb24-46d9fa9a8e60.json%22%7D%7D) | ![Battery Passport Example](untp-dpp-demo.png) | A sample digital product passport as a JWT envelope signed Verifiable Credential. The URL (or QR scan) resolved to a hosted verifier that displays a human readable version. Raw JSON data can be viewed via the `JSON` tab and the full credential can be downloaded via the download button. |
 
 ## Overview
 
@@ -63,34 +63,33 @@ The digital product passport (DPP) is issued by the shipper of goods and is the 
 
 ## Requirements
 
-The digital product passport is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://uncefact.github.io/spec-untp/docs/about/Requirements).
+The digital product passport is designed to meet the following detailed requirements as well as the more general [UNTP Requirements](https://untp.unece.org/docs/about/Requirements).
 
-| ID | Name  | Requirement Statement   | Solution Mapping  |
-| ------ | ---- | --------- | ---------- |
-| DPP-01 | Granularity | The DPP should support use at either *model* level or at *batch* level or at serialised *item* level.  | Claims are made at the passport level, which MUST have a related model and MAY have a related batch and item   |
-| DPP-02 | Classification       | The DPP should support any number of product classifications using codes from a defined classification scheme (eg UN-CPC) | The productCategory property |
-| DPP-03 | Materials provenance | The DPP should provide a simple structure to allow issuers to break down the material composition of their products by mass fraction and origin country so that raw material provenance requirements are easily assessed and met.    | The DPP "materialsProvenance" structure is designed to meet this need. |
-| DPP-04 | Produced at | The DPP should provide a simple structure to describe the manufacturing facility at which the product was made. The facility identifier SHOULD be resolvable and verifiable and SHOULD link to cadastral boundary information. | The "Facility" structure including the location class is designed to meet this need |
-| DPP-05 | Dimensions  | The DPP must support the definition of key product dimensions such as length, width, height, weight, volume so that conformity claims made at the unit level (eg Co2 intensity in Kg/Kg) can be used to calculate actual values for the shipped product  | Dimensions class  |
-| DPP-06 | Traceability | The DPP should provide a means to follow links to further DPPs and conformity credentials of constituent products so that (subject to confidentiality constraints), provenance claims can be verified to any arbitrary depth up to primary production | The links to ISO/IEC 19987 (EPCIS)-based traceability event credentials from the TraceabilityPerformance class is designed to meet this need  |
-| DPP-07 | Characteristics   | The DPP should allow an issuer to provide descriptive information about the product (image, description, etc) that is extensible to meet industry specific needs.   | Characteristics property as an industry extension point  |
-| DPP-08 | Verifiable Party     | The DPP should provide DPP issuer, product manufacturer, and facility operator identification including a name, a resolvable and verifiable identifier, and proof of ownership of the identifier  | DigitalProductPassport.Issuer Product.ProducedByParty, Product.ProducedAtFacility - all are uniquely identified objects and SHOULD have related resolvable [Identity Resolver](IdentityResolver.md) credentials|
-| DPP-09 | Claims  | The DPP MUST provide a means to include any number of conformity claims within one DPP so that it can provide simple single point to aggregate all claims about the product in one place  | The "conformityClaims" array is designed to meet this need  |
-| DPP-10 | Conformity Topic | The DPP MUST provide a simple mechanism to express the sustainability/circularity/conformity topic for each claim so that similar claims can be grouped and the high level scope easily understood.    | The ConformityTopic code list is designed to meet this need|
-| DPP-11 | Metrics  | The DPP MUST provide a simple mechanism to quantify a conformity claim (eg carbon intensity, water consumption, etc) and to express any accuracy range and also to compare the claimed value to a relevant benchmark such as a standard/regulation requirement or an industry average   | The "Metric" class is designed to meet this need  |
-| DPP-12 | Criteria  | The DPP MUST provide a means to reference a standard or regulation as well as the specific criteria within that standard or regulation - so that claims can be understood in terms of the criteria against which they are made. | Claim.referenceRegulation, Claim.referenceStandard, Claim.assessmentCriteria|
-| DPP-13 | Evidence  | The DPP MUST provide a means to reference independent conformity assessments that support and verify the claims being made. The related evidence SHOULD be digitally verifiable but MAY be a simple document or web page. The confidence level attached to the evidence should be clear. | The Claim.conformityEvidence property references a relevant digital conformity credential   |
+| ID     | Name                 | Requirement Statement                                                                                                                                                                                                                                                                    | Solution Mapping                                                                                                                                                                                                |
+| ------ | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DPP-01 | Granularity          | The DPP should support use at either _model_ level or at _batch_ level or at serialised _item_ level.                                                                                                                                                                                    | Claims are made at the passport level, which MUST have a related model and MAY have a related batch and item                                                                                                    |
+| DPP-02 | Classification       | The DPP should support any number of product classifications using codes from a defined classification scheme (eg UN-CPC)                                                                                                                                                                | The productCategory property                                                                                                                                                                                    |
+| DPP-03 | Materials provenance | The DPP should provide a simple structure to allow issuers to break down the material composition of their products by mass fraction and origin country so that raw material provenance requirements are easily assessed and met.                                                        | The DPP "materialsProvenance" structure is designed to meet this need.                                                                                                                                          |
+| DPP-04 | Produced at          | The DPP should provide a simple structure to describe the manufacturing facility at which the product was made. The facility identifier SHOULD be resolvable and verifiable and SHOULD link to cadastral boundary information.                                                           | The "Facility" structure including the location class is designed to meet this need                                                                                                                             |
+| DPP-05 | Dimensions           | The DPP must support the definition of key product dimensions such as length, width, height, weight, volume so that conformity claims made at the unit level (eg Co2 intensity in Kg/Kg) can be used to calculate actual values for the shipped product                                  | Dimensions class                                                                                                                                                                                                |
+| DPP-06 | Traceability         | The DPP should provide a means to follow links to further DPPs and conformity credentials of constituent products so that (subject to confidentiality constraints), provenance claims can be verified to any arbitrary depth up to primary production                                    | The links to ISO/IEC 19987 (EPCIS)-based traceability event credentials from the TraceabilityPerformance class is designed to meet this need                                                                    |
+| DPP-07 | Characteristics      | The DPP should allow an issuer to provide descriptive information about the product (image, description, etc) that is extensible to meet industry specific needs.                                                                                                                        | Characteristics property as an industry extension point                                                                                                                                                         |
+| DPP-08 | Verifiable Party     | The DPP should provide DPP issuer, product manufacturer, and facility operator identification including a name, a resolvable and verifiable identifier, and proof of ownership of the identifier                                                                                         | DigitalProductPassport.Issuer Product.ProducedByParty, Product.ProducedAtFacility - all are uniquely identified objects and SHOULD have related resolvable [Identity Resolver](IdentityResolver.md) credentials |
+| DPP-09 | Claims               | The DPP MUST provide a means to include any number of conformity claims within one DPP so that it can provide simple single point to aggregate all claims about the product in one place                                                                                                 | The "conformityClaims" array is designed to meet this need                                                                                                                                                      |
+| DPP-10 | Conformity Topic     | The DPP MUST provide a simple mechanism to express the sustainability/circularity/conformity topic for each claim so that similar claims can be grouped and the high level scope easily understood.                                                                                      | The ConformityTopic code list is designed to meet this need                                                                                                                                                     |
+| DPP-11 | Metrics              | The DPP MUST provide a simple mechanism to quantify a conformity claim (eg carbon intensity, water consumption, etc) and to express any accuracy range and also to compare the claimed value to a relevant benchmark such as a standard/regulation requirement or an industry average    | The "Metric" class is designed to meet this need                                                                                                                                                                |
+| DPP-12 | Criteria             | The DPP MUST provide a means to reference a standard or regulation as well as the specific criteria within that standard or regulation - so that claims can be understood in terms of the criteria against which they are made.                                                          | Claim.referenceRegulation, Claim.referenceStandard, Claim.assessmentCriteria                                                                                                                                    |
+| DPP-13 | Evidence             | The DPP MUST provide a means to reference independent conformity assessments that support and verify the claims being made. The related evidence SHOULD be digitally verifiable but MAY be a simple document or web page. The confidence level attached to the evidence should be clear. | The Claim.conformityEvidence property references a relevant digital conformity credential                                                                                                                       |
 
 ## Logical Model
 
-The Digital Product Passport is an assembly of re-usable components from the UNTP core vocabulary. 
+The Digital Product Passport is an assembly of re-usable components from the UNTP core vocabulary.
 
 ![Digital Product Passport data model](DigitalProductPassport.svg)
 
 ### Core Vocabulary Documentation
 
 The [UNTP core types vocabulary](https://jargon.sh/user/unece/untp-core/v/0.6.0/artefacts/readme/render) defines the uniquely identified Linked Data entities such as Product, Location, Facility, Party, Standard, Regulation, Criteria, Declaration, Attestation, Endorsement. These entities provide the building blocks for construction of Digital Product Passports and Digital Conformity Credentials.
-
 
 ### DPP Documentation
 
@@ -104,16 +103,16 @@ This section provides sample JSON-LD snippets for each DPP component.
 
 All DPPs are issued as W3C Verifiable Credentials and MUST conform to the [VCDM 2.0](https://www.w3.org/TR/vc-data-model-2.0/). Also note that all identified objects (i.e. those with an "id" property) also have a "type" property that indicates the Linked Data type of the object. The "type" values must be defined in the associated [JSON-LD @context file](https://test.uncefact.org/vocabulary/untp/dpp/0.6.0/). Key points to note from the VC sample below are:
 
-* That the credential type is both a W3C "VerifiableCredential" and a UNTP "DigitalProductPassport". The DPP is an extension of the VCDM. 
-* That the "@context" reference similarly lists both the W3C VCDM context URL and the UNTP DPP context URL.
-* The "id" is any globally unique reference for this specific DPP credential - typically a domain/UUID pattern.
-* The issuer property, unlike most VC examples, is an object with multiple properties. 
-  * The object conforms to the UNTP "CredentialIssuer" type.
-  * The id SHOULD be a DID and, if it is a DID then it MUST be a did:web.
-  * The name property provides a human readable name of the issuer.
-  * The array of "issuerAlsoKnownAs" is used to provide references to authoritative business identifiers for the issuer.  In the example shown the issuer is also identified as an Australian Business with an ABN and link to the authoritative business register entry.
-* The validFrom and validUntil fields are as defined in the W3C VCDM. They are optional but UNTP DPPs SHOULD include a validFrom date representing the date that the DPP was issued.
-* The credential subject carries the bulk of the digital product passport information.
+- That the credential type is both a W3C "VerifiableCredential" and a UNTP "DigitalProductPassport". The DPP is an extension of the VCDM.
+- That the "@context" reference similarly lists both the W3C VCDM context URL and the UNTP DPP context URL.
+- The "id" is any globally unique reference for this specific DPP credential - typically a domain/UUID pattern.
+- The issuer property, unlike most VC examples, is an object with multiple properties.
+  - The object conforms to the UNTP "CredentialIssuer" type.
+  - The id SHOULD be a DID and, if it is a DID then it MUST be a did:web.
+  - The name property provides a human readable name of the issuer.
+  - The array of "issuerAlsoKnownAs" is used to provide references to authoritative business identifiers for the issuer. In the example shown the issuer is also identified as an Australian Business with an ABN and link to the authoritative business register entry.
+- The validFrom and validUntil fields are as defined in the W3C VCDM. They are optional but UNTP DPPs SHOULD include a validFrom date representing the date that the DPP was issued.
+- The credential subject carries the bulk of the digital product passport information.
 
 ```json
 {
@@ -467,6 +466,4 @@ A key idea in UNTP is that performance **claims** made in product passports and 
 
 ### Referencing Conformity Criterion
 
-Conformity **claims** in DPPs SHOULD unambiguously reference a **criterion** in a relevant scheme, standard, or regulation using a URI. For example the`"id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation"` property in the example above is an example of a URI that references which rulebook an emissions intensity claim is made. Issuers of Digital product Passports (and Facility Records and Conformity Credentials) therefore need a way to find the the right criterion URI to put in their claims and assessments. This is the purpose of the UNTP [Sustainability Vocabulary Catalog](SustainabilityVocabularyCatalog.md). 
-
-
+Conformity **claims** in DPPs SHOULD unambiguously reference a **criterion** in a relevant scheme, standard, or regulation using a URI. For example the`"id": "https://www.globalbattery.org/GHGRulebook/2.0/GHG_Calculation"` property in the example above is an example of a URI that references which rulebook an emissions intensity claim is made. Issuers of Digital product Passports (and Facility Records and Conformity Credentials) therefore need a way to find the the right criterion URI to put in their claims and assessments. This is the purpose of the UNTP [Sustainability Vocabulary Catalog](SustainabilityVocabularyCatalog.md).

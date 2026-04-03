@@ -1,19 +1,22 @@
-# Validate Jargon Artefacts GitHub Action
+# Validate Jargon Artefacts GitLab Action
 
-This custom GitHub Action automates the validation of Jargon-generated UNTP artifacts, including JSON-LD contexts, schemas, and sample credentials. It ensures that the generated artifacts comply with the appropriate specifications before release.
+This custom GitLab Action automates the validation of Jargon-generated UNTP artifacts, including JSON-LD contexts, schemas, and sample credentials. It ensures that the generated artifacts comply with the appropriate specifications before release.
 
 ## Features
+
 - **Automated Validation**: Checks JSON-LD contexts, schemas, and sample credentials.
 - **Webhook Integration**: Triggers validation upon receiving Jargon snapshot events.
 - **Dockerized Execution**: Runs in an isolated container environment.
-- **GitHub Actions Support**: Easily integrates into GitHub workflows.
+- **GitLab Actions Support**: Easily integrates into GitLab workflows.
 - **Validation Reporting**: Outputs validation results for further processing.
 
 ## Installation
-This GitHub Action is designed to be used within a workflow in the [`spec-untp`](https://github.com/uncefact/spec-untp) repository.
+
+This GitLab Action is designed to be used within a workflow in the [`spec-untp`](https://opensource.unicc.org/un/unece/uncefact/spec-untp/) repository.
 
 ## Usage
-To use this action in your GitHub workflow, add the following YAML configuration to your `.github/workflows/validate.yml` file:
+
+To use this action in your GitLab workflow, add the following YAML configuration to your `.github/workflows/validate.yml` file:
 
 ```yaml
 name: Validate Jargon Artefacts
@@ -34,23 +37,26 @@ jobs:
         uses: ./.github/actions/validate-jargon-artefacts
         with:
           jargon-webhook-payload: ${{ toJSON(github.event.client_payload) }}
-      
+
       - name: Show Validation Result
         run: |
           echo "Jarogn Artefacts Validation Result: ${{ steps.validate.outputs.validation-result }}"
 ```
 
 ## Inputs
-| Name | Description | Required |
-|------|-------------|----------|
-| `jargon-webhook-payload` | The JSON payload from the Jargon webhook | Yes |
+
+| Name                     | Description                              | Required |
+| ------------------------ | ---------------------------------------- | -------- |
+| `jargon-webhook-payload` | The JSON payload from the Jargon webhook | Yes      |
 
 ## Outputs
-| Name | Description |
-|------|-------------|
+
+| Name                | Description                            |
+| ------------------- | -------------------------------------- |
 | `validation-result` | The validation result of the artifacts |
 
 ## Implementation Details
+
 - **Docker-based execution**: The action runs inside a Docker container using `node:21-alpine`.
 - **Validation Scripts**:
   - `schemaValidation.js`: Validates sample credentials against their schema and the context used in the sample credentials.
@@ -60,6 +66,7 @@ jobs:
 ## Development
 
 ### Running Locally
+
 To test this action locally, clone the repository and run:
 
 ```sh
@@ -67,7 +74,7 @@ To test this action locally, clone the repository and run:
 docker build -t validate-jargon-artefacts .
 
 # Run the Docker container
-docker run --rm -e INPUT_JARGON-WEBHOOK-PAYLOAD='{"artefacts": {...}}' validate-jargon-artefacts
+docker run --rm -e INPUT_JARGON_WEBHOOK_PAYLOAD='{"artefacts": {...}}' validate-jargon-artefacts
 ```
 
 ### Modifying the Action

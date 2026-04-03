@@ -6,12 +6,18 @@
   ],
   "scripts": {
     "postinstall": "yarn update-lock",
-    "update-lock": "yarn-deduplicate"
+    "update-lock": "yarn-deduplicate",
+    "validate-artefacts": "node scripts/validate-artefacts.mjs"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "jsonld": "^8.3.3"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",

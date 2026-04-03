@@ -1,0 +1,14 @@
+{
+  "prefix": "/performance-metrics/",
+  "majors": [
+    {
+      "log": [
+        {
+          "version": "0.1.0-working",
+          "date": " 2026-03-13",
+          "notes": "0.1.0-working"
+        }
+      ]
+    }
+  ]
+}

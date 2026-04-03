@@ -1,0 +1,110 @@
+---
+trigger-payload:
+  resource_group: trigger-validate-lock
+  stage: test
+  image: alpine:latest
+  variables:
+    REPOSITORY_URL: "https://oauth2:$PROJECT_ACCESS_TOKEN@opensource.unicc.org/un/unece/uncefact/spec-untp.git"
+    DATA_MODEL: "untp"
+
+  before_script:
+    - apk add --no-cache curl git jq yq
+    - git config --global user.name "GitLab CI Bot"
+    - git config --global user.email "ci@example.com"
+
+  script:
+    - set -x
+    - cat $TRIGGER_PAYLOAD > trigger_payload.json
+    - DOMAIN_NAME=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.domain.name')
+    - JARGON_ACTION_TYPE=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.action.type')
+    - PREFIX=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.settings.jsonld.prefix')
+    - |-
+      if [ "$JARGON_ACTION_TYPE" = "snapshot" ]; then
+        SNAPSHOT_INDEX=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.snapshot.index')
+        SNAPSHOT_DESCRIPTION=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.snapshot.description')
+        COMMIT_MESSAGE="sync(${PREFIX}-${SNAPSHOT_INDEX}): ${SNAPSHOT_DESCRIPTION}"
+        DEFAULT_MERGE_REQUEST_DESCRIPTION="$SNAPSHOT_DESCRIPTION"
+        MERGE_REQUEST_TITLE="chore: sync ${DOMAIN_NAME} data model with Jargon"
+        BRANCH_NAME="feature/jargon-sync-${PREFIX}"
+        export RELEASE_VERSION="working"
+        yq -i '.version=env(RELEASE_VERSION)' ci/publication/_config_${DATA_MODEL}.yml
+      elif [ "$JARGON_ACTION_TYPE" = "release" ]; then
+        export RELEASE_VERSION=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.release.version')
+        COMMIT_MESSAGE="feat: update ${DOMAIN_NAME} data model with Jargon release ${RELEASE_VERSION}"
+        DEFAULT_MERGE_REQUEST_DESCRIPTION="update ${DOMAIN_NAME} data model with Jargon release ${RELEASE_VERSION}"
+        MERGE_REQUEST_TITLE="feat: update data models with Jargon release ${RELEASE_VERSION}"
+        BRANCH_NAME="feature/jargon-release-$RELEASE_VERSION"
+        yq -i '.version=env(RELEASE_VERSION)' ci/publication/_config_${DATA_MODEL}.yml
+      else
+        echo -e "Unexpected jargon action type: $JARGON_ACTION_TYPE"
+        exit 1
+      fi
+    - VOCABULARY_URL=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.artefacts.jsonldVocab.url')
+    - CONTEXT_URL=$(cat "$TRIGGER_PAYLOAD" | jq -r '.client_payload.artefacts.jsonldContext.url')
+    - '[ "$PREFIX" = "" ] && exit 1'
+    - ENCODED_BRANCH=$(echo "${BRANCH_NAME}" | jq -sRr @uri)
+    - git branch -D $BRANCH_NAME || echo -e "no local branch to delete"
+    - git fetch origin $BRANCH_NAME && git checkout $BRANCH_NAME || git checkout -b $BRANCH_NAME
+    - cd data-models
+    - "[ -d $PREFIX ] || mkdir $PREFIX"
+    - cd $PREFIX
+    - "[ -d artefacts ] || mkdir artefacts"
+    - |-
+      wget -O vocabulary.jsonld $VOCABULARY_URL
+      wget -O context.jsonld $CONTEXT_URL
+
+    - |-
+      git status
+      git add .          
+      git add $CI_PROJECT_DIR/ci/publication/_config_${DATA_MODEL}.yml
+      git commit -m "$COMMIT_MESSAGE" || echo -e "nothing to commit"
+      git remote set-url --push origin "$REPOSITORY_URL"
+      git push origin $BRANCH_NAME || echo -e "Warning: $BRANCH_NAME failed"
+      MERGE_REQUEST_RESPONSE=$(curl --silent --header "PRIVATE-TOKEN: ${PROJECT_ACCESS_TOKEN}" \
+        "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests?state=opened")
+
+      # Filter by source branch using jq
+      MERGE_REQUEST=$(echo "$MERGE_REQUEST_RESPONSE" | jq --arg branch "${BRANCH_NAME}" '[.[] | select(.source_branch == $branch)]')
+      MERGE_REQUEST_COUNT=$(echo "$MERGE_REQUEST" | jq '. | length')
+      if [ "$MERGE_REQUEST_COUNT" -gt 0 ]; then
+      MERGE_REQUEST_TITLE=$(echo $MERGE_REQUEST | jq -r '.[0].title')
+      MERGE_REQUEST_DESCRIPTION=$(echo $MERGE_REQUEST | jq -r '.[0].description')
+      MERGE_REQUEST_IID=$(echo $MERGE_REQUEST | jq -r '.[0].iid')
+      cat > MERGE_REQUEST_DESCRIPTION.md <<EOF
+      ${MERGE_REQUEST_DESCRIPTION}
+
+      ${DEFAULT_MERGE_REQUEST_DESCRIPTION}
+      EOF
+      curl --request PUT --header "PRIVATE-TOKEN: $PROJECT_ACCESS_TOKEN" \
+        --header "Content-Type: application/json" \
+        --data "$(jq -n \
+          --arg desc "$(cat MERGE_REQUEST_DESCRIPTION.md)" \
+          '{description: $desc}')" \
+        "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests/${MERGE_REQUEST_IID}"
+      else
+      MERGE_REQUEST_RESPONSE=$(curl --request POST --header "PRIVATE-TOKEN: ${PROJECT_ACCESS_TOKEN}" \
+      --header "Content-Type: application/json" \
+      --data "$(jq -n \
+        --arg title "$MERGE_REQUEST_TITLE" \
+        --arg desc "$DEFAULT_MERGE_REQUEST_DESCRIPTION" \
+        --arg source "${BRANCH_NAME}" \
+        --arg target "main" \
+        '{
+          title: $title,
+          description: $desc,
+          source_branch: $source,
+          target_branch: $target
+        }')" \
+      "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests")
+      MERGE_REQUEST_IID=$(echo $MERGE_REQUEST_RESPONSE | jq -r '.iid')
+      fi
+      #TODO: fail job if pipeline trigger failed
+      echo "MERGE_REQUEST_IID-$MERGE_REQUEST_IID"
+    - set +x
+  artifacts:
+    paths:
+      - trigger_payload.json
+
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+      when: never #SC: GitLab only as the authoritative source. If we still use jargon then we can manually copy things from Jargon to gitlab.

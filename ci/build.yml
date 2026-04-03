@@ -1,0 +1,21 @@
+# Build and deploy to GitLab Pages
+build:
+  stage: build
+  image: node:${NODE_VERSION}
+  before_script:
+    - cd website
+    - yarn install --frozen-lockfile
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      - website/build/
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - website/**/*
+        - .gitlab-ci.yml
+        - ci/**/*
+        - yarn.lock

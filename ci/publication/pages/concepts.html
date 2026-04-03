@@ -1,0 +1,30 @@
+---
+title: Concepts
+permalink: concepts
+type: concept
+layout: table
+---
+
+<table class="table-grid">
+  <thead>
+    <tr>
+      <th>URI</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for concept in site.concepts %} {% unless
+    site.data[concept.jsonid].narrower == empty %} {%- assign conceptJson =
+    site.data[concept.jsonid] -%} {% assign referenceUrl = concept |
+    absolute_url | split: "." %}
+    <tr>
+      <td>
+        <a href="{{ referenceUrl[0] }}" title="{{ conceptJson.id }}"
+          >{{ conceptJson.id }}</a
+        >
+      </td>
+      <td>{{ conceptJson.definition }}</td>
+    </tr>
+    {% endunless %} {% endfor %}
+  </tbody>
+</table>

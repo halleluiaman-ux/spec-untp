@@ -1,0 +1,58 @@
+# Site settings
+title: UNTP Core Types
+description: UNTP Vocabulary, supporting Digital Product Passport (DPP), Digital Product Conformity (DPC), Digital Traceability Events (DTE), Digital Identity Anchor (DIA), and Sustainability topics.
+domainName: Core
+dataModel: untp
+baseurl: "/vocabulary/untp" # the subpath of your site, e.g. /blog
+artefacts: "/vocabulary/untp" # the subpath to deploy artefacts a level above major
+homeurl: "/vocabulary/untp/home"
+dest: "https://test.uncefact.org"
+dataSet: "dataset:'22A'"
+version: 0.7.0
+markdown: kramdown
+kramwdown:
+  parse_block_html: true
+collections:
+  classes:
+    output: true
+    permalink: /:name
+  properties:
+    output: true
+    permalink: /:name
+  code-lists:
+    output: true
+    permalink: /:name
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "classes"
+    values:
+      layout: "class"
+      type: "class"
+  - scope:
+      path: ""
+      type: "properties"
+    values:
+      layout: "property"
+      type: "property"
+  - scope:
+      path: ""
+      type: "code-lists"
+    values:
+      layout: "code-list"
+      type: "code-list"
+sass:
+  sourcemap: development
+exclude:
+  - vendor
+  - .idea
+  - .git
+  - .sass-cache
+  - versions/
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock

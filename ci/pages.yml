@@ -1,0 +1,23 @@
+# Build and deploy to GitLab Pages
+pages:
+  stage: deploy
+  needs:
+    - build
+    - docs_to_pdf
+  image: node:${NODE_VERSION}
+  script:
+    - mkdir -p public
+    - cp -r website/build/* public/
+    - cp un-transparency-protocol.pdf public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - website/**/*
+        - .gitlab-ci.yml
+        - ci/**/*
+        - yarn.lock

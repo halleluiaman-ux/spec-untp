@@ -1,0 +1,18 @@
+# Test deployment
+test:
+  stage: test
+  image: node:${NODE_VERSION}
+  before_script:
+    - cd website
+    - yarn install --frozen-lockfile
+  script:
+    - yarn build
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - website/**/*
+        - .gitlab-ci.yml
+        - ci/**/*
+        - yarn.lock

@@ -1,0 +1,275 @@
+.base-matrix:
+  parallel:
+    matrix:
+      - DATA_MODEL: untp
+
+.default_rules: &default_rules
+  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    when: never
+  - if: $CI_PIPELINE_SOURCE == "trigger"
+    when: never
+  - if: $CI_COMMIT_BRANCH == "main"
+    changes:
+      - artefacts/**/*
+      - ci/**/*
+  - if: $CI_COMMIT_TAG
+
+.test_rules: &test_rules
+  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    when: never
+  - if: $CI_PIPELINE_SOURCE == "trigger"
+    when: never
+  - if: $CI_COMMIT_BRANCH == "main"
+    changes:
+      - artefacts/**/*
+      - ci/**/*
+  - if: $CI_COMMIT_TAG
+    when: never
+
+.production_rules: &production_rules
+  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    when: never
+  - if: $CI_PIPELINE_SOURCE == "trigger"
+    when: never
+  - if: $CI_COMMIT_BRANCH == "main"
+    when: never
+  - if: $CI_COMMIT_TAG
+
+prepare:
+  stage: build
+  image: alpine:latest
+  extends: .base-matrix
+  variables:
+    MAJOR_VERSION: 0
+  before_script:
+    - apk add --no-cache jq bash yq
+  script:
+    - set -x
+    - echo "Processing $DATA_MODEL"
+    - |-
+      if [ -n "$CI_COMMIT_TAG" ]; then
+        export VERSION=$CI_COMMIT_TAG
+        #update config for production release
+        yq -i '.baseurl="/untp"' ci/publication/_config_${DATA_MODEL}.yml
+        yq -i '.artefacts="/untp"' ci/publication/_config_${DATA_MODEL}.yml
+        yq -i '.homeurl="/"' ci/publication/_config_${DATA_MODEL}.yml
+        yq -i '.dest="https://vocabulary.uncefact.org"' ci/publication/_config_${DATA_MODEL}.yml
+      elif [ "$CI_COMMIT_BRANCH" = "main" ]; then
+        export VERSION="working"
+      fi
+    - BASEURL=$(yq '.baseurl' < ci/publication/_config_${DATA_MODEL}.yml)
+    - ENV_DATA_MODEL=$(echo "${DATA_MODEL}" | sed -r 's/[-]+/_/g')
+    - |-
+      export VERSION=$(yq '.version' < ci/publication/_config_${DATA_MODEL}.yml)
+      case "${VERSION}" in
+        [0-9]*.[0-9]*.[0-9]*)
+          CURRENT_MAJOR_VERSION=$(echo "${VERSION}" | sed 's/^\([0-9]*\)\..*/\1/')
+          #VERSION_POSTFIX=$(echo "${VERSION}" | cut -dv -f2)
+          if [ "$CURRENT_MAJOR_VERSION" != "$MAJOR_VERSION" ]; then
+            echo -e "Error: major version mismatch, update input major version" && exit 1 
+          fi
+          export ARTEFACTS_PATH=$BASEURL
+          export VERSION_POSTFIX=$VERSION
+          ;;
+        *) 
+          export VERSION="working"
+          export MAJOR_VERSION="working"
+          export ARTEFACTS_PATH=$BASEURL/$MAJOR_VERSION
+          export VERSION_POSTFIX=$VERSION
+          ;;
+      esac
+      echo "ARTEFACTS_PATH=$ARTEFACTS_PATH" >> prepare_$DATA_MODEL.env
+      #version in config is update within a webhook from jargon
+      #yq -i '.version=env(VERSION_POSTFIX)' ci/publication/_config_${DATA_MODEL}.yml
+      #yq '.version' < ci/publication/_config_${DATA_MODEL}.yml
+
+    - echo "the BASEURL is $BASEURL"
+    - |-
+      #VOCAB_VERSION=$(jq --arg data_model "${DATA_MODEL}" -r '.["@context"][$data_model]' data-models/${DATA_MODEL}/vocabulary.jsonld | awk -F/ '{print $(NF-1)}')
+      #CONTEXT_VERSION=$(jq --arg data_model "${DATA_MODEL}" -r '.["@context"][$data_model]' data-models/${DATA_MODEL}/artefacts/context.jsonld | awk -F/ '{print $(NF-1)}')
+      #TODO: refactor major version check
+      VOCAB_VERSION=0
+      CONTEXT_VERSION=0
+      if [ "$VOCAB_VERSION" == "${MAJOR_VERSION}" ] && [ "$CONTEXT_VERSION" == "${MAJOR_VERSION}" ]; then
+        mkdir -p ci/publication/_artefacts
+        #TODO: check that data model is untp
+        cp artefacts/vocabularies/untp-core/untp-ontology.jsonld ci/publication/${DATA_MODEL}.jsonld
+        cp artefacts/contexts/v${VERSION_POSTFIX}/untp-context.jsonld ci/publication/${DATA_MODEL}-context-${VERSION_POSTFIX}.jsonld
+
+        # update namespace to testendpoint for publication
+        # #TODO: skip this for the release publishing to production
+        if [ "$CI_COMMIT_BRANCH" = "main" ]; then
+          sed -i 's|https://vocabulary.uncefact.org/untp|https://test.uncefact.org/vocabulary/untp|g' ci/publication/${DATA_MODEL}.jsonld
+          sed -i 's|https://vocabulary.uncefact.org/untp|https://test.uncefact.org/vocabulary/untp|g' ci/publication/${DATA_MODEL}-context-${VERSION_POSTFIX}.jsonld
+        fi
+        
+        echo "VERSION_POSTFIX=$VERSION_POSTFIX" >> prepare_$DATA_MODEL.env
+        
+      else
+        if [ "working" == "${VERSION}" ]; then
+          echo "Skipping data model due to version mismatch - only working versions are to be published"
+        else
+          echo "Error: Version in vocabulary or context doesn't match expected value - ${MAJOR_VERSION}" && exit 1
+        fi
+      fi
+    - |-
+      cd $CI_PROJECT_DIR
+      mkdir prepare_$DATA_MODEL
+      cp -R ci/publication/* prepare_$DATA_MODEL
+      cat prepare_$DATA_MODEL.env
+    - set -x
+  artifacts:
+    paths:
+      - prepare_$DATA_MODEL
+      - prepare_$DATA_MODEL.env
+  rules: *default_rules
+
+assume_role:
+  stage: deploy
+  image: alpine:latest
+  variables:
+    GIT_STRATEGY: none
+  id_tokens:
+    GITLAB_OIDC_TOKEN:
+      aud: https://opensource.unicc.org
+  before_script:
+    - apk add --no-cache aws-cli
+    - aws --version
+  script:
+    # this is split out for correct exit code handling
+    - >
+      if [ -n "$CI_COMMIT_TAG" ]; then
+        ROLE_ARN="arn:aws:iam::651690125008:role/untp-gitlab-production"
+      elif [ "$CI_COMMIT_BRANCH" = "main" ]; then
+        ROLE_ARN="arn:aws:iam::651690125008:role/untp-gitlab"
+      fi
+
+      aws_sts_output=$(aws sts assume-role-with-web-identity
+      --role-arn ${ROLE_ARN}
+      --role-session-name "GitLabRunner-${CI_PROJECT_ID}-${CI_PIPELINE_ID}"
+      --web-identity-token ${GITLAB_OIDC_TOKEN}
+      --duration-seconds 3600
+      --query 'Credentials.[AccessKeyId,SecretAccessKey,SessionToken]'
+      --output text)
+    - export $(printf "AWS_ACCESS_KEY_ID=%s AWS_SECRET_ACCESS_KEY=%s AWS_SESSION_TOKEN=%s" $aws_sts_output)
+    - echo "AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID" >> assume_role.env
+    - echo "AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY" >> assume_role.env
+    - echo "AWS_SESSION_TOKEN=$AWS_SESSION_TOKEN" >> assume_role.env
+    - aws sts get-caller-identity
+  artifacts:
+    reports:
+      dotenv: assume_role.env
+  rules: *default_rules
+
+generate:
+  stage: build
+  image: eclipse-temurin:11-jdk-alpine
+  extends: .base-matrix
+  variables:
+    UTILITY_JAR: vocab-jsonld-utility-1.6.5.jar
+    GIT_STRATEGY: none
+
+  script:
+    - cat prepare_$DATA_MODEL.env
+    - source prepare_$DATA_MODEL.env
+    - |-
+      echo "ARTEFACTS_PATH=$ARTEFACTS_PATH" >> generate_$DATA_MODEL.env
+      cd prepare_$DATA_MODEL
+      java -jar ${UTILITY_JAR} -m "md" -d "./" -i ${DATA_MODEL}.jsonld && cat out.md || \
+          (cat err.md && echo  "::error title=Failed to process ${DATA_MODEL}.jsonld::check logs for details" && exit 1)
+      mv versions/versions_${DATA_MODEL}.json _data/versions.json
+      rm ${UTILITY_JAR}
+      rm batch-add.json || echo -e "skip"
+      rm batch-delete.json || echo -e "skip"
+  artifacts:
+    paths:
+      - prepare_$DATA_MODEL
+      - generate_$DATA_MODEL.env
+  needs:
+    - job: prepare
+      artifacts: true
+  rules: *default_rules
+
+jekyll_build:
+  stage: build
+  image: ruby:2.6.5
+  extends: .base-matrix
+  variables:
+    LC_ALL: "C.UTF-8"
+    LANG: "en_US.UTF-8"
+    LANGUAGE: "en_US.UTF-8"
+    GIT_STRATEGY: none
+  script:
+    - source generate_$DATA_MODEL.env
+    - |-
+      cd prepare_$DATA_MODEL
+      gem install bundler:2.3.22
+      bundle install
+      bundle exec jekyll build --config _config_${DATA_MODEL}.yml
+  artifacts:
+    paths:
+      - prepare_$DATA_MODEL/_site/
+  needs:
+    - job: generate
+      artifacts: true
+  rules: *default_rules
+
+data-models-publish:
+  stage: deploy
+  image: alpine:latest
+  extends: .base-matrix
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - apk add --no-cache aws-cli
+    - aws --version
+  script:
+    - source generate_$DATA_MODEL.env
+    - |-
+      cd prepare_$DATA_MODEL
+      echo "Publication path - s3:///$PUBLICATION_BUCKET_NAME$ARTEFACTS_PATH"
+      aws s3 sync ./_site/ s3://$PUBLICATION_BUCKET_NAME$ARTEFACTS_PATH --exclude "*" --include "*.jsonld" --content-type application/ld+json --cache-control max-age=604800
+      aws s3 sync ./_site/ s3://$PUBLICATION_BUCKET_NAME$ARTEFACTS_PATH --include "*" --exclude "*.jsonld" --cache-control max-age=604800
+      aws cloudfront create-invalidation --distribution-id "$PUBLICATION_CLOUDFRONT_DISTRIBUTION_ID" --paths "$ARTEFACTS_PATH*"
+  needs:
+    - job: generate
+      artifacts: true
+    - job: jekyll_build
+      artifacts: true
+    - job: assume_role
+      artifacts: true
+  rules: *test_rules
+  environment:
+    name: test
+    url: https://test.uncefact.org/vocabulary/untp/about
+
+data-models-publish-production:
+  stage: deploy
+  image: alpine:latest
+  extends: .base-matrix
+  variables:
+    GIT_STRATEGY: none
+    PUBLICATION_BUCKET_NAME:
+  before_script:
+    - apk add --no-cache aws-cli
+    - aws --version
+  script:
+    - source generate_$DATA_MODEL.env
+    - |-
+      cd prepare_$DATA_MODEL
+      echo "Publication path - s3:///$PUBLICATION_BUCKET_NAME$ARTEFACTS_PATH"
+      aws s3 sync ./_site/ s3://$PUBLICATION_BUCKET_NAME$ARTEFACTS_PATH --exclude "*" --include "*.jsonld" --content-type application/ld+json --cache-control max-age=604800
+      aws s3 sync ./_site/ s3://$PUBLICATION_BUCKET_NAME$ARTEFACTS_PATH --include "*" --exclude "*.jsonld" --cache-control max-age=604800
+      aws cloudfront create-invalidation --distribution-id "$PUBLICATION_CLOUDFRONT_DISTRIBUTION_ID" --paths "$ARTEFACTS_PATH*"
+
+  needs:
+    - job: generate
+      artifacts: true
+    - job: jekyll_build
+      artifacts: true
+    - job: assume_role
+      artifacts: true
+  environment:
+    name: production
+    url: https://vocabulary.uncefact.org/untp
+  rules: *production_rules

@@ -1,0 +1,131 @@
+---
+layout: default
+---
+
+{%- assign initialCodeList = site.data[page.jsonid] -%} {%- if
+initialCodeList.values -%} {% assign codeList = initialCodeList.values %} {%-
+else -%} {% assign codeList = initialCodeList %} {%- endif -%} {% include
+breadcrumbs.html %}
+
+<h1 class="breakall">{{ page.title }}</h1>
+<div class="page-description">
+  {%- if initialCodeList.comment.first -%} {%- for comment in
+  initialCodeList.comment -%}
+  <p>{{ comment }}</p>
+  {%- endfor -%} {%- elsif initialCodeList.comment -%}
+  <p>{{ initialCodeList.comment }}</p>
+  {%- else -%}
+  <p>{{ page.comment }}</p>
+  {%- endif -%} {%- if initialCodeList.seeAlso -%}
+  <p>
+    See also the corresponding <a href="{{ initialCodeList.seeAlso }}">class</a>
+  </p>
+  {%- endif -%}
+  <p id="back-text" style="display: none">
+    Back to the <a id="back-country-link" href="/unlocode-countries">country</a>
+  </p>
+  <script>
+    const url = new URL(document.URL);
+
+    if (url.searchParams.has("country")) {
+      let countryCode = url.searchParams.get("country").toUpperCase();
+      document.getElementById("back-text").style.display = "block";
+      if (countryCode !== "") {
+        document
+          .getElementById("back-country-link")
+          .setAttribute("href", "/unlocode-countries#" + countryCode);
+      }
+    }
+  </script>
+</div>
+
+{%- if codeList -%}
+<h2>Values:</h2>
+<div class="table-wrapper">
+  {% assign columns = page.columns %} {% assign mapping = site.data.mapping %}
+  <table class="table-grid table-grid--code-list">
+    <thead>
+      <tr>
+        <th>URI</th>
+        {%- for column in columns -%}
+        <th>{{column.title}}</th>
+        {%- endfor -%}
+      </tr>
+    </thead>
+    <tbody>
+      {% for range in codeList %} {%- assign rangeUrl = range.uri | split: ":"
+      -%} {%- assign mappingKey = rangeUrl[0] -%}
+      <tr id="{{range.value}}">
+        {%- assign mappingUrl = mapping[mappingKey] | strip -%} {%- if
+        mappingUrl != '' -%}
+        <td data-title="URI">
+          <a href="{{ mapping[mappingKey] }}{{rangeUrl[1]}}"
+            >{{ range.uri | truncate: 40 }}</a
+          >
+        </td>
+        {%- else -%}
+        <td data-title="URI">
+          <a href="{{ rangeUrl[0] | absolute_url }}#{{rangeUrl[1]}}"
+            >{{ range.uri | truncate: 40 }}</a
+          >
+        </td>
+        {%- endif -%} {%- for column in columns -%} {%- if column.type == 'uri'
+        -%} {%- assign links = range[column.code] | split: "," -%}
+        <td data-title="{{column.title}}">
+          {%- for link in links -%} {%- assign linkUrl = link | split: ":" -%}
+          {%- assign mappingKey = linkUrl[0] | strip -%} {%- assign mappingUrl =
+          mapping[mappingKey] | strip -%} {%- if mappingUrl != '' -%}
+          <a href="{{ mapping[mappingKey] }}{{ linkUrl[1] }}"
+            >{{ link | strip }}</a
+          >
+          {%- else -%} {{ link | strip }} {%- endif -%} {% unless forloop.last
+          %}, {% endunless %} {%- endfor -%}
+        </td>
+        {%- elsif column.type == 'unlocode-link' -%}
+        <td class="action">
+          <a
+            href="{{ '/' | absolute_url }}unlocode?country={{rangeUrl[1] | downcase }}"
+            >View UN/LOCODEs</a
+          >
+        </td>
+        {%- else -%}
+        <td data-title="{{column.title}}">{{ range[column.code] }}</td>
+        {%- endif -%} {%- endfor -%}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{%- endif -%} {% if initialCodeList.referencedBy %}
+<h2>Referenced by</h2>
+<table class="table-grid">
+  <thead>
+    <tr>
+      <th>URI</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for reference in initialCodeList.referencedBy %} {% assign referenceUrl =
+    reference.uri | split: ":" %} {% assign mappingKey = referenceUrl[0] %}
+    <tr>
+      <td>
+        <a
+          {%
+          if
+          mappingKey
+          !="unece"
+          %}target="_blank"
+          {%
+          endif
+          %}
+          href="{{ site.data.mapping[mappingKey] }}{{ referenceUrl[1] }}"
+          >{{ reference.uri | truncate: 40 }}</a
+        >
+      </td>
+      <td>{{ reference.comment }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}

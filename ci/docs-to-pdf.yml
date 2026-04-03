@@ -1,0 +1,33 @@
+docs_to_pdf:
+  stage: build
+  needs: [build]
+  image: mcr.microsoft.com/playwright:v1.40.0-focal
+  before_script:
+    - npm install -g @ashleyharwood/docs-to-pdf@1.1.0-fork.5 http-server
+  script:
+    - |-
+      npx http-server website/build/ -p 8080 & sleep 10
+      npx docs-to-pdf --initialDocURLs="http://127.0.0.1:8080/docs/about/" \
+      --contentSelector="article" \
+      --baseUrl="https://untp.unece.org" \
+      --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" \
+      --excludeSelectors=".breadcrumbs,.theme-edit-this-page" \
+      --excludePaths="/docs/implementations/,/docs/governance/meetingArchive,/docs/about/FAQ" \
+      --outputPDFFilename="un-transparency-protocol.pdf" \
+      --coverTitle="UN Transparency Protocol" \
+      --coverImage="http://127.0.0.1:8080/img/home-hero.jpg" \
+      --cssStyle="body { font-size: 13px !important; } h1 { font-size: 40px !important; } h2 { font-size: 26px !important; } h3 { font-size: 20px !important; } h4 { font-size: 13px !important; } img[loading='lazy'] { loading: eager; }" \
+      --puppeteerArgs="--no-sandbox,--disable-setuid-sandbox,--disable-dev-shm-usage" \
+      --protocolTimeout "600000"
+  artifacts:
+    paths:
+      - un-transparency-protocol.pdf
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "trigger"
+      when: never
+    - if: $CI_COMMIT_BRANCH == "main"
+      changes:
+        - website/**/*
+        - .gitlab-ci.yml
+        - ci/**/*
+        - yarn.lock

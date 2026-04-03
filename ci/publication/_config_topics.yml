@@ -1,0 +1,40 @@
+# Site settings
+title: UNTP Conformity Topic Classification
+description: A hierarchical classification scheme for conformity topics used to categorise conformity criteria published by scheme owners. Encompasses sustainability (environmental, social, governance), product integrity, trade compliance, technical conformity, and information security domains. Designed as a common reference taxonomy for interoperable conformity assessments across regulatory frameworks and voluntary standards.
+domainName: Topics
+dataModel: topics
+baseurl: "/vocabulary/conformity-topics" # the subpath of your site, e.g. /blog
+artefacts: "/vocabulary/conformity-topics" # the subpath to deploy artefacts a level above major
+dest: "https://test.uncefact.org"
+dataSet: "dataset:'22A'"
+version: 0.7.0
+markdown: kramdown
+kramwdown:
+  parse_block_html: true
+collections:
+  concepts:
+    output: true
+    permalink: /:name
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "concepts"
+    values:
+      layout: "concept"
+      type: "concept"
+
+sass:
+  sourcemap: development
+exclude:
+  - vendor
+  - .idea
+  - .git
+  - .sass-cache
+  - versions/
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,18 @@
+include:
+  - local: ci/*.yml
+  - template: Security/Dependency-Scanning.gitlab-ci.yml
+
+stages:
+  - test
+  - build
+  - deploy
+
+variables:
+  NODE_VERSION: "18"
+  PIPELINE_NAME: "$CI_COMMIT_TITLE"
+
+# Cache for faster builds
+cache:
+  paths:
+    - website/node_modules/
+    - website/.yarn/cache/

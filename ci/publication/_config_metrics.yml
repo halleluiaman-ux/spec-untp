@@ -1,0 +1,40 @@
+# Site settings
+title: UNTP Performance Metrics Vocabulary
+description: A hierarchical vocabulary of standardised performance metrics for tagging fine-grained product and facility-level sustainability claims. Enables automatic roll-up to enterprise-level disclosures aligned with IFRS S1/S2, GRI, ESRS, and EU Battery Regulation. Counterpart to the UNTP Conformity Topic Classification — topics classify what is being assessed, metrics define what is measured.
+domainName: Metrics
+dataModel: metrics
+baseurl: "/vocabulary/performance-metrics" # the subpath of your site, e.g. /blog
+artefacts: "/vocabulary/performance-metrics" # the subpath to deploy artefacts a level above major
+dest: "https://test.uncefact.org"
+dataSet: "dataset:'22A'"
+version: 0.7.0
+markdown: kramdown
+kramwdown:
+  parse_block_html: true
+collections:
+  concepts:
+    output: true
+    permalink: /:name
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "concepts"
+    values:
+      layout: "concept"
+      type: "concept"
+
+sass:
+  sourcemap: development
+exclude:
+  - vendor
+  - .idea
+  - .git
+  - .sass-cache
+  - versions/
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock

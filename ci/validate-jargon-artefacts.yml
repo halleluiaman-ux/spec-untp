@@ -1,0 +1,22 @@
+# Test deployment
+validate-artefacts:
+  resource_group: trigger-validate-lock
+  stage: test
+  image: node:21-alpine
+  before_script:
+    - apk add --no-cache jq curl
+  script:
+    - |-
+      curl --fail --location \
+        --header "PRIVATE-TOKEN: ${PROJECT_ACCESS_TOKEN}" \
+        "$CI_API_V4_URL/projects/$CI_PROJECT_ID/jobs/artifacts/main/download?job=trigger-payload" \
+        --output artifacts.zip
+    - unzip artifacts.zip
+    - cd ci/validate-jargon-artefacts
+    - npm ci
+    - INPUT_JARGON_WEBHOOK_PAYLOAD=$(cat $CI_PROJECT_DIR/trigger_payload.json| jq -c ."client_payload") node src/index.js
+  artifacts:
+    paths:
+      - trigger_payload.json
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /^feature\/jargon-(sync|release)-/'
